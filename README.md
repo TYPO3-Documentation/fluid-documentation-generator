@@ -37,7 +37,7 @@ The command supports exactly three arguments. If you wish to specify the second 
 and so on. However, the arguments can be empty to make the default value apply.
 
 ```bash
-./bin/generate-fluid-documentation "`pwd`/public/" "https://example.local/" 1
+./bin/generate-fluid-documentation "`pwd`/public/" "https://example.localhost/" 1
 # Or, if you just want defaults but need to specify the last argument:
 ./bin/generate-fluid-documentation "" "" 1
 

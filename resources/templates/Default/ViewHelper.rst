@@ -1,4 +1,4 @@
-.. include:: {rootPath}Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _{headlineIdentifier}:
 

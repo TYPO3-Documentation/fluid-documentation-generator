@@ -1,4 +1,4 @@
-.. include:: {rootPath}Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _{headlineIdentifier}:
 
@@ -18,6 +18,7 @@ Arguments
 
 <f:for each="{arguments}" as="argumentData">
 .. _{argumentData.headlineIdentifier}:
+
 {argumentData.headline}
 {argumentData.headlineDecoration}
 <f:if condition="{argumentData.dataType}">

@@ -68,7 +68,7 @@ class IndexForViewhelperGroupWithoutSubGroupsTest extends TestCase
     public function includeClausePointsToSettingsCfg()
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $this->assertSame('.. include:: ../../../../Includes.txt' . PHP_EOL, $output[0]);
+        $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[0]);
     }
 
     /**

@@ -114,7 +114,7 @@ class ViewHelperDocumentation
                 return $matches[1] . PHP_EOL . str_repeat('-', strlen($matches[1]));
             },
             // Code block
-            '/\\n\\n```\S*\\n([^`]*)```/s' => function ($matches) {
+            '/\\n\\n```\S*\\n(.*?)```/s' => function ($matches) {
                 return PHP_EOL . PHP_EOL . '::' . PHP_EOL. PHP_EOL .
                     implode(PHP_EOL, array_map(function ($line) {
                         return '    ' . $line;

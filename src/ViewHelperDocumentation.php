@@ -89,6 +89,47 @@ class ViewHelperDocumentation
     }
 
     /**
+     * The ViewHelper description could be in Markdown format: Perform basic parsing in reST.
+     *
+     * This parsing is currently tailored to the TYPO3 VHS Extension documentation, which is
+     * rendered from reST to HTML on docs.typo3.org but from Markdown to HTML on
+     * viewhelpers.fluidtypo3.org. Move the parsing to its own class or use a third-party
+     * package if you want it to be more general - or try to convince the project maintainers
+     * to always write their ViewHelpers documentation in reST.
+     *
+     * The order of the parsing rules is important. For example, not to turn the already parsed
+     * quote into a code block.
+     *
+     * @return string
+     */
+    public function getDescriptionAsRst(): string
+    {
+        $replace = [
+            // Headline
+            '/^### (.*)$/m' => function ($matches) {
+                return $matches[1] . PHP_EOL . str_repeat('=', strlen($matches[1]));
+            },
+            // Headline - Level 2
+            '/^#### (.*)$/m' => function ($matches) {
+                return $matches[1] . PHP_EOL . str_repeat('-', strlen($matches[1]));
+            },
+            // Code block
+            '/\\n\\n```\S*\\n([^`]*)```/s' => function ($matches) {
+                return PHP_EOL . PHP_EOL . '::' . PHP_EOL. PHP_EOL .
+                    implode(PHP_EOL, array_map(function ($line) {
+                        return '    ' . $line;
+                    }, explode(PHP_EOL, rtrim($matches[1]))));
+            },
+            // Quotation block
+            '/^> (.*)$/m' => function ($matches) {
+                return '    ' . $matches[1];
+            }
+        ];
+        $description = $this->getDescription();
+        return preg_replace_callback_array($replace, $description);
+    }
+
+    /**
      * @return ArgumentDefinition[]
      */
     public function getArgumentDefinitions(): array

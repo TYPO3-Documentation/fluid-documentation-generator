@@ -196,7 +196,7 @@ class DataFileResolver
                 $files,
                 function ($item) use ($folderPath)
                 {
-                    return $item{0} !== '.' && is_dir($folderPath . $item);
+                    return $item[0] !== '.' && is_dir($folderPath . $item);
                 }
             )
         );

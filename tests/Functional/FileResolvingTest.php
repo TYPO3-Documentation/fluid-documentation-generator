@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class FileResolvingTest extends TestCase
 {
-    public static function setUpBeforeClass()/* The :void return type declaration that should be here would cause a BC issue */
+    public static function setUpBeforeClass(): void
     {
         DataFileResolver::getInstance(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Fixtures' . DIRECTORY_SEPARATOR);
     }

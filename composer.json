@@ -2,7 +2,7 @@
   "name": "namelesscoder/fluid-documentation-generator",
   "require": {
     "typo3fluid/fluid": "dev-main",
-    "php": "^7.1",
+    "php": "^7.2 || ^8.0",
     "cebe/markdown": "^1.2"
   },
   "autoload": {
@@ -23,7 +23,7 @@
   ],
   "require-dev": {
     "ext-json": "*",
-    "phpunit/phpunit": "^7.1",
+    "phpunit/phpunit": "^8.5 || ^9.5",
     "mikey179/vfsstream": "^1.6",
     "php-coveralls/php-coveralls": "^2.1"
   }

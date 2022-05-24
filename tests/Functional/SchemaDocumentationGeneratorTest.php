@@ -31,7 +31,7 @@ class SchemaDocumentationGeneratorTest extends TestCase
      */
     protected $vfs;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));

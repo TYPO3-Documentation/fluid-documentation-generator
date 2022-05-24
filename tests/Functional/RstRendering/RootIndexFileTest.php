@@ -23,7 +23,7 @@ class RootIndexFileTest extends TestCase
      */
     private $generatedFilePath = 'outputDir/public/Index.rst';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));

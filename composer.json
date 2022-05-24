@@ -1,7 +1,7 @@
 {
   "name": "namelesscoder/fluid-documentation-generator",
   "require": {
-    "typo3fluid/fluid": "dev-master",
+    "typo3fluid/fluid": "dev-main",
     "php": "^7.1",
     "cebe/markdown": "^1.2"
   },

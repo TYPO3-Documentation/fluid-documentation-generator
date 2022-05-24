@@ -30,7 +30,7 @@ class IndexForViewhelperGroupWithoutSubGroupsTest extends TestCase
      */
     private $generatedFilePath = 'outputDir/public/typo3/backend/9.4/Link/Index.rst';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));

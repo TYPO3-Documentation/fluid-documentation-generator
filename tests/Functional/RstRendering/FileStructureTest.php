@@ -24,7 +24,7 @@ class FileStructureTest extends TestCase
      */
     private $fixtureFilePath = __DIR__ . '/../../Fixtures/rendering/output/Documentation';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));

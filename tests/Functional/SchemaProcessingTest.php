@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 class SchemaProcessingTest extends TestCase
 {
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         DataFileResolver::getInstance(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Fixtures' . DIRECTORY_SEPARATOR);
     }
@@ -24,7 +24,7 @@ class SchemaProcessingTest extends TestCase
      */
     protected $vfs;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('public');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));

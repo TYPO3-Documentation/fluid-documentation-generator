@@ -7,7 +7,7 @@
 {headlineDecoration}
 
 
-{viewHelper.description -> f:format.raw()}
+{viewHelper.descriptionAsRst -> f:format.raw()}
 
 Arguments
 =========

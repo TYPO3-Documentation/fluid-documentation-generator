@@ -23,7 +23,7 @@
   ],
   "require-dev": {
     "ext-json": "*",
-    "phpunit/phpunit": "^8.5 || ^9.5",
+    "phpunit/phpunit": "^9.5",
     "mikey179/vfsstream": "^1.6",
     "php-coveralls/php-coveralls": "^2.1"
   }

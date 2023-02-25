@@ -180,7 +180,7 @@ uid
    mixed
 
 :aspect:`Required`
-   false
+   true
 :aspect:`Description`
    Uid of record to be edited
 
@@ -193,7 +193,7 @@ table
    string
 
 :aspect:`Required`
-   false
+   true
 :aspect:`Description`
    Target database table
 

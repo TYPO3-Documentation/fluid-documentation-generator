@@ -120,7 +120,7 @@ class ProcessedSchema
                 $name,
                 substr((string)$attributes['type'], 4),
                 (string)$element->xpath('xsd:annotation/xsd:documentation')[0],
-                ($attributes['use'] ?? false) === 'required',
+                ((string)($attributes['use'] ?? false)) === 'required',
                 ((string)$attributes['default'])
             );
         }

@@ -8,3 +8,4 @@ schemas/*
 !schemas/.keep
 build/logs/
 .idea/
+/.phpunit.result.cache

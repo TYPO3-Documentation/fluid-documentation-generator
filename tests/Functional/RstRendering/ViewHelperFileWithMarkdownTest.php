@@ -37,7 +37,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
         'outputDir/public/fluidtypo3/vhs/6.1/Iterator/Column.rst',
     ];
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));
@@ -88,7 +88,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
         $headlineTextIndex = 9;
         $lengthOfHeadline = strlen($output[$headlineTextIndex]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
-        $this->assertRegExp('/^[=]+$/', $output[$headlineTextIndex + 1]);
+        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex + 1]);
     }
 
     /**
@@ -110,7 +110,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
         $headlineTextIndex = 15;
         $lengthOfHeadline = strlen($output[$headlineTextIndex]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
-        $this->assertRegExp('/^[-]+$/', $output[$headlineTextIndex + 1]);
+        $this->assertMatchesRegularExpression('/^[-]+$/', $output[$headlineTextIndex + 1]);
     }
 
     /**
@@ -130,7 +130,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
         $codeBlockIndex = 56;
-        $this->assertRegExp('/^    [^\s]/', $output[$codeBlockIndex]);
+        $this->assertMatchesRegularExpression('/^    [^\s]/', $output[$codeBlockIndex]);
     }
 
     /**

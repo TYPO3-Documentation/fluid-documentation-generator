@@ -93,9 +93,9 @@ class ViewHelperFileFirstLevelTest extends TestCase
         $headlineTextIndex = 5;
         $lengthOfHeadline = strlen($output[$headlineTextIndex]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex - 1]));
-        $this->assertRegExp('/^[=]+$/', $output[$headlineTextIndex - 1]);
+        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex - 1]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
-        $this->assertRegExp('/^[=]+$/', $output[$headlineTextIndex + 1]);
+        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex + 1]);
     }
 
     /**

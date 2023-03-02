@@ -22,7 +22,7 @@ route
    string
 
 :aspect:`Required`
-   false
+   true
 :aspect:`Description`
    The route to link to
 

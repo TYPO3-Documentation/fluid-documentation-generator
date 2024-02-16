@@ -144,8 +144,10 @@ class RstExporter implements ExporterInterface
         switch ($packageName) {
             case 'fluid':
                 $package = 'f';
+                break;
             default:
                 $package = $packageName;
+                break;
         }
         $path = $viewHelperDocumentation->getPath();
         $backPath = str_repeat('../', substr_count($path, '/'));

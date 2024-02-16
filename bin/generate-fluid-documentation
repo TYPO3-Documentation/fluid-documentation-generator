@@ -7,10 +7,7 @@ $pwd = trim(shell_exec('pwd'));
 require_once $pwd . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 use NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver;
-use NamelessCoder\FluidDocumentationGenerator\Export\HtmlExporter;
-use NamelessCoder\FluidDocumentationGenerator\Export\JsonExporter;
 use NamelessCoder\FluidDocumentationGenerator\Export\RstExporter;
-use NamelessCoder\FluidDocumentationGenerator\Export\XsdExporter;
 use NamelessCoder\FluidDocumentationGenerator\Entity\Schema;
 use NamelessCoder\FluidDocumentationGenerator\SchemaDocumentationGenerator;
 
@@ -20,9 +17,6 @@ $force = (bool) ($argv[3] ?? false);
 
 $resolver = DataFileResolver::getInstance($pwd);
 $exporters = [
-    new XsdExporter($publicUrlPrefix),
-    new JsonExporter($publicUrlPrefix),
-    new HtmlExporter($publicUrlPrefix),
     new RstExporter($publicUrlPrefix)
 ];
 $generator = SchemaDocumentationGenerator::getInstance($exporters, $force);

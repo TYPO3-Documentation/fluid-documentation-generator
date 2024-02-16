@@ -1,8 +1,10 @@
 .. include:: /Includes.rst.txt
 
-=================
-moduleLayout.menu
-=================
+.. _typo3-backend-modulelayout-menu:
+
+==========================================================
+moduleLayout.menu ViewHelper `<backend:moduleLayout.menu>`
+==========================================================
 
 
 A view helper for adding a menu to the doc header area.
@@ -17,12 +19,22 @@ only <be:moduleLayout.menuItem> view helpers as children.
 </be:moduleLayout>
 </code>
 
+
+.. _typo3-backend-modulelayout-menu_arguments:
+
 Arguments
 =========
 
 
-identifier (string)
--------------------
+.. _modulelayout.menu_identifier:
 
+identifier
+----------
 
-Identifier of the menu
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   Identifier of the menu

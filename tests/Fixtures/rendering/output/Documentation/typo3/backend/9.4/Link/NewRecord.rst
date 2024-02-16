@@ -1,8 +1,10 @@
 .. include:: /Includes.rst.txt
 
-==============
-link.newRecord
-==============
+.. _typo3-backend-link-newrecord:
+
+====================================================
+link.newRecord ViewHelper `<backend:link.newRecord>`
+====================================================
 
 
 Use this ViewHelper to provide 'create new record' links.
@@ -52,93 +54,203 @@ To edit records, use the editRecordViewHelper
 </a>
 </output>
 
+
+.. _typo3-backend-link-newrecord_arguments:
+
 Arguments
 =========
 
 
-additionalAttributes (anySimpleType)
-------------------------------------
+.. _link.newrecord_additionalattributes:
 
-
-Additional tag attributes. They will be added directly to the resulting HTML tag.
-
-data (anySimpleType)
+additionalAttributes
 --------------------
 
+:aspect:`DataType`
+   mixed
 
-Additional data-* attributes. They will each be added with a &quot;data-&quot; prefix.
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-class (string)
---------------
+.. _link.newrecord_data:
 
+data
+----
 
-CSS class(es) for this element
+:aspect:`DataType`
+   mixed
 
-dir (string)
-------------
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Additional data-* attributes. They will each be added with a "data-" prefix.
 
+.. _link.newrecord_class:
 
-Text direction for this HTML element. Allowed strings: &quot;ltr&quot; (left to right), &quot;rtl&quot; (right to left)
+class
+-----
 
-id (string)
------------
+:aspect:`DataType`
+   string
 
+:aspect:`Required`
+   false
+:aspect:`Description`
+   CSS class(es) for this element
 
-Unique (in this file) identifier for this HTML element.
+.. _link.newrecord_dir:
 
-lang (string)
--------------
+dir
+---
 
+:aspect:`DataType`
+   string
 
-Language for this element. Use short names specified in RFC 1766
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-style (string)
---------------
+.. _link.newrecord_id:
 
+id
+--
 
-Individual CSS styles for this element
+:aspect:`DataType`
+   string
 
-title (string)
---------------
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Unique (in this file) identifier for this HTML element.
 
+.. _link.newrecord_lang:
 
-Tooltip text of element
+lang
+----
 
-accesskey (string)
-------------------
+:aspect:`DataType`
+   string
 
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Language for this element. Use short names specified in RFC 1766
 
-Keyboard shortcut to access this element
+.. _link.newrecord_style:
 
-tabindex (integer)
-------------------
+style
+-----
 
+:aspect:`DataType`
+   string
 
-Specifies the tab order of this element
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Individual CSS styles for this element
 
-onclick (string)
-----------------
+.. _link.newrecord_title:
 
+title
+-----
 
-JavaScript evaluated for the onclick event
+:aspect:`DataType`
+   string
 
-uid (anySimpleType)
--------------------
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Tooltip text of element
 
+.. _link.newrecord_accesskey:
 
-uid &lt; 0 will insert the record after the given uid
+accesskey
+---------
 
-pid (anySimpleType)
--------------------
+:aspect:`DataType`
+   string
 
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Keyboard shortcut to access this element
 
-the page id where the record will be created
+.. _link.newrecord_tabindex:
 
-table (string)
---------------
+tabindex
+--------
 
+:aspect:`DataType`
+   integer
 
-target database table
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Specifies the tab order of this element
 
-returnUrl (string)
-------------------
+.. _link.newrecord_onclick:
+
+onclick
+-------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   false
+:aspect:`Description`
+   JavaScript evaluated for the onclick event
+
+.. _link.newrecord_uid:
+
+uid
+---
+
+:aspect:`DataType`
+   mixed
+
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Uid < 0 will insert the record after the given uid
+
+.. _link.newrecord_pid:
+
+pid
+---
+
+:aspect:`DataType`
+   mixed
+
+:aspect:`Required`
+   false
+:aspect:`Description`
+   The page id where the record will be created
+
+.. _link.newrecord_table:
+
+table
+-----
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   Target database table
+
+.. _link.newrecord_returnurl:
+
+returnUrl
+---------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   false
+:aspect:`Description`

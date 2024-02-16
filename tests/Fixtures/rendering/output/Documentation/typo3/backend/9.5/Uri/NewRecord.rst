@@ -1,8 +1,10 @@
 .. include:: /Includes.rst.txt
 
-=============
-uri.newRecord
-=============
+.. _typo3-backend-uri-newrecord:
+
+==================================================
+uri.newRecord ViewHelper `<backend:uri.newRecord>`
+==================================================
 
 
 Use this ViewHelper to provide 'create new record' links.
@@ -46,27 +48,60 @@ To edit records, use the editRecordViewHelper
  /typo3/index.php?route=/record/edit&edit[a_table][-17]=new&returnUrl=foo/bar
 </output>
 
+
+.. _typo3-backend-uri-newrecord_arguments:
+
 Arguments
 =========
 
 
-uid (anySimpleType)
--------------------
+.. _uri.newrecord_uid:
 
+uid
+---
 
-uid &lt; 0 will insert the record after the given uid
+:aspect:`DataType`
+   mixed
 
-pid (anySimpleType)
--------------------
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Uid < 0 will insert the record after the given uid
 
+.. _uri.newrecord_pid:
 
-the page id where the record will be created
+pid
+---
 
-table (string)
---------------
+:aspect:`DataType`
+   mixed
 
+:aspect:`Required`
+   false
+:aspect:`Description`
+   The page id where the record will be created
 
-target database table
+.. _uri.newrecord_table:
 
-returnUrl (string)
-------------------
+table
+-----
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   Target database table
+
+.. _uri.newrecord_returnurl:
+
+returnUrl
+---------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   false
+:aspect:`Description`

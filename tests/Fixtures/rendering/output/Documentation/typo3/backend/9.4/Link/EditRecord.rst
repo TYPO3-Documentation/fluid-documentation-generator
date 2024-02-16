@@ -2,9 +2,9 @@
 
 .. _typo3-backend-link-editrecord:
 
-===============
-link.editRecord
-===============
+======================================================
+link.editRecord ViewHelper `<backend:link.editRecord>`
+======================================================
 
 
 Use this ViewHelper to provide edit links to records. The ViewHelper will
@@ -23,6 +23,9 @@ For new records, use the newRecordViewHelper
   Edit record
 </a>
 </output>
+
+
+.. _typo3-backend-link-editrecord_arguments:
 
 Arguments
 =========

@@ -80,7 +80,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text -> fourth line
         $index = 5;
-        $this->assertSame('link.editRecord' . PHP_EOL, $output[$index]);
+        $this->assertSame('link.editRecord ViewHelper `<backend:link.editRecord>`' . PHP_EOL, $output[$index]);
     }
 
     /**

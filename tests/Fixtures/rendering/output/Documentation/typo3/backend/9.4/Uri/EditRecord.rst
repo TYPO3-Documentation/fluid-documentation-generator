@@ -1,8 +1,10 @@
 .. include:: /Includes.rst.txt
 
-==============
-uri.editRecord
-==============
+.. _typo3-backend-uri-editrecord:
+
+====================================================
+uri.editRecord ViewHelper `<backend:uri.editRecord>`
+====================================================
 
 
 Use this ViewHelper to provide edit links (only the uri) to records. The ViewHelper will
@@ -20,21 +22,47 @@ For new records, use the newRecordViewHelper
 /typo3/index.php?route=/record/edit&edit[a_table][42]=edit&returnUrl=foo/bar
 </output>
 
+
+.. _typo3-backend-uri-editrecord_arguments:
+
 Arguments
 =========
 
 
-uid (anySimpleType)
--------------------
+.. _uri.editrecord_uid:
 
+uid
+---
 
-uid of record to be edited, 0 for creation
+:aspect:`DataType`
+   mixed
 
-table (string)
---------------
+:aspect:`Required`
+   true
+:aspect:`Description`
+   Uid of record to be edited, 0 for creation
 
+.. _uri.editrecord_table:
 
-target database table
+table
+-----
 
-returnUrl (string)
-------------------
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   Target database table
+
+.. _uri.editrecord_returnurl:
+
+returnUrl
+---------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   false
+:aspect:`Description`

@@ -1,38 +1,72 @@
 .. include:: /Includes.rst.txt
 
-==========
-moduleLink
-==========
+.. _typo3-backend-modulelink:
+
+============================================
+moduleLink ViewHelper `<backend:moduleLink>`
+============================================
 
 
 Create internal link within backend app
+
+
+.. _typo3-backend-modulelink_arguments:
 
 Arguments
 =========
 
 
-route (string)
---------------
+.. _modulelink_route:
 
+route
+-----
 
-The route to link to
+:aspect:`DataType`
+   string
 
-arguments (anySimpleType)
--------------------------
+:aspect:`Required`
+   true
+:aspect:`Description`
+   The route to link to
 
+.. _modulelink_arguments:
 
-Default: array ()
+arguments
+---------
 
-Additional link arguments
+:aspect:`DataType`
+   mixed
 
-query (string)
---------------
+:aspect:`Default`
+   array ()
 
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Additional link arguments
 
-Additional link arguments as string
+.. _modulelink_query:
 
-currentUrlParameterName (string)
---------------------------------
+query
+-----
 
+:aspect:`DataType`
+   string
 
-Add current url as given parameter
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Additional link arguments as string
+
+.. _modulelink_currenturlparametername:
+
+currentUrlParameterName
+-----------------------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Add current url as given parameter

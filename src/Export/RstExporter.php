@@ -140,22 +140,29 @@ class RstExporter implements ExporterInterface
         if (!$forceUpdate && file_exists($resolver->getPublicDirectoryPath() . $viewHelperDocumentation->getSchema()->getPath() . $viewHelperDocumentation->getPath() . '.rst')) {
             return;
         }
+        $packageName = $viewHelperDocumentation->getSchema()->getSchema()->getPackage()->getPackageName();
+        switch ($packageName) {
+            case 'fluid':
+                $package = 'f';
+            default:
+                $package = $packageName;
+        }
         $path = $viewHelperDocumentation->getPath();
         $backPath = str_repeat('../', substr_count($path, '/'));
         $rootPath = $backPath . '../../../';
 
-        $headline = $viewHelperDocumentation->getName();
+        $headline = $viewHelperDocumentation->getName() . ' ViewHelper `<' .  $package . ':' . $viewHelperDocumentation->getName() . '>`';
         $headlineDecoration = array_pad([], strlen($headline), '=');
         $namespace = array_filter(explode('/', $viewHelperDocumentation->getSchema()->getPath()));
         array_pop($namespace);
         $namespace = implode('/', $namespace);
-        $headlineIdentifier = str_replace(['.', '\'', '/'], '-', strtolower($namespace . '-' . $headline));
+        $headlineIdentifier = str_replace(['.', '\'', '/'], '-', strtolower($namespace . '-' . $viewHelperDocumentation->getName()));
 
         $arguments = [];
         foreach ($viewHelperDocumentation->getArgumentDefinitions() as $argumentDefinition) {
             $argumentHeadline = trim($argumentDefinition->getName());
             $argumentHeadlineDecoration = array_pad([], strlen($argumentHeadline), '-');
-            $argumentHeadlineIdentifier = strtolower($headline . '_' . $argumentHeadline);
+            $argumentHeadlineIdentifier = strtolower($viewHelperDocumentation->getName() . '_' . $argumentHeadline);
             $argumentsData = [
                 'headline' => $argumentHeadline,
                 'headlineIdentifier' => $argumentHeadlineIdentifier,

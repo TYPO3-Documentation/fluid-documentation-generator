@@ -80,7 +80,7 @@ class ViewHelperFileFirstLevelTest extends TestCase
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text -> fourth line
         $index = 5;
-        $this->assertSame('moduleLink' . PHP_EOL, $output[$index]);
+        $this->assertSame('moduleLink ViewHelper `<backend:moduleLink>`' . PHP_EOL, $output[$index]);
     }
 
     /**

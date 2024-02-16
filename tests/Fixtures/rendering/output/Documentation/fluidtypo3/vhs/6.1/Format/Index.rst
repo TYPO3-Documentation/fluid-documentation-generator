@@ -5,30 +5,13 @@ format
 ======
 
 
-* 16 ViewHelpers documented
-* 3 Sub namespaces
+* 1 ViewHelpers documented
 
 .. toctree::
    :titlesonly:
    :glob:
 
-   */Index
-   Append
-   Case
    DateRange
-   Eliminate
-   Hash
-   Hide
-   Markdown
-   Plaintext
-   PregReplace
-   Prepend
-   Replace
-   SanitizeString
-   Substring
-   Tidy
-   Trim
-   WordWrap
 
 
 

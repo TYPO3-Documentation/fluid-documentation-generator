@@ -1,8 +1,10 @@
 .. include:: /Includes.rst.txt
 
-============
-moduleLayout
-============
+.. _typo3-backend-modulelayout:
+
+================================================
+moduleLayout ViewHelper `<backend:moduleLayout>`
+================================================
 
 
 A view helper for having properly styled backend modules.
@@ -19,6 +21,9 @@ must be rendered as children of this view helper.
 <output>
 <!-- HTML of the backend module -->
 </output>
+
+
+.. _typo3-backend-modulelayout_arguments:
 
 Arguments
 =========

@@ -1,36 +1,59 @@
 .. include:: /Includes.rst.txt
 
-======
-avatar
-======
+.. _typo3-backend-avatar:
+
+====================================
+avatar ViewHelper `<backend:avatar>`
+====================================
 
 
 Render the avatar img tag for a given backend user
+
+
+.. _typo3-backend-avatar_arguments:
 
 Arguments
 =========
 
 
-backendUser (anySimpleType)
----------------------------
+.. _avatar_backenduser:
 
+backendUser
+-----------
 
-Default: 0
+:aspect:`DataType`
+   mixed
 
-uid of the backend user
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Uid of the backend user
 
-size (anySimpleType)
---------------------
+.. _avatar_size:
 
+size
+----
 
-Default: 32
+:aspect:`DataType`
+   mixed
 
-width and height of the image
+:aspect:`Default`
+   32
 
-showIcon (anySimpleType)
-------------------------
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Width and height of the image
 
+.. _avatar_showicon:
 
-Default: false
+showIcon
+--------
 
-show the record icon as well
+:aspect:`DataType`
+   mixed
+
+:aspect:`Required`
+   false
+:aspect:`Description`
+   Show the record icon as well

@@ -3,11 +3,14 @@
 .. _{headlineIdentifier}:
 
 {headlineDecoration}
-{headline}
+<f:format.raw>{headline}</f:format.raw>
 {headlineDecoration}
 
 
 {viewHelper.descriptionAsRst -> f:format.raw()}
+
+
+.. _{headlineIdentifier}_arguments:
 
 Arguments
 =========

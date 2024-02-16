@@ -56,6 +56,24 @@ To explain the command arguments:
    that already exist will not be regenerated. Useful if you add this to cron and generate from a collection at regular
    intervals and don't need to continuously re-write everything. Files that don't yet exist will of course be created.  
 
+Get the schemas
+---------------
+
+```
+git clone git@github.com:typo3/typo3.git core
+cd core
+composer require -o -n --no-progress typo3/fluid-schema-generator "^2.1"
+mkdir -p ../schemas/typo3fluid/fluid/latest
+./bin/generateschema TYPO3Fluid\\\Fluid > ../schemas/typo3fluid/fluid/latest/schema.xsd
+mkdir -p ../schemas/typo3/core/latest
+./bin/generateschema TYPO3\\\CMS\\\Core > ../schemas/typo3/core/latest/schema.xsd
+mkdir -p ../schemas/typo3/fluid/latest
+./bin/generateschema TYPO3\\\CMS\\\Fluid > ../schemas/typo3/fluid/latest/schema.xsd
+mkdir -p ../schemas/typo3/backend/latest
+./bin/generateschema TYPO3\\\CMS\\\Backend > ../schemas/typo3/backend/latest/schema.xsd
+
+```
+
 
 Metadata files
 --------------

@@ -75,7 +75,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     public function descriptionHeadlineAsExpected()
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
-        $index = 9;
+        $index = 10;
         $this->assertSame('Date range calculation/formatting ViewHelper' . PHP_EOL, $output[$index]);
     }
 
@@ -85,7 +85,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     public function descriptionHeadlineIsProperlyDecorated()
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
-        $headlineTextIndex = 9;
+        $headlineTextIndex = 10;
         $lengthOfHeadline = strlen($output[$headlineTextIndex]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
         $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex + 1]);
@@ -97,7 +97,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     public function descriptionHeadlineLvl2AsExpected()
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
-        $index = 15;
+        $index = 16;
         $this->assertSame('Usages' . PHP_EOL, $output[$index]);
     }
 
@@ -107,7 +107,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     public function descriptionHeadlineLvl2IsProperlyDecorated()
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
-        $headlineTextIndex = 15;
+        $headlineTextIndex = 16;
         $lengthOfHeadline = strlen($output[$headlineTextIndex]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
         $this->assertMatchesRegularExpression('/^[-]+$/', $output[$headlineTextIndex + 1]);
@@ -119,7 +119,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     public function descriptionCodeBlockIsProperlyDeclared()
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[1])->url());
-        $codeBlockIndex = 23;
+        $codeBlockIndex = 24;
         $this->assertSame('::' . PHP_EOL, $output[$codeBlockIndex-2]);
     }
 
@@ -129,7 +129,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     public function descriptionQuotationBlockIsProperlyIndented()
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
-        $codeBlockIndex = 56;
+        $codeBlockIndex = 57;
         $this->assertMatchesRegularExpression('/^    [^\s]/', $output[$codeBlockIndex]);
     }
 

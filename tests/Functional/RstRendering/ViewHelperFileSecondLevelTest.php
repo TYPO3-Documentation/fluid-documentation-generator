@@ -69,7 +69,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     public function includeClausePointsToSettingsCfg()
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[0]);
+        $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[1]);
     }
 
     /**
@@ -79,7 +79,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text -> fourth line
-        $index = 5;
+        $index = 6;
         $this->assertSame('link.editRecord ViewHelper `<backend:link.editRecord>`' . PHP_EOL, $output[$index]);
     }
 
@@ -90,7 +90,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text, then lower headline decoration
-        $headlineTextIndex = 5;
+        $headlineTextIndex = 6;
         $lengthOfHeadline = strlen($output[$headlineTextIndex]);
         $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex - 1]));
         $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex - 1]);
@@ -104,7 +104,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     public function descriptionGetsRendered()
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $index = 9;
+        $index = 10;
         $this->assertSame('Use this ViewHelper to provide edit links to records. The ViewHelper will' . PHP_EOL, $output[$index]);
     }
 
@@ -114,7 +114,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     public function headerIdentifierGetsRendered()
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $index = 2;
+        $index = 3;
         $this->assertSame('.. _typo3-backend-link-editrecord:' . PHP_EOL, $output[$index]);
     }
 

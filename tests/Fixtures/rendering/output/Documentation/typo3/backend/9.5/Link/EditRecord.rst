@@ -1,3 +1,4 @@
+:navigation-title: link.editRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-link-editrecord:

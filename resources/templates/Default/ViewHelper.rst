@@ -1,3 +1,4 @@
+:navigation-title: {viewHelper.name -> f:format.raw()}
 .. include:: /Includes.rst.txt
 
 .. _{headlineIdentifier}:

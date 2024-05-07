@@ -1,3 +1,4 @@
+:navigation-title: avatar
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-avatar:

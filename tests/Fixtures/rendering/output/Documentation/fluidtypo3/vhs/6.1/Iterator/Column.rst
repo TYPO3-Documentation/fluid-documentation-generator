@@ -1,3 +1,4 @@
+:navigation-title: iterator.column
 .. include:: /Includes.rst.txt
 
 .. _fluidtypo3-vhs-iterator-column:

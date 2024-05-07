@@ -1,3 +1,4 @@
+:navigation-title: moduleLayout.button.shortcutButton
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-modulelayout-button-shortcutbutton:

@@ -1,3 +1,4 @@
+:navigation-title: uri.editRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-uri-editrecord:

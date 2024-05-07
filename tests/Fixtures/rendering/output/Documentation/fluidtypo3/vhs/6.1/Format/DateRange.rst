@@ -1,3 +1,4 @@
+:navigation-title: format.dateRange
 .. include:: /Includes.rst.txt
 
 .. _fluidtypo3-vhs-format-daterange:

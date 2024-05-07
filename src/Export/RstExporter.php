@@ -169,6 +169,7 @@ class RstExporter implements ExporterInterface
                 'headline' => $argumentHeadline,
                 'headlineIdentifier' => $argumentHeadlineIdentifier,
                 'headlineDecoration' => implode('', $argumentHeadlineDecoration),
+                'package' => $package,
                 'description' => ucfirst(trim($argumentDefinition->getDescription())),
                 'dataType' => ($argumentDefinition->getType() === 'anySimpleType') ? 'mixed' : trim($argumentDefinition->getType()),
                 'isRequired' => $argumentDefinition->isRequired(),

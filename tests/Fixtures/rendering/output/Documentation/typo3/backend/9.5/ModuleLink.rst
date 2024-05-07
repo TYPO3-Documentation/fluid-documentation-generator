@@ -1,3 +1,4 @@
+:navigation-title: moduleLink
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-modulelink:

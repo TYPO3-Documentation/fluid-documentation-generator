@@ -1,3 +1,4 @@
+:navigation-title: moduleLayout.menu
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-modulelayout-menu:

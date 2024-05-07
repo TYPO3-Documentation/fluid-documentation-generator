@@ -1,4 +1,4 @@
-PHP_BIN = docker run -it --rm --user $$(id -u):$$(id -g) -v${PWD}:/opt/project -w /opt/project php:8.2-cli php -d memory_limit=1024M
+PHP_BIN = docker run --rm --user $$(id -u):$$(id -g) -v${PWD}:/opt/project -w /opt/project php:8.2-cli php -d memory_limit=1024M
 
 .PHONY: help
 help: ## Displays this list of targets with descriptions
@@ -21,3 +21,8 @@ test-unit: ## Run unit test
 
 .PHONY: test
 test: fix-code-style test-unit ## Runs all test
+
+.PHONY: code-style
+code-style: ## Executes php-cs-fixer with "check" option
+	@echo "$(ENV_INFO)"
+	$(PHP_BIN) vendor/bin/php-cs-fixer check

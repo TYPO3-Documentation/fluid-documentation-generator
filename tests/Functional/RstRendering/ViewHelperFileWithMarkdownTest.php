@@ -1,8 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Tests\Functional\RstRendering;
-
 
 use NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver;
 use NamelessCoder\FluidDocumentationGenerator\Entity\Schema;
@@ -21,18 +21,16 @@ class ViewHelperFileWithMarkdownTest extends TestCase
 
     /**
      * the generated file is compared against this fixture file
-     * @var array
      */
-    private $fixtureFilePaths = [
+    private array $fixtureFilePaths = [
         __DIR__ . '/../../Fixtures/rendering/output/Documentation/fluidtypo3/vhs/6.1/Format/DateRange.rst',
         __DIR__ . '/../../Fixtures/rendering/output/Documentation/fluidtypo3/vhs/6.1/Iterator/Column.rst',
     ];
 
     /**
      * output of the generation process
-     * @var array
      */
-    private $generatedFilePaths = [
+    private array $generatedFilePaths = [
         'outputDir/public/fluidtypo3/vhs/6.1/Format/DateRange.rst',
         'outputDir/public/fluidtypo3/vhs/6.1/Iterator/Column.rst',
     ];
@@ -41,12 +39,14 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));
+
         $dataFileResolver = DataFileResolver::getInstance(vfsStream::url('outputDir'));
         $dataFileResolver->setResourcesDirectory(__DIR__ . '/../../../resources/');
         $dataFileResolver->setSchemasDirectory(__DIR__ . '/../../Fixtures/rendering/input/');
+
         $schemaDocumentationGenerator = new SchemaDocumentationGenerator(
             [
-                new RstExporter()
+                new RstExporter(),
             ]
         );
         $schemaDocumentationGenerator->generateFilesForRoot();
@@ -64,7 +64,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function fileIsCreated()
+    public function fileIsCreated(): void
     {
         $this->assertTrue($this->vfs->hasChild($this->generatedFilePaths[0]));
     }
@@ -72,7 +72,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function descriptionHeadlineAsExpected()
+    public function descriptionHeadlineAsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
         $index = 10;
@@ -82,7 +82,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function descriptionHeadlineIsProperlyDecorated()
+    public function descriptionHeadlineIsProperlyDecorated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
         $headlineTextIndex = 10;
@@ -94,7 +94,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function descriptionHeadlineLvl2AsExpected()
+    public function descriptionHeadlineLvl2AsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
         $index = 16;
@@ -104,7 +104,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function descriptionHeadlineLvl2IsProperlyDecorated()
+    public function descriptionHeadlineLvl2IsProperlyDecorated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
         $headlineTextIndex = 16;
@@ -116,17 +116,17 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function descriptionCodeBlockIsProperlyDeclared()
+    public function descriptionCodeBlockIsProperlyDeclared(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[1])->url());
         $codeBlockIndex = 24;
-        $this->assertSame('::' . PHP_EOL, $output[$codeBlockIndex-2]);
+        $this->assertSame('::' . PHP_EOL, $output[$codeBlockIndex - 2]);
     }
 
     /**
      * @test
      */
-    public function descriptionQuotationBlockIsProperlyIndented()
+    public function descriptionQuotationBlockIsProperlyIndented(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePaths[0])->url());
         $codeBlockIndex = 57;
@@ -136,11 +136,13 @@ class ViewHelperFileWithMarkdownTest extends TestCase
     /**
      * @test
      */
-    public function generatedFileIsSameAsFixture()
+    public function generatedFileIsSameAsFixture(): void
     {
-        for ($i = 0; $i <= count($this->fixtureFilePaths)-1; $i++) {
-            $this->assertSame(file_get_contents($this->fixtureFilePaths[$i]),
-                file_get_contents($this->vfs->getChild($this->generatedFilePaths[$i])->url()));
+        for ($i = 0; $i <= count($this->fixtureFilePaths) - 1; ++$i) {
+            $this->assertSame(
+                file_get_contents($this->fixtureFilePaths[$i]),
+                file_get_contents($this->vfs->getChild($this->generatedFilePaths[$i])->url())
+            );
         }
     }
 }

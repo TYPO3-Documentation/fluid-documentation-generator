@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator\Data;
 
 use NamelessCoder\FluidDocumentationGenerator\Entity\Schema;
@@ -11,39 +13,39 @@ use NamelessCoder\FluidDocumentationGenerator\ProcessedSchema;
 
 class DataFileResolver
 {
-    const SCHEMA_FILENAME = 'schema.xsd';
-    const CACHE_DIRECTORY = 'cache';
-    const PUBLIC_DIRECTORY = 'public';
-    const SCHEMAS_DIRECTORY = 'schemas';
-    const RESOURCES_DIRECTORY = 'resources';
+    public const SCHEMA_FILENAME = 'schema.xsd';
 
-    /**
-     * @var DataFileWriter
-     */
-    private $writer;
+    public const CACHE_DIRECTORY = 'cache';
 
-    private $rootDirectory = '';
+    public const PUBLIC_DIRECTORY = 'public';
 
-    private $resourcesDirectory = '';
+    public const SCHEMAS_DIRECTORY = 'schemas';
 
-    private $schemasDirectory = '';
+    public const RESOURCES_DIRECTORY = 'resources';
 
-    private static $instance;
+    private readonly \NamelessCoder\FluidDocumentationGenerator\Data\DataFileWriter $writer;
+
+    private string $resourcesDirectory = '';
+
+    private string $schemasDirectory = '';
+
+    private static ?self $instance = null;
 
     public static function getInstance(?string $rootDirectory = null): DataFileResolver
     {
-        if (!static::$instance && !$rootDirectory) {
+        if (!static::$instance instanceof \NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver && ($rootDirectory === null || $rootDirectory === '' || $rootDirectory === '0')) {
             throw new \RuntimeException('DataFileResolver must be fetched once with a root directory argument');
         }
-        if (!static::$instance || $rootDirectory) {
+
+        if (!static::$instance instanceof \NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver || $rootDirectory) {
             static::$instance = new static($rootDirectory);
         }
+
         return static::$instance;
     }
 
-    public function __construct(string $rootDirectory)
+    public function __construct(private readonly string $rootDirectory)
     {
-        $this->rootDirectory = $rootDirectory;
         $this->writer = new DataFileWriter($this);
     }
 
@@ -51,6 +53,7 @@ class DataFileResolver
     {
         return $this->writer;
     }
+
     public function readSchemaMetaDataFile(Schema $schema): array
     {
         return $this->readVendorMetaDataFile($schema->getVendor())
@@ -101,22 +104,15 @@ class DataFileResolver
      */
     public function resolveInstalledVendors(): array
     {
-        $cache = [];
-        if (empty($cache)) {
-            $path = $this->getSchemaDirectoryPath();
-            $cache = array_map(
-                function ($item)
-                {
-                    return new SchemaVendor(pathinfo($item, PATHINFO_FILENAME));
-                },
-                $this->readContentsOfFolder($path)
-            );
-        }
-        return $cache;
+        $path = $this->getSchemaDirectoryPath();
+
+        return array_map(
+            static fn($item): \NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVendor => new SchemaVendor(pathinfo((string) $item, PATHINFO_FILENAME)),
+            $this->readContentsOfFolder($path)
+        );
     }
 
     /**
-     * @param SchemaVendor $vendor
      * @return SchemaPackage[]
      */
     public function resolveInstalledPackagesForVendor(SchemaVendor $vendor): array
@@ -125,18 +121,15 @@ class DataFileResolver
         if (!isset($cache[$vendor->getVendorName()])) {
             $path = $this->getSchemaDirectoryPath() . DIRECTORY_SEPARATOR . $vendor->getVendorName() . DIRECTORY_SEPARATOR;
             $cache[$vendor->getVendorName()] = array_map(
-                function ($item) use ($vendor)
-                {
-                    return new SchemaPackage($vendor, $item);
-                },
+                static fn($item): \NamelessCoder\FluidDocumentationGenerator\Entity\SchemaPackage => new SchemaPackage($vendor, $item),
                 $this->readContentsOfFolder($path)
             );
         }
+
         return $cache[$vendor->getVendorName()];
     }
 
     /**
-     * @param SchemaPackage $package
      * @return SchemaVersion[]
      */
     public function resolveInstalledVersionsForPackage(SchemaPackage $package): array
@@ -146,13 +139,11 @@ class DataFileResolver
             $path = $this->getSchemaDirectoryPath() . DIRECTORY_SEPARATOR . $package->getVendor()->getVendorName()
                 . DIRECTORY_SEPARATOR . $package->getPackageName() . DIRECTORY_SEPARATOR;
             $cache[$package->getFullyQualifiedName()] = array_map(
-                function ($item) use ($package)
-                {
-                    return new SchemaVersion($package, $item);
-                },
+                static fn($item): \NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVersion => new SchemaVersion($package, $item),
                 $this->readContentsOfFolder($path)
             );
         }
+
         return $cache[$package->getFullyQualifiedName()];
     }
 
@@ -162,6 +153,7 @@ class DataFileResolver
         if (!file_exists($path)) {
             throw new SchemaFileNotFoundException('File ' . $path . ' does not exist');
         }
+
         return $path;
     }
 
@@ -191,20 +183,17 @@ class DataFileResolver
     private function readContentsOfFolder(string $folderPath): array
     {
         $files = @scandir($folderPath);
-        return empty($files) ? [] : array_values(
+        return $files === [] || $files === false ? [] : array_values(
             array_filter(
                 $files,
-                function ($item) use ($folderPath)
-                {
-                    return $item[0] !== '.' && is_dir($folderPath . $item);
-                }
+                static fn(string $item): bool => $item[0] !== '.' && is_dir($folderPath . $item)
             )
         );
     }
 
     public function getResourcesDirectoryPath(): string
     {
-        return $this->resourcesDirectory ?: $this->rootDirectory . DIRECTORY_SEPARATOR . static::RESOURCES_DIRECTORY . DIRECTORY_SEPARATOR;
+        return $this->resourcesDirectory !== '' && $this->resourcesDirectory !== '0' ? $this->resourcesDirectory : $this->rootDirectory . DIRECTORY_SEPARATOR . static::RESOURCES_DIRECTORY . DIRECTORY_SEPARATOR;
     }
 
     public function getPublicDirectoryPath(): string
@@ -214,7 +203,7 @@ class DataFileResolver
 
     public function getSchemaDirectoryPath(): string
     {
-        return $this->schemasDirectory ?: $this->rootDirectory . DIRECTORY_SEPARATOR . static::SCHEMAS_DIRECTORY . DIRECTORY_SEPARATOR;
+        return $this->schemasDirectory !== '' && $this->schemasDirectory !== '0' ? $this->schemasDirectory : $this->rootDirectory . DIRECTORY_SEPARATOR . static::SCHEMAS_DIRECTORY . DIRECTORY_SEPARATOR;
     }
 
     public function getCacheDirectoryPath(): string

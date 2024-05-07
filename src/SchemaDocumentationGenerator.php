@@ -1,8 +1,9 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator;
 
-use NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver;
 use NamelessCoder\FluidDocumentationGenerator\Entity\Schema;
 use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaPackage;
 use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVendor;
@@ -13,9 +14,7 @@ class SchemaDocumentationGenerator
     /**
      * @var ExporterInterface[]
      */
-    private $exporters = [];
-
-    private $forceUpdate = false;
+    private readonly array $exporters;
 
     public static function getInstance(array $exporters = [], bool $forceUpdate = false): self
     {
@@ -23,16 +22,17 @@ class SchemaDocumentationGenerator
         if (!$instance) {
             $instance = new static($exporters, $forceUpdate);
         }
+
         return $instance;
     }
 
-    public function __construct(array $exporters, bool $forceUpdate = false)
+    public function __construct(array $exporters, private readonly bool $forceUpdate = false)
     {
         foreach ($exporters as $exporter) {
             $exporter->setGenerator($this);
         }
+
         $this->exporters = $exporters;
-        $this->forceUpdate = $forceUpdate;
     }
 
     public function generateFilesForRoot(): void
@@ -64,9 +64,11 @@ class SchemaDocumentationGenerator
             foreach ($processedSchema->getDocumentationTree()->getDocumentedViewHelpers() as $viewHelperDocumentation) {
                 $exporter->exportViewHelper($viewHelperDocumentation);
             }
+
             foreach ($processedSchema->getDocumentationTree()->getSubGroups() as $viewHelperDocumentationGroup) {
                 $this->generateFilesForViewHelperDocumentationGroup($viewHelperDocumentationGroup, $exporter);
             }
+
             $exporter->exportSchema($processedSchema, $this->forceUpdate);
         }
     }
@@ -76,9 +78,11 @@ class SchemaDocumentationGenerator
         foreach ($group->getDocumentedViewHelpers() as $viewHelperDocumentation) {
             $exporter->exportViewHelper($viewHelperDocumentation, $this->forceUpdate);
         }
+
         foreach ($group->getSubGroups() as $subGroup) {
             $this->generateFilesForViewHelperDocumentationGroup($subGroup, $exporter);
         }
+
         $exporter->exportViewHelperGroup($group, $this->forceUpdate);
     }
 
@@ -91,6 +95,7 @@ class SchemaDocumentationGenerator
                 $exporter->createAdditionalViewHelperResources($viewHelperDocumentation)
             );
         }
+
         return $resources;
     }
 
@@ -103,6 +108,7 @@ class SchemaDocumentationGenerator
                 $exporter->createAdditionalSchemaResources($schema)
             );
         }
+
         return $resources;
     }
 
@@ -115,6 +121,7 @@ class SchemaDocumentationGenerator
                 $exporter->createAdditionalViewHelperResources($viewHelperDocumentation, $exporter->getIdentifier())
             );
         }
+
         return $resources;
     }
 }

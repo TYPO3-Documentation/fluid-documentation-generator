@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Entity;
@@ -8,15 +9,7 @@ use NamelessCoder\FluidDocumentationGenerator\ProcessedSchema;
 
 class Schema
 {
-    /**
-     * @var SchemaVersion
-     */
-    private $version;
-
-    public function __construct(SchemaVersion $version)
-    {
-        $this->version = $version;
-    }
+    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVersion $version) {}
 
     public function getSchemaSource(): string
     {

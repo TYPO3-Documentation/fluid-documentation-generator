@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Tests\Functional;
@@ -28,6 +29,7 @@ class SchemaProcessingTest extends TestCase
     {
         $this->vfs = vfsStream::setup('public');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));
+
         $resolver = DataFileResolver::getInstance(vfsStream::url('public'));
         $resolver->setSchemasDirectory(__DIR__ . '/../Fixtures/schemas/');
     }

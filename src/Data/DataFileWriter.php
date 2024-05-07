@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator\Data;
 
 use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaPackage;
@@ -8,15 +10,7 @@ use NamelessCoder\FluidDocumentationGenerator\ProcessedSchema;
 
 class DataFileWriter
 {
-    /**
-     * @var DataFileResolver
-     */
-    private $resolver;
-
-    public function __construct(DataFileResolver $resolver)
-    {
-        $this->resolver = $resolver;
-    }
+    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver $resolver) {}
 
     public function publishDataFileForSchema(ProcessedSchema $schema, string $subPath, $contents): string
     {
@@ -54,11 +48,13 @@ class DataFileWriter
     {
         $directoryPath = pathinfo($targetFileLocation, PATHINFO_DIRNAME);
         if (!is_dir($directoryPath)) {
-            mkdir($directoryPath, 0755, true);
+            mkdir($directoryPath, 0o755, true);
         }
+
         if (is_array($contents)) {
             $contents = json_encode($contents, JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_TAG | JSON_UNESCAPED_SLASHES);
         }
+
         file_put_contents($targetFileLocation, $contents);
         return $targetFileLocation;
     }

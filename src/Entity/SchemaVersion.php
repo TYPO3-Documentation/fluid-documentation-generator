@@ -1,21 +1,12 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator\Entity;
 
 class SchemaVersion
 {
-    private $version = '';
-
-    /**
-     * @var SchemaPackage
-     */
-    private $package;
-
-    public function __construct(SchemaPackage $package, string $version)
-    {
-        $this->package = $package;
-        $this->version = $version;
-    }
+    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\Entity\SchemaPackage $package, private readonly string $version) {}
 
     public function getFullyQualifiedName(): string
     {

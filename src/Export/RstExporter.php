@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Export;
@@ -16,30 +17,15 @@ use TYPO3Fluid\Fluid\View\TemplateView;
 
 class RstExporter implements ExporterInterface
 {
-    /**
-     * @var TemplateView
-     */
-    private $view;
-
-    /**
-     * @var SchemaDocumentationGenerator
-     */
-    private $generator;
-
-    /**
-     * @var null|string
-     */
-    private $rootUrl;
+    private readonly \TYPO3Fluid\Fluid\View\TemplateView $view;
 
     /**
      * intention level for toctree structures
-     * @var string
      */
-    private $intend = '   ';
+    private string $intend = '   ';
 
-    public function __construct(?string $rootUrl = null)
+    public function __construct()
     {
-        $this->rootUrl = $rootUrl;
         $resourcesDirectory = DataFileResolver::getInstance()->getResourcesDirectoryPath();
         $this->view = new TemplateView();
         $this->view->getRenderingContext()->setCache(new SimpleFileCache(DataFileResolver::getInstance()->getCacheDirectoryPath()));
@@ -48,7 +34,7 @@ class RstExporter implements ExporterInterface
                 TemplatePaths::CONFIG_TEMPLATEROOTPATHS => [$resourcesDirectory . 'templates' . DIRECTORY_SEPARATOR],
                 TemplatePaths::CONFIG_LAYOUTROOTPATHS => [$resourcesDirectory . 'layouts' . DIRECTORY_SEPARATOR],
                 TemplatePaths::CONFIG_PARTIALROOTPATHS => [$resourcesDirectory . 'partials' . DIRECTORY_SEPARATOR],
-                TemplatePaths::CONFIG_FORMAT => 'rst'
+                TemplatePaths::CONFIG_FORMAT => 'rst',
             ]
         ));
     }
@@ -58,10 +44,7 @@ class RstExporter implements ExporterInterface
         return 'rst';
     }
 
-    public function setGenerator(SchemaDocumentationGenerator $generator): void
-    {
-        $this->generator = $generator;
-    }
+    public function setGenerator(SchemaDocumentationGenerator $generator): void {}
 
     public function createAdditionalViewHelperResources(ViewHelperDocumentation $viewHelperDocumentation, ?string $label = null): array
     {
@@ -91,6 +74,7 @@ class RstExporter implements ExporterInterface
                 }
             }
         }
+
         $this->view->assign('tocTree', $toctree);
         $resolver->getWriter()->publishDataFile(
             'Index.rst',
@@ -114,6 +98,7 @@ class RstExporter implements ExporterInterface
         if (!$forceUpdate && file_exists($resolver->getPublicDirectoryPath() . $processedSchema->getPath() . 'Index.rst')) {
             return;
         }
+
         $schema = $processedSchema->getSchema();
         $headline = $schema->getPackage()->getVendor()->getVendorName() . '/' . $schema->getPackage()->getPackageName();
         $headlineDecoration = array_pad([], strlen($headline), '=');
@@ -140,25 +125,23 @@ class RstExporter implements ExporterInterface
         if (!$forceUpdate && file_exists($resolver->getPublicDirectoryPath() . $viewHelperDocumentation->getSchema()->getPath() . $viewHelperDocumentation->getPath() . '.rst')) {
             return;
         }
+
         $packageName = $viewHelperDocumentation->getSchema()->getSchema()->getPackage()->getPackageName();
-        switch ($packageName) {
-            case 'fluid':
-                $package = 'f';
-                break;
-            default:
-                $package = $packageName;
-                break;
-        }
+        $package = match ($packageName) {
+            'fluid' => 'f',
+            default => $packageName,
+        };
+
         $path = $viewHelperDocumentation->getPath();
         $backPath = str_repeat('../', substr_count($path, '/'));
         $rootPath = $backPath . '../../../';
 
-        $headline = $viewHelperDocumentation->getName() . ' ViewHelper `<' .  $package . ':' . $viewHelperDocumentation->getName() . '>`';
+        $headline = $viewHelperDocumentation->getName() . ' ViewHelper `<' . $package . ':' . $viewHelperDocumentation->getName() . '>`';
         $headlineDecoration = array_pad([], strlen($headline), '=');
         $namespace = array_filter(explode('/', $viewHelperDocumentation->getSchema()->getPath()));
         array_pop($namespace);
         $namespace = implode('/', $namespace);
-        $headlineIdentifier = str_replace(['.', '\'', '/'], '-', strtolower($namespace . '-' . $viewHelperDocumentation->getName()));
+        $headlineIdentifier = str_replace(['.', "'", '/'], '-', strtolower($namespace . '-' . $viewHelperDocumentation->getName()));
 
         $arguments = [];
         foreach ($viewHelperDocumentation->getArgumentDefinitions() as $argumentDefinition) {
@@ -177,10 +160,12 @@ class RstExporter implements ExporterInterface
 
             $defaultValue = $argumentDefinition->getDefaultValue();
             if ($defaultValue !== 'NULL' && $defaultValue !== "''") {
-                $argumentsData['default'] = trim(str_replace(PHP_EOL, '', $defaultValue));
+                $argumentsData['default'] = trim(str_replace(PHP_EOL, '', (string) $defaultValue));
             }
+
             $arguments[] = $argumentsData;
         }
+
         $this->view->assignMultiple([
             'headline' => $headline,
             'headlineDecoration' => implode('', $headlineDecoration),
@@ -232,9 +217,11 @@ class RstExporter implements ExporterInterface
         if ($subGroupsCount > 0) {
             $toctree[] = $this->intend . '*/Index' . PHP_EOL;
         }
+
         foreach ($viewHelpers as $viewHelper) {
             $toctree[] = $this->intend . $viewHelper->getLocalName() . PHP_EOL;
         }
+
         return $toctree;
     }
 }

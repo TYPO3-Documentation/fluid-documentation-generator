@@ -1,40 +1,22 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator;
 
 class ViewHelperDocumentationGroup
 {
     /**
-     * @var ProcessedSchema
-     */
-    private $schema;
-
-    /**
-     * @var string
-     */
-    private $groupId = '';
-
-    /**
-     * @var string
-     */
-    private $path = '';
-
-    /**
      * @var ViewHelperDocumentation[]
      */
-    private $documentedViewHelpers = [];
+    private array $documentedViewHelpers = [];
 
     /**
      * @var self[]
      */
-    private $subGroups = [];
+    private array $subGroups = [];
 
-    public function __construct(ProcessedSchema $schema, string $groupId = '', string $path = '')
-    {
-        $this->schema = $schema;
-        $this->groupId = $groupId;
-        $this->path = $path;
-    }
+    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\ProcessedSchema $schema, private readonly string $groupId = '', private readonly string $path = '') {}
 
     public function getPath(): string
     {

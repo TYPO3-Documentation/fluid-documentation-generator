@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Tests\Functional\RstRendering;
@@ -26,20 +27,21 @@ class IndexForSchemaTest extends TestCase
 
     /**
      * output of the generation process
-     * @var string
      */
-    private $generatedFilePath = 'outputDir/public/typo3/backend/9.4/Index.rst';
+    private string $generatedFilePath = 'outputDir/public/typo3/backend/9.4/Index.rst';
 
     protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));
+
         $dataFileResolver = DataFileResolver::getInstance(vfsStream::url('outputDir'));
         $dataFileResolver->setResourcesDirectory(__DIR__ . '/../../../resources/');
         $dataFileResolver->setSchemasDirectory(__DIR__ . '/../../Fixtures/rendering/input/');
+
         $schemaDocumentationGenerator = new SchemaDocumentationGenerator(
             [
-                new RstExporter()
+                new RstExporter(),
             ]
         );
         $schemaDocumentationGenerator->generateFilesForRoot();
@@ -57,7 +59,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function fileIsCreated()
+    public function fileIsCreated(): void
     {
         $this->assertTrue($this->vfs->hasChild($this->generatedFilePath));
     }
@@ -65,7 +67,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function includeClausePointsToSettingsCfg()
+    public function includeClausePointsToSettingsCfg(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[0]);
@@ -74,7 +76,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function headlineAsExpected()
+    public function headlineAsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text -> fourth line
@@ -85,7 +87,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function headlineIsProperlyDecorated()
+    public function headlineIsProperlyDecorated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text, then lower headline decoration
@@ -100,7 +102,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function viewHelperCountIsIntegrated()
+    public function viewHelperCountIsIntegrated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $index = 6;
@@ -110,7 +112,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function subNamespacesCountIsIntegrated()
+    public function subNamespacesCountIsIntegrated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $index = 7;
@@ -120,7 +122,7 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function tocTreeContainsSubDirectoriesAsExpected()
+    public function tocTreeContainsSubDirectoriesAsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $index = 13;
@@ -133,9 +135,11 @@ class IndexForSchemaTest extends TestCase
     /**
      * @test
      */
-    public function generatedFileIsSameAsFixture()
+    public function generatedFileIsSameAsFixture(): void
     {
-        $this->assertSame(trim(file_get_contents($this->fixtureFilePath)),
-            trim(file_get_contents($this->vfs->getChild($this->generatedFilePath)->url())));
+        $this->assertSame(
+            trim(file_get_contents($this->fixtureFilePath)),
+            trim(file_get_contents($this->vfs->getChild($this->generatedFilePath)->url()))
+        );
     }
 }

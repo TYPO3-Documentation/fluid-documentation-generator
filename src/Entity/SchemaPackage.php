@@ -1,22 +1,14 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator\Entity;
 
 use NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver;
 
 class SchemaPackage
 {
-    /**
-     * @var SchemaVendor
-     */
-    private $vendor;
-    private $packageName = '';
-
-    public function __construct(SchemaVendor $vendor, string $packageName)
-    {
-        $this->vendor = $vendor;
-        $this->packageName = $packageName;
-    }
+    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVendor $vendor, private readonly string $packageName) {}
 
     public function getPackageName(): string
     {

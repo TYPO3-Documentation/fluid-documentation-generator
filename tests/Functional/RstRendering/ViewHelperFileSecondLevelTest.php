@@ -1,8 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Tests\Functional\RstRendering;
-
 
 use NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver;
 use NamelessCoder\FluidDocumentationGenerator\Entity\Schema;
@@ -27,20 +27,21 @@ class ViewHelperFileSecondLevelTest extends TestCase
 
     /**
      * output of the generation process
-     * @var string
      */
-    private $generatedFilePath = 'outputDir/public/typo3/backend/9.4/Link/EditRecord.rst';
+    private string $generatedFilePath = 'outputDir/public/typo3/backend/9.4/Link/EditRecord.rst';
 
     protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));
+
         $dataFileResolver = DataFileResolver::getInstance(vfsStream::url('outputDir'));
         $dataFileResolver->setResourcesDirectory(__DIR__ . '/../../../resources/');
         $dataFileResolver->setSchemasDirectory(__DIR__ . '/../../Fixtures/rendering/input/');
+
         $schemaDocumentationGenerator = new SchemaDocumentationGenerator(
             [
-                new RstExporter()
+                new RstExporter(),
             ]
         );
         $schemaDocumentationGenerator->generateFilesForRoot();
@@ -58,7 +59,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function fileIsCreated()
+    public function fileIsCreated(): void
     {
         $this->assertTrue($this->vfs->hasChild($this->generatedFilePath));
     }
@@ -66,7 +67,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function includeClausePointsToSettingsCfg()
+    public function includeClausePointsToSettingsCfg(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[1]);
@@ -75,7 +76,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function headlineAsExpected()
+    public function headlineAsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text -> fourth line
@@ -86,7 +87,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function headlineIsProperlyDecorated()
+    public function headlineIsProperlyDecorated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // first line is include, then empty, then upper headline decoration, then text, then lower headline decoration
@@ -101,7 +102,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function descriptionGetsRendered()
+    public function descriptionGetsRendered(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $index = 10;
@@ -111,7 +112,7 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function headerIdentifierGetsRendered()
+    public function headerIdentifierGetsRendered(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $index = 3;
@@ -121,9 +122,11 @@ class ViewHelperFileSecondLevelTest extends TestCase
     /**
      * @test
      */
-    public function generatedFileIsSameAsFixture()
+    public function generatedFileIsSameAsFixture(): void
     {
-        $this->assertSame(file_get_contents($this->fixtureFilePath),
-            file_get_contents($this->vfs->getChild($this->generatedFilePath)->url()));
+        $this->assertSame(
+            file_get_contents($this->fixtureFilePath),
+            file_get_contents($this->vfs->getChild($this->generatedFilePath)->url())
+        );
     }
 }

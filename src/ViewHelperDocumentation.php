@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator;
 
 use cebe\markdown\GithubMarkdown;
@@ -8,36 +10,19 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\ArgumentDefinition;
 
 class ViewHelperDocumentation
 {
-    /**
-     * @var ProcessedSchema
-     */
-    private $schema;
-
-    /**
-     * @var ViewHelperDocumentationGroup
-     */
-    private $group;
-
-    /**
-     * @var ArgumentDefinition[]
-     */
-    private $argumentDefinitions = [];
-
-    private $viewHelperName = '';
-    private $description = '';
+    private readonly string $description;
 
     public function __construct(
-        ProcessedSchema $schema,
-        string $viewHelperName,
+        private readonly \NamelessCoder\FluidDocumentationGenerator\ProcessedSchema $schema,
+        private readonly string $viewHelperName,
         string $description,
-        array $argumentDefinitions,
-        ViewHelperDocumentationGroup $group
+        /**
+         * @var ArgumentDefinition[]
+         */
+        private readonly array $argumentDefinitions,
+        private readonly \NamelessCoder\FluidDocumentationGenerator\ViewHelperDocumentationGroup $group
     ) {
-        $this->schema = $schema;
-        $this->viewHelperName = $viewHelperName;
         $this->description = trim($description, "\n\r\t/");
-        $this->argumentDefinitions = $argumentDefinitions;
-        $this->group = $group;
         $this->group->addDocumentedViewHelper($this);
     }
 
@@ -85,7 +70,7 @@ class ViewHelperDocumentation
     public function getDescriptionAsMarkup(): string
     {
         $description = $this->getDescription();
-        return empty(trim((string)$description)) ? '' : (new GithubMarkdown())->parse($description);
+        return trim($description) === '' || trim($description) === '0' ? '' : (new GithubMarkdown())->parse($description);
     }
 
     /**
@@ -99,31 +84,19 @@ class ViewHelperDocumentation
      *
      * The order of the parsing rules is important. For example, not to turn the already parsed
      * quote into a code block.
-     *
-     * @return string
      */
     public function getDescriptionAsRst(): string
     {
         $replace = [
             // Headline
-            '/^### (.*)$/m' => function ($matches) {
-                return $matches[1] . PHP_EOL . str_repeat('=', strlen($matches[1]));
-            },
+            '/^### (.*)$/m' => static fn($matches): string => $matches[1] . PHP_EOL . str_repeat('=', strlen((string) $matches[1])),
             // Headline - Level 2
-            '/^#### (.*)$/m' => function ($matches) {
-                return $matches[1] . PHP_EOL . str_repeat('-', strlen($matches[1]));
-            },
+            '/^#### (.*)$/m' => static fn($matches): string => $matches[1] . PHP_EOL . str_repeat('-', strlen((string) $matches[1])),
             // Code block
-            '/\\n\\n```\S*\\n(.*?)```/s' => function ($matches) {
-                return PHP_EOL . PHP_EOL . '::' . PHP_EOL. PHP_EOL .
-                    implode(PHP_EOL, array_map(function ($line) {
-                        return '    ' . $line;
-                    }, explode(PHP_EOL, rtrim($matches[1]))));
-            },
+            '/\\n\\n```\S*\\n(.*?)```/s' => static fn($matches): string => PHP_EOL . PHP_EOL . '::' . PHP_EOL . PHP_EOL .
+                implode(PHP_EOL, array_map(static fn(string $line): string => '    ' . $line, explode(PHP_EOL, rtrim((string) $matches[1])))),
             // Quotation block
-            '/^> (.*)$/m' => function ($matches) {
-                return '    ' . $matches[1];
-            }
+            '/^> (.*)$/m' => static fn($matches): string => '    ' . $matches[1],
         ];
         $description = $this->getDescription();
         return preg_replace_callback_array($replace, $description);

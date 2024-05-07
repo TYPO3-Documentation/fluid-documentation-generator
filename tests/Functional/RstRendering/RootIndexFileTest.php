@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator\Tests\Functional\RstRendering;
@@ -19,20 +20,21 @@ class RootIndexFileTest extends TestCase
 
     /**
      * output of the generation process
-     * @var string
      */
-    private $generatedFilePath = 'outputDir/public/Index.rst';
+    private string $generatedFilePath = 'outputDir/public/Index.rst';
 
     protected function setUp(): void
     {
         $this->vfs = vfsStream::setup('outputDir');
         $this->vfs->addChild(vfsStream::newDirectory('cache'));
+
         $dataFileResolver = DataFileResolver::getInstance(vfsStream::url('outputDir'));
         $dataFileResolver->setResourcesDirectory(__DIR__ . '/../../../resources/');
         $dataFileResolver->setSchemasDirectory(__DIR__ . '/../../Fixtures/rendering/input/');
+
         $schemaDocumentationGenerator = new SchemaDocumentationGenerator(
             [
-                new RstExporter()
+                new RstExporter(),
             ]
         );
         $schemaDocumentationGenerator->generateFilesForRoot();
@@ -41,7 +43,7 @@ class RootIndexFileTest extends TestCase
     /**
      * @test
      */
-    public function fileIsCreated()
+    public function fileIsCreated(): void
     {
         $this->assertTrue($this->vfs->hasChild($this->generatedFilePath));
     }
@@ -49,7 +51,7 @@ class RootIndexFileTest extends TestCase
     /**
      * @test
      */
-    public function includeClausePointsToSettingsCfg()
+    public function includeClausePointsToSettingsCfg(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[0]);
@@ -58,7 +60,7 @@ class RootIndexFileTest extends TestCase
     /**
      * @test
      */
-    public function headlineAsExpected()
+    public function headlineAsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // include, empty, anchor, empty, upper headline decoration, text, lower headline decoration
@@ -69,7 +71,7 @@ class RootIndexFileTest extends TestCase
     /**
      * @test
      */
-    public function headlineIsProperlyDecorated()
+    public function headlineIsProperlyDecorated(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         // include, empty, anchor, empty, upper headline decoration, text, lower headline decoration
@@ -84,7 +86,7 @@ class RootIndexFileTest extends TestCase
     /**
      * @test
      */
-    public function tocTreeContainsSubDirectoriesAsExpected()
+    public function tocTreeContainsSubDirectoriesAsExpected(): void
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $output = implode(PHP_EOL, $output);

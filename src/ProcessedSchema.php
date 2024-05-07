@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace NamelessCoder\FluidDocumentationGenerator;
@@ -9,24 +10,15 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\ArgumentDefinition;
 
 class ProcessedSchema
 {
-    /**
-     * @var Schema
-     */
-    private $schema;
-
-    /**
-     * @var ViewHelperDocumentationGroup
-     */
-    private $viewHelperDocumentationRootGroup;
+    private \NamelessCoder\FluidDocumentationGenerator\ViewHelperDocumentationGroup $viewHelperDocumentationRootGroup;
 
     /**
      * @var ViewHelperDocumentation[]
      */
-    private $viewHelpersDocumentations = [];
+    private array $viewHelpersDocumentations = [];
 
-    public function __construct(Schema $schema)
+    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\Entity\Schema $schema)
     {
-        $this->schema = $schema;
         $this->viewHelperDocumentationRootGroup = new ViewHelperDocumentationGroup($this);
         $this->processXmlFile();
     }
@@ -38,7 +30,7 @@ class ProcessedSchema
             [
                 $this->schema->getVendor()->getVendorName(),
                 $this->schema->getPackage()->getPackageName(),
-                $this->schema->getVersion()->getVersion()
+                $this->schema->getVersion()->getVersion(),
             ]
         ) . '/';
     }
@@ -77,32 +69,36 @@ class ProcessedSchema
                 $group
             );
         }
+
         return $json;
     }
 
     private function findOrCreateViewHelperDocumentationGroupByViewHelperName(string $name): ViewHelperDocumentationGroup
     {
-        if (strpos($name, '.') === false) {
+        if (!str_contains($name, '.')) {
             return $this->viewHelperDocumentationRootGroup;
         }
+
         return $this->findOrCreateViewHelperDocumentationGroupByGroupPath(substr($name, 0, strrpos($name, '.')));
     }
 
     private function findOrCreateViewHelperDocumentationGroupByGroupPath(string $path): ViewHelperDocumentationGroup
     {
         $parts = explode('.', $path);
-        $group = $root = $this->viewHelperDocumentationRootGroup;
+        $group = $this->viewHelperDocumentationRootGroup;
         $path = '';
         foreach ($parts as $part) {
             $subGroup = $group->getSubGroupByPath($part);
             $path .= ucfirst($part);
-            if (!$subGroup) {
+            if (!$subGroup instanceof \NamelessCoder\FluidDocumentationGenerator\ViewHelperDocumentationGroup) {
                 $subGroup = new ViewHelperDocumentationGroup($this, $part, $path);
                 $group->addSubGroup($subGroup);
             }
+
             $group = $subGroup;
             $path .= '/';
         }
+
         return $group;
     }
 
@@ -124,6 +120,7 @@ class ProcessedSchema
                 ((string)$attributes['default'])
             );
         }
+
         return $argumentDefinitions;
     }
 }

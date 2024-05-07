@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 namespace NamelessCoder\FluidDocumentationGenerator\Data;
 
 use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaPackage;
@@ -13,22 +15,21 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\ArgumentDefinition;
 
 class GraphDataHandler
 {
-    const GRAPH_SCHEMA = 'schema';
-    const GRAPH_VENDOR = 'vendor';
-    const GRAPH_PACKAGE = 'package';
-    const GRAPH_VERSION = 'version';
-    const GRAPH_VIEW_HELPER = 'viewHelper';
-    const GRAPH_VIEW_HELPER_GROUP = 'group';
-    const GRAPH_ARGUMENT = 'argument';
+    public const GRAPH_SCHEMA = 'schema';
 
-    private $url = '';
+    public const GRAPH_VENDOR = 'vendor';
 
-    public function __construct(string $url)
-    {
-        $this->url = $url;
-    }
+    public const GRAPH_PACKAGE = 'package';
 
-    static function getInstance(string $url): self
+    public const GRAPH_VERSION = 'version';
+
+    public const GRAPH_VIEW_HELPER = 'viewHelper';
+
+    public const GRAPH_VIEW_HELPER_GROUP = 'group';
+
+    public const GRAPH_ARGUMENT = 'argument';
+
+    public static function getInstance(string $url): self
     {
         return new static($url);
     }
@@ -64,7 +65,7 @@ class GraphDataHandler
                 $package->getVersions(),
                 '',
                 $summary
-            )
+            ),
         ];
     }
 
@@ -86,13 +87,14 @@ class GraphDataHandler
             'urls' => SchemaDocumentationGenerator::getInstance()->generateMachineResourceLinksForViewHelper($viewHelper),
         ];
         if (!$summary) {
-            $viewHelperData = $this->merge(
+            return $this->merge(
                 $viewHelperData,
                 ['arguments' => $this->createPropertyIndexedDataArray($viewHelper->getArgumentDefinitions(), 'name')],
                 [static::GRAPH_VIEW_HELPER_GROUP => $this->createViewHelperGroupData($viewHelper->getGroup(), true)],
                 [static::GRAPH_SCHEMA => $this->createSchemaData($schema, true)]
             );
         }
+
         return $viewHelperData;
     }
 
@@ -103,7 +105,7 @@ class GraphDataHandler
             'type' => $argumentDefinition->getType(),
             'description' => $argumentDefinition->getDescription(),
             'default' => $argumentDefinition->getDefaultValue(),
-            'required' => $argumentDefinition->isRequired()
+            'required' => $argumentDefinition->isRequired(),
         ];
     }
 
@@ -124,8 +126,8 @@ class GraphDataHandler
     {
         $structured = [];
         foreach ($values as $originalKey => $value) {
-            $key = $propertyNameContainingKey ? $value->{'get' . ucfirst($propertyNameContainingKey)}() : $originalKey;
-            switch (get_class($value)) {
+            $key = $propertyNameContainingKey !== '' && $propertyNameContainingKey !== '0' ? $value->{'get' . ucfirst($propertyNameContainingKey)}() : $originalKey;
+            switch ($value::class) {
                 case SchemaVersion::class:
                     $graphData = $this->createVersionData($value, $summary);
                     break;
@@ -141,8 +143,10 @@ class GraphDataHandler
                 default:
                     break;
             }
+
             $structured[$key] = $graphData;
         }
+
         return $structured;
     }
 }

@@ -9,3 +9,4 @@ schemas/*
 build/logs/
 .idea/
 /.phpunit.result.cache
+/.cache/.php-cs-fixer.cache

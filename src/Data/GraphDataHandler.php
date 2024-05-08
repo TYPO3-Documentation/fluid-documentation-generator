@@ -13,7 +13,7 @@ use NamelessCoder\FluidDocumentationGenerator\ViewHelperDocumentation;
 use NamelessCoder\FluidDocumentationGenerator\ViewHelperDocumentationGroup;
 use TYPO3Fluid\Fluid\Core\ViewHelper\ArgumentDefinition;
 
-class GraphDataHandler
+final class GraphDataHandler
 {
     public const GRAPH_SCHEMA = 'schema';
 
@@ -29,9 +29,9 @@ class GraphDataHandler
 
     public const GRAPH_ARGUMENT = 'argument';
 
-    public static function getInstance(string $url): self
+    public static function getInstance(): self
     {
-        return new static($url);
+        return new static();
     }
 
     public function createSchemaData(ProcessedSchema $schema, bool $summary = false): array
@@ -127,6 +127,7 @@ class GraphDataHandler
         $structured = [];
         foreach ($values as $originalKey => $value) {
             $key = $propertyNameContainingKey !== '' && $propertyNameContainingKey !== '0' ? $value->{'get' . ucfirst($propertyNameContainingKey)}() : $originalKey;
+            $graphData = [];
             switch ($value::class) {
                 case SchemaVersion::class:
                     $graphData = $this->createVersionData($value, $summary);

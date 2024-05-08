@@ -9,7 +9,7 @@ use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaPackage;
 use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVendor;
 use NamelessCoder\FluidDocumentationGenerator\Export\ExporterInterface;
 
-class SchemaDocumentationGenerator
+final class SchemaDocumentationGenerator
 {
     /**
      * @var ExporterInterface[]

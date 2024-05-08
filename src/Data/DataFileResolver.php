@@ -11,7 +11,7 @@ use NamelessCoder\FluidDocumentationGenerator\Entity\SchemaVersion;
 use NamelessCoder\FluidDocumentationGenerator\Exception\SchemaFileNotFoundException;
 use NamelessCoder\FluidDocumentationGenerator\ProcessedSchema;
 
-class DataFileResolver
+final class DataFileResolver
 {
     public const SCHEMA_FILENAME = 'schema.xsd';
 

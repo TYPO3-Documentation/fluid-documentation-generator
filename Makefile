@@ -26,3 +26,13 @@ test: fix-code-style test-unit ## Runs all test
 code-style: ## Executes php-cs-fixer with "check" option
 	@echo "$(ENV_INFO)"
 	$(PHP_BIN) vendor/bin/php-cs-fixer check
+
+.PHONY: phpstan
+phpstan: ## Execute phpstan
+	@echo "$(ENV_INFO)"
+	$(PHP_BIN) vendor/bin/phpstan --configuration=phpstan.neon
+
+.PHONY: phpstan-baseline
+phpstan-baseline: ## Generates phpstan baseline
+	@echo "$(ENV_INFO)"
+	$(PHP_BIN) vendor/bin/phpstan --configuration=phpstan.neon --generate-baseline

@@ -1,0 +1,11 @@
+includes:
+  - phpstan-baseline.neon
+parameters:
+  phpVersion: 80200
+  level: 1
+  inferPrivatePropertyTypeFromConstructor: true
+  treatPhpDocTypesAsCertain: false
+  paths:
+    - src
+    - tests
+  tmpDir: .cache/phpstan/

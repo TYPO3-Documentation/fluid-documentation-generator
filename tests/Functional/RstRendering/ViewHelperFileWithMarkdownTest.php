@@ -21,6 +21,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
 
     /**
      * the generated file is compared against this fixture file
+     * @var string[] $fixtureFilePaths
      */
     private array $fixtureFilePaths = [
         __DIR__ . '/../../Fixtures/rendering/output/Documentation/fluidtypo3/vhs/6.1/Format/DateRange.rst',
@@ -29,6 +30,7 @@ class ViewHelperFileWithMarkdownTest extends TestCase
 
     /**
      * output of the generation process
+     * @var string[] $generatedFilePaths
      */
     private array $generatedFilePaths = [
         'outputDir/public/fluidtypo3/vhs/6.1/Format/DateRange.rst',

@@ -12,7 +12,7 @@ class DataFileWriter
 {
     public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver $resolver) {}
 
-    public function publishDataFileForSchema(ProcessedSchema $schema, string $subPath, $contents): string
+    public function publishDataFileForSchema(ProcessedSchema $schema, string $subPath, string $contents): string
     {
         return $this->writeDataFileToTargetLocation(
             $this->resolver->resolveSchemaSpecificPublicDataFilePath($schema, $subPath),
@@ -20,7 +20,7 @@ class DataFileWriter
         );
     }
 
-    public function publishDataFile(string $subPath, $contents): string
+    public function publishDataFile(string $subPath, string $contents): string
     {
         return $this->writeDataFileToTargetLocation(
             $this->resolver->getPublicDirectoryPath() . $subPath,
@@ -28,7 +28,7 @@ class DataFileWriter
         );
     }
 
-    public function publishDataFileForVendor(SchemaVendor $vendor, string $subPath, $contents): string
+    public function publishDataFileForVendor(SchemaVendor $vendor, string $subPath, string $contents): string
     {
         return $this->writeDataFileToTargetLocation(
             $this->resolver->getPublicDirectoryPath() . $vendor->getVendorName() . DIRECTORY_SEPARATOR . $subPath,
@@ -36,7 +36,7 @@ class DataFileWriter
         );
     }
 
-    public function publishDataFileForPackage(SchemaPackage $package, string $subPath, $contents): string
+    public function publishDataFileForPackage(SchemaPackage $package, string $subPath, string $contents): string
     {
         return $this->writeDataFileToTargetLocation(
             $this->resolver->getPublicDirectoryPath() . $package->getVendor()->getVendorName() . DIRECTORY_SEPARATOR . $package->getPackageName() . DIRECTORY_SEPARATOR . $subPath,
@@ -44,15 +44,11 @@ class DataFileWriter
         );
     }
 
-    private function writeDataFileToTargetLocation(string $targetFileLocation, $contents): string
+    private function writeDataFileToTargetLocation(string $targetFileLocation, string $contents): string
     {
         $directoryPath = pathinfo($targetFileLocation, PATHINFO_DIRNAME);
         if (!is_dir($directoryPath)) {
             mkdir($directoryPath, 0o755, true);
-        }
-
-        if (is_array($contents)) {
-            $contents = json_encode($contents, JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_TAG | JSON_UNESCAPED_SLASHES);
         }
 
         file_put_contents($targetFileLocation, $contents);

@@ -46,11 +46,17 @@ class RstExporter implements ExporterInterface
 
     public function setGenerator(SchemaDocumentationGenerator $generator): void {}
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function createAdditionalViewHelperResources(ViewHelperDocumentation $viewHelperDocumentation, ?string $label = null): array
     {
         return [];
     }
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function createAdditionalSchemaResources(ProcessedSchema $schema, ?string $label = null): array
     {
         return [];
@@ -211,6 +217,10 @@ class RstExporter implements ExporterInterface
         );
     }
 
+    /**
+     * @param ViewHelperDocumentation[] $viewHelpers
+     * @return string[]
+     */
     protected function getTocTree(array $viewHelpers, int $subGroupsCount): array
     {
         $toctree = [];

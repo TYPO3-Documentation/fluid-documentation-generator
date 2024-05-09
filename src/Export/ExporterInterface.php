@@ -29,7 +29,13 @@ interface ExporterInterface
 
     public function exportViewHelperGroup(ViewHelperDocumentationGroup $viewHelperDocumentationGroup, bool $forceUpdate = false): void;
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function createAdditionalViewHelperResources(ViewHelperDocumentation $viewHelperDocumentation, ?string $label = null): array;
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function createAdditionalSchemaResources(ProcessedSchema $schema, ?string $label = null): array;
 }

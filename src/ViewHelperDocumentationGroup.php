@@ -48,6 +48,9 @@ class ViewHelperDocumentationGroup
         return $this->subGroups[$path] ?? null;
     }
 
+    /**
+     * @return ViewHelperDocumentationGroup[]
+     */
     public function getSubGroups(): array
     {
         return $this->subGroups;

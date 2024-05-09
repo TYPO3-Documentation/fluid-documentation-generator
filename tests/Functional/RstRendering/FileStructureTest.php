@@ -61,6 +61,9 @@ class FileStructureTest extends TestCase
         $this->assertSame($expected, $actual);
     }
 
+    /**
+     * @return string[]
+     */
     private function directoryToArray(string $directory): array
     {
 

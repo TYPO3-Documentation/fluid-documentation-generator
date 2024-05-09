@@ -11,6 +11,8 @@
 Spaceless ViewHelper `<f:spaceless>`
 ====================================
 
+
+
 Space Removal ViewHelper
 
 Removes redundant spaces between HTML tags while

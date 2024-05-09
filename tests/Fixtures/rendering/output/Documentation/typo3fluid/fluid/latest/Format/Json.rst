@@ -11,6 +11,8 @@
 Format.json ViewHelper `<f:format.json>`
 ========================================
 
+
+
 Wrapper for PHPs :php:`json_encode` function.
 See https://www.php.net/manual/function.json-encode.php.
 

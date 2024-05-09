@@ -11,6 +11,8 @@
 Comment ViewHelper `<f:comment>`
 ================================
 
+
+
 This ViewHelper prevents rendering of any content inside the tag.
 
 Contents of the comment will still be **parsed** thus throwing an

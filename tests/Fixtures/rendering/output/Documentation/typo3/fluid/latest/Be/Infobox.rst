@@ -11,6 +11,8 @@
 Be.infobox ViewHelper `<f:be.infobox>`
 ======================================
 
+
+
 ViewHelper for rendering a styled content infobox markup.
 
 States

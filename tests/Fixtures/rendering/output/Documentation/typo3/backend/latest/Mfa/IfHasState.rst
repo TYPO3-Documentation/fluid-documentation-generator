@@ -7,9 +7,17 @@
 
 .. _typo3-backend-mfa-ifhasstate:
 
-====================================================
-Mfa.ifHasState ViewHelper `<backend:mfa.ifHasState>`
-====================================================
+===============================================
+Mfa.ifHasState ViewHelper `<be:mfa.ifHasState>`
+===============================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Check if the given provider for the current user has the requested state set
 
@@ -25,7 +33,7 @@ Go to the source code of this ViewHelper: `IfHasStateViewHelper.php (GitHub) <ht
 Arguments
 =========
 
-The following arguments are available for `<backend:mfa.ifHasState>`:
+The following arguments are available for `<be:mfa.ifHasState>`:
 
 ..  contents::
     :local:

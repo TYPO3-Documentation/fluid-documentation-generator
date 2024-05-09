@@ -11,6 +11,8 @@
 Link.typolink ViewHelper `<f:link.typolink>`
 ============================================
 
+
+
 A ViewHelper to create links from fields supported by the link wizard
 
 Example

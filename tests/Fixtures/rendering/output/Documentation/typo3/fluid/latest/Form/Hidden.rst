@@ -11,6 +11,8 @@
 Form.hidden ViewHelper `<f:form.hidden>`
 ========================================
 
+
+
 Renders an :html:`<input type="hidden" ...>` tag.
 
 Examples

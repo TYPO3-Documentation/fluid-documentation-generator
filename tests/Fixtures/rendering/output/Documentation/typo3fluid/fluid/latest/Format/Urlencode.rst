@@ -11,6 +11,8 @@
 Format.urlencode ViewHelper `<f:format.urlencode>`
 ==================================================
 
+
+
 Encodes the given string according to http://www.faqs.org/rfcs/rfc3986.html
 Applying PHPs :php:`rawurlencode()` function.
 See https://www.php.net/manual/function.rawurlencode.php.

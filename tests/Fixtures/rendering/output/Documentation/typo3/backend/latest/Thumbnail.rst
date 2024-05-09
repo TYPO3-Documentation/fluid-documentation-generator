@@ -7,9 +7,17 @@
 
 .. _typo3-backend-thumbnail:
 
-==========================================
-Thumbnail ViewHelper `<backend:thumbnail>`
-==========================================
+=====================================
+Thumbnail ViewHelper `<be:thumbnail>`
+=====================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 ViewHelper for the backend which generates an :html:`<img>` tag with the special URI to render thumbnails deferred.
 
@@ -58,7 +66,7 @@ Go to the source code of this ViewHelper: `ThumbnailViewHelper.php (GitHub) <htt
 Arguments
 =========
 
-The following arguments are available for `<backend:thumbnail>`:
+The following arguments are available for `<be:thumbnail>`:
 
 ..  contents::
     :local:

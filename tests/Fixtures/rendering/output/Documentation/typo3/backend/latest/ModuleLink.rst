@@ -7,9 +7,17 @@
 
 .. _typo3-backend-modulelink:
 
-============================================
-ModuleLink ViewHelper `<backend:moduleLink>`
-============================================
+=======================================
+ModuleLink ViewHelper `<be:moduleLink>`
+=======================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Create internal link within backend.
 
@@ -40,7 +48,7 @@ Go to the source code of this ViewHelper: `ModuleLinkViewHelper.php (GitHub) <ht
 Arguments
 =========
 
-The following arguments are available for `<backend:moduleLink>`:
+The following arguments are available for `<be:moduleLink>`:
 
 ..  contents::
     :local:

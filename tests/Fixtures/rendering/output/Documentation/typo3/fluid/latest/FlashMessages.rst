@@ -11,6 +11,8 @@
 FlashMessages ViewHelper `<f:flashMessages>`
 ============================================
 
+
+
 ViewHelper which renders the flash messages (if there are any) as an unsorted list.
 
 In case you need custom Flash Message HTML output, please write your own ViewHelper for the moment.

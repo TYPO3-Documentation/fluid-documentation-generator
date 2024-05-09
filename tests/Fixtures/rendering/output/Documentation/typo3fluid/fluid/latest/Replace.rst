@@ -11,6 +11,8 @@
 Replace ViewHelper `<f:replace>`
 ================================
 
+
+
 The ReplaceViewHelper replaces one or multiple strings with other
 strings. This ViewHelper mimicks PHP's :php:`str_replace()` function.
 However, it's also possible to provide replace pairs as associative array

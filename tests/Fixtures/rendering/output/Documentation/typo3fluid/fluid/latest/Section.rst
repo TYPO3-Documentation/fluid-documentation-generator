@@ -11,6 +11,8 @@
 Section ViewHelper `<f:section>`
 ================================
 
+
+
 A ViewHelper to declare sections in templates for later use with e.g. the ``f:render`` ViewHelper.
 
 Examples

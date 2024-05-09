@@ -11,6 +11,8 @@
 Switch ViewHelper `<f:switch>`
 ==============================
 
+
+
 Switch ViewHelper which can be used to render content depending on a value or expression.
 Implements what a basic PHP ``switch()`` does.
 

@@ -135,6 +135,7 @@ class RstExporter implements ExporterInterface
         $packageName = $viewHelperDocumentation->getSchema()->getSchema()->getPackage()->getPackageName();
         $package = match ($packageName) {
             'fluid' => 'f',
+            'backend' => 'be',
             default => $packageName,
         };
 
@@ -181,6 +182,10 @@ class RstExporter implements ExporterInterface
             'source' => $source['source'],
             'sourceEdit' => $source['sourceEdit'],
             'phpFileName' => $source['phpFileName'],
+            'namespace' => $source['namespace'],
+            'namespace2' => sprintf('xmlns:%s="http://typo3.org/ns/%s"', $package, $source['namespaceUrl']),
+            'namespace3' => sprintf('{namespace %s=%s}', $package, $source['namespace']),
+            'package' => $package,
             'tagName' => $tagName,
             'rootPath' => $rootPath,
             'viewHelper' => $viewHelperDocumentation,
@@ -252,18 +257,22 @@ class RstExporter implements ExporterInterface
             case 'typo3/backend/latest/':
                 $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/';
                 $sourceEditPath = 'https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/';
+                $namespace = 'TYPO3\\CMS\\Backend\\ViewHelpers\\';
                 break;
             case 'typo3/core/latest/':
                 $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/';
                 $sourceEditPath = 'https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/';
+                $namespace = 'TYPO3\\CMS\\Core\\ViewHelpers\\';
                 break;
             case 'typo3/fluid/latest/':
                 $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/';
                 $sourceEditPath = 'https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/';
+                $namespace = 'TYPO3\\CMS\\Fluid\\ViewHelpers\\';
                 break;
             case 'typo3fluid/fluid/latest/':
                 $sourcePath = 'https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/';
                 $sourceEditPath = 'https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/';
+                $namespace = 'TYPO3Fluid\\Fluid\\ViewHelpers\\';
                 break;
         }
 
@@ -279,6 +288,8 @@ class RstExporter implements ExporterInterface
             'source' => $source,
             'sourceEdit' => $sourceEdit,
             'phpFileName' => $phpFileName,
+            'namespace' => $namespace,
+            'namespaceUrl' => str_replace('\\', '/', $namespace),
         ];
     }
 }

@@ -11,6 +11,8 @@
 Link.email ViewHelper `<f:link.email>`
 ======================================
 
+
+
 Email link ViewHelper.
 Generates an email link incorporating TYPO3s `spamProtectEmailAddresses`_ TypoScript setting.
 

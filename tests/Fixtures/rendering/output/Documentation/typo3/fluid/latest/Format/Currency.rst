@@ -11,6 +11,8 @@
 Format.currency ViewHelper `<f:format.currency>`
 ================================================
 
+
+
 Formats a given float to a currency representation.
 
 Examples

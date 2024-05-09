@@ -11,6 +11,8 @@
 Translate ViewHelper `<f:translate>`
 ====================================
 
+
+
 Translate a key from locallang. The files are loaded from the folder
 :file:`Resources/Private/Language/`.
 

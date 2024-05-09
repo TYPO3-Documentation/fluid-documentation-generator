@@ -11,6 +11,8 @@
 Count ViewHelper `<f:count>`
 ============================
 
+
+
 This ViewHelper counts elements of the specified array or countable object.
 
 Examples

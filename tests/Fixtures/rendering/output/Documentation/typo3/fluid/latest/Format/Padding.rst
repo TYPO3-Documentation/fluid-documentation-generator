@@ -11,6 +11,8 @@
 Format.padding ViewHelper `<f:format.padding>`
 ==============================================
 
+
+
 Formats a string using PHPs :php:`str_pad` function.
 See https://www.php.net/manual/en/function.str-pad.
 

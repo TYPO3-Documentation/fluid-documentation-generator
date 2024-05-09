@@ -11,6 +11,8 @@
 Form.checkbox ViewHelper `<f:form.checkbox>`
 ============================================
 
+
+
 ViewHelper which creates a simple checkbox :html:`<input type="checkbox">`.
 
 Examples

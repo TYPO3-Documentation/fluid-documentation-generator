@@ -11,6 +11,8 @@
 Join ViewHelper `<f:join>`
 ==========================
 
+
+
 The JoinViewHelper combines elements from an array into a single string.
 You can specify both a general separator and a special one for the last
 element, which serves as the delimiter between the elements.

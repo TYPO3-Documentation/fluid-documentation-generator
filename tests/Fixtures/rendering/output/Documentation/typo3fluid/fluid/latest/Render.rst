@@ -11,6 +11,8 @@
 Render ViewHelper `<f:render>`
 ==============================
 
+
+
 A ViewHelper to render a section, a partial, a specified section in a partial
 or a delegate ParsedTemplateInterface implementation.
 

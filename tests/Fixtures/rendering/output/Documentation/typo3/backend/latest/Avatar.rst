@@ -7,9 +7,17 @@
 
 .. _typo3-backend-avatar:
 
-====================================
-Avatar ViewHelper `<backend:avatar>`
-====================================
+===============================
+Avatar ViewHelper `<be:avatar>`
+===============================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Render the avatar markup, including the :html:`<img>` tag, for a given backend user.
 
@@ -60,7 +68,7 @@ Go to the source code of this ViewHelper: `AvatarViewHelper.php (GitHub) <https:
 Arguments
 =========
 
-The following arguments are available for `<backend:avatar>`:
+The following arguments are available for `<be:avatar>`:
 
 ..  contents::
     :local:

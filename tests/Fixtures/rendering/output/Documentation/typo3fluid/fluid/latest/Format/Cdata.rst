@@ -11,6 +11,8 @@
 Format.cdata ViewHelper `<f:format.cdata>`
 ==========================================
 
+
+
 Outputs an argument/value without any escaping and wraps it with CDATA tags.
 
 PAY SPECIAL ATTENTION TO SECURITY HERE (especially Cross Site Scripting),

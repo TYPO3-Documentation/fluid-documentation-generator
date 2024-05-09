@@ -11,6 +11,8 @@
 Be.pagePath ViewHelper `<f:be.pagePath>`
 ========================================
 
+
+
 ViewHelper which returns the current page path as known from TYPO3 backend modules.
 
 .. note::

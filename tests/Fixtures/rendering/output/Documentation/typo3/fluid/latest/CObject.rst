@@ -11,6 +11,8 @@
 CObject ViewHelper `<f:cObject>`
 ================================
 
+
+
 This ViewHelper renders CObjects from the global TypoScript configuration.
 
 .. note::

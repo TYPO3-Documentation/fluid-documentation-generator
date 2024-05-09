@@ -11,6 +11,8 @@
 Debug.render ViewHelper `<f:debug.render>`
 ==========================================
 
+
+
 Debuggable version of :ref:`f:render <typo3-fluid-render>` - performs the
 same rendering operation but wraps the output with HTML that can be
 inspected with the admin panel in frontend.

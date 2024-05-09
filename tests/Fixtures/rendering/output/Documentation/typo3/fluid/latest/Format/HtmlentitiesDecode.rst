@@ -11,6 +11,8 @@
 Format.htmlentitiesDecode ViewHelper `<f:format.htmlentitiesDecode>`
 ====================================================================
 
+
+
 Applies :php:`html_entity_decode()` to a value.
 See https://www.php.net/html_entity_decode.
 

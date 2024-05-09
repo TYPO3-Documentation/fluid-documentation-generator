@@ -11,6 +11,8 @@
 Format.trim ViewHelper `<f:format.trim>`
 ========================================
 
+
+
 This ViewHelper strips whitespace (or other characters) from the beginning and end of a string.
 
 Possible sides are:

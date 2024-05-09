@@ -7,9 +7,17 @@
 
 .. _typo3-backend-toolbar-attributes:
 
-============================================================
-Toolbar.attributes ViewHelper `<backend:toolbar.attributes>`
-============================================================
+=======================================================
+Toolbar.attributes ViewHelper `<be:toolbar.attributes>`
+=======================================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Builds an attribute string for use in rendered toolbar items
 
@@ -25,7 +33,7 @@ Go to the source code of this ViewHelper: `AttributesViewHelper.php (GitHub) <ht
 Arguments
 =========
 
-The following arguments are available for `<backend:toolbar.attributes>`:
+The following arguments are available for `<be:toolbar.attributes>`:
 
 ..  contents::
     :local:

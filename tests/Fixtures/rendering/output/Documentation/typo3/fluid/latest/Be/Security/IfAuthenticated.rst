@@ -11,6 +11,8 @@
 Be.security.ifAuthenticated ViewHelper `<f:be.security.ifAuthenticated>`
 ========================================================================
 
+
+
 This ViewHelper implements an ifAuthenticated/else condition for backend
 users and backend groups.
 

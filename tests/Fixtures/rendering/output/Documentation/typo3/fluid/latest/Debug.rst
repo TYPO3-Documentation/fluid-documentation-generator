@@ -11,6 +11,8 @@
 Debug ViewHelper `<f:debug>`
 ============================
 
+
+
 This ViewHelper generates a HTML dump of the tagged variable.
 
 Examples

@@ -7,9 +7,17 @@
 
 .. _typo3-backend-languagecolumn:
 
-====================================================
-LanguageColumn ViewHelper `<backend:languageColumn>`
-====================================================
+===============================================
+LanguageColumn ViewHelper `<be:languageColumn>`
+===============================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 
 
@@ -25,7 +33,7 @@ Go to the source code of this ViewHelper: `LanguageColumnViewHelper.php (GitHub)
 Arguments
 =========
 
-The following arguments are available for `<backend:languageColumn>`:
+The following arguments are available for `<be:languageColumn>`:
 
 ..  contents::
     :local:

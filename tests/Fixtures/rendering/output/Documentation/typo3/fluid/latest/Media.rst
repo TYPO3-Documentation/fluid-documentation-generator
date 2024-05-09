@@ -11,6 +11,8 @@
 Media ViewHelper `<f:media>`
 ============================
 
+
+
 Render a given media file with the correct html tag.
 
 It asks the :php:`RendererRegistry` for the correct Renderer class and if not found it falls

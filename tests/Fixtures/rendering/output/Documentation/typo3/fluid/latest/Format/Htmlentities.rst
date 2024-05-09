@@ -11,6 +11,8 @@
 Format.htmlentities ViewHelper `<f:format.htmlentities>`
 ========================================================
 
+
+
 Applies :php:`htmlentities()` escaping to a value.
 See https://www.php.net/manual/function.htmlentities.php.
 

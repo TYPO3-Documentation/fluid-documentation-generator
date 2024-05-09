@@ -7,9 +7,17 @@
 
 .. _typo3-backend-uri-editrecord:
 
-====================================================
-Uri.editRecord ViewHelper `<backend:uri.editRecord>`
-====================================================
+===============================================
+Uri.editRecord ViewHelper `<be:uri.editRecord>`
+===============================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Use this ViewHelper to provide edit links (only the uri) to records. The ViewHelper will
 pass the uid and table to FormEngine.
@@ -45,7 +53,7 @@ Go to the source code of this ViewHelper: `EditRecordViewHelper.php (GitHub) <ht
 Arguments
 =========
 
-The following arguments are available for `<backend:uri.editRecord>`:
+The following arguments are available for `<be:uri.editRecord>`:
 
 ..  contents::
     :local:

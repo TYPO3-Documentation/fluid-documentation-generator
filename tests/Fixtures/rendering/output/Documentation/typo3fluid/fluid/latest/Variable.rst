@@ -11,6 +11,8 @@
 Variable ViewHelper `<f:variable>`
 ==================================
 
+
+
 Variable assigning ViewHelper
 
 Assigns one template variable which will exist also

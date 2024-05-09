@@ -11,6 +11,8 @@
 Format.htmlspecialchars ViewHelper `<f:format.htmlspecialchars>`
 ================================================================
 
+
+
 Applies PHP ``htmlspecialchars()`` escaping to a value.
 
 See http://www.php.net/manual/function.htmlspecialchars.php

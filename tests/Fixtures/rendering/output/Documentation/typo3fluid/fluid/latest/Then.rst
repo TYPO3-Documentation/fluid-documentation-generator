@@ -11,6 +11,8 @@
 Then ViewHelper `<f:then>`
 ==========================
 
+
+
 ``f:then`` only has an effect inside of ``f:if``. See the ``f:if`` ViewHelper for documentation.
 
 .. _typo3fluid-fluid-then_source:

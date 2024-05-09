@@ -11,6 +11,8 @@
 Alias ViewHelper `<f:alias>`
 ============================
 
+
+
 Declares new variables which are aliases of other variables.
 Takes a "map"-Parameter which is an associative array which defines the shorthand mapping.
 

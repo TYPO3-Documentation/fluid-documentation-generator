@@ -11,6 +11,8 @@
 Format.stripTags ViewHelper `<f:format.stripTags>`
 ==================================================
 
+
+
 Removes tags from the given string (applying PHPs :php:`strip_tags()` function)
 See https://www.php.net/manual/function.strip-tags.php.
 

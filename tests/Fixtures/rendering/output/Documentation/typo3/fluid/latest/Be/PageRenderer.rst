@@ -11,6 +11,8 @@
 Be.pageRenderer ViewHelper `<f:be.pageRenderer>`
 ================================================
 
+
+
 ViewHelper to register backend module resources like CSS and JavaScript using the PageRenderer.
 
 Examples

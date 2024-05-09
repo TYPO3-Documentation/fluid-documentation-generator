@@ -11,6 +11,8 @@
 Image ViewHelper `<f:image>`
 ============================
 
+
+
 Resizes a given image (if required) and renders the respective img tag.
 
 Note that image operations (cropping, scaling, converting) on

@@ -11,6 +11,8 @@
 Format.number ViewHelper `<f:format.number>`
 ============================================
 
+
+
 Formats a number with custom precision, decimal point and grouped thousands.
 See https://www.php.net/manual/function.number-format.php.
 

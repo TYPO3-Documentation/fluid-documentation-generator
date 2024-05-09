@@ -11,6 +11,8 @@
 Format.crop ViewHelper `<f:format.crop>`
 ========================================
 
+
+
 Use this ViewHelper to crop the text between its opening and closing tags.
 
 Whitespace within the f:format.crop element will be considered as characters.

@@ -11,6 +11,8 @@
 Be.pageInfo ViewHelper `<f:be.pageInfo>`
 ========================================
 
+
+
 ViewHelper which return page info icon as known from TYPO3 backend modules.
 
 .. note::

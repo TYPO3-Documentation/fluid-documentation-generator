@@ -11,6 +11,8 @@
 Format.html ViewHelper `<f:format.html>`
 ========================================
 
+
+
 Renders a string by passing it to a TYPO3 `parseFunc`_.
 You can either specify a path to the TypoScript setting or set the `parseFunc`_ options directly.
 By default :typoscript:`lib.parseFunc_RTE` is used to parse the string.

@@ -11,6 +11,14 @@
 IconForRecord ViewHelper `<core:iconForRecord>`
 ===============================================
 
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace core=TYPO3\CMS\Core\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers/"` in the opening HTML tag.
+
+
 Displays icon for record.
 
 Examples

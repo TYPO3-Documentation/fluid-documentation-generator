@@ -7,9 +7,17 @@
 
 .. _typo3-backend-toolbar-ifhasdropdown:
 
-==================================================================
-Toolbar.ifHasDropdown ViewHelper `<backend:toolbar.ifHasDropdown>`
-==================================================================
+=============================================================
+Toolbar.ifHasDropdown ViewHelper `<be:toolbar.ifHasDropdown>`
+=============================================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Checks whether a toolbar item provides a dropdown menu
 
@@ -25,7 +33,7 @@ Go to the source code of this ViewHelper: `IfHasDropdownViewHelper.php (GitHub) 
 Arguments
 =========
 
-The following arguments are available for `<backend:toolbar.ifHasDropdown>`:
+The following arguments are available for `<be:toolbar.ifHasDropdown>`:
 
 ..  contents::
     :local:

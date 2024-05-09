@@ -11,6 +11,8 @@
 Cycle ViewHelper `<f:cycle>`
 ============================
 
+
+
 This ViewHelper cycles through the specified values.
 This can be often used to specify CSS classes for example.
 

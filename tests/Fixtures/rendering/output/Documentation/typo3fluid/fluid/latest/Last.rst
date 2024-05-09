@@ -11,6 +11,8 @@
 Last ViewHelper `<f:last>`
 ==========================
 
+
+
 The LastViewHelper returns the last item of an array.
 
 Example

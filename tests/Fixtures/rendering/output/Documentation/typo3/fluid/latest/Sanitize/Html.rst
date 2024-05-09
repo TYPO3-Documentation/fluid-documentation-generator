@@ -11,6 +11,8 @@
 Sanitize.html ViewHelper `<f:sanitize.html>`
 ============================================
 
+
+
 Passes a given content through `typo3/html-sanitizer` to mitigate potential
 cross-site scripting occurrences. Given `default` build corresponds to class
 `TYPO3\CMS\Core\Html\DefaultSanitizerBuilder` declaring allowed HTML tags,

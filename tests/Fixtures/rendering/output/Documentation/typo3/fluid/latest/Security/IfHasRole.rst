@@ -11,6 +11,8 @@
 Security.ifHasRole ViewHelper `<f:security.ifHasRole>`
 ======================================================
 
+
+
 This ViewHelper implements an ifHasRole/else condition for frontend groups.
 
 Examples

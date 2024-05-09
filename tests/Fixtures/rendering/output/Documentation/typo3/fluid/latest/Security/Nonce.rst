@@ -11,6 +11,8 @@
 Security.nonce ViewHelper `<f:security.nonce>`
 ==============================================
 
+
+
 This ViewHelper resolves the `nonce` attribute from the global server request object,
 or from the `PolicyProvider` service as a fall-back value.
 

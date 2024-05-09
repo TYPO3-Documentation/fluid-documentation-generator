@@ -11,6 +11,8 @@
 Case ViewHelper `<f:case>`
 ==========================
 
+
+
 Case ViewHelper that is only usable within the ``f:switch`` ViewHelper.
 
 .. _typo3fluid-fluid-case_source:

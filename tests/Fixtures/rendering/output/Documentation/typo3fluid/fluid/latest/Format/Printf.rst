@@ -11,6 +11,8 @@
 Format.printf ViewHelper `<f:format.printf>`
 ============================================
 
+
+
 A ViewHelper for formatting values with printf. Either supply an array for
 the arguments or a single value.
 

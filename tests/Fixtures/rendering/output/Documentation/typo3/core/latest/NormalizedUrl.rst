@@ -11,6 +11,14 @@
 NormalizedUrl ViewHelper `<core:normalizedUrl>`
 ===============================================
 
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace core=TYPO3\CMS\Core\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers/"` in the opening HTML tag.
+
+
 Normalizes a path that uses EXT: syntax or an absolute URL to an absolute web path
 
 Examples

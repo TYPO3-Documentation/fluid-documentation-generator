@@ -11,6 +11,8 @@
 Uri.resource ViewHelper `<f:uri.resource>`
 ==========================================
 
+
+
 A ViewHelper for creating URIs to resources.
 
 This ViewHelper should be used for extension resource files.

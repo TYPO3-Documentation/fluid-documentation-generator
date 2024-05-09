@@ -11,6 +11,8 @@
 Be.security.ifHasRole ViewHelper `<f:be.security.ifHasRole>`
 ============================================================
 
+
+
 This ViewHelper implements an ifHasRole/else condition for backend users
 and backend groups.
 

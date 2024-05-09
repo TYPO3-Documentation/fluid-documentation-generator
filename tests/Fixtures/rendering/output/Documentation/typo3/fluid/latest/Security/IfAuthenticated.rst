@@ -11,6 +11,8 @@
 Security.ifAuthenticated ViewHelper `<f:security.ifAuthenticated>`
 ==================================================================
 
+
+
 This ViewHelper implements an ifAuthenticated/else condition for frontend users.
 
 Examples

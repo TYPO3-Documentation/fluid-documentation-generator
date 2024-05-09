@@ -11,6 +11,8 @@
 Format.case ViewHelper `<f:format.case>`
 ========================================
 
+
+
 Modifies the case of an input string to upper- or lowercase or capitalization.
 The default transformation will be uppercase as in `mb_convert_case`_.
 

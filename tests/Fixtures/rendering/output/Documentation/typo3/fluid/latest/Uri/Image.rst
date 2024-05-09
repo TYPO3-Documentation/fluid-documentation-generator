@@ -11,6 +11,8 @@
 Uri.image ViewHelper `<f:uri.image>`
 ====================================
 
+
+
 Resizes a given image (if required) and returns its relative path.
 
 This ViewHelper should only be used for images within FAL storages,

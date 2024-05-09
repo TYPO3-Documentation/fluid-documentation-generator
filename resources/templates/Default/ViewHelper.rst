@@ -11,6 +11,14 @@
 <f:format.raw>{headline}</f:format.raw>
 {headlineDecoration}
 
+<f:if condition="{package} != 'f'">..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace3 -> f:format.raw()}` in the Fluid file or
+    :fluid:`{namespace2 -> f:format.raw()}` in the opening HTML tag.
+</f:if>
+
 {viewHelper.descriptionAsRst -> f:format.raw()}
 
 .. _{headlineIdentifier}_source:

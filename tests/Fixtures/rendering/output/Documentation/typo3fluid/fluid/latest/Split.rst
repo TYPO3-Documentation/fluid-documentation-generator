@@ -11,6 +11,8 @@
 Split ViewHelper `<f:split>`
 ============================
 
+
+
 The SplitViewHelper splits a string by the specified separator, which
 results in an array. The number of values in the resulting array can
 be limited with the limit parameter, which results in an array where

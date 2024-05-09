@@ -11,6 +11,8 @@
 Inline ViewHelper `<f:inline>`
 ==============================
 
+
+
 Inline Fluid rendering ViewHelper
 
 Renders Fluid code stored in a variable, which you normally would

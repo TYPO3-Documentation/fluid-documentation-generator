@@ -7,9 +7,17 @@
 
 .. _typo3-backend-typoscript-finediff:
 
-==============================================================
-TypoScript.fineDiff ViewHelper `<backend:typoScript.fineDiff>`
-==============================================================
+=========================================================
+TypoScript.fineDiff ViewHelper `<be:typoScript.fineDiff>`
+=========================================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Runs two strings through 'FineDiff' on word level.
 
@@ -25,7 +33,7 @@ Go to the source code of this ViewHelper: `FineDiffViewHelper.php (GitHub) <http
 Arguments
 =========
 
-The following arguments are available for `<backend:typoScript.fineDiff>`:
+The following arguments are available for `<be:typoScript.fineDiff>`:
 
 ..  contents::
     :local:

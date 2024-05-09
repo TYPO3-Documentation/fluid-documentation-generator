@@ -7,9 +7,17 @@
 
 .. _typo3-backend-link-newrecord:
 
-====================================================
-Link.newRecord ViewHelper `<backend:link.newRecord>`
-====================================================
+===============================================
+Link.newRecord ViewHelper `<be:link.newRecord>`
+===============================================
+
+..  note::
+    This ViewHelper is not available by default.
+
+    :ref:`Import its namespace <t3coreapi:fluid-syntax-viewhelpers-import-namespaces>`
+    :fluid:`{namespace be=TYPO3\CMS\Backend\ViewHelpers\}` in the Fluid file or
+    :fluid:`xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers/"` in the opening HTML tag.
+
 
 Use this ViewHelper to provide 'create new record' links.
 The ViewHelper will pass the command to FormEngine.
@@ -94,7 +102,7 @@ Go to the source code of this ViewHelper: `NewRecordViewHelper.php (GitHub) <htt
 Arguments
 =========
 
-The following arguments are available for `<backend:link.newRecord>`:
+The following arguments are available for `<be:link.newRecord>`:
 
 ..  contents::
     :local:

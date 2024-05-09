@@ -11,6 +11,8 @@
 Cache.static ViewHelper `<f:cache.static>`
 ==========================================
 
+
+
 ViewHelper to force compiling to a static string
 
 Used around chunks of template code where you want the

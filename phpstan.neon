@@ -2,7 +2,7 @@ includes:
   - phpstan-baseline.neon
 parameters:
   phpVersion: 80200
-  level: 1
+  level: 2
   inferPrivatePropertyTypeFromConstructor: true
   treatPhpDocTypesAsCertain: false
   paths:

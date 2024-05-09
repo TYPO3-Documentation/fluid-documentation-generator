@@ -90,7 +90,7 @@ class RootIndexFileTest extends TestCase
     {
         $output = file($this->vfs->getChild($this->generatedFilePath)->url());
         $output = implode(PHP_EOL, $output);
-        $this->assertStringContainsString('   typo3/backend/9.4/Index' . PHP_EOL, $output);
-        $this->assertStringContainsString('   typo3/backend/9.5/Index' . PHP_EOL, $output);
+        $this->assertStringContainsString('   typo3/backend/latest/Index' . PHP_EOL, $output);
+        $this->assertStringContainsString('   typo3fluid/fluid/latest/Index' . PHP_EOL, $output);
     }
 }

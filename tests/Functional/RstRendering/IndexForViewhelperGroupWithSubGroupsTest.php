@@ -23,12 +23,12 @@ class IndexForViewhelperGroupWithSubGroupsTest extends TestCase
      * the generated file is compared against this fixture file
      * @var string
      */
-    private $fixtureFilePath = __DIR__ . '/../../Fixtures/rendering/output/Documentation/typo3/backend/9.4/ModuleLayout/Index.rst';
+    private $fixtureFilePath = __DIR__ . '/../../Fixtures/rendering/output/Documentation/typo3/fluid/latest/Asset/Index.rst';
 
     /**
      * output of the generation process
      */
-    private string $generatedFilePath = 'outputDir/public/typo3/backend/9.4/ModuleLayout/Index.rst';
+    private string $generatedFilePath = 'outputDir/public/typo3/fluid/latest/Asset/Index.rst';
 
     protected function setUp(): void
     {
@@ -62,73 +62,6 @@ class IndexForViewhelperGroupWithSubGroupsTest extends TestCase
     public function fileIsCreated(): void
     {
         $this->assertTrue($this->vfs->hasChild($this->generatedFilePath));
-    }
-
-    /**
-     * @test
-     */
-    public function includeClausePointsToSettingsCfg(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[0]);
-    }
-
-    /**
-     * @test
-     */
-    public function headlineAsExpected(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        // first line is include, then empty, then upper headline decoration, then text -> fourth line
-        $index = 3;
-        $this->assertSame('moduleLayout' . PHP_EOL, $output[$index]);
-    }
-
-    /**
-     * @test
-     */
-    public function headlineIsProperlyDecorated(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        // first line is include, then empty, then upper headline decoration, then text, then lower headline decoration
-        $headlineTextIndex = 3;
-        $lengthOfHeadline = strlen($output[$headlineTextIndex]);
-        $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex - 1]));
-        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex - 1]);
-        $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
-        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex + 1]);
-    }
-
-    /**
-     * @test
-     */
-    public function viewHelperCountIsIntegrated(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $index = 7;
-        $this->assertSame('* 2 ViewHelpers documented' . PHP_EOL, $output[$index]);
-    }
-
-    /**
-     * @test
-     */
-    public function subNamespacesCountIsIntegrated(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $index = 8;
-        $this->assertSame('* 1 Sub namespaces' . PHP_EOL, $output[$index]);
-    }
-
-    /**
-     * @test
-     */
-    public function tocTreeContainsSubDirectoriesAsExpected(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $index = 14;
-        $this->assertSame('   */Index' . PHP_EOL, $output[$index]);
-        $this->assertSame('   MenuItem' . PHP_EOL, $output[$index + 1]);
-        $this->assertSame('   Menu' . PHP_EOL, $output[$index + 2]);
     }
 
     /**

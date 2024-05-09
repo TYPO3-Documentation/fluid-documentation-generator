@@ -16,6 +16,9 @@ final class SchemaDocumentationGenerator
      */
     private readonly array $exporters;
 
+    /**
+     * @param ExporterInterface[] $exporters
+     */
     public static function getInstance(array $exporters = [], bool $forceUpdate = false): self
     {
         static $instance;
@@ -26,6 +29,9 @@ final class SchemaDocumentationGenerator
         return $instance;
     }
 
+    /**
+     * @param ExporterInterface[] $exporters
+     */
     public function __construct(array $exporters, private readonly bool $forceUpdate = false)
     {
         foreach ($exporters as $exporter) {
@@ -86,6 +92,9 @@ final class SchemaDocumentationGenerator
         $exporter->exportViewHelperGroup($group, $this->forceUpdate);
     }
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function generateResourceLinksForViewHelper(ViewHelperDocumentation $viewHelperDocumentation): array
     {
         $resources = [];
@@ -99,6 +108,9 @@ final class SchemaDocumentationGenerator
         return $resources;
     }
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function generateResourceLinksForSchema(ProcessedSchema $schema): array
     {
         $resources = [];
@@ -112,6 +124,9 @@ final class SchemaDocumentationGenerator
         return $resources;
     }
 
+    /**
+     * @return ExporterInterface[]
+     */
     public function generateMachineResourceLinksForViewHelper(ViewHelperDocumentation $viewHelperDocumentation): array
     {
         $resources = [];

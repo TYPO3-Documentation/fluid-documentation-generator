@@ -54,6 +54,9 @@ final class DataFileResolver
         return $this->writer;
     }
 
+    /**
+     * @return array<mixed>
+     */
     public function readSchemaMetaDataFile(Schema $schema): array
     {
         return $this->readVendorMetaDataFile($schema->getVendor())
@@ -61,15 +64,21 @@ final class DataFileResolver
             + (array) json_decode($this->readSchemaDataFile($schema, 'metadata.json'), true);
     }
 
+    /**
+     * @return array<mixed>
+     */
+    public function readVendorMetaDataFile(SchemaVendor $vendor): array
+    {
+        return (array) json_decode($this->readVendorDataFile($vendor, 'metadata.json'), true);
+    }
+
+    /**
+     * @return array<mixed>
+     */
     public function readPackageMetaDataFile(SchemaPackage $package): array
     {
         return $this->readVendorMetaDataFile($package->getVendor())
             + (array) json_decode($this->readPackageDataFile($package, 'metadata.json'), true);
-    }
-
-    public function readVendorMetaDataFile(SchemaVendor $vendor): array
-    {
-        return (array) json_decode($this->readVendorDataFile($vendor, 'metadata.json'), true);
     }
 
     public function readRootDataFile(string $relativeFilePath): string
@@ -180,6 +189,9 @@ final class DataFileResolver
         $this->schemasDirectory = $schemasDirectory;
     }
 
+    /**
+     * @return array<mixed>
+     */
     private function readContentsOfFolder(string $folderPath): array
     {
         $files = @scandir($folderPath);

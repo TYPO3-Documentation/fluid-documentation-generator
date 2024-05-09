@@ -34,9 +34,12 @@ final class GraphDataHandler
         return new self();
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function createSchemaData(ProcessedSchema $schema, bool $summary = false): array
     {
-        return $this->merge(
+        return array_merge_recursive(
             [static::GRAPH_PACKAGE => $this->createPackageData($schema->getSchema()->getPackage(), $summary)],
             [static::GRAPH_VERSION => $this->createVersionData($schema->getSchema()->getVersion(), $summary)],
             [static::GRAPH_VENDOR => $this->createVendorGraphData($schema->getSchema()->getVendor(), $summary)],
@@ -44,6 +47,9 @@ final class GraphDataHandler
         );
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function createVendorGraphData(SchemaVendor $vendor, bool $summary = false): array
     {
         return [
@@ -56,6 +62,9 @@ final class GraphDataHandler
         ];
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function createPackageData(SchemaPackage $package, bool $summary = false): array
     {
         return [
@@ -69,6 +78,9 @@ final class GraphDataHandler
         ];
     }
 
+    /**
+     * @return array<string, string>
+     */
     public function createVersionData(SchemaVersion $version, bool $summary = false): array
     {
         return [
@@ -77,6 +89,9 @@ final class GraphDataHandler
         ];
     }
 
+    /**
+     * @return array<mixed>
+     */
     public function createViewHelperData(ViewHelperDocumentation $viewHelper, bool $summary = false): array
     {
         $schema = $viewHelper->getSchema();
@@ -87,7 +102,7 @@ final class GraphDataHandler
             'urls' => SchemaDocumentationGenerator::getInstance()->generateMachineResourceLinksForViewHelper($viewHelper),
         ];
         if (!$summary) {
-            return $this->merge(
+            return array_merge_recursive(
                 $viewHelperData,
                 ['arguments' => $this->createPropertyIndexedDataArray($viewHelper->getArgumentDefinitions(), 'name')],
                 [static::GRAPH_VIEW_HELPER_GROUP => $this->createViewHelperGroupData($viewHelper->getGroup(), true)],
@@ -98,6 +113,9 @@ final class GraphDataHandler
         return $viewHelperData;
     }
 
+    /**
+     * @return array<mixed>
+     */
     public function createViewHelperArgumentData(ArgumentDefinition $argumentDefinition): array
     {
         return [
@@ -109,6 +127,9 @@ final class GraphDataHandler
         ];
     }
 
+    /**
+     * @return array<string, string|array<mixed>>
+     */
     public function createViewHelperGroupData(ViewHelperDocumentationGroup $viewHelperGroup, bool $summary = false): array
     {
         return [
@@ -117,11 +138,10 @@ final class GraphDataHandler
         ];
     }
 
-    public function merge(...$arrays): array
-    {
-        return array_merge_recursive(...$arrays);
-    }
-
+    /**
+     * @param array<ArgumentDefinition|ViewHelperDocumentation|SchemaVersion|SchemaPackage> $values
+     * @return array<array<array<mixed>>>
+     */
     private function createPropertyIndexedDataArray(array $values, string $propertyNameContainingKey, bool $summary = false): array
     {
         $structured = [];

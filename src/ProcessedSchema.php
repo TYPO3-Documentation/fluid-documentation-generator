@@ -53,6 +53,9 @@ class ProcessedSchema
         return $this->viewHelpersDocumentations;
     }
 
+    /**
+     * @return array<mixed>
+     */
     private function processXmlFile(): array
     {
         $json = [];

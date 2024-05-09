@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextareaViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextareaViewHelper.php
 :navigation-title: form.textarea
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-textarea:
 
 ============================================
-form.textarea ViewHelper `<f:form.textarea>`
+Form.textarea ViewHelper `<f:form.textarea>`
 ============================================
-
 
 Generates an :html:`<textarea>`.
 
@@ -23,311 +26,297 @@ Output::
 
    <textarea name="myTextArea">This is shown inside the textarea</textarea>
 
+.. _typo3-fluid-form-textarea_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `TextareaViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextareaViewHelper.php>`__.
 
 .. _typo3-fluid-form-textarea_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.textarea>`:
 
-.. _typo3-fluid-form-textarea-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-textarea-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-textarea-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-textarea-data:
+.. _typo3-fluid-form-textarea-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-textarea-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-textarea-aria:
+.. _typo3-fluid-form-textarea-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-textarea-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-textarea-name:
+.. _typo3-fluid-form-textarea-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-textarea-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-textarea-value:
+.. _typo3-fluid-form-textarea-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-form-textarea-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value of input tag
+    Value of input tag
 
-.. _typo3-fluid-form-textarea-property:
+.. _typo3-fluid-form-textarea-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-textarea-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-textarea-autofocus:
+.. _typo3-fluid-form-textarea-autofocus_argument:
 
 autofocus
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: autofocus
+    :name: typo3-fluid-form-textarea-autofocus
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that a text area should automatically get focus when the page loads
+    Specifies that a text area should automatically get focus when the page loads
 
-.. _typo3-fluid-form-textarea-rows:
+.. _typo3-fluid-form-textarea-rows_argument:
 
 rows
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: rows
+    :name: typo3-fluid-form-textarea-rows
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The number of rows of a text area
+    The number of rows of a text area
 
-.. _typo3-fluid-form-textarea-cols:
+.. _typo3-fluid-form-textarea-cols_argument:
 
 cols
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: cols
+    :name: typo3-fluid-form-textarea-cols
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The number of columns of a text area
+    The number of columns of a text area
 
-.. _typo3-fluid-form-textarea-disabled:
+.. _typo3-fluid-form-textarea-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-textarea-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads
 
-.. _typo3-fluid-form-textarea-placeholder:
+.. _typo3-fluid-form-textarea-placeholder_argument:
 
 placeholder
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: placeholder
+    :name: typo3-fluid-form-textarea-placeholder
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The placeholder of the textarea
+    The placeholder of the textarea
 
-.. _typo3-fluid-form-textarea-errorclass:
+.. _typo3-fluid-form-textarea-errorclass_argument:
 
 errorClass
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: errorClass
+    :name: typo3-fluid-form-textarea-errorclass
+    :type: string
+    :Default: 'f3-form-error'
+    :required: false
 
-:aspect:`Default`
-   'f3-form-error'
+    CSS class to set if there are errors for this ViewHelper
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class to set if there are errors for this ViewHelper
-
-.. _typo3-fluid-form-textarea-readonly:
+.. _typo3-fluid-form-textarea-readonly_argument:
 
 readonly
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: readonly
+    :name: typo3-fluid-form-textarea-readonly
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The readonly attribute of the textarea
+    The readonly attribute of the textarea
 
-.. _typo3-fluid-form-textarea-required:
+.. _typo3-fluid-form-textarea-required_argument:
 
 required
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: required
+    :name: typo3-fluid-form-textarea-required
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies whether the textarea is required
+    Specifies whether the textarea is required
 
-.. _typo3-fluid-form-textarea-class:
+.. _typo3-fluid-form-textarea-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-textarea-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-textarea-dir:
+.. _typo3-fluid-form-textarea-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-textarea-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-textarea-id:
+.. _typo3-fluid-form-textarea-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-textarea-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-textarea-lang:
+.. _typo3-fluid-form-textarea-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-textarea-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-textarea-style:
+.. _typo3-fluid-form-textarea-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-textarea-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-textarea-title:
+.. _typo3-fluid-form-textarea-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-textarea-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-textarea-accesskey:
+.. _typo3-fluid-form-textarea-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-textarea-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-textarea-tabindex:
+.. _typo3-fluid-form-textarea-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-textarea-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-textarea-onclick:
+.. _typo3-fluid-form-textarea-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-textarea-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event

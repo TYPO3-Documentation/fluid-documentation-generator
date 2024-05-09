@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/TableListViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/TableListViewHelper.php
 :navigation-title: be.tableList
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-tablelist:
 
 ==========================================
-be.tableList ViewHelper `<f:be.tableList>`
+Be.tableList ViewHelper `<f:be.tableList>`
 ==========================================
-
 
 ViewHelper which renders a record list as known from the TYPO3 list module.
 
@@ -45,171 +48,166 @@ Full::
 List of "Website user" records with a text property of ``foo`` stored on PID ``1`` and two levels down.
 Clicking on a username will open the TYPO3 info popup for the respective record
 
+.. _typo3-fluid-be-tablelist_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `TableListViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/TableListViewHelper.php>`__.
 
 .. _typo3-fluid-be-tablelist_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.tableList>`:
 
-.. _typo3-fluid-be-tablelist-tablename:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-tablelist-tablename_argument:
 
 tableName
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: tableName
+    :name: typo3-fluid-be-tablelist-tablename
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Name of the database table
+    Name of the database table
 
-.. _typo3-fluid-be-tablelist-fieldlist:
+.. _typo3-fluid-be-tablelist-fieldlist_argument:
 
 fieldList
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: fieldList
+    :name: typo3-fluid-be-tablelist-fieldlist
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    List of fields to be displayed. If empty, only the title column (configured in $TCA[$tableName]['ctrl']['title']) is shown
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   List of fields to be displayed. If empty, only the title column (configured in $TCA[$tableName]['ctrl']['title']) is shown
-
-.. _typo3-fluid-be-tablelist-storagepid:
+.. _typo3-fluid-be-tablelist-storagepid_argument:
 
 storagePid
 ----------
 
-:aspect:`DataType`
-   mixed
+..  confval:: storagePid
+    :name: typo3-fluid-be-tablelist-storagepid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   By default, records are fetched from the storage PID configured in persistence.storagePid. With this argument, the storage PID can be overwritten
+    By default, records are fetched from the storage PID configured in persistence.storagePid. With this argument, the storage PID can be overwritten
 
-.. _typo3-fluid-be-tablelist-levels:
+.. _typo3-fluid-be-tablelist-levels_argument:
 
 levels
 ------
 
-:aspect:`DataType`
-   mixed
+..  confval:: levels
+    :name: typo3-fluid-be-tablelist-levels
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Corresponds to the level selector of the TYPO3 list module. By default only records from the current storagePid are fetched
+    Corresponds to the level selector of the TYPO3 list module. By default only records from the current storagePid are fetched
 
-.. _typo3-fluid-be-tablelist-filter:
+.. _typo3-fluid-be-tablelist-filter_argument:
 
 filter
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: filter
+    :name: typo3-fluid-be-tablelist-filter
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Corresponds to the "Search String" textbox of the TYPO3 list module. If not empty, only records matching the string will be fetched
+    Corresponds to the "Search String" textbox of the TYPO3 list module. If not empty, only records matching the string will be fetched
 
-.. _typo3-fluid-be-tablelist-recordsperpage:
+.. _typo3-fluid-be-tablelist-recordsperpage_argument:
 
 recordsPerPage
 --------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: recordsPerPage
+    :name: typo3-fluid-be-tablelist-recordsperpage
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Amount of records to be displayed at once. Defaults to $TCA[$tableName]['interface']['maxSingleDBListItems'] or (if that's not set) to 100
+    Amount of records to be displayed at once. Defaults to $TCA[$tableName]['interface']['maxSingleDBListItems'] or (if that's not set) to 100
 
-.. _typo3-fluid-be-tablelist-sortfield:
+.. _typo3-fluid-be-tablelist-sortfield_argument:
 
 sortField
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: sortField
+    :name: typo3-fluid-be-tablelist-sortfield
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Table field to sort the results by
+    Table field to sort the results by
 
-.. _typo3-fluid-be-tablelist-sortdescending:
+.. _typo3-fluid-be-tablelist-sortdescending_argument:
 
 sortDescending
 --------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: sortDescending
+    :name: typo3-fluid-be-tablelist-sortdescending
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE records will be sorted in descending order
+    If TRUE records will be sorted in descending order
 
-.. _typo3-fluid-be-tablelist-readonly:
+.. _typo3-fluid-be-tablelist-readonly_argument:
 
 readOnly
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: readOnly
+    :name: typo3-fluid-be-tablelist-readonly
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, the edit icons won't be shown. Otherwise edit icons will be shown, if the current BE user has edit rights for the specified table!
+    If TRUE, the edit icons won't be shown. Otherwise edit icons will be shown, if the current BE user has edit rights for the specified table!
 
-.. _typo3-fluid-be-tablelist-enableclickmenu:
+.. _typo3-fluid-be-tablelist-enableclickmenu_argument:
 
 enableClickMenu
 ---------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: enableClickMenu
+    :name: typo3-fluid-be-tablelist-enableclickmenu
+    :type: boolean
+    :Default: true
+    :required: false
 
-:aspect:`Default`
-   true
+    Enables context menu
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Enables context menu
-
-.. _typo3-fluid-be-tablelist-enablecontrolpanels:
+.. _typo3-fluid-be-tablelist-enablecontrolpanels_argument:
 
 enableControlPanels
 -------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: enableControlPanels
+    :name: typo3-fluid-be-tablelist-enablecontrolpanels
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Enables control panels
+    Enables control panels
 
-.. _typo3-fluid-be-tablelist-clicktitlemode:
+.. _typo3-fluid-be-tablelist-clicktitlemode_argument:
 
 clickTitleMode
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: clickTitleMode
+    :name: typo3-fluid-be-tablelist-clicktitlemode
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   One of "edit", "show" (only pages, tt_content), "info
+    One of "edit", "show" (only pages, tt_content), "info

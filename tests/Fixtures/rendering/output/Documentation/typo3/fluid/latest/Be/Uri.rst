@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/UriViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/UriViewHelper.php
 :navigation-title: be.uri
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-uri:
 
 ==============================
-be.uri ViewHelper `<f:be.uri>`
+Be.uri ViewHelper `<f:be.uri>`
 ==============================
-
 
 A ViewHelper for creating URIs to modules.
 
@@ -25,54 +28,58 @@ Inline notation::
 
 ``/typo3/module/web/ts?token=b6e9c9f&id=92``
 
+.. _typo3-fluid-be-uri_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `UriViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/UriViewHelper.php>`__.
 
 .. _typo3-fluid-be-uri_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.uri>`:
 
-.. _typo3-fluid-be-uri-route:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-uri-route_argument:
 
 route
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: route
+    :name: typo3-fluid-be-uri-route
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The name of the route
+    The name of the route
 
-.. _typo3-fluid-be-uri-parameters:
+.. _typo3-fluid-be-uri-parameters_argument:
 
 parameters
 ----------
 
-:aspect:`DataType`
-   mixed
+..  confval:: parameters
+    :name: typo3-fluid-be-uri-parameters
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    An array of parameters
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   An array of parameters
-
-.. _typo3-fluid-be-uri-referencetype:
+.. _typo3-fluid-be-uri-referencetype_argument:
 
 referenceType
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: referenceType
+    :name: typo3-fluid-be-uri-referencetype
+    :type: string
+    :Default: 'absolute'
+    :required: false
 
-:aspect:`Default`
-   'absolute'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The type of reference to be generated (one of the constants)
+    The type of reference to be generated (one of the constants)

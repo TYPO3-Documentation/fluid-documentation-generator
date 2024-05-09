@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/CdataViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/CdataViewHelper.php
 :navigation-title: format.cdata
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-cdata:
 
 ==========================================
-format.cdata ViewHelper `<f:format.cdata>`
+Format.cdata ViewHelper `<f:format.cdata>`
 ==========================================
-
 
 Outputs an argument/value without any escaping and wraps it with CDATA tags.
 
@@ -49,22 +52,32 @@ Output::
 
     <![CDATA[(Content of {string} without any conversion/escaping)]]>
 
+.. _typo3fluid-fluid-format-cdata_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CdataViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/CdataViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-cdata_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.cdata>`:
 
-.. _typo3fluid-fluid-format-cdata-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-cdata-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3fluid-fluid-format-cdata-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The value to output
+    The value to output

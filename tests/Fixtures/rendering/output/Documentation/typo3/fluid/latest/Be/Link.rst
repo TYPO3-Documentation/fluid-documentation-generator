@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/LinkViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/LinkViewHelper.php
 :navigation-title: be.link
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-link:
 
 ================================
-be.link ViewHelper `<f:be.link>`
+Be.link ViewHelper `<f:be.link>`
 ================================
-
 
 A ViewHelper for creating URIs to modules.
 
@@ -19,262 +22,250 @@ URI to the web_ts module on page 92::
 
 ``<a href="/typo3/module/web/ts?token=b6e9c9f&id=92">Go to web_ts</a>``
 
+.. _typo3-fluid-be-link_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `LinkViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/LinkViewHelper.php>`__.
 
 .. _typo3-fluid-be-link_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.link>`:
 
-.. _typo3-fluid-be-link-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-link-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-be-link-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-be-link-data:
+.. _typo3-fluid-be-link-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-be-link-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-be-link-aria:
+.. _typo3-fluid-be-link-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-be-link-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-be-link-route:
+.. _typo3-fluid-be-link-route_argument:
 
 route
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: route
+    :name: typo3-fluid-be-link-route
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The name of the route
+    The name of the route
 
-.. _typo3-fluid-be-link-parameters:
+.. _typo3-fluid-be-link-parameters_argument:
 
 parameters
 ----------
 
-:aspect:`DataType`
-   mixed
+..  confval:: parameters
+    :name: typo3-fluid-be-link-parameters
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    An array of parameters
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   An array of parameters
-
-.. _typo3-fluid-be-link-referencetype:
+.. _typo3-fluid-be-link-referencetype_argument:
 
 referenceType
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: referenceType
+    :name: typo3-fluid-be-link-referencetype
+    :type: string
+    :Default: 'absolute'
+    :required: false
 
-:aspect:`Default`
-   'absolute'
+    The type of reference to be generated (one of the constants)
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The type of reference to be generated (one of the constants)
-
-.. _typo3-fluid-be-link-name:
+.. _typo3-fluid-be-link-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-be-link-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the name of an anchor
+    Specifies the name of an anchor
 
-.. _typo3-fluid-be-link-rel:
+.. _typo3-fluid-be-link-rel_argument:
 
 rel
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rel
+    :name: typo3-fluid-be-link-rel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the current document and the linked document
+    Specifies the relationship between the current document and the linked document
 
-.. _typo3-fluid-be-link-rev:
+.. _typo3-fluid-be-link-rev_argument:
 
 rev
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rev
+    :name: typo3-fluid-be-link-rev
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the linked document and the current document
+    Specifies the relationship between the linked document and the current document
 
-.. _typo3-fluid-be-link-target:
+.. _typo3-fluid-be-link-target_argument:
 
 target
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: target
+    :name: typo3-fluid-be-link-target
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies where to open the linked document
+    Specifies where to open the linked document
 
-.. _typo3-fluid-be-link-class:
+.. _typo3-fluid-be-link-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-be-link-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-be-link-dir:
+.. _typo3-fluid-be-link-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-be-link-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-be-link-id:
+.. _typo3-fluid-be-link-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-be-link-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-be-link-lang:
+.. _typo3-fluid-be-link-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-be-link-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-be-link-style:
+.. _typo3-fluid-be-link-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-be-link-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-be-link-title:
+.. _typo3-fluid-be-link-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-be-link-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-be-link-accesskey:
+.. _typo3-fluid-be-link-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-be-link-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-be-link-tabindex:
+.. _typo3-fluid-be-link-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-be-link-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-be-link-onclick:
+.. _typo3-fluid-be-link-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-be-link-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event

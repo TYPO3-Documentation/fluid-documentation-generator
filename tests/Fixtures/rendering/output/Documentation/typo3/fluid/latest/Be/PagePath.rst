@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PagePathViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PagePathViewHelper.php
 :navigation-title: be.pagePath
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-pagepath:
 
 ========================================
-be.pagePath ViewHelper `<f:be.pagePath>`
+Be.pagePath ViewHelper `<f:be.pagePath>`
 ========================================
-
 
 ViewHelper which returns the current page path as known from TYPO3 backend modules.
 
@@ -22,11 +25,11 @@ Default::
 
 Current page path, prefixed with "Path:" and wrapped in a span with the class ``typo3-docheader-pagePath``.
 
+.. _typo3-fluid-be-pagepath_source:
 
-.. _typo3-fluid-be-pagepath_arguments:
+Source code
+===========
 
-Arguments
-=========
+Go to the source code of this ViewHelper: `PagePathViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PagePathViewHelper.php>`__.
 
-
-This ViewHelper has no arguments.
+..  note:: `<f:be.pagePath>` has no arguments.

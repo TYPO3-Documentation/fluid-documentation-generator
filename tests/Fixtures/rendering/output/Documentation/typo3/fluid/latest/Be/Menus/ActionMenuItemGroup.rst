@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemGroupViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemGroupViewHelper.php
 :navigation-title: be.menus.actionMenuItemGroup
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup:
 
 ==========================================================================
-be.menus.actionMenuItemGroup ViewHelper `<f:be.menus.actionMenuItemGroup>`
+Be.menus.actionMenuItemGroup ViewHelper `<f:be.menus.actionMenuItemGroup>`
 ==========================================================================
-
 
 ViewHelper which groups options of an option tag.
 
@@ -28,74 +31,80 @@ Example
      </f:be.menus.actionMenuItemGroup>
  </f:be.menus.actionMenu>
 
+.. _typo3-fluid-be-menus-actionmenuitemgroup_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ActionMenuItemGroupViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemGroupViewHelper.php>`__.
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.menus.actionMenuItemGroup>`:
 
-.. _typo3-fluid-be-menus-actionmenuitemgroup-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-menus-actionmenuitemgroup-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-be-menus-actionmenuitemgroup-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-be-menus-actionmenuitemgroup-data:
+.. _typo3-fluid-be-menus-actionmenuitemgroup-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-be-menus-actionmenuitemgroup-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-be-menus-actionmenuitemgroup-aria:
+.. _typo3-fluid-be-menus-actionmenuitemgroup-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-be-menus-actionmenuitemgroup-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-be-menus-actionmenuitemgroup-defaultcontroller:
+.. _typo3-fluid-be-menus-actionmenuitemgroup-defaultcontroller_argument:
 
 defaultController
 -----------------
 
-:aspect:`DataType`
-   string
+..  confval:: defaultController
+    :name: typo3-fluid-be-menus-actionmenuitemgroup-defaultcontroller
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unused
+    Unused
 
-.. _typo3-fluid-be-menus-actionmenuitemgroup-label:
+.. _typo3-fluid-be-menus-actionmenuitemgroup-label_argument:
 
 label
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: label
+    :name: typo3-fluid-be-menus-actionmenuitemgroup-label
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The label of the option group
+    The label of the option group

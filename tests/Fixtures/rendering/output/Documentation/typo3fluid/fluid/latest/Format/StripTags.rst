@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/StripTagsViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/StripTagsViewHelper.php
 :navigation-title: format.stripTags
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-striptags:
 
 ==================================================
-format.stripTags ViewHelper `<f:format.stripTags>`
+Format.stripTags ViewHelper `<f:format.stripTags>`
 ==================================================
-
 
 Removes tags from the given string (applying PHPs :php:`strip_tags()` function)
 See https://www.php.net/manual/function.strip-tags.php.
@@ -57,35 +60,44 @@ Inline notation with allowedTags
 
 Text with p, span, div and script Tags inside, all other tags are removed.
 
+.. _typo3fluid-fluid-format-striptags_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `StripTagsViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/StripTagsViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-striptags_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.stripTags>`:
 
-.. _typo3fluid-fluid-format-striptags-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-striptags-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-format-striptags-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   String to format
+    String to format
 
-.. _typo3fluid-fluid-format-striptags-allowedtags:
+.. _typo3fluid-fluid-format-striptags-allowedtags_argument:
 
 allowedTags
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: allowedTags
+    :name: typo3fluid-fluid-format-striptags-allowedtags
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Optional string of allowed tags as required by PHPs strip_tags() function
+    Optional string of allowed tags as required by PHPs strip_tags() function

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/CountViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/CountViewHelper.php
 :navigation-title: count
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-count:
 
 ============================
-count ViewHelper `<f:count>`
+Count ViewHelper `<f:count>`
 ============================
-
 
 This ViewHelper counts elements of the specified array or countable object.
 
@@ -35,22 +38,32 @@ Output::
 
     10 (depending on the number of items in ``{objects}``)
 
+.. _typo3fluid-fluid-count_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CountViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/CountViewHelper.php>`__.
 
 .. _typo3fluid-fluid-count_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:count>`:
 
-.. _typo3fluid-fluid-count-subject:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-count-subject_argument:
 
 subject
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: subject
+    :name: typo3fluid-fluid-count-subject
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Countable subject, array or \Countable
+    Countable subject, array or \Countable

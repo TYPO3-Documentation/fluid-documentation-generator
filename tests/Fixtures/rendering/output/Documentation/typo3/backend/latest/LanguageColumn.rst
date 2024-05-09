@@ -1,44 +1,56 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/LanguageColumnViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/LanguageColumnViewHelper.php
 :navigation-title: languageColumn
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-languagecolumn:
 
 ====================================================
-languageColumn ViewHelper `<backend:languageColumn>`
+LanguageColumn ViewHelper `<backend:languageColumn>`
 ====================================================
 
 
 
+.. _typo3-backend-languagecolumn_source:
 
+Source code
+===========
+
+Go to the source code of this ViewHelper: `LanguageColumnViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/LanguageColumnViewHelper.php>`__.
 
 .. _typo3-backend-languagecolumn_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:languageColumn>`:
 
-.. _typo3-backend-languagecolumn-languagecolumn:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-languagecolumn-languagecolumn_argument:
 
 languageColumn
 --------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: languageColumn
+    :name: typo3-backend-languagecolumn-languagecolumn
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Language column object which is context for column
+    Language column object which is context for column
 
-.. _typo3-backend-languagecolumn-columnnumber:
+.. _typo3-backend-languagecolumn-columnnumber_argument:
 
 columnNumber
 ------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: columnNumber
+    :name: typo3-backend-languagecolumn-columnnumber
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Number (colPos) of column within LanguageColumn to be returned
+    Number (colPos) of column within LanguageColumn to be returned

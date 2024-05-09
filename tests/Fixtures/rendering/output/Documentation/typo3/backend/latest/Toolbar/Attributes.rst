@@ -1,31 +1,44 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Toolbar/AttributesViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Toolbar/AttributesViewHelper.php
 :navigation-title: toolbar.attributes
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-toolbar-attributes:
 
 ============================================================
-toolbar.attributes ViewHelper `<backend:toolbar.attributes>`
+Toolbar.attributes ViewHelper `<backend:toolbar.attributes>`
 ============================================================
-
 
 Builds an attribute string for use in rendered toolbar items
 
+.. _typo3-backend-toolbar-attributes_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `AttributesViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Toolbar/AttributesViewHelper.php>`__.
 
 .. _typo3-backend-toolbar-attributes_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:toolbar.attributes>`:
 
-.. _typo3-backend-toolbar-attributes-class:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-toolbar-attributes-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: class
+    :name: typo3-backend-toolbar-attributes-class
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Class being converted to a string for usage as id attribute
+    Class being converted to a string for usage as id attribute

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/RawViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/RawViewHelper.php
 :navigation-title: format.raw
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-raw:
 
 ======================================
-format.raw ViewHelper `<f:format.raw>`
+Format.raw ViewHelper `<f:format.raw>`
 ======================================
-
 
 Outputs an argument/value without any escaping. Is normally used to output
 an ObjectAccessor which should not be escaped, but output as-is.
@@ -50,22 +53,32 @@ Output::
 
     (Content of ``{string}`` without any conversion/escaping)
 
+.. _typo3fluid-fluid-format-raw_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `RawViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/RawViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-raw_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.raw>`:
 
-.. _typo3fluid-fluid-format-raw-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-raw-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3fluid-fluid-format-raw-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The value to output
+    The value to output

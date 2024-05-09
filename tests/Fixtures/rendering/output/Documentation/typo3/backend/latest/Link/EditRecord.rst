@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Link/EditRecordViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Link/EditRecordViewHelper.php
 :navigation-title: link.editRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-link-editrecord:
 
 ======================================================
-link.editRecord ViewHelper `<backend:link.editRecord>`
+Link.editRecord ViewHelper `<backend:link.editRecord>`
 ======================================================
-
 
 Use this ViewHelper to provide edit links to records. The ViewHelper will
 pass the uid and table to FormEngine.
@@ -43,217 +46,212 @@ Output::
        Edit record
    </a>
 
+.. _typo3-backend-link-editrecord_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `EditRecordViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Link/EditRecordViewHelper.php>`__.
 
 .. _typo3-backend-link-editrecord_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:link.editRecord>`:
 
-.. _typo3-backend-link-editrecord-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-link-editrecord-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-backend-link-editrecord-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-backend-link-editrecord-data:
+.. _typo3-backend-link-editrecord-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-backend-link-editrecord-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-backend-link-editrecord-aria:
+.. _typo3-backend-link-editrecord-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-backend-link-editrecord-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-backend-link-editrecord-class:
+.. _typo3-backend-link-editrecord-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-backend-link-editrecord-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-backend-link-editrecord-dir:
+.. _typo3-backend-link-editrecord-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-backend-link-editrecord-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-backend-link-editrecord-id:
+.. _typo3-backend-link-editrecord-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-backend-link-editrecord-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-backend-link-editrecord-lang:
+.. _typo3-backend-link-editrecord-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-backend-link-editrecord-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-backend-link-editrecord-style:
+.. _typo3-backend-link-editrecord-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-backend-link-editrecord-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-backend-link-editrecord-title:
+.. _typo3-backend-link-editrecord-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-backend-link-editrecord-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-backend-link-editrecord-accesskey:
+.. _typo3-backend-link-editrecord-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-backend-link-editrecord-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-backend-link-editrecord-tabindex:
+.. _typo3-backend-link-editrecord-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-backend-link-editrecord-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-backend-link-editrecord-onclick:
+.. _typo3-backend-link-editrecord-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-backend-link-editrecord-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-backend-link-editrecord-uid:
+.. _typo3-backend-link-editrecord-uid_argument:
 
 uid
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: uid
+    :name: typo3-backend-link-editrecord-uid
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Uid of record to be edited
+    Uid of record to be edited
 
-.. _typo3-backend-link-editrecord-table:
+.. _typo3-backend-link-editrecord-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-backend-link-editrecord-table
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Target database table
+    Target database table
 
-.. _typo3-backend-link-editrecord-fields:
+.. _typo3-backend-link-editrecord-fields_argument:
 
 fields
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: fields
+    :name: typo3-backend-link-editrecord-fields
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Edit only these fields (comma separated list)
+    Edit only these fields (comma separated list)
 
-.. _typo3-backend-link-editrecord-returnurl:
+.. _typo3-backend-link-editrecord-returnurl_argument:
 
 returnUrl
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: returnUrl
+    :name: typo3-backend-link-editrecord-returnurl
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Return to this URL after closing the edit dialog
+    Return to this URL after closing the edit dialog

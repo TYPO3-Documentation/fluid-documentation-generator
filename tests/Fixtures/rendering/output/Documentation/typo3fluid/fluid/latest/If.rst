@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/IfViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/IfViewHelper.php
 :navigation-title: if
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-if:
 
 ======================
-if ViewHelper `<f:if>`
+If ViewHelper `<f:if>`
 ======================
-
 
 This ViewHelper implements an if/else condition.
 
@@ -142,48 +145,56 @@ Output::
     Depending on which expression evaluated to TRUE, that value is displayed.
     If no expression matched, the contents inside the final "else" tag are displayed.
 
+.. _typo3fluid-fluid-if_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `IfViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/IfViewHelper.php>`__.
 
 .. _typo3fluid-fluid-if_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:if>`:
 
-.. _typo3fluid-fluid-if-then:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-if-then_argument:
 
 then
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: then
+    :name: typo3fluid-fluid-if-then
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to be returned if the condition if met.
+    Value to be returned if the condition if met.
 
-.. _typo3fluid-fluid-if-else:
+.. _typo3fluid-fluid-if-else_argument:
 
 else
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: else
+    :name: typo3fluid-fluid-if-else
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to be returned if the condition if not met.
+    Value to be returned if the condition if not met.
 
-.. _typo3fluid-fluid-if-condition:
+.. _typo3fluid-fluid-if-condition_argument:
 
 condition
 ---------
 
-:aspect:`DataType`
-   boolean
+..  confval:: condition
+    :name: typo3fluid-fluid-if-condition
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Condition expression conforming to Fluid boolean rules
+    Condition expression conforming to Fluid boolean rules

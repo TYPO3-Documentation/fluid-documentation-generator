@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/UrlencodeViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/UrlencodeViewHelper.php
 :navigation-title: format.urlencode
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-urlencode:
 
 ==================================================
-format.urlencode ViewHelper `<f:format.urlencode>`
+Format.urlencode ViewHelper `<f:format.urlencode>`
 ==================================================
-
 
 Encodes the given string according to http://www.faqs.org/rfcs/rfc3986.html
 Applying PHPs :php:`rawurlencode()` function.
@@ -36,22 +39,32 @@ Inline notation
 
 Url encoded text :php:`rawurlencode()` applied.
 
+.. _typo3fluid-fluid-format-urlencode_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `UrlencodeViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/UrlencodeViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-urlencode_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.urlencode>`:
 
-.. _typo3fluid-fluid-format-urlencode-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-urlencode-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-format-urlencode-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   String to format
+    String to format

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextfieldViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextfieldViewHelper.php
 :navigation-title: form.textfield
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-textfield:
 
 ==============================================
-form.textfield ViewHelper `<f:form.textfield>`
+Form.textfield ViewHelper `<f:form.textfield>`
 ==============================================
-
 
 ViewHelper which creates a text field :html:`<input type="text">`.
 
@@ -21,340 +24,322 @@ Output::
 
    <input type="text" name="myTextBox" value="default value" />
 
+.. _typo3-fluid-form-textfield_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `TextfieldViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextfieldViewHelper.php>`__.
 
 .. _typo3-fluid-form-textfield_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.textfield>`:
 
-.. _typo3-fluid-form-textfield-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-textfield-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-textfield-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-textfield-data:
+.. _typo3-fluid-form-textfield-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-textfield-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-textfield-aria:
+.. _typo3-fluid-form-textfield-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-textfield-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-textfield-name:
+.. _typo3-fluid-form-textfield-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-textfield-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-textfield-value:
+.. _typo3-fluid-form-textfield-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-form-textfield-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value of input tag
+    Value of input tag
 
-.. _typo3-fluid-form-textfield-property:
+.. _typo3-fluid-form-textfield-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-textfield-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-textfield-autofocus:
+.. _typo3-fluid-form-textfield-autofocus_argument:
 
 autofocus
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: autofocus
+    :name: typo3-fluid-form-textfield-autofocus
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that an input should automatically get focus when the page loads
+    Specifies that an input should automatically get focus when the page loads
 
-.. _typo3-fluid-form-textfield-disabled:
+.. _typo3-fluid-form-textfield-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-textfield-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads
 
-.. _typo3-fluid-form-textfield-maxlength:
+.. _typo3-fluid-form-textfield-maxlength_argument:
 
 maxlength
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: maxlength
+    :name: typo3-fluid-form-textfield-maxlength
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The maxlength attribute of the input field (will not be validated)
+    The maxlength attribute of the input field (will not be validated)
 
-.. _typo3-fluid-form-textfield-readonly:
+.. _typo3-fluid-form-textfield-readonly_argument:
 
 readonly
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: readonly
+    :name: typo3-fluid-form-textfield-readonly
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The readonly attribute of the input field
+    The readonly attribute of the input field
 
-.. _typo3-fluid-form-textfield-size:
+.. _typo3-fluid-form-textfield-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: size
+    :name: typo3-fluid-form-textfield-size
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The size of the input field
+    The size of the input field
 
-.. _typo3-fluid-form-textfield-placeholder:
+.. _typo3-fluid-form-textfield-placeholder_argument:
 
 placeholder
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: placeholder
+    :name: typo3-fluid-form-textfield-placeholder
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The placeholder of the textfield
+    The placeholder of the textfield
 
-.. _typo3-fluid-form-textfield-pattern:
+.. _typo3-fluid-form-textfield-pattern_argument:
 
 pattern
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: pattern
+    :name: typo3-fluid-form-textfield-pattern
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   HTML5 validation pattern
+    HTML5 validation pattern
 
-.. _typo3-fluid-form-textfield-errorclass:
+.. _typo3-fluid-form-textfield-errorclass_argument:
 
 errorClass
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: errorClass
+    :name: typo3-fluid-form-textfield-errorclass
+    :type: string
+    :Default: 'f3-form-error'
+    :required: false
 
-:aspect:`Default`
-   'f3-form-error'
+    CSS class to set if there are errors for this ViewHelper
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class to set if there are errors for this ViewHelper
-
-.. _typo3-fluid-form-textfield-class:
+.. _typo3-fluid-form-textfield-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-textfield-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-textfield-dir:
+.. _typo3-fluid-form-textfield-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-textfield-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-textfield-id:
+.. _typo3-fluid-form-textfield-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-textfield-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-textfield-lang:
+.. _typo3-fluid-form-textfield-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-textfield-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-textfield-style:
+.. _typo3-fluid-form-textfield-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-textfield-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-textfield-title:
+.. _typo3-fluid-form-textfield-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-textfield-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-textfield-accesskey:
+.. _typo3-fluid-form-textfield-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-textfield-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-textfield-tabindex:
+.. _typo3-fluid-form-textfield-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-textfield-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-textfield-onclick:
+.. _typo3-fluid-form-textfield-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-textfield-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-form-textfield-required:
+.. _typo3-fluid-form-textfield-required_argument:
 
 required
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: required
+    :name: typo3-fluid-form-textfield-required
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If the field is required or not
+    If the field is required or not
 
-.. _typo3-fluid-form-textfield-type:
+.. _typo3-fluid-form-textfield-type_argument:
 
 type
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: type
+    :name: typo3-fluid-form-textfield-type
+    :type: string
+    :Default: 'text'
+    :required: false
 
-:aspect:`Default`
-   'text'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The field type, e.g. "text", "email", "url" etc.
+    The field type, e.g. "text", "email", "url" etc.

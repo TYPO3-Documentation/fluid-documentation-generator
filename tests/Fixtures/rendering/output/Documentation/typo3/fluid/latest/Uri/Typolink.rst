@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/TypolinkViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/TypolinkViewHelper.php
 :navigation-title: uri.typolink
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-typolink:
 
 ==========================================
-uri.typolink ViewHelper `<f:uri.typolink>`
+Uri.typolink ViewHelper `<f:uri.typolink>`
 ==========================================
-
 
 A ViewHelper to create uris from fields supported by the link wizard.
 
@@ -41,87 +44,92 @@ Full parameter usage
 
 Depending on routing and page path configuration.
 
+.. _typo3-fluid-uri-typolink_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `TypolinkViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/TypolinkViewHelper.php>`__.
 
 .. _typo3-fluid-uri-typolink_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:uri.typolink>`:
 
-.. _typo3-fluid-uri-typolink-parameter:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-uri-typolink-parameter_argument:
 
 parameter
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: parameter
+    :name: typo3-fluid-uri-typolink-parameter
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   StdWrap.typolink style parameter string
+    StdWrap.typolink style parameter string
 
-.. _typo3-fluid-uri-typolink-additionalparams:
+.. _typo3-fluid-uri-typolink-additionalparams_argument:
 
 additionalParams
 ----------------
 
-:aspect:`DataType`
-   string
+..  confval:: additionalParams
+    :name: typo3-fluid-uri-typolink-additionalparams
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   StdWrap.typolink additionalParams
+    StdWrap.typolink additionalParams
 
-.. _typo3-fluid-uri-typolink-language:
+.. _typo3-fluid-uri-typolink-language_argument:
 
 language
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: language
+    :name: typo3-fluid-uri-typolink-language
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
+    Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
 
-.. _typo3-fluid-uri-typolink-addquerystring:
+.. _typo3-fluid-uri-typolink-addquerystring_argument:
 
 addQueryString
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: addQueryString
+    :name: typo3-fluid-uri-typolink-addquerystring
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
+    If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
 
-.. _typo3-fluid-uri-typolink-addquerystringexclude:
+.. _typo3-fluid-uri-typolink-addquerystringexclude_argument:
 
 addQueryStringExclude
 ---------------------
 
-:aspect:`DataType`
-   string
+..  confval:: addQueryStringExclude
+    :name: typo3-fluid-uri-typolink-addquerystringexclude
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define parameters to be excluded from the query string (only active if addQueryString is set)
+    Define parameters to be excluded from the query string (only active if addQueryString is set)
 
-.. _typo3-fluid-uri-typolink-absolute:
+.. _typo3-fluid-uri-typolink-absolute_argument:
 
 absolute
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: absolute
+    :name: typo3-fluid-uri-typolink-absolute
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Ensure the resulting URL is an absolute URL
+    Ensure the resulting URL is an absolute URL

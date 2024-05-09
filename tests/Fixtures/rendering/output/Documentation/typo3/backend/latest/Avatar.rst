@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/AvatarViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/AvatarViewHelper.php
 :navigation-title: avatar
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-avatar:
 
 ====================================
-avatar ViewHelper `<backend:avatar>`
+Avatar ViewHelper `<backend:avatar>`
 ====================================
-
 
 Render the avatar markup, including the :html:`<img>` tag, for a given backend user.
 
@@ -45,51 +48,57 @@ Output::
        </span>
    </span>
 
+.. _typo3-backend-avatar_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `AvatarViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/AvatarViewHelper.php>`__.
 
 .. _typo3-backend-avatar_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:avatar>`:
 
-.. _typo3-backend-avatar-backenduser:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-avatar-backenduser_argument:
 
 backendUser
 -----------
 
-:aspect:`DataType`
-   mixed
+..  confval:: backendUser
+    :name: typo3-backend-avatar-backenduser
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Uid of the backend user
+    Uid of the backend user
 
-.. _typo3-backend-avatar-size:
+.. _typo3-backend-avatar-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: size
+    :name: typo3-backend-avatar-size
+    :type: mixed
+    :Default: 32
+    :required: false
 
-:aspect:`Default`
-   32
+    Width and height of the image
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Width and height of the image
-
-.. _typo3-backend-avatar-showicon:
+.. _typo3-backend-avatar-showicon_argument:
 
 showIcon
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: showIcon
+    :name: typo3-backend-avatar-showicon
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Show the record icon as well
+    Show the record icon as well

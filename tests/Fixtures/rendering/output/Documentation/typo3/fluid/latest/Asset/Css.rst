@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/CssViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/CssViewHelper.php
 :navigation-title: asset.css
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-asset-css:
 
 ====================================
-asset.css ViewHelper `<f:asset.css>`
+Asset.css ViewHelper `<f:asset.css>`
 ====================================
-
 
 ViewHelper to add CSS to the TYPO3 AssetCollector. Either a file or inline CSS can be added.
 
@@ -30,373 +33,356 @@ Some available attributes are defaults but do not make sense for this ViewHelper
 for this ViewHelper are: as, crossorigin, disabled, href, hreflang, importance, integrity, media, referrerpolicy,
 sizes, type, nonce.
 
+.. _typo3-fluid-asset-css_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CssViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/CssViewHelper.php>`__.
 
 .. _typo3-fluid-asset-css_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:asset.css>`:
 
-.. _typo3-fluid-asset-css-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-asset-css-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-asset-css-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-asset-css-data:
+.. _typo3-fluid-asset-css-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-asset-css-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-asset-css-aria:
+.. _typo3-fluid-asset-css-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-asset-css-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-asset-css-class:
+.. _typo3-fluid-asset-css-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-asset-css-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-asset-css-dir:
+.. _typo3-fluid-asset-css-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-asset-css-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-asset-css-id:
+.. _typo3-fluid-asset-css-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-asset-css-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-asset-css-lang:
+.. _typo3-fluid-asset-css-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-asset-css-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-asset-css-style:
+.. _typo3-fluid-asset-css-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-asset-css-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-asset-css-title:
+.. _typo3-fluid-asset-css-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-asset-css-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-asset-css-accesskey:
+.. _typo3-fluid-asset-css-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-asset-css-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-asset-css-tabindex:
+.. _typo3-fluid-asset-css-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-asset-css-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-asset-css-onclick:
+.. _typo3-fluid-asset-css-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-asset-css-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-asset-css-as:
+.. _typo3-fluid-asset-css-as_argument:
 
 as
 --
 
-:aspect:`DataType`
-   string
+..  confval:: as
+    :name: typo3-fluid-asset-css-as
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the type of content being loaded (For rel="preload" or rel="prefetch" only).
+    Define the type of content being loaded (For rel="preload" or rel="prefetch" only).
 
-.. _typo3-fluid-asset-css-crossorigin:
+.. _typo3-fluid-asset-css-crossorigin_argument:
 
 crossorigin
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: crossorigin
+    :name: typo3-fluid-asset-css-crossorigin
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define how to handle crossorigin requests.
+    Define how to handle crossorigin requests.
 
-.. _typo3-fluid-asset-css-disabled:
+.. _typo3-fluid-asset-css-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: disabled
+    :name: typo3-fluid-asset-css-disabled
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define whether or not the described stylesheet should be loaded and applied to the document.
+    Define whether or not the described stylesheet should be loaded and applied to the document.
 
-.. _typo3-fluid-asset-css-href:
+.. _typo3-fluid-asset-css-href_argument:
 
 href
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: href
+    :name: typo3-fluid-asset-css-href
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the URL of the resource (absolute or relative).
+    Define the URL of the resource (absolute or relative).
 
-.. _typo3-fluid-asset-css-hreflang:
+.. _typo3-fluid-asset-css-hreflang_argument:
 
 hreflang
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: hreflang
+    :name: typo3-fluid-asset-css-hreflang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the language of the resource (Only to be used if 'href' is set).
+    Define the language of the resource (Only to be used if 'href' is set).
 
-.. _typo3-fluid-asset-css-importance:
+.. _typo3-fluid-asset-css-importance_argument:
 
 importance
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: importance
+    :name: typo3-fluid-asset-css-importance
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the relative fetch priority of the resource.
+    Define the relative fetch priority of the resource.
 
-.. _typo3-fluid-asset-css-integrity:
+.. _typo3-fluid-asset-css-integrity_argument:
 
 integrity
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: integrity
+    :name: typo3-fluid-asset-css-integrity
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define base64-encoded cryptographic hash of the resource that allows browsers to verify what they fetch.
+    Define base64-encoded cryptographic hash of the resource that allows browsers to verify what they fetch.
 
-.. _typo3-fluid-asset-css-media:
+.. _typo3-fluid-asset-css-media_argument:
 
 media
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: media
+    :name: typo3-fluid-asset-css-media
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define which media type the resources applies to.
+    Define which media type the resources applies to.
 
-.. _typo3-fluid-asset-css-referrerpolicy:
+.. _typo3-fluid-asset-css-referrerpolicy_argument:
 
 referrerpolicy
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: referrerpolicy
+    :name: typo3-fluid-asset-css-referrerpolicy
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define which referrer is sent when fetching the resource.
+    Define which referrer is sent when fetching the resource.
 
-.. _typo3-fluid-asset-css-rel:
+.. _typo3-fluid-asset-css-rel_argument:
 
 rel
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rel
+    :name: typo3-fluid-asset-css-rel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the relationship of the target object to the link object.
+    Define the relationship of the target object to the link object.
 
-.. _typo3-fluid-asset-css-sizes:
+.. _typo3-fluid-asset-css-sizes_argument:
 
 sizes
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: sizes
+    :name: typo3-fluid-asset-css-sizes
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the icon size of the resource.
+    Define the icon size of the resource.
 
-.. _typo3-fluid-asset-css-type:
+.. _typo3-fluid-asset-css-type_argument:
 
 type
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: type
+    :name: typo3-fluid-asset-css-type
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the MIME type (usually 'text/css').
+    Define the MIME type (usually 'text/css').
 
-.. _typo3-fluid-asset-css-nonce:
+.. _typo3-fluid-asset-css-nonce_argument:
 
 nonce
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: nonce
+    :name: typo3-fluid-asset-css-nonce
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define a cryptographic nonce (number used once) used to whitelist inline styles in a style-src Content-Security-Policy.
+    Define a cryptographic nonce (number used once) used to whitelist inline styles in a style-src Content-Security-Policy.
 
-.. _typo3-fluid-asset-css-usenonce:
+.. _typo3-fluid-asset-css-usenonce_argument:
 
 useNonce
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: useNonce
+    :name: typo3-fluid-asset-css-usenonce
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Whether to use the global nonce value
+    Whether to use the global nonce value
 
-.. _typo3-fluid-asset-css-identifier:
+.. _typo3-fluid-asset-css-identifier_argument:
 
 identifier
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: identifier
+    :name: typo3-fluid-asset-css-identifier
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Use this identifier within templates to only inject your CSS once, even though it is added multiple times.
+    Use this identifier within templates to only inject your CSS once, even though it is added multiple times.
 
-.. _typo3-fluid-asset-css-priority:
+.. _typo3-fluid-asset-css-priority_argument:
 
 priority
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: priority
+    :name: typo3-fluid-asset-css-priority
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define whether the CSS should be included before other CSS. CSS will always be output in the <head> tag.
+    Define whether the CSS should be included before other CSS. CSS will always be output in the <head> tag.

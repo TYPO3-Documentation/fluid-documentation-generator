@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/NumberViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/NumberViewHelper.php
 :navigation-title: format.number
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-number:
 
 ============================================
-format.number ViewHelper `<f:format.number>`
+Format.number ViewHelper `<f:format.number>`
 ============================================
-
 
 Formats a number with custom precision, decimal point and grouped thousands.
 See https://www.php.net/manual/function.number-format.php.
@@ -34,57 +37,59 @@ With all parameters
 
 ``423.423,2``
 
+.. _typo3fluid-fluid-format-number_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `NumberViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/NumberViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-number_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.number>`:
 
-.. _typo3fluid-fluid-format-number-decimals:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-number-decimals_argument:
 
 decimals
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: decimals
+    :name: typo3fluid-fluid-format-number-decimals
+    :type: mixed
+    :Default: 2
+    :required: false
 
-:aspect:`Default`
-   2
+    The number of digits after the decimal point
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The number of digits after the decimal point
-
-.. _typo3fluid-fluid-format-number-decimalseparator:
+.. _typo3fluid-fluid-format-number-decimalseparator_argument:
 
 decimalSeparator
 ----------------
 
-:aspect:`DataType`
-   string
+..  confval:: decimalSeparator
+    :name: typo3fluid-fluid-format-number-decimalseparator
+    :type: string
+    :Default: '.'
+    :required: false
 
-:aspect:`Default`
-   '.'
+    The decimal point character
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The decimal point character
-
-.. _typo3fluid-fluid-format-number-thousandsseparator:
+.. _typo3fluid-fluid-format-number-thousandsseparator_argument:
 
 thousandsSeparator
 ------------------
 
-:aspect:`DataType`
-   string
+..  confval:: thousandsSeparator
+    :name: typo3fluid-fluid-format-number-thousandsseparator
+    :type: string
+    :Default: ','
+    :required: false
 
-:aspect:`Default`
-   ','
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The character for grouping the thousand digits
+    The character for grouping the thousand digits

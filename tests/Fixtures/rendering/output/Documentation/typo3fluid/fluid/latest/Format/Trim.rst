@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/TrimViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/TrimViewHelper.php
 :navigation-title: format.trim
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-trim:
 
 ========================================
-format.trim ViewHelper `<f:format.trim>`
+Format.trim ViewHelper `<f:format.trim>`
 ========================================
-
 
 This ViewHelper strips whitespace (or other characters) from the beginning and end of a string.
 
@@ -59,51 +62,57 @@ Trim special characters
 
    #ring to be trimmed#
 
+.. _typo3fluid-fluid-format-trim_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `TrimViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/TrimViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-trim_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.trim>`:
 
-.. _typo3fluid-fluid-format-trim-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-trim-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-format-trim-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The string value to be trimmed. If not given, the evaluated child nodes will be used.
+    The string value to be trimmed. If not given, the evaluated child nodes will be used.
 
-.. _typo3fluid-fluid-format-trim-characters:
+.. _typo3fluid-fluid-format-trim-characters_argument:
 
 characters
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: characters
+    :name: typo3fluid-fluid-format-trim-characters
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Optionally, the stripped characters can also be specified using the characters parameter. Simply list all characters that you want to be stripped. With .. you can specify a range of characters.
+    Optionally, the stripped characters can also be specified using the characters parameter. Simply list all characters that you want to be stripped. With .. you can specify a range of characters.
 
-.. _typo3fluid-fluid-format-trim-side:
+.. _typo3fluid-fluid-format-trim-side_argument:
 
 side
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: side
+    :name: typo3fluid-fluid-format-trim-side
+    :type: string
+    :Default: 'both'
+    :required: false
 
-:aspect:`Default`
-   'both'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The side to apply, must be one of this' CASE_* constants. Defaults to both application.
+    The side to apply, must be one of this' CASE_* constants. Defaults to both application.

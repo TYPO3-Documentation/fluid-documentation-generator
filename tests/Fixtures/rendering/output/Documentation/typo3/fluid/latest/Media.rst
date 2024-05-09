@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/MediaViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/MediaViewHelper.php
 :navigation-title: media
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-media:
 
 ============================
-media ViewHelper `<f:media>`
+Media ViewHelper `<f:media>`
 ============================
-
 
 Render a given media file with the correct html tag.
 
@@ -49,288 +52,274 @@ Output::
 
    <video width="400" height="375" controls loop><source src="fileadmin/user_upload/my-video.mp4" type="video/mp4"></video>
 
+.. _typo3-fluid-media_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `MediaViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/MediaViewHelper.php>`__.
 
 .. _typo3-fluid-media_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:media>`:
 
-.. _typo3-fluid-media-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-media-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-media-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-media-data:
+.. _typo3-fluid-media-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-media-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-media-aria:
+.. _typo3-fluid-media-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-media-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-media-class:
+.. _typo3-fluid-media-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-media-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-media-dir:
+.. _typo3-fluid-media-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-media-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-media-id:
+.. _typo3-fluid-media-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-media-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-media-lang:
+.. _typo3-fluid-media-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-media-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-media-style:
+.. _typo3-fluid-media-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-media-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-media-title:
+.. _typo3-fluid-media-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-media-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-media-accesskey:
+.. _typo3-fluid-media-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-media-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-media-tabindex:
+.. _typo3-fluid-media-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-media-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-media-onclick:
+.. _typo3-fluid-media-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-media-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-media-alt:
+.. _typo3-fluid-media-alt_argument:
 
 alt
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: alt
+    :name: typo3-fluid-media-alt
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies an alternate text for an image
+    Specifies an alternate text for an image
 
-.. _typo3-fluid-media-file:
+.. _typo3-fluid-media-file_argument:
 
 file
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: file
+    :name: typo3-fluid-media-file
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   File
+    File
 
-.. _typo3-fluid-media-additionalconfig:
+.. _typo3-fluid-media-additionalconfig_argument:
 
 additionalConfig
 ----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalConfig
+    :name: typo3-fluid-media-additionalconfig
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    This array can hold additional configuration that is passed though to the Renderer object
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   This array can hold additional configuration that is passed though to the Renderer object
-
-.. _typo3-fluid-media-width:
+.. _typo3-fluid-media-width_argument:
 
 width
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: width
+    :name: typo3-fluid-media-width
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   This can be a numeric value representing the fixed width of in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
+    This can be a numeric value representing the fixed width of in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
-.. _typo3-fluid-media-height:
+.. _typo3-fluid-media-height_argument:
 
 height
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: height
+    :name: typo3-fluid-media-height
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   This can be a numeric value representing the fixed height in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
+    This can be a numeric value representing the fixed height in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
-.. _typo3-fluid-media-cropvariant:
+.. _typo3-fluid-media-cropvariant_argument:
 
 cropVariant
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: cropVariant
+    :name: typo3-fluid-media-cropvariant
+    :type: string
+    :Default: 'default'
+    :required: false
 
-:aspect:`Default`
-   'default'
+    Select a cropping variant, in case multiple croppings have been specified or stored in FileReference
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Select a cropping variant, in case multiple croppings have been specified or stored in FileReference
-
-.. _typo3-fluid-media-fileextension:
+.. _typo3-fluid-media-fileextension_argument:
 
 fileExtension
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: fileExtension
+    :name: typo3-fluid-media-fileextension
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Custom file extension to use for images
+    Custom file extension to use for images
 
-.. _typo3-fluid-media-loading:
+.. _typo3-fluid-media-loading_argument:
 
 loading
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: loading
+    :name: typo3-fluid-media-loading
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Native lazy-loading for images property. Can be "lazy", "eager" or "auto". Used on image files only.
+    Native lazy-loading for images property. Can be "lazy", "eager" or "auto". Used on image files only.
 
-.. _typo3-fluid-media-decoding:
+.. _typo3-fluid-media-decoding_argument:
 
 decoding
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: decoding
+    :name: typo3-fluid-media-decoding
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Provides an image decoding hint to the browser. Can be "sync", "async" or "auto"
+    Provides an image decoding hint to the browser. Can be "sync", "async" or "auto"

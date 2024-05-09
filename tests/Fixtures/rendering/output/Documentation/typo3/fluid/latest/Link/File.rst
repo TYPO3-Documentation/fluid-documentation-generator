@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/FileViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/FileViewHelper.php
 :navigation-title: link.file
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-file:
 
 ====================================
-link.file ViewHelper `<f:link.file>`
+Link.file ViewHelper `<f:link.file>`
 ====================================
-
 
 A ViewHelper for creating links to a file (FAL).
 
@@ -43,256 +46,248 @@ Output of a non-public file::
 
    <a href="https://example.com/index.php?eID=dumpFile&t=f&f=123&dl=1&fn=alternative-name.jpg&token=79bce812">Download file</a>
 
+.. _typo3-fluid-link-file_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `FileViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/FileViewHelper.php>`__.
 
 .. _typo3-fluid-link-file_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:link.file>`:
 
-.. _typo3-fluid-link-file-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-link-file-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-link-file-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-link-file-data:
+.. _typo3-fluid-link-file-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-link-file-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-link-file-aria:
+.. _typo3-fluid-link-file-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-link-file-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-link-file-file:
+.. _typo3-fluid-link-file-file_argument:
 
 file
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: file
+    :name: typo3-fluid-link-file-file
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Specifies the file to create a link to
+    Specifies the file to create a link to
 
-.. _typo3-fluid-link-file-download:
+.. _typo3-fluid-link-file-download_argument:
 
 download
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: download
+    :name: typo3-fluid-link-file-download
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies if file should be downloaded instead of displayed
+    Specifies if file should be downloaded instead of displayed
 
-.. _typo3-fluid-link-file-filename:
+.. _typo3-fluid-link-file-filename_argument:
 
 filename
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: filename
+    :name: typo3-fluid-link-file-filename
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies an alternative filename. If filename contains a file extension, this must be the same as from 'file'.
+    Specifies an alternative filename. If filename contains a file extension, this must be the same as from 'file'.
 
-.. _typo3-fluid-link-file-class:
+.. _typo3-fluid-link-file-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-link-file-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-link-file-dir:
+.. _typo3-fluid-link-file-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-link-file-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-link-file-id:
+.. _typo3-fluid-link-file-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-link-file-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-link-file-lang:
+.. _typo3-fluid-link-file-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-link-file-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-link-file-style:
+.. _typo3-fluid-link-file-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-link-file-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-link-file-title:
+.. _typo3-fluid-link-file-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-link-file-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-link-file-accesskey:
+.. _typo3-fluid-link-file-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-link-file-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-link-file-tabindex:
+.. _typo3-fluid-link-file-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-link-file-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-link-file-onclick:
+.. _typo3-fluid-link-file-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-link-file-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-link-file-name:
+.. _typo3-fluid-link-file-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-link-file-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the name of an anchor
+    Specifies the name of an anchor
 
-.. _typo3-fluid-link-file-rel:
+.. _typo3-fluid-link-file-rel_argument:
 
 rel
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rel
+    :name: typo3-fluid-link-file-rel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the current document and the linked document
+    Specifies the relationship between the current document and the linked document
 
-.. _typo3-fluid-link-file-rev:
+.. _typo3-fluid-link-file-rev_argument:
 
 rev
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rev
+    :name: typo3-fluid-link-file-rev
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the linked document and the current document
+    Specifies the relationship between the linked document and the current document
 
-.. _typo3-fluid-link-file-target:
+.. _typo3-fluid-link-file-target_argument:
 
 target
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: target
+    :name: typo3-fluid-link-file-target
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies where to open the linked document
+    Specifies where to open the linked document

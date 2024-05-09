@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/GroupedForViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/GroupedForViewHelper.php
 :navigation-title: groupedFor
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-groupedfor:
 
 ======================================
-groupedFor ViewHelper `<f:groupedFor>`
+GroupedFor ViewHelper `<f:groupedFor>`
 ======================================
-
 
 Grouped loop ViewHelper.
 Loops through the specified values.
@@ -78,64 +81,69 @@ Output::
         </li>
     </ul>
 
+.. _typo3fluid-fluid-groupedfor_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `GroupedForViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/GroupedForViewHelper.php>`__.
 
 .. _typo3fluid-fluid-groupedfor_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:groupedFor>`:
 
-.. _typo3fluid-fluid-groupedfor-each:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-groupedfor-each_argument:
 
 each
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: each
+    :name: typo3fluid-fluid-groupedfor-each
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The array or \SplObjectStorage to iterated over
+    The array or \SplObjectStorage to iterated over
 
-.. _typo3fluid-fluid-groupedfor-as:
+.. _typo3fluid-fluid-groupedfor-as_argument:
 
 as
 --
 
-:aspect:`DataType`
-   string
+..  confval:: as
+    :name: typo3fluid-fluid-groupedfor-as
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The name of the iteration variable
+    The name of the iteration variable
 
-.. _typo3fluid-fluid-groupedfor-groupby:
+.. _typo3fluid-fluid-groupedfor-groupby_argument:
 
 groupBy
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: groupBy
+    :name: typo3fluid-fluid-groupedfor-groupby
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Group by this property
+    Group by this property
 
-.. _typo3fluid-fluid-groupedfor-groupkey:
+.. _typo3fluid-fluid-groupedfor-groupkey_argument:
 
 groupKey
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: groupKey
+    :name: typo3fluid-fluid-groupedfor-groupkey
+    :type: string
+    :Default: 'groupKey'
+    :required: false
 
-:aspect:`Default`
-   'groupKey'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The name of the variable to store the current group
+    The name of the variable to store the current group

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Security/IfAuthenticatedViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Security/IfAuthenticatedViewHelper.php
 :navigation-title: security.ifAuthenticated
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-security-ifauthenticated:
 
 ==================================================================
-security.ifAuthenticated ViewHelper `<f:security.ifAuthenticated>`
+Security.ifAuthenticated ViewHelper `<f:security.ifAuthenticated>`
 ==================================================================
-
 
 This ViewHelper implements an ifAuthenticated/else condition for frontend users.
 
@@ -42,35 +45,44 @@ IfAuthenticated / then / else
 Everything inside the :html:`<f:then></f:then>` tag is displayed if frontend user is authenticated.
 Otherwise, everything inside the :html:`<f:else></f:else>` tag is displayed.
 
+.. _typo3-fluid-security-ifauthenticated_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `IfAuthenticatedViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Security/IfAuthenticatedViewHelper.php>`__.
 
 .. _typo3-fluid-security-ifauthenticated_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:security.ifAuthenticated>`:
 
-.. _typo3-fluid-security-ifauthenticated-then:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-security-ifauthenticated-then_argument:
 
 then
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: then
+    :name: typo3-fluid-security-ifauthenticated-then
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to be returned if the condition if met.
+    Value to be returned if the condition if met.
 
-.. _typo3-fluid-security-ifauthenticated-else:
+.. _typo3-fluid-security-ifauthenticated-else_argument:
 
 else
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: else
+    :name: typo3-fluid-security-ifauthenticated-else
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to be returned if the condition if not met.
+    Value to be returned if the condition if not met.

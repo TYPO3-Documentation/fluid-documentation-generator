@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Cache/StaticViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Cache/StaticViewHelper.php
 :navigation-title: cache.static
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cache-static:
 
 ==========================================
-cache.static ViewHelper `<f:cache.static>`
+Cache.static ViewHelper `<f:cache.static>`
 ==========================================
-
 
 ViewHelper to force compiling to a static string
 
@@ -61,11 +64,11 @@ This is also evaluated when compiled (static node is closed)::
 
     <f:if condition="{var}">Also evaluated; is outside static node</f:if>
 
+.. _typo3fluid-fluid-cache-static_source:
 
-.. _typo3fluid-fluid-cache-static_arguments:
+Source code
+===========
 
-Arguments
-=========
+Go to the source code of this ViewHelper: `StaticViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Cache/StaticViewHelper.php>`__.
 
-
-This ViewHelper has no arguments.
+..  note:: `<f:cache.static>` has no arguments.

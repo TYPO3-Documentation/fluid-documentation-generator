@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/ForViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/ForViewHelper.php
 :navigation-title: for
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-for:
 
 ========================
-for ViewHelper `<f:for>`
+For ViewHelper `<f:for>`
 ========================
-
 
 Loop ViewHelper which can be used to iterate over arrays.
 Implements what a basic PHP ``foreach()`` does.
@@ -67,74 +70,80 @@ Output::
         <li>Index: 3 Cycle: 4 Total: 4 Even Last</li>
     </ul>
 
+.. _typo3fluid-fluid-for_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ForViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/ForViewHelper.php>`__.
 
 .. _typo3fluid-fluid-for_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:for>`:
 
-.. _typo3fluid-fluid-for-each:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-for-each_argument:
 
 each
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: each
+    :name: typo3fluid-fluid-for-each
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The array or \SplObjectStorage to iterated over
+    The array or \SplObjectStorage to iterated over
 
-.. _typo3fluid-fluid-for-as:
+.. _typo3fluid-fluid-for-as_argument:
 
 as
 --
 
-:aspect:`DataType`
-   string
+..  confval:: as
+    :name: typo3fluid-fluid-for-as
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The name of the iteration variable
+    The name of the iteration variable
 
-.. _typo3fluid-fluid-for-key:
+.. _typo3fluid-fluid-for-key_argument:
 
 key
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: key
+    :name: typo3fluid-fluid-for-key
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Variable to assign array key to
+    Variable to assign array key to
 
-.. _typo3fluid-fluid-for-reverse:
+.. _typo3fluid-fluid-for-reverse_argument:
 
 reverse
 -------
 
-:aspect:`DataType`
-   boolean
+..  confval:: reverse
+    :name: typo3fluid-fluid-for-reverse
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, iterates in reverse
+    If TRUE, iterates in reverse
 
-.. _typo3fluid-fluid-for-iteration:
+.. _typo3fluid-fluid-for-iteration_argument:
 
 iteration
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: iteration
+    :name: typo3fluid-fluid-for-iteration
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The name of the variable to store iteration information (index, cycle, total, isFirst, isLast, isEven, isOdd)
+    The name of the variable to store iteration information (index, cycle, total, isFirst, isLast, isEven, isOdd)

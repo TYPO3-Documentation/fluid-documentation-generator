@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/ThumbnailViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/ThumbnailViewHelper.php
 :navigation-title: thumbnail
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-thumbnail:
 
 ==========================================
-thumbnail ViewHelper `<backend:thumbnail>`
+Thumbnail ViewHelper `<backend:thumbnail>`
 ==========================================
-
 
 ViewHelper for the backend which generates an :html:`<img>` tag with the special URI to render thumbnails deferred.
 
@@ -43,340 +46,322 @@ Output::
         alt="alt set in image record"
         title="title set in image record"/>
 
+.. _typo3-backend-thumbnail_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ThumbnailViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/ThumbnailViewHelper.php>`__.
 
 .. _typo3-backend-thumbnail_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:thumbnail>`:
 
-.. _typo3-backend-thumbnail-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-thumbnail-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-backend-thumbnail-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-backend-thumbnail-data:
+.. _typo3-backend-thumbnail-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-backend-thumbnail-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-backend-thumbnail-aria:
+.. _typo3-backend-thumbnail-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-backend-thumbnail-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-backend-thumbnail-class:
+.. _typo3-backend-thumbnail-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-backend-thumbnail-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-backend-thumbnail-dir:
+.. _typo3-backend-thumbnail-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-backend-thumbnail-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-backend-thumbnail-id:
+.. _typo3-backend-thumbnail-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-backend-thumbnail-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-backend-thumbnail-lang:
+.. _typo3-backend-thumbnail-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-backend-thumbnail-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-backend-thumbnail-style:
+.. _typo3-backend-thumbnail-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-backend-thumbnail-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-backend-thumbnail-title:
+.. _typo3-backend-thumbnail-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-backend-thumbnail-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-backend-thumbnail-accesskey:
+.. _typo3-backend-thumbnail-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-backend-thumbnail-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-backend-thumbnail-tabindex:
+.. _typo3-backend-thumbnail-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-backend-thumbnail-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-backend-thumbnail-onclick:
+.. _typo3-backend-thumbnail-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-backend-thumbnail-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-backend-thumbnail-alt:
+.. _typo3-backend-thumbnail-alt_argument:
 
 alt
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: alt
+    :name: typo3-backend-thumbnail-alt
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies an alternate text for an image
+    Specifies an alternate text for an image
 
-.. _typo3-backend-thumbnail-src:
+.. _typo3-backend-thumbnail-src_argument:
 
 src
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: src
+    :name: typo3-backend-thumbnail-src
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   A path to a file, a combined FAL identifier or an uid (int). If $treatIdAsReference is set, the integer is considered the uid of the sys_file_reference record. If you already got a FAL object, consider using the $image parameter instead
+    A path to a file, a combined FAL identifier or an uid (int). If $treatIdAsReference is set, the integer is considered the uid of the sys_file_reference record. If you already got a FAL object, consider using the $image parameter instead
 
-.. _typo3-backend-thumbnail-treatidasreference:
+.. _typo3-backend-thumbnail-treatidasreference_argument:
 
 treatIdAsReference
 ------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: treatIdAsReference
+    :name: typo3-backend-thumbnail-treatidasreference
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Given src argument is a sys_file_reference record
+    Given src argument is a sys_file_reference record
 
-.. _typo3-backend-thumbnail-image:
+.. _typo3-backend-thumbnail-image_argument:
 
 image
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: image
+    :name: typo3-backend-thumbnail-image
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   A FAL object (\TYPO3\CMS\Core\Resource\File or \TYPO3\CMS\Core\Resource\FileReference)
+    A FAL object (\TYPO3\CMS\Core\Resource\File or \TYPO3\CMS\Core\Resource\FileReference)
 
-.. _typo3-backend-thumbnail-crop:
+.. _typo3-backend-thumbnail-crop_argument:
 
 crop
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: crop
+    :name: typo3-backend-thumbnail-crop
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Overrule cropping of image (setting to FALSE disables the cropping set in FileReference)
+    Overrule cropping of image (setting to FALSE disables the cropping set in FileReference)
 
-.. _typo3-backend-thumbnail-cropvariant:
+.. _typo3-backend-thumbnail-cropvariant_argument:
 
 cropVariant
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: cropVariant
+    :name: typo3-backend-thumbnail-cropvariant
+    :type: string
+    :Default: 'default'
+    :required: false
 
-:aspect:`Default`
-   'default'
+    Select a cropping variant, in case multiple croppings have been specified or stored in FileReference
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Select a cropping variant, in case multiple croppings have been specified or stored in FileReference
-
-.. _typo3-backend-thumbnail-width:
+.. _typo3-backend-thumbnail-width_argument:
 
 width
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: width
+    :name: typo3-backend-thumbnail-width
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Width of the image. This can be a numeric value representing the fixed width of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
+    Width of the image. This can be a numeric value representing the fixed width of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
-.. _typo3-backend-thumbnail-height:
+.. _typo3-backend-thumbnail-height_argument:
 
 height
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: height
+    :name: typo3-backend-thumbnail-height
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Height of the image. This can be a numeric value representing the fixed height of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
+    Height of the image. This can be a numeric value representing the fixed height of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
-.. _typo3-backend-thumbnail-minwidth:
+.. _typo3-backend-thumbnail-minwidth_argument:
 
 minWidth
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: minWidth
+    :name: typo3-backend-thumbnail-minwidth
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Minimum width of the image
+    Minimum width of the image
 
-.. _typo3-backend-thumbnail-minheight:
+.. _typo3-backend-thumbnail-minheight_argument:
 
 minHeight
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: minHeight
+    :name: typo3-backend-thumbnail-minheight
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Minimum height of the image
+    Minimum height of the image
 
-.. _typo3-backend-thumbnail-maxwidth:
+.. _typo3-backend-thumbnail-maxwidth_argument:
 
 maxWidth
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: maxWidth
+    :name: typo3-backend-thumbnail-maxwidth
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Maximum width of the image
+    Maximum width of the image
 
-.. _typo3-backend-thumbnail-maxheight:
+.. _typo3-backend-thumbnail-maxheight_argument:
 
 maxHeight
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: maxHeight
+    :name: typo3-backend-thumbnail-maxheight
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Maximum height of the image
+    Maximum height of the image
 
-.. _typo3-backend-thumbnail-context:
+.. _typo3-backend-thumbnail-context_argument:
 
 context
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: context
+    :name: typo3-backend-thumbnail-context
+    :type: string
+    :Default: 'Image.Preview'
+    :required: false
 
-:aspect:`Default`
-   'Image.Preview'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Context for image rendering
+    Context for image rendering

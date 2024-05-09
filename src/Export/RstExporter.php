@@ -142,12 +142,14 @@ class RstExporter implements ExporterInterface
         $backPath = str_repeat('../', substr_count($path, '/'));
         $rootPath = $backPath . '../../../';
 
-        $headline = $viewHelperDocumentation->getName() . ' ViewHelper `<' . $package . ':' . $viewHelperDocumentation->getName() . '>`';
+        $tagName = '<' . $package . ':' . $viewHelperDocumentation->getName() . '>';
+        $headline = ucfirst($viewHelperDocumentation->getName()) . ' ViewHelper `' . $tagName . '`';
         $headlineDecoration = array_pad([], strlen($headline), '=');
         $namespace = array_filter(explode('/', $viewHelperDocumentation->getSchema()->getPath()));
         array_pop($namespace);
         $namespace = implode('/', $namespace);
         $headlineIdentifier = str_replace(['.', "'", '/'], '-', strtolower($namespace . '-' . $viewHelperDocumentation->getName()));
+        $source = $this->getSourcePath($viewHelperDocumentation);
 
         $arguments = [];
         foreach ($viewHelperDocumentation->getArgumentDefinitions() as $argumentDefinition) {
@@ -176,6 +178,10 @@ class RstExporter implements ExporterInterface
             'headline' => $headline,
             'headlineDecoration' => implode('', $headlineDecoration),
             'headlineIdentifier' => $headlineIdentifier,
+            'source' => $source['source'],
+            'sourceEdit' => $source['sourceEdit'],
+            'phpFileName' => $source['phpFileName'],
+            'tagName' => $tagName,
             'rootPath' => $rootPath,
             'viewHelper' => $viewHelperDocumentation,
             'arguments' => $arguments,
@@ -233,5 +239,46 @@ class RstExporter implements ExporterInterface
         }
 
         return $toctree;
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public function getSourcePath(ViewHelperDocumentation $viewHelperDocumentation): array
+    {
+        $sourcePath = $viewHelperDocumentation->getSchema()->getPath();
+        $sourceEditPath = '';
+        switch ($sourcePath) {
+            case 'typo3/backend/latest/':
+                $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/';
+                $sourceEditPath = 'https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/';
+                break;
+            case 'typo3/core/latest/':
+                $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/';
+                $sourceEditPath = 'https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/';
+                break;
+            case 'typo3/fluid/latest/':
+                $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/';
+                $sourceEditPath = 'https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/';
+                break;
+            case 'typo3fluid/fluid/latest/':
+                $sourcePath = 'https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/';
+                $sourceEditPath = 'https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/';
+                break;
+        }
+
+        $name = $viewHelperDocumentation->getName();
+        $explodedName = explode('.', $name);
+        $explodedName = array_map('ucfirst', $explodedName);
+
+        $implodedName = implode('/', $explodedName);
+        $source = $sourcePath . $implodedName . 'ViewHelper.php';
+        $phpFileName = end($explodedName) . 'ViewHelper.php';
+        $sourceEdit = $sourceEditPath . $implodedName . 'ViewHelper.php';
+        return [
+            'source' => $source,
+            'sourceEdit' => $sourceEdit,
+            'phpFileName' => $phpFileName,
+        ];
     }
 }

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/BytesViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/BytesViewHelper.php
 :navigation-title: format.bytes
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-bytes:
 
 ==========================================
-format.bytes ViewHelper `<f:format.bytes>`
+Format.bytes ViewHelper `<f:format.bytes>`
 ==========================================
-
 
 Formats an integer with a byte count into human readable form.
 
@@ -45,80 +48,82 @@ Custom units
 ``123 KB``
 Depending on the value of ``{fileSize}``.
 
+.. _typo3-fluid-format-bytes_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `BytesViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/BytesViewHelper.php>`__.
 
 .. _typo3-fluid-format-bytes_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.bytes>`:
 
-.. _typo3-fluid-format-bytes-value:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-format-bytes-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-format-bytes-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The incoming data to convert, or NULL if VH children should be used
+    The incoming data to convert, or NULL if VH children should be used
 
-.. _typo3-fluid-format-bytes-decimals:
+.. _typo3-fluid-format-bytes-decimals_argument:
 
 decimals
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: decimals
+    :name: typo3-fluid-format-bytes-decimals
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The number of digits after the decimal point
+    The number of digits after the decimal point
 
-.. _typo3-fluid-format-bytes-decimalseparator:
+.. _typo3-fluid-format-bytes-decimalseparator_argument:
 
 decimalSeparator
 ----------------
 
-:aspect:`DataType`
-   string
+..  confval:: decimalSeparator
+    :name: typo3-fluid-format-bytes-decimalseparator
+    :type: string
+    :Default: '.'
+    :required: false
 
-:aspect:`Default`
-   '.'
+    The decimal point character
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The decimal point character
-
-.. _typo3-fluid-format-bytes-thousandsseparator:
+.. _typo3-fluid-format-bytes-thousandsseparator_argument:
 
 thousandsSeparator
 ------------------
 
-:aspect:`DataType`
-   string
+..  confval:: thousandsSeparator
+    :name: typo3-fluid-format-bytes-thousandsseparator
+    :type: string
+    :Default: ','
+    :required: false
 
-:aspect:`Default`
-   ','
+    The character for grouping the thousand digits
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The character for grouping the thousand digits
-
-.. _typo3-fluid-format-bytes-units:
+.. _typo3-fluid-format-bytes-units_argument:
 
 units
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: units
+    :name: typo3-fluid-format-bytes-units
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Comma separated list of available units, default is LocalizationUtility::translate('viewhelper.format.bytes.units', 'fluid')
+    Comma separated list of available units, default is LocalizationUtility::translate('viewhelper.format.bytes.units', 'fluid')

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Cache/DisableViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Cache/DisableViewHelper.php
 :navigation-title: cache.disable
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cache-disable:
 
 ============================================
-cache.disable ViewHelper `<f:cache.disable>`
+Cache.disable ViewHelper `<f:cache.disable>`
 ============================================
-
 
 ViewHelper to disable template compiling
 
@@ -53,11 +56,11 @@ Container tag
 
 Additional output is also not compilable because of the ViewHelper
 
+.. _typo3fluid-fluid-cache-disable_source:
 
-.. _typo3fluid-fluid-cache-disable_arguments:
+Source code
+===========
 
-Arguments
-=========
+Go to the source code of this ViewHelper: `DisableViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Cache/DisableViewHelper.php>`__.
 
-
-This ViewHelper has no arguments.
+..  note:: `<f:cache.disable>` has no arguments.

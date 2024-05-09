@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Cache/WarmupViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Cache/WarmupViewHelper.php
 :navigation-title: cache.warmup
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cache-warmup:
 
 ==========================================
-cache.warmup ViewHelper `<f:cache.warmup>`
+Cache.warmup ViewHelper `<f:cache.warmup>`
 ==========================================
-
 
 ViewHelper to insert variables which only apply during
 cache warmup and only apply if no other variables are
@@ -52,25 +55,33 @@ Usage and effect
        assignment only happens if Fluid is in warmup mode.
     </f:cache.warmup>
 
+.. _typo3fluid-fluid-cache-warmup_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `WarmupViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Cache/WarmupViewHelper.php>`__.
 
 .. _typo3fluid-fluid-cache-warmup_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:cache.warmup>`:
 
-.. _typo3fluid-fluid-cache-warmup-variables:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-cache-warmup-variables_argument:
 
 variables
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: variables
+    :name: typo3fluid-fluid-cache-warmup-variables
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Array of variables to assign ONLY when compiling. See main class documentation.
+    Array of variables to assign ONLY when compiling. See main class documentation.

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/IconViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/IconViewHelper.php
 :navigation-title: icon
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-icon:
 
 =============================
-icon ViewHelper `<core:icon>`
+Icon ViewHelper `<core:icon>`
 =============================
-
 
 Displays icon identified by icon identifier.
 
@@ -37,93 +40,94 @@ Output::
         </span>
     </span>
 
+.. _typo3-core-icon_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `IconViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/IconViewHelper.php>`__.
 
 .. _typo3-core-icon_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<core:icon>`:
 
-.. _typo3-core-icon-identifier:
+..  contents::
+    :local:
+
+
+.. _typo3-core-icon-identifier_argument:
 
 identifier
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: identifier
+    :name: typo3-core-icon-identifier
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Identifier of the icon as registered in the Icon Registry.
+    Identifier of the icon as registered in the Icon Registry.
 
-.. _typo3-core-icon-size:
+.. _typo3-core-icon-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: size
+    :name: typo3-core-icon-size
+    :type: string
+    :Default: 'small'
+    :required: false
 
-:aspect:`Default`
-   'small'
+    Desired size of the icon. All values of the IconSize enum are allowed, these are: "small", "default", "medium", "large" and "mega".
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Desired size of the icon. All values of the IconSize enum are allowed, these are: "small", "default", "medium", "large" and "mega".
-
-.. _typo3-core-icon-overlay:
+.. _typo3-core-icon-overlay_argument:
 
 overlay
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: overlay
+    :name: typo3-core-icon-overlay
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Identifier of an overlay icon as registered in the Icon Registry.
+    Identifier of an overlay icon as registered in the Icon Registry.
 
-.. _typo3-core-icon-state:
+.. _typo3-core-icon-state_argument:
 
 state
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: state
+    :name: typo3-core-icon-state
+    :type: string
+    :Default: 'default'
+    :required: false
 
-:aspect:`Default`
-   'default'
+    Sets the state of the icon. All values of the Icons.states enum are allowed, these are: "default" and "disabled".
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Sets the state of the icon. All values of the Icons.states enum are allowed, these are: "default" and "disabled".
-
-.. _typo3-core-icon-alternativemarkupidentifier:
+.. _typo3-core-icon-alternativemarkupidentifier_argument:
 
 alternativeMarkupIdentifier
 ---------------------------
 
-:aspect:`DataType`
-   string
+..  confval:: alternativeMarkupIdentifier
+    :name: typo3-core-icon-alternativemarkupidentifier
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Alternative icon identifier. Takes precedence over the identifier if supported by the IconProvider.
+    Alternative icon identifier. Takes precedence over the identifier if supported by the IconProvider.
 
-.. _typo3-core-icon-title:
+.. _typo3-core-icon-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-core-icon-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Title for the icon
+    Title for the icon

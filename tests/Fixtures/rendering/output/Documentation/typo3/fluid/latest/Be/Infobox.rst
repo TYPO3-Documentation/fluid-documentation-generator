@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/InfoboxViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/InfoboxViewHelper.php
 :navigation-title: be.infobox
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-infobox:
 
 ======================================
-be.infobox ViewHelper `<f:be.infobox>`
+Be.infobox ViewHelper `<f:be.infobox>`
 ======================================
-
 
 ViewHelper for rendering a styled content infobox markup.
 
@@ -42,77 +45,81 @@ All options::
 
    <f:be.infobox title="Message title" message="your box content" state="-2" iconName="check" disableIcon="true" />
 
+.. _typo3-fluid-be-infobox_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `InfoboxViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/InfoboxViewHelper.php>`__.
 
 .. _typo3-fluid-be-infobox_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.infobox>`:
 
-.. _typo3-fluid-be-infobox-message:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-infobox-message_argument:
 
 message
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: message
+    :name: typo3-fluid-be-infobox-message
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The message of the info box, if NULL tag content is used
+    The message of the info box, if NULL tag content is used
 
-.. _typo3-fluid-be-infobox-title:
+.. _typo3-fluid-be-infobox-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-be-infobox-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The title of the info box
+    The title of the info box
 
-.. _typo3-fluid-be-infobox-state:
+.. _typo3-fluid-be-infobox-state_argument:
 
 state
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: state
+    :name: typo3-fluid-be-infobox-state
+    :type: mixed
+    :Default: -2
+    :required: false
 
-:aspect:`Default`
-   -2
+    The state of the box, InfoboxViewHelper::STATE_*
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The state of the box, InfoboxViewHelper::STATE_*
-
-.. _typo3-fluid-be-infobox-iconname:
+.. _typo3-fluid-be-infobox-iconname_argument:
 
 iconName
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: iconName
+    :name: typo3-fluid-be-infobox-iconname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The icon name from font awesome, NULL sets default icon
+    The icon name from font awesome, NULL sets default icon
 
-.. _typo3-fluid-be-infobox-disableicon:
+.. _typo3-fluid-be-infobox-disableicon_argument:
 
 disableIcon
 -----------
 
-:aspect:`DataType`
-   boolean
+..  confval:: disableIcon
+    :name: typo3-fluid-be-infobox-disableicon
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set to TRUE, the icon is not rendered.
+    If set to TRUE, the icon is not rendered.

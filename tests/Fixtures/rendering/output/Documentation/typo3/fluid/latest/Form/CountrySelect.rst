@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/CountrySelectViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/CountrySelectViewHelper.php
 :navigation-title: form.countrySelect
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-countryselect:
 
 ======================================================
-form.countrySelect ViewHelper `<f:form.countrySelect>`
+Form.countrySelect ViewHelper `<f:form.countrySelect>`
 ======================================================
-
 
 Renders a :html:`<select>` tag with all available countries as options.
 
@@ -63,388 +66,361 @@ Bind an object
 You can also use the "property" attribute if you have bound an object to the form.
 See :ref:`<f:form> <typo3-fluid-form>` for more documentation.
 
+.. _typo3-fluid-form-countryselect_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CountrySelectViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/CountrySelectViewHelper.php>`__.
 
 .. _typo3-fluid-form-countryselect_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.countrySelect>`:
 
-.. _typo3-fluid-form-countryselect-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-countryselect-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-countryselect-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-countryselect-data:
+.. _typo3-fluid-form-countryselect-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-countryselect-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-countryselect-aria:
+.. _typo3-fluid-form-countryselect-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-countryselect-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-countryselect-name:
+.. _typo3-fluid-form-countryselect-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-countryselect-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-countryselect-value:
+.. _typo3-fluid-form-countryselect-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-form-countryselect-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value of input tag
+    Value of input tag
 
-.. _typo3-fluid-form-countryselect-property:
+.. _typo3-fluid-form-countryselect-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-countryselect-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-countryselect-class:
+.. _typo3-fluid-form-countryselect-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-countryselect-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-countryselect-dir:
+.. _typo3-fluid-form-countryselect-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-countryselect-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-countryselect-id:
+.. _typo3-fluid-form-countryselect-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-countryselect-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-countryselect-lang:
+.. _typo3-fluid-form-countryselect-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-countryselect-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-countryselect-style:
+.. _typo3-fluid-form-countryselect-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-countryselect-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-countryselect-title:
+.. _typo3-fluid-form-countryselect-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-countryselect-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-countryselect-accesskey:
+.. _typo3-fluid-form-countryselect-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-countryselect-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-countryselect-tabindex:
+.. _typo3-fluid-form-countryselect-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-countryselect-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-countryselect-onclick:
+.. _typo3-fluid-form-countryselect-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-countryselect-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-form-countryselect-size:
+.. _typo3-fluid-form-countryselect-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: size
+    :name: typo3-fluid-form-countryselect-size
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Size of select field, a numeric value to show the amount of items to be visible at the same time - equivalent to HTML <select> site attribute
+    Size of select field, a numeric value to show the amount of items to be visible at the same time - equivalent to HTML <select> site attribute
 
-.. _typo3-fluid-form-countryselect-disabled:
+.. _typo3-fluid-form-countryselect-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-countryselect-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads
 
-.. _typo3-fluid-form-countryselect-excludecountries:
+.. _typo3-fluid-form-countryselect-excludecountries_argument:
 
 excludeCountries
 ----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: excludeCountries
+    :name: typo3-fluid-form-countryselect-excludecountries
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    Array with country codes that should not be shown.
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Array with country codes that should not be shown.
-
-.. _typo3-fluid-form-countryselect-onlycountries:
+.. _typo3-fluid-form-countryselect-onlycountries_argument:
 
 onlyCountries
 -------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: onlyCountries
+    :name: typo3-fluid-form-countryselect-onlycountries
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    If set, only the country codes in the list are rendered.
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, only the country codes in the list are rendered.
-
-.. _typo3-fluid-form-countryselect-optionlabelfield:
+.. _typo3-fluid-form-countryselect-optionlabelfield_argument:
 
 optionLabelField
 ----------------
 
-:aspect:`DataType`
-   string
+..  confval:: optionLabelField
+    :name: typo3-fluid-form-countryselect-optionlabelfield
+    :type: string
+    :Default: 'localizedName'
+    :required: false
 
-:aspect:`Default`
-   'localizedName'
+    If specified, will call the appropriate getter on each object to determine the label. Use "name", "localizedName", "officialName" or "localizedOfficialName"
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will call the appropriate getter on each object to determine the label. Use "name", "localizedName", "officialName" or "localizedOfficialName"
-
-.. _typo3-fluid-form-countryselect-sortbyoptionlabel:
+.. _typo3-fluid-form-countryselect-sortbyoptionlabel_argument:
 
 sortByOptionLabel
 -----------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: sortByOptionLabel
+    :name: typo3-fluid-form-countryselect-sortbyoptionlabel
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If true, List will be sorted by label.
+    If true, List will be sorted by label.
 
-.. _typo3-fluid-form-countryselect-errorclass:
+.. _typo3-fluid-form-countryselect-errorclass_argument:
 
 errorClass
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: errorClass
+    :name: typo3-fluid-form-countryselect-errorclass
+    :type: string
+    :Default: 'f3-form-error'
+    :required: false
 
-:aspect:`Default`
-   'f3-form-error'
+    CSS class to set if there are errors for this ViewHelper
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class to set if there are errors for this ViewHelper
-
-.. _typo3-fluid-form-countryselect-prependoptionlabel:
+.. _typo3-fluid-form-countryselect-prependoptionlabel_argument:
 
 prependOptionLabel
 ------------------
 
-:aspect:`DataType`
-   string
+..  confval:: prependOptionLabel
+    :name: typo3-fluid-form-countryselect-prependoptionlabel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will provide an option at first position with the specified label.
+    If specified, will provide an option at first position with the specified label.
 
-.. _typo3-fluid-form-countryselect-prependoptionvalue:
+.. _typo3-fluid-form-countryselect-prependoptionvalue_argument:
 
 prependOptionValue
 ------------------
 
-:aspect:`DataType`
-   string
+..  confval:: prependOptionValue
+    :name: typo3-fluid-form-countryselect-prependoptionvalue
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will provide an option at first position with the specified value.
+    If specified, will provide an option at first position with the specified value.
 
-.. _typo3-fluid-form-countryselect-multiple:
+.. _typo3-fluid-form-countryselect-multiple_argument:
 
 multiple
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: multiple
+    :name: typo3-fluid-form-countryselect-multiple
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set multiple options may be selected.
+    If set multiple options may be selected.
 
-.. _typo3-fluid-form-countryselect-required:
+.. _typo3-fluid-form-countryselect-required_argument:
 
 required
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: required
+    :name: typo3-fluid-form-countryselect-required
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set no empty value is allowed.
+    If set no empty value is allowed.
 
-.. _typo3-fluid-form-countryselect-prioritizedcountries:
+.. _typo3-fluid-form-countryselect-prioritizedcountries_argument:
 
 prioritizedCountries
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: prioritizedCountries
+    :name: typo3-fluid-form-countryselect-prioritizedcountries
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    A list of country codes which should be listed on top of the list.
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   A list of country codes which should be listed on top of the list.
-
-.. _typo3-fluid-form-countryselect-alternativelanguage:
+.. _typo3-fluid-form-countryselect-alternativelanguage_argument:
 
 alternativeLanguage
 -------------------
 
-:aspect:`DataType`
-   string
+..  confval:: alternativeLanguage
+    :name: typo3-fluid-form-countryselect-alternativelanguage
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, the country list will be shown in the given language.
+    If specified, the country list will be shown in the given language.

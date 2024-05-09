@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/PasswordViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/PasswordViewHelper.php
 :navigation-title: form.password
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-password:
 
 ============================================
-form.password ViewHelper `<f:form.password>`
+Form.password ViewHelper `<f:form.password>`
 ============================================
-
 
 ViewHelper which creates a simple Password Text Box :html:`<input type="password">`.
 
@@ -21,298 +24,285 @@ Output::
 
    <input type="password" name="myPassword" value="default value" />
 
+.. _typo3-fluid-form-password_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `PasswordViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/PasswordViewHelper.php>`__.
 
 .. _typo3-fluid-form-password_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.password>`:
 
-.. _typo3-fluid-form-password-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-password-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-password-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-password-data:
+.. _typo3-fluid-form-password-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-password-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-password-aria:
+.. _typo3-fluid-form-password-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-password-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-password-name:
+.. _typo3-fluid-form-password-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-password-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-password-value:
+.. _typo3-fluid-form-password-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-form-password-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value of input tag
+    Value of input tag
 
-.. _typo3-fluid-form-password-property:
+.. _typo3-fluid-form-password-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-password-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-password-disabled:
+.. _typo3-fluid-form-password-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-password-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads
 
-.. _typo3-fluid-form-password-maxlength:
+.. _typo3-fluid-form-password-maxlength_argument:
 
 maxlength
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: maxlength
+    :name: typo3-fluid-form-password-maxlength
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The maxlength attribute of the input field (will not be validated)
+    The maxlength attribute of the input field (will not be validated)
 
-.. _typo3-fluid-form-password-placeholder:
+.. _typo3-fluid-form-password-placeholder_argument:
 
 placeholder
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: placeholder
+    :name: typo3-fluid-form-password-placeholder
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The placeholder of the textfield
+    The placeholder of the textfield
 
-.. _typo3-fluid-form-password-readonly:
+.. _typo3-fluid-form-password-readonly_argument:
 
 readonly
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: readonly
+    :name: typo3-fluid-form-password-readonly
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The readonly attribute of the input field
+    The readonly attribute of the input field
 
-.. _typo3-fluid-form-password-autocomplete:
+.. _typo3-fluid-form-password-autocomplete_argument:
 
 autocomplete
 ------------
 
-:aspect:`DataType`
-   string
+..  confval:: autocomplete
+    :name: typo3-fluid-form-password-autocomplete
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specify the autocomplete behaviour for password managers
+    Specify the autocomplete behaviour for password managers
 
-.. _typo3-fluid-form-password-size:
+.. _typo3-fluid-form-password-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: size
+    :name: typo3-fluid-form-password-size
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The size of the input field
+    The size of the input field
 
-.. _typo3-fluid-form-password-errorclass:
+.. _typo3-fluid-form-password-errorclass_argument:
 
 errorClass
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: errorClass
+    :name: typo3-fluid-form-password-errorclass
+    :type: string
+    :Default: 'f3-form-error'
+    :required: false
 
-:aspect:`Default`
-   'f3-form-error'
+    CSS class to set if there are errors for this ViewHelper
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class to set if there are errors for this ViewHelper
-
-.. _typo3-fluid-form-password-class:
+.. _typo3-fluid-form-password-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-password-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-password-dir:
+.. _typo3-fluid-form-password-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-password-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-password-id:
+.. _typo3-fluid-form-password-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-password-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-password-lang:
+.. _typo3-fluid-form-password-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-password-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-password-style:
+.. _typo3-fluid-form-password-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-password-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-password-title:
+.. _typo3-fluid-form-password-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-password-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-password-accesskey:
+.. _typo3-fluid-form-password-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-password-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-password-tabindex:
+.. _typo3-fluid-form-password-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-password-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-password-onclick:
+.. _typo3-fluid-form-password-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-password-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event

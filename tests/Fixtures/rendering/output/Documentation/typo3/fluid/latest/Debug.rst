@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/DebugViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/DebugViewHelper.php
 :navigation-title: debug
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-debug:
 
 ============================
-debug ViewHelper `<f:debug>`
+Debug ViewHelper `<f:debug>`
 ============================
-
 
 This ViewHelper generates a HTML dump of the tagged variable.
 
@@ -38,103 +41,105 @@ All Features
 
 [A HTML view of the var_dump]
 
+.. _typo3-fluid-debug_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `DebugViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/DebugViewHelper.php>`__.
 
 .. _typo3-fluid-debug_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:debug>`:
 
-.. _typo3-fluid-debug-title:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-debug-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-debug-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Optional custom title for the debug output
+    Optional custom title for the debug output
 
-.. _typo3-fluid-debug-maxdepth:
+.. _typo3-fluid-debug-maxdepth_argument:
 
 maxDepth
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: maxDepth
+    :name: typo3-fluid-debug-maxdepth
+    :type: mixed
+    :Default: 8
+    :required: false
 
-:aspect:`Default`
-   8
+    Sets the max recursion depth of the dump (defaults to 8). De- or increase the number according to your needs and memory limit.
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Sets the max recursion depth of the dump (defaults to 8). De- or increase the number according to your needs and memory limit.
-
-.. _typo3-fluid-debug-plaintext:
+.. _typo3-fluid-debug-plaintext_argument:
 
 plainText
 ---------
 
-:aspect:`DataType`
-   boolean
+..  confval:: plainText
+    :name: typo3-fluid-debug-plaintext
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, the dump is in plain text, if FALSE the debug output is in HTML format.
+    If TRUE, the dump is in plain text, if FALSE the debug output is in HTML format.
 
-.. _typo3-fluid-debug-ansicolors:
+.. _typo3-fluid-debug-ansicolors_argument:
 
 ansiColors
 ----------
 
-:aspect:`DataType`
-   boolean
+..  confval:: ansiColors
+    :name: typo3-fluid-debug-ansicolors
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, ANSI color codes is added to the plaintext output, if FALSE (default) the plaintext debug output not colored.
+    If TRUE, ANSI color codes is added to the plaintext output, if FALSE (default) the plaintext debug output not colored.
 
-.. _typo3-fluid-debug-inline:
+.. _typo3-fluid-debug-inline_argument:
 
 inline
 ------
 
-:aspect:`DataType`
-   boolean
+..  confval:: inline
+    :name: typo3-fluid-debug-inline
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, the dump is rendered at the position of the <f:debug> tag. If FALSE (default), the dump is displayed at the top of the page.
+    If TRUE, the dump is rendered at the position of the <f:debug> tag. If FALSE (default), the dump is displayed at the top of the page.
 
-.. _typo3-fluid-debug-blacklistedclassnames:
+.. _typo3-fluid-debug-blacklistedclassnames_argument:
 
 blacklistedClassNames
 ---------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: blacklistedClassNames
+    :name: typo3-fluid-debug-blacklistedclassnames
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   An array of class names (RegEx) to be filtered. Default is an array of some common class names.
+    An array of class names (RegEx) to be filtered. Default is an array of some common class names.
 
-.. _typo3-fluid-debug-blacklistedpropertynames:
+.. _typo3-fluid-debug-blacklistedpropertynames_argument:
 
 blacklistedPropertyNames
 ------------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: blacklistedPropertyNames
+    :name: typo3-fluid-debug-blacklistedpropertynames
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   An array of property names and/or array keys (RegEx) to be filtered. Default is an array of some common property names.
+    An array of property names and/or array keys (RegEx) to be filtered. Default is an array of some common property names.

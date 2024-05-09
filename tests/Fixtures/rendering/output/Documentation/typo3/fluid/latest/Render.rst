@@ -1,128 +1,130 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/RenderViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/RenderViewHelper.php
 :navigation-title: render
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-render:
 
 ==============================
-render ViewHelper `<f:render>`
+Render ViewHelper `<f:render>`
 ==============================
 
 
 
+.. _typo3-fluid-render_source:
 
+Source code
+===========
+
+Go to the source code of this ViewHelper: `RenderViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/RenderViewHelper.php>`__.
 
 .. _typo3-fluid-render_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:render>`:
 
-.. _typo3-fluid-render-section:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-render-section_argument:
 
 section
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: section
+    :name: typo3-fluid-render-section
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Section to render - combine with partial to render section in partial
+    Section to render - combine with partial to render section in partial
 
-.. _typo3-fluid-render-partial:
+.. _typo3-fluid-render-partial_argument:
 
 partial
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: partial
+    :name: typo3-fluid-render-partial
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Partial to render, with or without section
+    Partial to render, with or without section
 
-.. _typo3-fluid-render-delegate:
+.. _typo3-fluid-render-delegate_argument:
 
 delegate
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: delegate
+    :name: typo3-fluid-render-delegate
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Optional PHP class name of a permanent, included-in-app ParsedTemplateInterface implementation to override partial/section
+    Optional PHP class name of a permanent, included-in-app ParsedTemplateInterface implementation to override partial/section
 
-.. _typo3-fluid-render-arguments:
+.. _typo3-fluid-render-arguments_argument:
 
 arguments
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: arguments
+    :name: typo3-fluid-render-arguments
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    Array of variables to be transferred. Use {_all} for all variables
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Array of variables to be transferred. Use {_all} for all variables
-
-.. _typo3-fluid-render-optional:
+.. _typo3-fluid-render-optional_argument:
 
 optional
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: optional
+    :name: typo3-fluid-render-optional
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, considers the *section* optional. Partial never is.
+    If TRUE, considers the *section* optional. Partial never is.
 
-.. _typo3-fluid-render-default:
+.. _typo3-fluid-render-default_argument:
 
 default
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: default
+    :name: typo3-fluid-render-default
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value (usually string) to be displayed if the section or partial does not exist
+    Value (usually string) to be displayed if the section or partial does not exist
 
-.. _typo3-fluid-render-contentas:
+.. _typo3-fluid-render-contentas_argument:
 
 contentAs
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: contentAs
+    :name: typo3-fluid-render-contentas
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If used, renders the child content and adds it as a template variable with this name for use in the partial/section
+    If used, renders the child content and adds it as a template variable with this name for use in the partial/section
 
-.. _typo3-fluid-render-debug:
+.. _typo3-fluid-render-debug_argument:
 
 debug
 -----
 
-:aspect:`DataType`
-   boolean
+..  confval:: debug
+    :name: typo3-fluid-render-debug
+    :type: boolean
+    :Default: true
+    :required: false
 
-:aspect:`Default`
-   true
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If true, the admin panel shows debug information if activated,
+    If true, the admin panel shows debug information if activated,

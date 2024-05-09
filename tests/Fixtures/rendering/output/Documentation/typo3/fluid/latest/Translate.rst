@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/TranslateViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/TranslateViewHelper.php
 :navigation-title: translate
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-translate:
 
 ====================================
-translate ViewHelper `<f:translate>`
+Translate ViewHelper `<f:translate>`
 ====================================
-
 
 Translate a key from locallang. The files are loaded from the folder
 :file:`Resources/Private/Language/`.
@@ -81,87 +84,92 @@ Inline notation with extension name
 Value of key ``someKey`` in the current website language.
 The locallang file of extension "some_extension_name" will be used.
 
+.. _typo3-fluid-translate_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `TranslateViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/TranslateViewHelper.php>`__.
 
 .. _typo3-fluid-translate_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:translate>`:
 
-.. _typo3-fluid-translate-key:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-translate-key_argument:
 
 key
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: key
+    :name: typo3-fluid-translate-key
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Translation Key
+    Translation Key
 
-.. _typo3-fluid-translate-id:
+.. _typo3-fluid-translate-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-translate-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Translation ID. Same as key.
+    Translation ID. Same as key.
 
-.. _typo3-fluid-translate-default:
+.. _typo3-fluid-translate-default_argument:
 
 default
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: default
+    :name: typo3-fluid-translate-default
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If the given locallang key could not be found, this value is used. If this argument is not set, child nodes will be used to render the default
+    If the given locallang key could not be found, this value is used. If this argument is not set, child nodes will be used to render the default
 
-.. _typo3-fluid-translate-arguments:
+.. _typo3-fluid-translate-arguments_argument:
 
 arguments
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: arguments
+    :name: typo3-fluid-translate-arguments
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Arguments to be replaced in the resulting string
+    Arguments to be replaced in the resulting string
 
-.. _typo3-fluid-translate-extensionname:
+.. _typo3-fluid-translate-extensionname_argument:
 
 extensionName
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: extensionName
+    :name: typo3-fluid-translate-extensionname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   UpperCamelCased extension key (for example BlogExample)
+    UpperCamelCased extension key (for example BlogExample)
 
-.. _typo3-fluid-translate-languagekey:
+.. _typo3-fluid-translate-languagekey_argument:
 
 languageKey
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: languageKey
+    :name: typo3-fluid-translate-languagekey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language key ("da" for example) or "default" to use. Also a Locale object is possible. If empty, use current locale from the request.
+    Language key ("da" for example) or "default" to use. Also a Locale object is possible. If empty, use current locale from the request.

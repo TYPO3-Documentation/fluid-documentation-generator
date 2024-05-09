@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ExternalViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ExternalViewHelper.php
 :navigation-title: link.external
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-external:
 
 ============================================
-link.external ViewHelper `<f:link.external>`
+Link.external ViewHelper `<f:link.external>`
 ============================================
-
 
 A ViewHelper for creating links to external targets.
 
@@ -35,246 +38,237 @@ Output::
 
    <a href="ftp://typo3.org">external ftp link</a>
 
+.. _typo3-fluid-link-external_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ExternalViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ExternalViewHelper.php>`__.
 
 .. _typo3-fluid-link-external_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:link.external>`:
 
-.. _typo3-fluid-link-external-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-link-external-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-link-external-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-link-external-data:
+.. _typo3-fluid-link-external-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-link-external-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-link-external-aria:
+.. _typo3-fluid-link-external-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-link-external-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-link-external-uri:
+.. _typo3-fluid-link-external-uri_argument:
 
 uri
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: uri
+    :name: typo3-fluid-link-external-uri
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The URI that will be put in the href attribute of the rendered link tag
+    The URI that will be put in the href attribute of the rendered link tag
 
-.. _typo3-fluid-link-external-defaultscheme:
+.. _typo3-fluid-link-external-defaultscheme_argument:
 
 defaultScheme
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: defaultScheme
+    :name: typo3-fluid-link-external-defaultscheme
+    :type: string
+    :Default: 'https'
+    :required: false
 
-:aspect:`Default`
-   'https'
+    Scheme the href attribute will be prefixed with if specified $uri does not contain a scheme already
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Scheme the href attribute will be prefixed with if specified $uri does not contain a scheme already
-
-.. _typo3-fluid-link-external-class:
+.. _typo3-fluid-link-external-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-link-external-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-link-external-dir:
+.. _typo3-fluid-link-external-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-link-external-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-link-external-id:
+.. _typo3-fluid-link-external-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-link-external-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-link-external-lang:
+.. _typo3-fluid-link-external-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-link-external-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-link-external-style:
+.. _typo3-fluid-link-external-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-link-external-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-link-external-title:
+.. _typo3-fluid-link-external-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-link-external-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-link-external-accesskey:
+.. _typo3-fluid-link-external-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-link-external-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-link-external-tabindex:
+.. _typo3-fluid-link-external-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-link-external-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-link-external-onclick:
+.. _typo3-fluid-link-external-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-link-external-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-link-external-name:
+.. _typo3-fluid-link-external-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-link-external-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the name of an anchor
+    Specifies the name of an anchor
 
-.. _typo3-fluid-link-external-rel:
+.. _typo3-fluid-link-external-rel_argument:
 
 rel
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rel
+    :name: typo3-fluid-link-external-rel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the current document and the linked document
+    Specifies the relationship between the current document and the linked document
 
-.. _typo3-fluid-link-external-rev:
+.. _typo3-fluid-link-external-rev_argument:
 
 rev
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rev
+    :name: typo3-fluid-link-external-rev
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the linked document and the current document
+    Specifies the relationship between the linked document and the current document
 
-.. _typo3-fluid-link-external-target:
+.. _typo3-fluid-link-external-target_argument:
 
 target
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: target
+    :name: typo3-fluid-link-external-target
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies where to open the linked document
+    Specifies where to open the linked document

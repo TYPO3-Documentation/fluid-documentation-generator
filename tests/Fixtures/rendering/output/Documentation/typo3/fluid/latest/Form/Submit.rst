@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SubmitViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SubmitViewHelper.php
 :navigation-title: form.submit
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-submit:
 
 ========================================
-form.submit ViewHelper `<f:form.submit>`
+Form.submit ViewHelper `<f:form.submit>`
 ========================================
-
 
 Creates a submit button.
 
@@ -35,217 +38,212 @@ Output::
 
    <input type="submit" name="mySubmit" value="Send Mail" />
 
+.. _typo3-fluid-form-submit_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `SubmitViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SubmitViewHelper.php>`__.
 
 .. _typo3-fluid-form-submit_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.submit>`:
 
-.. _typo3-fluid-form-submit-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-submit-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-submit-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-submit-data:
+.. _typo3-fluid-form-submit-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-submit-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-submit-aria:
+.. _typo3-fluid-form-submit-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-submit-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-submit-name:
+.. _typo3-fluid-form-submit-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-submit-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-submit-value:
+.. _typo3-fluid-form-submit-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-form-submit-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value of input tag
+    Value of input tag
 
-.. _typo3-fluid-form-submit-property:
+.. _typo3-fluid-form-submit-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-submit-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-submit-disabled:
+.. _typo3-fluid-form-submit-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-submit-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads
 
-.. _typo3-fluid-form-submit-class:
+.. _typo3-fluid-form-submit-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-submit-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-submit-dir:
+.. _typo3-fluid-form-submit-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-submit-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-submit-id:
+.. _typo3-fluid-form-submit-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-submit-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-submit-lang:
+.. _typo3-fluid-form-submit-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-submit-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-submit-style:
+.. _typo3-fluid-form-submit-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-submit-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-submit-title:
+.. _typo3-fluid-form-submit-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-submit-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-submit-accesskey:
+.. _typo3-fluid-form-submit-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-submit-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-submit-tabindex:
+.. _typo3-fluid-form-submit-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-submit-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-submit-onclick:
+.. _typo3-fluid-form-submit-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-submit-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event

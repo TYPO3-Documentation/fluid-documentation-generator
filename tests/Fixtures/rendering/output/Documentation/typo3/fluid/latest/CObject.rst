@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/CObjectViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/CObjectViewHelper.php
 :navigation-title: cObject
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-cobject:
 
 ================================
-cObject ViewHelper `<f:cObject>`
+CObject ViewHelper `<f:cObject>`
 ================================
-
 
 This ViewHelper renders CObjects from the global TypoScript configuration.
 
@@ -60,61 +63,68 @@ When passing an object with ``{data}``, the properties of the object are accessi
 TypoScript. If only a single value is passed or the ``currentValueKey`` is specified, :typoscript:`.current = 1`
 can be used in the TypoScript.
 
+.. _typo3-fluid-cobject_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CObjectViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/CObjectViewHelper.php>`__.
 
 .. _typo3-fluid-cobject_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:cObject>`:
 
-.. _typo3-fluid-cobject-data:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-cobject-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-cobject-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The data to be used for rendering the cObject. Can be an object, array or string. If this argument is not set, child nodes will be used
+    The data to be used for rendering the cObject. Can be an object, array or string. If this argument is not set, child nodes will be used
 
-.. _typo3-fluid-cobject-typoscriptobjectpath:
+.. _typo3-fluid-cobject-typoscriptobjectpath_argument:
 
 typoscriptObjectPath
 --------------------
 
-:aspect:`DataType`
-   string
+..  confval:: typoscriptObjectPath
+    :name: typo3-fluid-cobject-typoscriptobjectpath
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The TypoScript setup path of the TypoScript object to render
+    The TypoScript setup path of the TypoScript object to render
 
-.. _typo3-fluid-cobject-currentvaluekey:
+.. _typo3-fluid-cobject-currentvaluekey_argument:
 
 currentValueKey
 ---------------
 
-:aspect:`DataType`
-   string
+..  confval:: currentValueKey
+    :name: typo3-fluid-cobject-currentvaluekey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CurrentValueKey
+    CurrentValueKey
 
-.. _typo3-fluid-cobject-table:
+.. _typo3-fluid-cobject-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-fluid-cobject-table
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The table name associated with "data" argument. Typically tt_content or one of your custom tables. This argument should be set if rendering a FILES cObject where file references are used, or if the data argument is a database record.
+    The table name associated with "data" argument. Typically tt_content or one of your custom tables. This argument should be set if rendering a FILES cObject where file references are used, or if the data argument is a database record.

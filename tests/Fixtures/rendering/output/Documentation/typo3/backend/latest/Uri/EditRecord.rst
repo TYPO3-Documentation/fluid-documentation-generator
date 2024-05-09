@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/EditRecordViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/EditRecordViewHelper.php
 :navigation-title: uri.editRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-uri-editrecord:
 
 ====================================================
-uri.editRecord ViewHelper `<backend:uri.editRecord>`
+Uri.editRecord ViewHelper `<backend:uri.editRecord>`
 ====================================================
-
 
 Use this ViewHelper to provide edit links (only the uri) to records. The ViewHelper will
 pass the uid and table to FormEngine.
@@ -30,61 +33,68 @@ page uid=42 and return to foo/bar::
 
 ``<a href="/typo3/record/edit&edit[pages][42]=edit&returnUrl=foo/bar&columnsOnly=title,subtitle">``
 
+.. _typo3-backend-uri-editrecord_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `EditRecordViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/EditRecordViewHelper.php>`__.
 
 .. _typo3-backend-uri-editrecord_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:uri.editRecord>`:
 
-.. _typo3-backend-uri-editrecord-uid:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-uri-editrecord-uid_argument:
 
 uid
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: uid
+    :name: typo3-backend-uri-editrecord-uid
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Uid of record to be edited, 0 for creation
+    Uid of record to be edited, 0 for creation
 
-.. _typo3-backend-uri-editrecord-table:
+.. _typo3-backend-uri-editrecord-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-backend-uri-editrecord-table
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Target database table
+    Target database table
 
-.. _typo3-backend-uri-editrecord-fields:
+.. _typo3-backend-uri-editrecord-fields_argument:
 
 fields
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: fields
+    :name: typo3-backend-uri-editrecord-fields
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Edit only these fields (comma separated list)
+    Edit only these fields (comma separated list)
 
-.. _typo3-backend-uri-editrecord-returnurl:
+.. _typo3-backend-uri-editrecord-returnurl_argument:
 
 returnUrl
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: returnUrl
+    :name: typo3-backend-uri-editrecord-returnurl
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Return to this URL after closing the edit dialog
+    Return to this URL after closing the edit dialog

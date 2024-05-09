@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/ValidationResultsViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/ValidationResultsViewHelper.php
 :navigation-title: form.validationResults
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-validationresults:
 
 ==============================================================
-form.validationResults ViewHelper `<f:form.validationResults>`
+Form.validationResults ViewHelper `<f:form.validationResults>`
 ==============================================================
-
 
 Validation results ViewHelper
 
@@ -55,38 +58,45 @@ Output::
      <li>1234567890: Some error message</li>
    </ul>
 
+.. _typo3-fluid-form-validationresults_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ValidationResultsViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/ValidationResultsViewHelper.php>`__.
 
 .. _typo3-fluid-form-validationresults_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.validationResults>`:
 
-.. _typo3-fluid-form-validationresults-for:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-validationresults-for_argument:
 
 for
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: for
+    :name: typo3-fluid-form-validationresults-for
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The name of the error name (e.g. argument name or property name). This can also be a property path (like blog.title), and will then only display the validation errors of that property.
+    The name of the error name (e.g. argument name or property name). This can also be a property path (like blog.title), and will then only display the validation errors of that property.
 
-.. _typo3-fluid-form-validationresults-as:
+.. _typo3-fluid-form-validationresults-as_argument:
 
 as
 --
 
-:aspect:`DataType`
-   string
+..  confval:: as
+    :name: typo3-fluid-form-validationresults-as
+    :type: string
+    :Default: 'validationResults'
+    :required: false
 
-:aspect:`Default`
-   'validationResults'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The name of the variable to store the current error
+    The name of the variable to store the current error

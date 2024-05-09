@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PageRendererViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PageRendererViewHelper.php
 :navigation-title: be.pageRenderer
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-pagerenderer:
 
 ================================================
-be.pageRenderer ViewHelper `<f:be.pageRenderer>`
+Be.pageRenderer ViewHelper `<f:be.pageRenderer>`
 ================================================
-
 
 ViewHelper to register backend module resources like CSS and JavaScript using the PageRenderer.
 
@@ -27,87 +30,92 @@ All options::
 This will load the specified css, js files and JavaScript modules, adds a custom js
 inline setting, and adds a resolved label to be used in js.
 
+.. _typo3-fluid-be-pagerenderer_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `PageRendererViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PageRendererViewHelper.php>`__.
 
 .. _typo3-fluid-be-pagerenderer_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.pageRenderer>`:
 
-.. _typo3-fluid-be-pagerenderer-pagetitle:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-pagerenderer-pagetitle_argument:
 
 pageTitle
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: pageTitle
+    :name: typo3-fluid-be-pagerenderer-pagetitle
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Title tag of the module. Not required by default, as BE modules are shown in a frame
+    Title tag of the module. Not required by default, as BE modules are shown in a frame
 
-.. _typo3-fluid-be-pagerenderer-includecssfiles:
+.. _typo3-fluid-be-pagerenderer-includecssfiles_argument:
 
 includeCssFiles
 ---------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: includeCssFiles
+    :name: typo3-fluid-be-pagerenderer-includecssfiles
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   List of custom CSS file to be loaded
+    List of custom CSS file to be loaded
 
-.. _typo3-fluid-be-pagerenderer-includejsfiles:
+.. _typo3-fluid-be-pagerenderer-includejsfiles_argument:
 
 includeJsFiles
 --------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: includeJsFiles
+    :name: typo3-fluid-be-pagerenderer-includejsfiles
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   List of custom JavaScript file to be loaded
+    List of custom JavaScript file to be loaded
 
-.. _typo3-fluid-be-pagerenderer-addjsinlinelabels:
+.. _typo3-fluid-be-pagerenderer-addjsinlinelabels_argument:
 
 addJsInlineLabels
 -----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: addJsInlineLabels
+    :name: typo3-fluid-be-pagerenderer-addjsinlinelabels
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Custom labels to add to JavaScript inline labels
+    Custom labels to add to JavaScript inline labels
 
-.. _typo3-fluid-be-pagerenderer-includejavascriptmodules:
+.. _typo3-fluid-be-pagerenderer-includejavascriptmodules_argument:
 
 includeJavaScriptModules
 ------------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: includeJavaScriptModules
+    :name: typo3-fluid-be-pagerenderer-includejavascriptmodules
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   List of JavaScript modules to be loaded
+    List of JavaScript modules to be loaded
 
-.. _typo3-fluid-be-pagerenderer-addinlinesettings:
+.. _typo3-fluid-be-pagerenderer-addinlinesettings_argument:
 
 addInlineSettings
 -----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: addInlineSettings
+    :name: typo3-fluid-be-pagerenderer-addinlinesettings
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Adds Javascript Inline Setting
+    Adds Javascript Inline Setting

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlentitiesDecodeViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlentitiesDecodeViewHelper.php
 :navigation-title: format.htmlentitiesDecode
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-htmlentitiesdecode:
 
 ====================================================================
-format.htmlentitiesDecode ViewHelper `<f:format.htmlentitiesDecode>`
+Format.htmlentitiesDecode ViewHelper `<f:format.htmlentitiesDecode>`
 ====================================================================
-
 
 Applies :php:`html_entity_decode()` to a value.
 See https://www.php.net/html_entity_decode.
@@ -36,48 +39,56 @@ These will result in: ``&`` ``"`` ``'`` ``<`` ``>``.
 
 But encoded as ISO-8859-1.
 
+.. _typo3-fluid-format-htmlentitiesdecode_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `HtmlentitiesDecodeViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlentitiesDecodeViewHelper.php>`__.
 
 .. _typo3-fluid-format-htmlentitiesdecode_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.htmlentitiesDecode>`:
 
-.. _typo3-fluid-format-htmlentitiesdecode-value:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-format-htmlentitiesdecode-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3-fluid-format-htmlentitiesdecode-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   String to format
+    String to format
 
-.. _typo3-fluid-format-htmlentitiesdecode-keepquotes:
+.. _typo3-fluid-format-htmlentitiesdecode-keepquotes_argument:
 
 keepQuotes
 ----------
 
-:aspect:`DataType`
-   boolean
+..  confval:: keepQuotes
+    :name: typo3-fluid-format-htmlentitiesdecode-keepquotes
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE, single and double quotes won't be replaced (sets ENT_NOQUOTES flag).
+    If TRUE, single and double quotes won't be replaced (sets ENT_NOQUOTES flag).
 
-.. _typo3-fluid-format-htmlentitiesdecode-encoding:
+.. _typo3-fluid-format-htmlentitiesdecode-encoding_argument:
 
 encoding
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: encoding
+    :name: typo3-fluid-format-htmlentitiesdecode-encoding
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the encoding used when converting characters (Default: UTF-8).
+    Define the encoding used when converting characters (Default: UTF-8).

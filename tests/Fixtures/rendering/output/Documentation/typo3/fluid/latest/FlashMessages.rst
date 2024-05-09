@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/FlashMessagesViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/FlashMessagesViewHelper.php
 :navigation-title: flashMessages
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-flashmessages:
 
 ============================================
-flashMessages ViewHelper `<f:flashMessages>`
+FlashMessages ViewHelper `<f:flashMessages>`
 ============================================
-
 
 ViewHelper which renders the flash messages (if there are any) as an unsorted list.
 
@@ -81,35 +84,44 @@ Using a specific queue
 
    <f:flashMessages queueIdentifier="myQueue" />
 
+.. _typo3-fluid-flashmessages_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `FlashMessagesViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/FlashMessagesViewHelper.php>`__.
 
 .. _typo3-fluid-flashmessages_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:flashMessages>`:
 
-.. _typo3-fluid-flashmessages-queueidentifier:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-flashmessages-queueidentifier_argument:
 
 queueIdentifier
 ---------------
 
-:aspect:`DataType`
-   string
+..  confval:: queueIdentifier
+    :name: typo3-fluid-flashmessages-queueidentifier
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Flash-message queue to use
+    Flash-message queue to use
 
-.. _typo3-fluid-flashmessages-as:
+.. _typo3-fluid-flashmessages-as_argument:
 
 as
 --
 
-:aspect:`DataType`
-   string
+..  confval:: as
+    :name: typo3-fluid-flashmessages-as
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The name of the current flashMessage variable for rendering inside
+    The name of the current flashMessage variable for rendering inside

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/NewRecordViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/NewRecordViewHelper.php
 :navigation-title: uri.newRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-uri-newrecord:
 
 ==================================================
-uri.newRecord ViewHelper `<backend:uri.newRecord>`
+Uri.newRecord ViewHelper `<backend:uri.newRecord>`
 ==================================================
-
 
 Use this ViewHelper to provide 'create new record' links.
 The ViewHelper will pass the command to FormEngine.
@@ -53,77 +56,81 @@ Uri to create a new record of a_table on page 17 with a default value::
 
 ``/typo3/record/edit?edit[a_table][17]=new&returnUrl=foo/bar&defVals[a_table][a_field]=value``
 
+.. _typo3-backend-uri-newrecord_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `NewRecordViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/NewRecordViewHelper.php>`__.
 
 .. _typo3-backend-uri-newrecord_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:uri.newRecord>`:
 
-.. _typo3-backend-uri-newrecord-uid:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-uri-newrecord-uid_argument:
 
 uid
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: uid
+    :name: typo3-backend-uri-newrecord-uid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Uid < 0 will insert the record after the given uid
+    Uid < 0 will insert the record after the given uid
 
-.. _typo3-backend-uri-newrecord-pid:
+.. _typo3-backend-uri-newrecord-pid_argument:
 
 pid
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: pid
+    :name: typo3-backend-uri-newrecord-pid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The page id where the record will be created
+    The page id where the record will be created
 
-.. _typo3-backend-uri-newrecord-table:
+.. _typo3-backend-uri-newrecord-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-backend-uri-newrecord-table
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Target database table
+    Target database table
 
-.. _typo3-backend-uri-newrecord-returnurl:
+.. _typo3-backend-uri-newrecord-returnurl_argument:
 
 returnUrl
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: returnUrl
+    :name: typo3-backend-uri-newrecord-returnurl
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Return to this URL after closing the edit dialog
+    Return to this URL after closing the edit dialog
 
-.. _typo3-backend-uri-newrecord-defaultvalues:
+.. _typo3-backend-uri-newrecord-defaultvalues_argument:
 
 defaultValues
 -------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: defaultValues
+    :name: typo3-backend-uri-newrecord-defaultvalues
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Default values for fields of the new record
+    Default values for fields of the new record

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/ScriptViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/ScriptViewHelper.php
 :navigation-title: asset.script
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-asset-script:
 
 ==========================================
-asset.script ViewHelper `<f:asset.script>`
+Asset.script ViewHelper `<f:asset.script>`
 ==========================================
-
 
 ViewHelper to add JavaScript to the TYPO3 AssetCollector. Either a file or inline JavaScript can be added.
 
@@ -29,321 +32,308 @@ times using the same identifier, the asset will only be served once (the last ad
 Some available attributes are defaults but do not make sense for this ViewHelper. Relevant attributes specific
 for this ViewHelper are: async, crossorigin, defer, integrity, nomodule, nonce, referrerpolicy, src, type.
 
+.. _typo3-fluid-asset-script_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ScriptViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/ScriptViewHelper.php>`__.
 
 .. _typo3-fluid-asset-script_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:asset.script>`:
 
-.. _typo3-fluid-asset-script-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-asset-script-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-asset-script-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-asset-script-data:
+.. _typo3-fluid-asset-script-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-asset-script-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-asset-script-aria:
+.. _typo3-fluid-asset-script-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-asset-script-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-asset-script-class:
+.. _typo3-fluid-asset-script-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-asset-script-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-asset-script-dir:
+.. _typo3-fluid-asset-script-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-asset-script-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-asset-script-id:
+.. _typo3-fluid-asset-script-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-asset-script-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-asset-script-lang:
+.. _typo3-fluid-asset-script-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-asset-script-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-asset-script-style:
+.. _typo3-fluid-asset-script-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-asset-script-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-asset-script-title:
+.. _typo3-fluid-asset-script-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-asset-script-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-asset-script-accesskey:
+.. _typo3-fluid-asset-script-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-asset-script-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-asset-script-tabindex:
+.. _typo3-fluid-asset-script-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-asset-script-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-asset-script-onclick:
+.. _typo3-fluid-asset-script-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-asset-script-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-asset-script-async:
+.. _typo3-fluid-asset-script-async_argument:
 
 async
 -----
 
-:aspect:`DataType`
-   boolean
+..  confval:: async
+    :name: typo3-fluid-asset-script-async
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define that the script will be fetched in parallel to parsing and evaluation.
+    Define that the script will be fetched in parallel to parsing and evaluation.
 
-.. _typo3-fluid-asset-script-crossorigin:
+.. _typo3-fluid-asset-script-crossorigin_argument:
 
 crossorigin
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: crossorigin
+    :name: typo3-fluid-asset-script-crossorigin
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define how to handle crossorigin requests.
+    Define how to handle crossorigin requests.
 
-.. _typo3-fluid-asset-script-defer:
+.. _typo3-fluid-asset-script-defer_argument:
 
 defer
 -----
 
-:aspect:`DataType`
-   boolean
+..  confval:: defer
+    :name: typo3-fluid-asset-script-defer
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define that the script is meant to be executed after the document has been parsed.
+    Define that the script is meant to be executed after the document has been parsed.
 
-.. _typo3-fluid-asset-script-integrity:
+.. _typo3-fluid-asset-script-integrity_argument:
 
 integrity
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: integrity
+    :name: typo3-fluid-asset-script-integrity
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define base64-encoded cryptographic hash of the resource that allows browsers to verify what they fetch.
+    Define base64-encoded cryptographic hash of the resource that allows browsers to verify what they fetch.
 
-.. _typo3-fluid-asset-script-nomodule:
+.. _typo3-fluid-asset-script-nomodule_argument:
 
 nomodule
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: nomodule
+    :name: typo3-fluid-asset-script-nomodule
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define that the script should not be executed in browsers that support ES2015 modules.
+    Define that the script should not be executed in browsers that support ES2015 modules.
 
-.. _typo3-fluid-asset-script-nonce:
+.. _typo3-fluid-asset-script-nonce_argument:
 
 nonce
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: nonce
+    :name: typo3-fluid-asset-script-nonce
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define a cryptographic nonce (number used once) used to whitelist inline styles in a style-src Content-Security-Policy.
+    Define a cryptographic nonce (number used once) used to whitelist inline styles in a style-src Content-Security-Policy.
 
-.. _typo3-fluid-asset-script-referrerpolicy:
+.. _typo3-fluid-asset-script-referrerpolicy_argument:
 
 referrerpolicy
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: referrerpolicy
+    :name: typo3-fluid-asset-script-referrerpolicy
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define which referrer is sent when fetching the resource.
+    Define which referrer is sent when fetching the resource.
 
-.. _typo3-fluid-asset-script-src:
+.. _typo3-fluid-asset-script-src_argument:
 
 src
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: src
+    :name: typo3-fluid-asset-script-src
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the URI of the external resource.
+    Define the URI of the external resource.
 
-.. _typo3-fluid-asset-script-type:
+.. _typo3-fluid-asset-script-type_argument:
 
 type
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: type
+    :name: typo3-fluid-asset-script-type
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the MIME type (usually 'text/javascript').
+    Define the MIME type (usually 'text/javascript').
 
-.. _typo3-fluid-asset-script-usenonce:
+.. _typo3-fluid-asset-script-usenonce_argument:
 
 useNonce
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: useNonce
+    :name: typo3-fluid-asset-script-usenonce
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Whether to use the global nonce value
+    Whether to use the global nonce value
 
-.. _typo3-fluid-asset-script-identifier:
+.. _typo3-fluid-asset-script-identifier_argument:
 
 identifier
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: identifier
+    :name: typo3-fluid-asset-script-identifier
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Use this identifier within templates to only inject your JS once, even though it is added multiple times.
+    Use this identifier within templates to only inject your JS once, even though it is added multiple times.
 
-.. _typo3-fluid-asset-script-priority:
+.. _typo3-fluid-asset-script-priority_argument:
 
 priority
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: priority
+    :name: typo3-fluid-asset-script-priority
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define whether the JavaScript should be put in the <head> tag above-the-fold or somewhere in the body part.
+    Define whether the JavaScript should be put in the <head> tag above-the-fold or somewhere in the body part.

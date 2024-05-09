@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/CycleViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/CycleViewHelper.php
 :navigation-title: cycle
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cycle:
 
 ============================
-cycle ViewHelper `<f:cycle>`
+Cycle ViewHelper `<f:cycle>`
 ============================
-
 
 This ViewHelper cycles through the specified values.
 This can be often used to specify CSS classes for example.
@@ -57,35 +60,44 @@ Output::
         <li class="even">4</li>
     </ul>
 
+.. _typo3fluid-fluid-cycle_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CycleViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/CycleViewHelper.php>`__.
 
 .. _typo3fluid-fluid-cycle_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:cycle>`:
 
-.. _typo3fluid-fluid-cycle-values:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-cycle-values_argument:
 
 values
 ------
 
-:aspect:`DataType`
-   mixed
+..  confval:: values
+    :name: typo3fluid-fluid-cycle-values
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The array or object implementing \ArrayAccess (for example \SplObjectStorage) to iterated over
+    The array or object implementing \ArrayAccess (for example \SplObjectStorage) to iterated over
 
-.. _typo3fluid-fluid-cycle-as:
+.. _typo3fluid-fluid-cycle-as_argument:
 
 as
 --
 
-:aspect:`DataType`
-   string
+..  confval:: as
+    :name: typo3fluid-fluid-cycle-as
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The name of the iteration variable
+    The name of the iteration variable

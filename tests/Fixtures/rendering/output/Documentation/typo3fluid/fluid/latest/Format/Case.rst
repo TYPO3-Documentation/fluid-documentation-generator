@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/CaseViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/CaseViewHelper.php
 :navigation-title: format.case
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-case:
 
 ========================================
-format.case ViewHelper `<f:format.case>`
+Format.case ViewHelper `<f:format.case>`
 ========================================
-
 
 Modifies the case of an input string to upper- or lowercase or capitalization.
 The default transformation will be uppercase as in `mb_convert_case`_.
@@ -58,38 +61,45 @@ Output::
 
    SomeString
 
+.. _typo3fluid-fluid-format-case_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CaseViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/CaseViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-case_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.case>`:
 
-.. _typo3fluid-fluid-format-case-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-case-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-format-case-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The input value. If not given, the evaluated child nodes will be used.
+    The input value. If not given, the evaluated child nodes will be used.
 
-.. _typo3fluid-fluid-format-case-mode:
+.. _typo3fluid-fluid-format-case-mode_argument:
 
 mode
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: mode
+    :name: typo3fluid-fluid-format-case-mode
+    :type: string
+    :Default: 'upper'
+    :required: false
 
-:aspect:`Default`
-   'upper'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The case to apply, must be one of this' CASE_* constants. Defaults to uppercase application.
+    The case to apply, must be one of this' CASE_* constants. Defaults to uppercase application.

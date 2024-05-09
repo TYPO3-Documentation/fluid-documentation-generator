@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemViewHelper.php
 :navigation-title: be.menus.actionMenuItem
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-menus-actionmenuitem:
 
 ================================================================
-be.menus.actionMenuItem ViewHelper `<f:be.menus.actionMenuItem>`
+Be.menus.actionMenuItem ViewHelper `<f:be.menus.actionMenuItem>`
 ================================================================
-
 
 ViewHelper which returns an option tag.
 This ViewHelper only works in conjunction with :php:`\TYPO3\CMS\Fluid\ViewHelpers\Be\Menus\ActionMenuViewHelper`.
@@ -37,103 +40,105 @@ Localized::
 
 Localized select box.
 
+.. _typo3-fluid-be-menus-actionmenuitem_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ActionMenuItemViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemViewHelper.php>`__.
 
 .. _typo3-fluid-be-menus-actionmenuitem_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.menus.actionMenuItem>`:
 
-.. _typo3-fluid-be-menus-actionmenuitem-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-menus-actionmenuitem-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-be-menus-actionmenuitem-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-be-menus-actionmenuitem-data:
+.. _typo3-fluid-be-menus-actionmenuitem-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-be-menus-actionmenuitem-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-be-menus-actionmenuitem-aria:
+.. _typo3-fluid-be-menus-actionmenuitem-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-be-menus-actionmenuitem-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-be-menus-actionmenuitem-label:
+.. _typo3-fluid-be-menus-actionmenuitem-label_argument:
 
 label
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: label
+    :name: typo3-fluid-be-menus-actionmenuitem-label
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Label of the option tag
+    Label of the option tag
 
-.. _typo3-fluid-be-menus-actionmenuitem-controller:
+.. _typo3-fluid-be-menus-actionmenuitem-controller_argument:
 
 controller
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: controller
+    :name: typo3-fluid-be-menus-actionmenuitem-controller
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Controller to be associated with this ActionMenuItem
+    Controller to be associated with this ActionMenuItem
 
-.. _typo3-fluid-be-menus-actionmenuitem-action:
+.. _typo3-fluid-be-menus-actionmenuitem-action_argument:
 
 action
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: action
+    :name: typo3-fluid-be-menus-actionmenuitem-action
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The action to be associated with this ActionMenuItem
+    The action to be associated with this ActionMenuItem
 
-.. _typo3-fluid-be-menus-actionmenuitem-arguments:
+.. _typo3-fluid-be-menus-actionmenuitem-arguments_argument:
 
 arguments
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: arguments
+    :name: typo3-fluid-be-menus-actionmenuitem-arguments
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional controller arguments to be passed to the action when this ActionMenuItem is selected
+    Additional controller arguments to be passed to the action when this ActionMenuItem is selected

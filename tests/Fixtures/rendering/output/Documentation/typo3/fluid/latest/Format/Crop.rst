@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/CropViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/CropViewHelper.php
 :navigation-title: format.crop
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-crop:
 
 ========================================
-format.crop ViewHelper `<f:format.crop>`
+Format.crop ViewHelper `<f:format.crop>`
 ========================================
-
 
 Use this ViewHelper to crop the text between its opening and closing tags.
 
@@ -72,70 +75,71 @@ Inline notation
 ``someLongText cropped after 10 characters``
 Depending on the value of ``{someLongText}``.
 
+.. _typo3-fluid-format-crop_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `CropViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/CropViewHelper.php>`__.
 
 .. _typo3-fluid-format-crop_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.crop>`:
 
-.. _typo3-fluid-format-crop-maxcharacters:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-format-crop-maxcharacters_argument:
 
 maxCharacters
 -------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: maxCharacters
+    :name: typo3-fluid-format-crop-maxcharacters
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Place where to truncate the string
+    Place where to truncate the string
 
-.. _typo3-fluid-format-crop-append:
+.. _typo3-fluid-format-crop-append_argument:
 
 append
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: append
+    :name: typo3-fluid-format-crop-append
+    :type: string
+    :Default: '&hellip;'
+    :required: false
 
-:aspect:`Default`
-   '&hellip;'
+    What to append, if truncation happened
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   What to append, if truncation happened
-
-.. _typo3-fluid-format-crop-respectwordboundaries:
+.. _typo3-fluid-format-crop-respectwordboundaries_argument:
 
 respectWordBoundaries
 ---------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: respectWordBoundaries
+    :name: typo3-fluid-format-crop-respectwordboundaries
+    :type: boolean
+    :Default: true
+    :required: false
 
-:aspect:`Default`
-   true
+    If TRUE and division is in the middle of a word, the remains of that word is removed.
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE and division is in the middle of a word, the remains of that word is removed.
-
-.. _typo3-fluid-format-crop-respecthtml:
+.. _typo3-fluid-format-crop-respecthtml_argument:
 
 respectHtml
 -----------
 
-:aspect:`DataType`
-   boolean
+..  confval:: respectHtml
+    :name: typo3-fluid-format-crop-respecthtml
+    :type: boolean
+    :Default: true
+    :required: false
 
-:aspect:`Default`
-   true
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE the cropped string will respect HTML tags and entities. Technically that means, that cropHTML() is called rather than crop()
+    If TRUE the cropped string will respect HTML tags and entities. Technically that means, that cropHTML() is called rather than crop()

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ActionViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ActionViewHelper.php
 :navigation-title: link.action
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-action:
 
 ========================================
-link.action ViewHelper `<f:link.action>`
+Link.action ViewHelper `<f:link.action>`
 ========================================
-
 
 A ViewHelper for creating links to extbase actions. Tailored for extbase plugins, uses extbase Request and extbase UriBuilder.
 
@@ -23,425 +26,404 @@ Output::
 
 Depending on the current page and your TypoScript configuration.
 
+.. _typo3-fluid-link-action_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ActionViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ActionViewHelper.php>`__.
 
 .. _typo3-fluid-link-action_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:link.action>`:
 
-.. _typo3-fluid-link-action-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-link-action-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-link-action-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-link-action-data:
+.. _typo3-fluid-link-action-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-link-action-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-link-action-aria:
+.. _typo3-fluid-link-action-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-link-action-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-link-action-class:
+.. _typo3-fluid-link-action-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-link-action-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-link-action-dir:
+.. _typo3-fluid-link-action-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-link-action-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-link-action-id:
+.. _typo3-fluid-link-action-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-link-action-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-link-action-lang:
+.. _typo3-fluid-link-action-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-link-action-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-link-action-style:
+.. _typo3-fluid-link-action-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-link-action-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-link-action-title:
+.. _typo3-fluid-link-action-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-link-action-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-link-action-accesskey:
+.. _typo3-fluid-link-action-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-link-action-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-link-action-tabindex:
+.. _typo3-fluid-link-action-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-link-action-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-link-action-onclick:
+.. _typo3-fluid-link-action-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-link-action-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-link-action-name:
+.. _typo3-fluid-link-action-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-link-action-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the name of an anchor
+    Specifies the name of an anchor
 
-.. _typo3-fluid-link-action-rel:
+.. _typo3-fluid-link-action-rel_argument:
 
 rel
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rel
+    :name: typo3-fluid-link-action-rel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the current document and the linked document
+    Specifies the relationship between the current document and the linked document
 
-.. _typo3-fluid-link-action-rev:
+.. _typo3-fluid-link-action-rev_argument:
 
 rev
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rev
+    :name: typo3-fluid-link-action-rev
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the linked document and the current document
+    Specifies the relationship between the linked document and the current document
 
-.. _typo3-fluid-link-action-target:
+.. _typo3-fluid-link-action-target_argument:
 
 target
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: target
+    :name: typo3-fluid-link-action-target
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies where to open the linked document
+    Specifies where to open the linked document
 
-.. _typo3-fluid-link-action-action:
+.. _typo3-fluid-link-action-action_argument:
 
 action
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: action
+    :name: typo3-fluid-link-action-action
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target action
+    Target action
 
-.. _typo3-fluid-link-action-controller:
+.. _typo3-fluid-link-action-controller_argument:
 
 controller
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: controller
+    :name: typo3-fluid-link-action-controller
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target controller. If NULL current controllerName is used
+    Target controller. If NULL current controllerName is used
 
-.. _typo3-fluid-link-action-extensionname:
+.. _typo3-fluid-link-action-extensionname_argument:
 
 extensionName
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: extensionName
+    :name: typo3-fluid-link-action-extensionname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target Extension Name (without `tx_` prefix and no underscores). If NULL the current extension name is used
+    Target Extension Name (without `tx_` prefix and no underscores). If NULL the current extension name is used
 
-.. _typo3-fluid-link-action-pluginname:
+.. _typo3-fluid-link-action-pluginname_argument:
 
 pluginName
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: pluginName
+    :name: typo3-fluid-link-action-pluginname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target plugin. If empty, the current plugin name is used
+    Target plugin. If empty, the current plugin name is used
 
-.. _typo3-fluid-link-action-pageuid:
+.. _typo3-fluid-link-action-pageuid_argument:
 
 pageUid
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: pageUid
+    :name: typo3-fluid-link-action-pageuid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target page. See TypoLink destination
+    Target page. See TypoLink destination
 
-.. _typo3-fluid-link-action-pagetype:
+.. _typo3-fluid-link-action-pagetype_argument:
 
 pageType
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: pageType
+    :name: typo3-fluid-link-action-pagetype
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Type of the target page. See typolink.parameter
+    Type of the target page. See typolink.parameter
 
-.. _typo3-fluid-link-action-nocache:
+.. _typo3-fluid-link-action-nocache_argument:
 
 noCache
 -------
 
-:aspect:`DataType`
-   boolean
+..  confval:: noCache
+    :name: typo3-fluid-link-action-nocache
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Set this to disable caching for the target page. You should not need this.
+    Set this to disable caching for the target page. You should not need this.
 
-.. _typo3-fluid-link-action-language:
+.. _typo3-fluid-link-action-language_argument:
 
 language
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: language
+    :name: typo3-fluid-link-action-language
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
+    Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
 
-.. _typo3-fluid-link-action-section:
+.. _typo3-fluid-link-action-section_argument:
 
 section
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: section
+    :name: typo3-fluid-link-action-section
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The anchor to be added to the URI
+    The anchor to be added to the URI
 
-.. _typo3-fluid-link-action-format:
+.. _typo3-fluid-link-action-format_argument:
 
 format
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: format
+    :name: typo3-fluid-link-action-format
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The requested format, e.g. ".html
+    The requested format, e.g. ".html
 
-.. _typo3-fluid-link-action-linkaccessrestrictedpages:
+.. _typo3-fluid-link-action-linkaccessrestrictedpages_argument:
 
 linkAccessRestrictedPages
 -------------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: linkAccessRestrictedPages
+    :name: typo3-fluid-link-action-linkaccessrestrictedpages
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, links pointing to access restricted pages will still link to the page even though the page cannot be accessed.
+    If set, links pointing to access restricted pages will still link to the page even though the page cannot be accessed.
 
-.. _typo3-fluid-link-action-additionalparams:
+.. _typo3-fluid-link-action-additionalparams_argument:
 
 additionalParams
 ----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalParams
+    :name: typo3-fluid-link-action-additionalparams
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional query parameters that won't be prefixed like $arguments (overrule $arguments)
+    Additional query parameters that won't be prefixed like $arguments (overrule $arguments)
 
-.. _typo3-fluid-link-action-absolute:
+.. _typo3-fluid-link-action-absolute_argument:
 
 absolute
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: absolute
+    :name: typo3-fluid-link-action-absolute
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, the URI of the rendered link is absolute
+    If set, the URI of the rendered link is absolute
 
-.. _typo3-fluid-link-action-addquerystring:
+.. _typo3-fluid-link-action-addquerystring_argument:
 
 addQueryString
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: addQueryString
+    :name: typo3-fluid-link-action-addquerystring
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
+    If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
 
-.. _typo3-fluid-link-action-argumentstobeexcludedfromquerystring:
+.. _typo3-fluid-link-action-argumentstobeexcludedfromquerystring_argument:
 
 argumentsToBeExcludedFromQueryString
 ------------------------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: argumentsToBeExcludedFromQueryString
+    :name: typo3-fluid-link-action-argumentstobeexcludedfromquerystring
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Arguments to be removed from the URI. Only active if $addQueryString = TRUE
+    Arguments to be removed from the URI. Only active if $addQueryString = TRUE
 
-.. _typo3-fluid-link-action-arguments:
+.. _typo3-fluid-link-action-arguments_argument:
 
 arguments
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: arguments
+    :name: typo3-fluid-link-action-arguments
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Arguments for the controller action, associative array
+    Arguments for the controller action, associative array

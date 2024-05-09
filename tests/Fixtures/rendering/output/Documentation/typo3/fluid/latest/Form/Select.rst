@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SelectViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SelectViewHelper.php
 :navigation-title: form.select
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-select:
 
 ========================================
-form.select ViewHelper `<f:form.select>`
+Form.select ViewHelper `<f:form.select>`
 ========================================
-
 
 This ViewHelper generates a :html:`<select>` dropdown list for the use with a form.
 
@@ -80,376 +83,357 @@ value of each entry.
 
 The ``value`` property now expects a domain object, and tests for object equivalence.
 
+.. _typo3-fluid-form-select_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `SelectViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SelectViewHelper.php>`__.
 
 .. _typo3-fluid-form-select_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.select>`:
 
-.. _typo3-fluid-form-select-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-select-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-select-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-select-data:
+.. _typo3-fluid-form-select-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-select-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-select-aria:
+.. _typo3-fluid-form-select-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-select-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-select-name:
+.. _typo3-fluid-form-select-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-select-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-select-value:
+.. _typo3-fluid-form-select-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: value
+    :name: typo3-fluid-form-select-value
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value of input tag
+    Value of input tag
 
-.. _typo3-fluid-form-select-property:
+.. _typo3-fluid-form-select-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-select-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-select-class:
+.. _typo3-fluid-form-select-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-select-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-select-dir:
+.. _typo3-fluid-form-select-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-select-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-select-id:
+.. _typo3-fluid-form-select-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-select-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-select-lang:
+.. _typo3-fluid-form-select-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-select-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-select-style:
+.. _typo3-fluid-form-select-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-select-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-select-title:
+.. _typo3-fluid-form-select-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-select-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-select-accesskey:
+.. _typo3-fluid-form-select-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-select-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-select-tabindex:
+.. _typo3-fluid-form-select-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-select-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-select-onclick:
+.. _typo3-fluid-form-select-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-select-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-form-select-size:
+.. _typo3-fluid-form-select-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: size
+    :name: typo3-fluid-form-select-size
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Size of select field, a numeric value to show the amount of items to be visible at the same time - equivalent to HTML <select> site attribute
+    Size of select field, a numeric value to show the amount of items to be visible at the same time - equivalent to HTML <select> site attribute
 
-.. _typo3-fluid-form-select-disabled:
+.. _typo3-fluid-form-select-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-select-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads
 
-.. _typo3-fluid-form-select-options:
+.. _typo3-fluid-form-select-options_argument:
 
 options
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: options
+    :name: typo3-fluid-form-select-options
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Associative array with internal IDs as key, and the values are displayed in the select box. Can be combined with or replaced by child f:form.select.* nodes.
+    Associative array with internal IDs as key, and the values are displayed in the select box. Can be combined with or replaced by child f:form.select.* nodes.
 
-.. _typo3-fluid-form-select-optionsaftercontent:
+.. _typo3-fluid-form-select-optionsaftercontent_argument:
 
 optionsAfterContent
 -------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: optionsAfterContent
+    :name: typo3-fluid-form-select-optionsaftercontent
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If true, places auto-generated option tags after those rendered in the tag content. If false, automatic options come first.
+    If true, places auto-generated option tags after those rendered in the tag content. If false, automatic options come first.
 
-.. _typo3-fluid-form-select-optionvaluefield:
+.. _typo3-fluid-form-select-optionvaluefield_argument:
 
 optionValueField
 ----------------
 
-:aspect:`DataType`
-   string
+..  confval:: optionValueField
+    :name: typo3-fluid-form-select-optionvaluefield
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will call the appropriate getter on each object to determine the value.
+    If specified, will call the appropriate getter on each object to determine the value.
 
-.. _typo3-fluid-form-select-optionlabelfield:
+.. _typo3-fluid-form-select-optionlabelfield_argument:
 
 optionLabelField
 ----------------
 
-:aspect:`DataType`
-   string
+..  confval:: optionLabelField
+    :name: typo3-fluid-form-select-optionlabelfield
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will call the appropriate getter on each object to determine the label.
+    If specified, will call the appropriate getter on each object to determine the label.
 
-.. _typo3-fluid-form-select-sortbyoptionlabel:
+.. _typo3-fluid-form-select-sortbyoptionlabel_argument:
 
 sortByOptionLabel
 -----------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: sortByOptionLabel
+    :name: typo3-fluid-form-select-sortbyoptionlabel
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If true, List will be sorted by label.
+    If true, List will be sorted by label.
 
-.. _typo3-fluid-form-select-selectallbydefault:
+.. _typo3-fluid-form-select-selectallbydefault_argument:
 
 selectAllByDefault
 ------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: selectAllByDefault
+    :name: typo3-fluid-form-select-selectallbydefault
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified options are selected if none was set before.
+    If specified options are selected if none was set before.
 
-.. _typo3-fluid-form-select-errorclass:
+.. _typo3-fluid-form-select-errorclass_argument:
 
 errorClass
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: errorClass
+    :name: typo3-fluid-form-select-errorclass
+    :type: string
+    :Default: 'f3-form-error'
+    :required: false
 
-:aspect:`Default`
-   'f3-form-error'
+    CSS class to set if there are errors for this ViewHelper
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class to set if there are errors for this ViewHelper
-
-.. _typo3-fluid-form-select-prependoptionlabel:
+.. _typo3-fluid-form-select-prependoptionlabel_argument:
 
 prependOptionLabel
 ------------------
 
-:aspect:`DataType`
-   string
+..  confval:: prependOptionLabel
+    :name: typo3-fluid-form-select-prependoptionlabel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will provide an option at first position with the specified label.
+    If specified, will provide an option at first position with the specified label.
 
-.. _typo3-fluid-form-select-prependoptionvalue:
+.. _typo3-fluid-form-select-prependoptionvalue_argument:
 
 prependOptionValue
 ------------------
 
-:aspect:`DataType`
-   string
+..  confval:: prependOptionValue
+    :name: typo3-fluid-form-select-prependoptionvalue
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If specified, will provide an option at first position with the specified value.
+    If specified, will provide an option at first position with the specified value.
 
-.. _typo3-fluid-form-select-multiple:
+.. _typo3-fluid-form-select-multiple_argument:
 
 multiple
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: multiple
+    :name: typo3-fluid-form-select-multiple
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set multiple options may be selected.
+    If set multiple options may be selected.
 
-.. _typo3-fluid-form-select-required:
+.. _typo3-fluid-form-select-required_argument:
 
 required
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: required
+    :name: typo3-fluid-form-select-required
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set no empty value is allowed.
+    If set no empty value is allowed.

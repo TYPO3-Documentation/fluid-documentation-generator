@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/EmailViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/EmailViewHelper.php
 :navigation-title: link.email
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-email:
 
 ======================================
-link.email ViewHelper `<f:link.email>`
+Link.email ViewHelper `<f:link.email>`
 ======================================
-
 
 Email link ViewHelper.
 Generates an email link incorporating TYPO3s `spamProtectEmailAddresses`_ TypoScript setting.
@@ -52,282 +55,272 @@ Output::
 
 Depending on `spamProtectEmailAddresses`_ setting.
 
+.. _typo3-fluid-link-email_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `EmailViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/EmailViewHelper.php>`__.
 
 .. _typo3-fluid-link-email_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:link.email>`:
 
-.. _typo3-fluid-link-email-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-link-email-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-link-email-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-link-email-data:
+.. _typo3-fluid-link-email-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-link-email-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-link-email-aria:
+.. _typo3-fluid-link-email-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-link-email-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-link-email-email:
+.. _typo3-fluid-link-email-email_argument:
 
 email
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: email
+    :name: typo3-fluid-link-email-email
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The email address to be turned into a link
+    The email address to be turned into a link
 
-.. _typo3-fluid-link-email-cc:
+.. _typo3-fluid-link-email-cc_argument:
 
 cc
 --
 
-:aspect:`DataType`
-   string
+..  confval:: cc
+    :name: typo3-fluid-link-email-cc
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The email address(es) for CC of the email link
+    The email address(es) for CC of the email link
 
-.. _typo3-fluid-link-email-bcc:
+.. _typo3-fluid-link-email-bcc_argument:
 
 bcc
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: bcc
+    :name: typo3-fluid-link-email-bcc
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The email address(es) for BCC of the email link
+    The email address(es) for BCC of the email link
 
-.. _typo3-fluid-link-email-subject:
+.. _typo3-fluid-link-email-subject_argument:
 
 subject
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: subject
+    :name: typo3-fluid-link-email-subject
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   A prefilled subject for the email link
+    A prefilled subject for the email link
 
-.. _typo3-fluid-link-email-body:
+.. _typo3-fluid-link-email-body_argument:
 
 body
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: body
+    :name: typo3-fluid-link-email-body
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   A prefilled body for the email link
+    A prefilled body for the email link
 
-.. _typo3-fluid-link-email-class:
+.. _typo3-fluid-link-email-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-link-email-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-link-email-dir:
+.. _typo3-fluid-link-email-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-link-email-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-link-email-id:
+.. _typo3-fluid-link-email-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-link-email-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-link-email-lang:
+.. _typo3-fluid-link-email-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-link-email-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-link-email-style:
+.. _typo3-fluid-link-email-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-link-email-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-link-email-title:
+.. _typo3-fluid-link-email-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-link-email-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-link-email-accesskey:
+.. _typo3-fluid-link-email-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-link-email-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-link-email-tabindex:
+.. _typo3-fluid-link-email-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-link-email-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-link-email-onclick:
+.. _typo3-fluid-link-email-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-link-email-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-link-email-name:
+.. _typo3-fluid-link-email-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-link-email-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the name of an anchor
+    Specifies the name of an anchor
 
-.. _typo3-fluid-link-email-rel:
+.. _typo3-fluid-link-email-rel_argument:
 
 rel
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rel
+    :name: typo3-fluid-link-email-rel
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the current document and the linked document
+    Specifies the relationship between the current document and the linked document
 
-.. _typo3-fluid-link-email-rev:
+.. _typo3-fluid-link-email-rev_argument:
 
 rev
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: rev
+    :name: typo3-fluid-link-email-rev
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the relationship between the linked document and the current document
+    Specifies the relationship between the linked document and the current document
 
-.. _typo3-fluid-link-email-target:
+.. _typo3-fluid-link-email-target_argument:
 
 target
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: target
+    :name: typo3-fluid-link-email-target
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies where to open the linked document
+    Specifies where to open the linked document

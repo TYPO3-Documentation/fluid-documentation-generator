@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/IconForResourceViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/IconForResourceViewHelper.php
 :navigation-title: iconForResource
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-iconforresource:
 
 ===================================================
-iconForResource ViewHelper `<core:iconForResource>`
+IconForResource ViewHelper `<core:iconForResource>`
 ===================================================
-
 
 Displays icon for a FAL resource (file or folder means a :php:`TYPO3\CMS\Core\Resource\ResourceInterface`).
 
@@ -25,80 +28,82 @@ Output::
         </span>
     </span>
 
+.. _typo3-core-iconforresource_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `IconForResourceViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/IconForResourceViewHelper.php>`__.
 
 .. _typo3-core-iconforresource_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<core:iconForResource>`:
 
-.. _typo3-core-iconforresource-resource:
+..  contents::
+    :local:
+
+
+.. _typo3-core-iconforresource-resource_argument:
 
 resource
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: resource
+    :name: typo3-core-iconforresource-resource
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Resource
+    Resource
 
-.. _typo3-core-iconforresource-size:
+.. _typo3-core-iconforresource-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: size
+    :name: typo3-core-iconforresource-size
+    :type: string
+    :Default: \TYPO3\CMS\Core\Imaging\IconSize::SMALL
+    :required: false
 
-:aspect:`Default`
-   \TYPO3\CMS\Core\Imaging\IconSize::SMALL
+    The icon size
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The icon size
-
-.. _typo3-core-iconforresource-overlay:
+.. _typo3-core-iconforresource-overlay_argument:
 
 overlay
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: overlay
+    :name: typo3-core-iconforresource-overlay
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Overlay identifier
+    Overlay identifier
 
-.. _typo3-core-iconforresource-options:
+.. _typo3-core-iconforresource-options_argument:
 
 options
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: options
+    :name: typo3-core-iconforresource-options
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    An associative array with additional options
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   An associative array with additional options
-
-.. _typo3-core-iconforresource-alternativemarkupidentifier:
+.. _typo3-core-iconforresource-alternativemarkupidentifier_argument:
 
 alternativeMarkupIdentifier
 ---------------------------
 
-:aspect:`DataType`
-   string
+..  confval:: alternativeMarkupIdentifier
+    :name: typo3-core-iconforresource-alternativemarkupidentifier
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Alternative markup identifier
+    Alternative markup identifier

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/PageViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/PageViewHelper.php
 :navigation-title: uri.page
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-page:
 
 ==================================
-uri.page ViewHelper `<f:uri.page>`
+Uri.page ViewHelper `<f:uri.page>`
 ==================================
-
 
 A ViewHelper for creating URIs to TYPO3 pages.
 
@@ -46,145 +49,142 @@ Query parameters for extensions
 
 Depending on current page, routing and page path configuration.
 
+.. _typo3-fluid-uri-page_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `PageViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/PageViewHelper.php>`__.
 
 .. _typo3-fluid-uri-page_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:uri.page>`:
 
-.. _typo3-fluid-uri-page-pageuid:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-uri-page-pageuid_argument:
 
 pageUid
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: pageUid
+    :name: typo3-fluid-uri-page-pageuid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target PID
+    Target PID
 
-.. _typo3-fluid-uri-page-additionalparams:
+.. _typo3-fluid-uri-page-additionalparams_argument:
 
 additionalParams
 ----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalParams
+    :name: typo3-fluid-uri-page-additionalparams
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    Query parameters to be attached to the resulting URI
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Query parameters to be attached to the resulting URI
-
-.. _typo3-fluid-uri-page-pagetype:
+.. _typo3-fluid-uri-page-pagetype_argument:
 
 pageType
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: pageType
+    :name: typo3-fluid-uri-page-pagetype
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Type of the target page. See typolink.parameter
+    Type of the target page. See typolink.parameter
 
-.. _typo3-fluid-uri-page-nocache:
+.. _typo3-fluid-uri-page-nocache_argument:
 
 noCache
 -------
 
-:aspect:`DataType`
-   boolean
+..  confval:: noCache
+    :name: typo3-fluid-uri-page-nocache
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Set this to disable caching for the target page. You should not need this.
+    Set this to disable caching for the target page. You should not need this.
 
-.. _typo3-fluid-uri-page-language:
+.. _typo3-fluid-uri-page-language_argument:
 
 language
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: language
+    :name: typo3-fluid-uri-page-language
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
+    Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
 
-.. _typo3-fluid-uri-page-section:
+.. _typo3-fluid-uri-page-section_argument:
 
 section
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: section
+    :name: typo3-fluid-uri-page-section
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The anchor to be added to the URI
+    The anchor to be added to the URI
 
-.. _typo3-fluid-uri-page-linkaccessrestrictedpages:
+.. _typo3-fluid-uri-page-linkaccessrestrictedpages_argument:
 
 linkAccessRestrictedPages
 -------------------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: linkAccessRestrictedPages
+    :name: typo3-fluid-uri-page-linkaccessrestrictedpages
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, links pointing to access restricted pages will still link to the page even though the page cannot be accessed.
+    If set, links pointing to access restricted pages will still link to the page even though the page cannot be accessed.
 
-.. _typo3-fluid-uri-page-absolute:
+.. _typo3-fluid-uri-page-absolute_argument:
 
 absolute
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: absolute
+    :name: typo3-fluid-uri-page-absolute
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, the URI of the rendered link is absolute
+    If set, the URI of the rendered link is absolute
 
-.. _typo3-fluid-uri-page-addquerystring:
+.. _typo3-fluid-uri-page-addquerystring_argument:
 
 addQueryString
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: addQueryString
+    :name: typo3-fluid-uri-page-addquerystring
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
+    If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
 
-.. _typo3-fluid-uri-page-argumentstobeexcludedfromquerystring:
+.. _typo3-fluid-uri-page-argumentstobeexcludedfromquerystring_argument:
 
 argumentsToBeExcludedFromQueryString
 ------------------------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: argumentsToBeExcludedFromQueryString
+    :name: typo3-fluid-uri-page-argumentstobeexcludedfromquerystring
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Arguments to be removed from the URI. Only active if $addQueryString = TRUE
+    Arguments to be removed from the URI. Only active if $addQueryString = TRUE

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/AliasViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/AliasViewHelper.php
 :navigation-title: alias
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-alias:
 
 ============================
-alias ViewHelper `<f:alias>`
+Alias ViewHelper `<f:alias>`
 ============================
-
 
 Declares new variables which are aliases of other variables.
 Takes a "map"-Parameter which is an associative array which defines the shorthand mapping.
@@ -47,22 +50,32 @@ Output::
 
 Depending on ``{foo.bar.baz}``.
 
+.. _typo3fluid-fluid-alias_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `AliasViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/AliasViewHelper.php>`__.
 
 .. _typo3fluid-fluid-alias_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:alias>`:
 
-.. _typo3fluid-fluid-alias-map:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-alias-map_argument:
 
 map
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: map
+    :name: typo3fluid-fluid-alias-map
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Array that specifies which variables should be mapped to which alias
+    Array that specifies which variables should be mapped to which alias

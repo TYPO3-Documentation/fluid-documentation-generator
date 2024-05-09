@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SectionViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SectionViewHelper.php
 :navigation-title: section
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-section:
 
 ================================
-section ViewHelper `<f:section>`
+Section ViewHelper `<f:section>`
 ================================
-
 
 A ViewHelper to declare sections in templates for later use with e.g. the ``f:render`` ViewHelper.
 
@@ -56,22 +59,32 @@ Output::
     [...]
     (depending on the value of {menu})
 
+.. _typo3fluid-fluid-section_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `SectionViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SectionViewHelper.php>`__.
 
 .. _typo3fluid-fluid-section_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:section>`:
 
-.. _typo3fluid-fluid-section-name:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-section-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3fluid-fluid-section-name
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Name of the section
+    Name of the section

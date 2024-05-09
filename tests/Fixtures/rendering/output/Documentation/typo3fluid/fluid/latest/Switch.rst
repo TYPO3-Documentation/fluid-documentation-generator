@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SwitchViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SwitchViewHelper.php
 :navigation-title: switch
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-switch:
 
 ==============================
-switch ViewHelper `<f:switch>`
+Switch ViewHelper `<f:switch>`
 ==============================
-
 
 Switch ViewHelper which can be used to render content depending on a value or expression.
 Implements what a basic PHP ``switch()`` does.
@@ -38,22 +41,32 @@ Output::
 
     "Mr.", "Mrs." or "Mr. / Mrs." (depending on the value of {person.gender})
 
+.. _typo3fluid-fluid-switch_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `SwitchViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SwitchViewHelper.php>`__.
 
 .. _typo3fluid-fluid-switch_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:switch>`:
 
-.. _typo3fluid-fluid-switch-expression:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-switch-expression_argument:
 
 expression
 ----------
 
-:aspect:`DataType`
-   mixed
+..  confval:: expression
+    :name: typo3fluid-fluid-switch-expression
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Expression to switch
+    Expression to switch

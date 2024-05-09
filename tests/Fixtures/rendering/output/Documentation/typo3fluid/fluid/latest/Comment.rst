@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/CommentViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/CommentViewHelper.php
 :navigation-title: comment
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-comment:
 
 ================================
-comment ViewHelper `<f:comment>`
+Comment ViewHelper `<f:comment>`
 ================================
-
 
 This ViewHelper prevents rendering of any content inside the tag.
 
@@ -53,11 +56,11 @@ Output:
 
 Will be nothing.
 
+.. _typo3fluid-fluid-comment_source:
 
-.. _typo3fluid-fluid-comment_arguments:
+Source code
+===========
 
-Arguments
-=========
+Go to the source code of this ViewHelper: `CommentViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/CommentViewHelper.php>`__.
 
-
-This ViewHelper has no arguments.
+..  note:: `<f:comment>` has no arguments.

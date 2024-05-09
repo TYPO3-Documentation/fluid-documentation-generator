@@ -10,3 +10,4 @@ build/logs/
 .idea/
 /.phpunit.result.cache
 /.cache/*
+/Documentation-GENERATED-temp/

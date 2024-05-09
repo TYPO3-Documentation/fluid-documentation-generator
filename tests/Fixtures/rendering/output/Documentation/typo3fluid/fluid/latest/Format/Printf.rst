@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/PrintfViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/PrintfViewHelper.php
 :navigation-title: format.printf
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-printf:
 
 ============================================
-format.printf ViewHelper `<f:format.printf>`
+Format.printf ViewHelper `<f:format.printf>`
 ============================================
-
 
 A ViewHelper for formatting values with printf. Either supply an array for
 the arguments or a single value.
@@ -62,38 +65,45 @@ Output::
 
     We love TYPO3
 
+.. _typo3fluid-fluid-format-printf_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `PrintfViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/PrintfViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-printf_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.printf>`:
 
-.. _typo3fluid-fluid-format-printf-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-printf-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-format-printf-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   String to format
+    String to format
 
-.. _typo3fluid-fluid-format-printf-arguments:
+.. _typo3fluid-fluid-format-printf-arguments_argument:
 
 arguments
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: arguments
+    :name: typo3fluid-fluid-format-printf-arguments
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The arguments for vsprintf
+    The arguments for vsprintf

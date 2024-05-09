@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ResourceViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ResourceViewHelper.php
 :navigation-title: uri.resource
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-resource:
 
 ==========================================
-uri.resource ViewHelper `<f:uri.resource>`
+Uri.resource ViewHelper `<f:uri.resource>`
 ==========================================
-
 
 A ViewHelper for creating URIs to resources.
 
@@ -57,48 +60,56 @@ Output::
 
 Magically adds 'Resources/Public' to path.
 
+.. _typo3-fluid-uri-resource_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ResourceViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ResourceViewHelper.php>`__.
 
 .. _typo3-fluid-uri-resource_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:uri.resource>`:
 
-.. _typo3-fluid-uri-resource-path:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-uri-resource-path_argument:
 
 path
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: path
+    :name: typo3-fluid-uri-resource-path
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The path and filename of the resource (relative to Public resource directory of the extension).
+    The path and filename of the resource (relative to Public resource directory of the extension).
 
-.. _typo3-fluid-uri-resource-extensionname:
+.. _typo3-fluid-uri-resource-extensionname_argument:
 
 extensionName
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: extensionName
+    :name: typo3-fluid-uri-resource-extensionname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target extension name. If not set, the current extension name will be used
+    Target extension name. If not set, the current extension name will be used
 
-.. _typo3-fluid-uri-resource-absolute:
+.. _typo3-fluid-uri-resource-absolute_argument:
 
 absolute
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: absolute
+    :name: typo3-fluid-uri-resource-absolute
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, an absolute URI is rendered
+    If set, an absolute URI is rendered

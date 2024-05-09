@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/HtmlspecialcharsViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/HtmlspecialcharsViewHelper.php
 :navigation-title: format.htmlspecialchars
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-htmlspecialchars:
 
 ================================================================
-format.htmlspecialchars ViewHelper `<f:format.htmlspecialchars>`
+Format.htmlspecialchars ViewHelper `<f:format.htmlspecialchars>`
 ================================================================
-
 
 Applies PHP ``htmlspecialchars()`` escaping to a value.
 
@@ -37,67 +40,70 @@ Output::
 
     Text with & " ' < > * replaced by HTML entities (htmlspecialchars applied).
 
+.. _typo3fluid-fluid-format-htmlspecialchars_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `HtmlspecialcharsViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/Format/HtmlspecialcharsViewHelper.php>`__.
 
 .. _typo3fluid-fluid-format-htmlspecialchars_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.htmlspecialchars>`:
 
-.. _typo3fluid-fluid-format-htmlspecialchars-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-format-htmlspecialchars-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-format-htmlspecialchars-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to format
+    Value to format
 
-.. _typo3fluid-fluid-format-htmlspecialchars-keepquotes:
+.. _typo3fluid-fluid-format-htmlspecialchars-keepquotes_argument:
 
 keepQuotes
 ----------
 
-:aspect:`DataType`
-   boolean
+..  confval:: keepQuotes
+    :name: typo3fluid-fluid-format-htmlspecialchars-keepquotes
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If TRUE quotes will not be replaced (ENT_NOQUOTES)
+    If TRUE quotes will not be replaced (ENT_NOQUOTES)
 
-.. _typo3fluid-fluid-format-htmlspecialchars-encoding:
+.. _typo3fluid-fluid-format-htmlspecialchars-encoding_argument:
 
 encoding
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: encoding
+    :name: typo3fluid-fluid-format-htmlspecialchars-encoding
+    :type: string
+    :Default: 'UTF-8'
+    :required: false
 
-:aspect:`Default`
-   'UTF-8'
+    Encoding
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Encoding
-
-.. _typo3fluid-fluid-format-htmlspecialchars-doubleencode:
+.. _typo3fluid-fluid-format-htmlspecialchars-doubleencode_argument:
 
 doubleEncode
 ------------
 
-:aspect:`DataType`
-   boolean
+..  confval:: doubleEncode
+    :name: typo3fluid-fluid-format-htmlspecialchars-doubleencode
+    :type: boolean
+    :Default: true
+    :required: false
 
-:aspect:`Default`
-   true
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If FALSE html entities will not be encoded
+    If FALSE html entities will not be encoded

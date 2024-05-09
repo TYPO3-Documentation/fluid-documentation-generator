@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SpacelessViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SpacelessViewHelper.php
 :navigation-title: spaceless
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-spaceless:
 
 ====================================
-spaceless ViewHelper `<f:spaceless>`
+Spaceless ViewHelper `<f:spaceless>`
 ====================================
-
 
 Space Removal ViewHelper
 
@@ -37,11 +40,11 @@ Output::
 
     text</div></div></div>
 
+.. _typo3fluid-fluid-spaceless_source:
 
-.. _typo3fluid-fluid-spaceless_arguments:
+Source code
+===========
 
-Arguments
-=========
+Go to the source code of this ViewHelper: `SpacelessViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SpacelessViewHelper.php>`__.
 
-
-This ViewHelper has no arguments.
+..  note:: `<f:spaceless>` has no arguments.

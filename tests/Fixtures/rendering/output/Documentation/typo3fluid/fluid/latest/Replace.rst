@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/ReplaceViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/ReplaceViewHelper.php
 :navigation-title: replace
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-replace:
 
 ================================
-replace ViewHelper `<f:replace>`
+Replace ViewHelper `<f:replace>`
 ================================
-
 
 The ReplaceViewHelper replaces one or multiple strings with other
 strings. This ViewHelper mimicks PHP's :php:`str_replace()` function.
@@ -49,47 +52,54 @@ Replace multiple strings using associative array
 
    Hi Fluid
 
+.. _typo3fluid-fluid-replace_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ReplaceViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/ReplaceViewHelper.php>`__.
 
 .. _typo3fluid-fluid-replace_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:replace>`:
 
-.. _typo3fluid-fluid-replace-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-replace-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-replace-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   
+    
 
-.. _typo3fluid-fluid-replace-search:
+.. _typo3fluid-fluid-replace-search_argument:
 
 search
 ------
 
-:aspect:`DataType`
-   mixed
+..  confval:: search
+    :name: typo3fluid-fluid-replace-search
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   
+    
 
-.. _typo3fluid-fluid-replace-replace:
+.. _typo3fluid-fluid-replace-replace_argument:
 
 replace
 -------
 
-:aspect:`DataType`
-   mixed
-
-:aspect:`Required`
-   true
-:aspect:`Description`
+..  confval:: replace
+    :name: typo3fluid-fluid-replace-replace
+    :type: mixed
+    :required: true

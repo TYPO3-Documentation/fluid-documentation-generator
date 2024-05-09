@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlViewHelper.php
 :navigation-title: format.html
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-html:
 
 ========================================
-format.html ViewHelper `<f:format.html>`
+Format.html ViewHelper `<f:format.html>`
 ========================================
-
 
 Renders a string by passing it to a TYPO3 `parseFunc`_.
 You can either specify a path to the TypoScript setting or set the `parseFunc`_ options directly.
@@ -96,77 +99,81 @@ Output::
 
 .. _parseFunc: https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/Functions/Parsefunc.html
 
+.. _typo3-fluid-format-html_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `HtmlViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlViewHelper.php>`__.
 
 .. _typo3-fluid-format-html_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:format.html>`:
 
-.. _typo3-fluid-format-html-parsefunctspath:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-format-html-parsefunctspath_argument:
 
 parseFuncTSPath
 ---------------
 
-:aspect:`DataType`
-   string
+..  confval:: parseFuncTSPath
+    :name: typo3-fluid-format-html-parsefunctspath
+    :type: string
+    :Default: 'lib.parseFunc_RTE'
+    :required: false
 
-:aspect:`Default`
-   'lib.parseFunc_RTE'
+    Path to the TypoScript parseFunc setup.
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Path to the TypoScript parseFunc setup.
-
-.. _typo3-fluid-format-html-data:
+.. _typo3-fluid-format-html-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-format-html-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Initialize the content object with this set of data. Either an array or object.
+    Initialize the content object with this set of data. Either an array or object.
 
-.. _typo3-fluid-format-html-current:
+.. _typo3-fluid-format-html-current_argument:
 
 current
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: current
+    :name: typo3-fluid-format-html-current
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Initialize the content object with this value for current property.
+    Initialize the content object with this value for current property.
 
-.. _typo3-fluid-format-html-currentvaluekey:
+.. _typo3-fluid-format-html-currentvaluekey_argument:
 
 currentValueKey
 ---------------
 
-:aspect:`DataType`
-   string
+..  confval:: currentValueKey
+    :name: typo3-fluid-format-html-currentvaluekey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Define the value key, used to locate the current value for the content object
+    Define the value key, used to locate the current value for the content object
 
-.. _typo3-fluid-format-html-table:
+.. _typo3-fluid-format-html-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-fluid-format-html-table
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The table name associated with the "data" argument.
+    The table name associated with the "data" argument.

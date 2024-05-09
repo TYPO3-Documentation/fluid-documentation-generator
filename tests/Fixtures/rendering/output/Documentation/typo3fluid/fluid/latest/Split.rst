@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SplitViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SplitViewHelper.php
 :navigation-title: split
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-split:
 
 ============================
-split ViewHelper `<f:split>`
+Split ViewHelper `<f:split>`
 ============================
-
 
 The SplitViewHelper splits a string by the specified separator, which
 results in an array. The number of values in the resulting array can
@@ -53,51 +56,57 @@ Split with a limit
 
    {0: '1', 1: '5,8'}
 
+.. _typo3fluid-fluid-split_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `SplitViewHelper.php (GitHub) <https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/SplitViewHelper.php>`__.
 
 .. _typo3fluid-fluid-split_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:split>`:
 
-.. _typo3fluid-fluid-split-value:
+..  contents::
+    :local:
+
+
+.. _typo3fluid-fluid-split-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3fluid-fluid-split-value
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The string to explode
+    The string to explode
 
-.. _typo3fluid-fluid-split-separator:
+.. _typo3fluid-fluid-split-separator_argument:
 
 separator
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: separator
+    :name: typo3fluid-fluid-split-separator
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Separator string to explode with
+    Separator string to explode with
 
-.. _typo3fluid-fluid-split-limit:
+.. _typo3fluid-fluid-split-limit_argument:
 
 limit
 -----
 
-:aspect:`DataType`
-   mixed
+..  confval:: limit
+    :name: typo3fluid-fluid-split-limit
+    :type: mixed
+    :Default: 9223372036854775807
+    :required: false
 
-:aspect:`Default`
-   9223372036854775807
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If limit is positive, a maximum of $limit items will be returned. If limit is negative, all items except for the last $limit items will be returned. 0 will be treated as 1.
+    If limit is positive, a maximum of $limit items will be returned. If limit is negative, all items except for the last $limit items will be returned. 0 will be treated as 1.

@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Security/IfHasRoleViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Security/IfHasRoleViewHelper.php
 :navigation-title: be.security.ifHasRole
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-security-ifhasrole:
 
 ============================================================
-be.security.ifHasRole ViewHelper `<f:be.security.ifHasRole>`
+Be.security.ifHasRole ViewHelper `<f:be.security.ifHasRole>`
 ============================================================
-
 
 This ViewHelper implements an ifHasRole/else condition for backend users
 and backend groups.
@@ -50,48 +53,56 @@ Everything inside the :html:`<f:then></f:then>` tag is displayed if the
 logged in backend user belongs to the specified backend group.
 Otherwise, everything inside the :html:`<f:else></f:else>` tag is displayed.
 
+.. _typo3-fluid-be-security-ifhasrole_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `IfHasRoleViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Security/IfHasRoleViewHelper.php>`__.
 
 .. _typo3-fluid-be-security-ifhasrole_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:be.security.ifHasRole>`:
 
-.. _typo3-fluid-be-security-ifhasrole-then:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-be-security-ifhasrole-then_argument:
 
 then
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: then
+    :name: typo3-fluid-be-security-ifhasrole-then
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to be returned if the condition if met.
+    Value to be returned if the condition if met.
 
-.. _typo3-fluid-be-security-ifhasrole-else:
+.. _typo3-fluid-be-security-ifhasrole-else_argument:
 
 else
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: else
+    :name: typo3-fluid-be-security-ifhasrole-else
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Value to be returned if the condition if not met.
+    Value to be returned if the condition if not met.
 
-.. _typo3-fluid-be-security-ifhasrole-role:
+.. _typo3-fluid-be-security-ifhasrole-role_argument:
 
 role
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: role
+    :name: typo3-fluid-be-security-ifhasrole-role
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The usergroup (either the usergroup uid or its title).
+    The usergroup (either the usergroup uid or its title).

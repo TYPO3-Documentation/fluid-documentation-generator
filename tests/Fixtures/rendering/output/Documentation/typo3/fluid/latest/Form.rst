@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/FormViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/FormViewHelper.php
 :navigation-title: form
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form:
 
 ==========================
-form ViewHelper `<f:form>`
+Form ViewHelper `<f:form>`
 ==========================
-
 
 Form ViewHelper. Generates a :html:`<form>` Tag. Tailored for extbase plugins, uses extbase Request.
 
@@ -41,541 +44,504 @@ Binding a domain object to a form::
 This automatically inserts the value of ``{customer.name}`` inside the
 textarea and adjusts the name of the textarea accordingly.
 
+.. _typo3-fluid-form_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `FormViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/FormViewHelper.php>`__.
 
 .. _typo3-fluid-form_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form>`:
 
-.. _typo3-fluid-form-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-data:
+.. _typo3-fluid-form-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-aria:
+.. _typo3-fluid-form-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-action:
+.. _typo3-fluid-form-action_argument:
 
 action
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: action
+    :name: typo3-fluid-form-action
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target action
+    Target action
 
-.. _typo3-fluid-form-arguments:
+.. _typo3-fluid-form-arguments_argument:
 
 arguments
 ---------
 
-:aspect:`DataType`
-   mixed
+..  confval:: arguments
+    :name: typo3-fluid-form-arguments
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    Arguments
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Arguments
-
-.. _typo3-fluid-form-controller:
+.. _typo3-fluid-form-controller_argument:
 
 controller
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: controller
+    :name: typo3-fluid-form-controller
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target controller
+    Target controller
 
-.. _typo3-fluid-form-extensionname:
+.. _typo3-fluid-form-extensionname_argument:
 
 extensionName
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: extensionName
+    :name: typo3-fluid-form-extensionname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target Extension Name (without `tx_` prefix and no underscores). If NULL the current extension name is used
+    Target Extension Name (without `tx_` prefix and no underscores). If NULL the current extension name is used
 
-.. _typo3-fluid-form-pluginname:
+.. _typo3-fluid-form-pluginname_argument:
 
 pluginName
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: pluginName
+    :name: typo3-fluid-form-pluginname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target plugin. If empty, the current plugin name is used
+    Target plugin. If empty, the current plugin name is used
 
-.. _typo3-fluid-form-pageuid:
+.. _typo3-fluid-form-pageuid_argument:
 
 pageUid
 -------
 
-:aspect:`DataType`
-   mixed
+..  confval:: pageUid
+    :name: typo3-fluid-form-pageuid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target page uid
+    Target page uid
 
-.. _typo3-fluid-form-object:
+.. _typo3-fluid-form-object_argument:
 
 object
 ------
 
-:aspect:`DataType`
-   mixed
+..  confval:: object
+    :name: typo3-fluid-form-object
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Object to use for the form. Use in conjunction with the "property" attribute on the sub tags
+    Object to use for the form. Use in conjunction with the "property" attribute on the sub tags
 
-.. _typo3-fluid-form-pagetype:
+.. _typo3-fluid-form-pagetype_argument:
 
 pageType
 --------
 
-:aspect:`DataType`
-   mixed
+..  confval:: pageType
+    :name: typo3-fluid-form-pagetype
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target page type
+    Target page type
 
-.. _typo3-fluid-form-nocache:
+.. _typo3-fluid-form-nocache_argument:
 
 noCache
 -------
 
-:aspect:`DataType`
-   boolean
+..  confval:: noCache
+    :name: typo3-fluid-form-nocache
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Set this to disable caching for the target page. You should not need this.
+    Set this to disable caching for the target page. You should not need this.
 
-.. _typo3-fluid-form-section:
+.. _typo3-fluid-form-section_argument:
 
 section
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: section
+    :name: typo3-fluid-form-section
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The anchor to be added to the action URI (only active if $actionUri is not set)
+    The anchor to be added to the action URI (only active if $actionUri is not set)
 
-.. _typo3-fluid-form-format:
+.. _typo3-fluid-form-format_argument:
 
 format
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: format
+    :name: typo3-fluid-form-format
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The requested format (e.g. ".html") of the target page (only active if $actionUri is not set)
+    The requested format (e.g. ".html") of the target page (only active if $actionUri is not set)
 
-.. _typo3-fluid-form-additionalparams:
+.. _typo3-fluid-form-additionalparams_argument:
 
 additionalParams
 ----------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalParams
+    :name: typo3-fluid-form-additionalparams
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    Additional action URI query parameters that won't be prefixed like $arguments (overrule $arguments) (only active if $actionUri is not set)
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional action URI query parameters that won't be prefixed like $arguments (overrule $arguments) (only active if $actionUri is not set)
-
-.. _typo3-fluid-form-absolute:
+.. _typo3-fluid-form-absolute_argument:
 
 absolute
 --------
 
-:aspect:`DataType`
-   boolean
+..  confval:: absolute
+    :name: typo3-fluid-form-absolute
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, an absolute action URI is rendered (only active if $actionUri is not set)
+    If set, an absolute action URI is rendered (only active if $actionUri is not set)
 
-.. _typo3-fluid-form-addquerystring:
+.. _typo3-fluid-form-addquerystring_argument:
 
 addQueryString
 --------------
 
-:aspect:`DataType`
-   string
+..  confval:: addQueryString
+    :name: typo3-fluid-form-addquerystring
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
+    If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
 
-.. _typo3-fluid-form-argumentstobeexcludedfromquerystring:
+.. _typo3-fluid-form-argumentstobeexcludedfromquerystring_argument:
 
 argumentsToBeExcludedFromQueryString
 ------------------------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: argumentsToBeExcludedFromQueryString
+    :name: typo3-fluid-form-argumentstobeexcludedfromquerystring
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
+    Arguments to be removed from the action URI. Only active if $addQueryString = TRUE and $actionUri is not set
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Arguments to be removed from the action URI. Only active if $addQueryString = TRUE and $actionUri is not set
-
-.. _typo3-fluid-form-fieldnameprefix:
+.. _typo3-fluid-form-fieldnameprefix_argument:
 
 fieldNamePrefix
 ---------------
 
-:aspect:`DataType`
-   string
+..  confval:: fieldNamePrefix
+    :name: typo3-fluid-form-fieldnameprefix
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Prefix that will be added to all field names within this form. If not set the prefix will be tx_yourExtension_plugin
+    Prefix that will be added to all field names within this form. If not set the prefix will be tx_yourExtension_plugin
 
-.. _typo3-fluid-form-actionuri:
+.. _typo3-fluid-form-actionuri_argument:
 
 actionUri
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: actionUri
+    :name: typo3-fluid-form-actionuri
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Can be used to overwrite the "action" attribute of the form tag
+    Can be used to overwrite the "action" attribute of the form tag
 
-.. _typo3-fluid-form-objectname:
+.. _typo3-fluid-form-objectname_argument:
 
 objectName
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: objectName
+    :name: typo3-fluid-form-objectname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of the object that is bound to this form. If this argument is not specified, the name attribute of this form is used to determine the FormObjectName
+    Name of the object that is bound to this form. If this argument is not specified, the name attribute of this form is used to determine the FormObjectName
 
-.. _typo3-fluid-form-hiddenfieldclassname:
+.. _typo3-fluid-form-hiddenfieldclassname_argument:
 
 hiddenFieldClassName
 --------------------
 
-:aspect:`DataType`
-   string
+..  confval:: hiddenFieldClassName
+    :name: typo3-fluid-form-hiddenfieldclassname
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   HiddenFieldClassName
+    HiddenFieldClassName
 
-.. _typo3-fluid-form-requesttoken:
+.. _typo3-fluid-form-requesttoken_argument:
 
 requestToken
 ------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: requestToken
+    :name: typo3-fluid-form-requesttoken
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Whether to add that request token to the form
+    Whether to add that request token to the form
 
-.. _typo3-fluid-form-signingtype:
+.. _typo3-fluid-form-signingtype_argument:
 
 signingType
 -----------
 
-:aspect:`DataType`
-   string
+..  confval:: signingType
+    :name: typo3-fluid-form-signingtype
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Which signing type to be used on the request token (falls back to "nonce")
+    Which signing type to be used on the request token (falls back to "nonce")
 
-.. _typo3-fluid-form-enctype:
+.. _typo3-fluid-form-enctype_argument:
 
 enctype
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: enctype
+    :name: typo3-fluid-form-enctype
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   MIME type with which the form is submitted
+    MIME type with which the form is submitted
 
-.. _typo3-fluid-form-method:
+.. _typo3-fluid-form-method_argument:
 
 method
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: method
+    :name: typo3-fluid-form-method
+    :type: string
+    :Default: 'post'
+    :required: false
 
-:aspect:`Default`
-   'post'
+    Transfer type (get or post)
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Transfer type (get or post)
-
-.. _typo3-fluid-form-name:
+.. _typo3-fluid-form-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of form
+    Name of form
 
-.. _typo3-fluid-form-onreset:
+.. _typo3-fluid-form-onreset_argument:
 
 onreset
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onreset
+    :name: typo3-fluid-form-onreset
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript: On reset of the form
+    JavaScript: On reset of the form
 
-.. _typo3-fluid-form-onsubmit:
+.. _typo3-fluid-form-onsubmit_argument:
 
 onsubmit
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: onsubmit
+    :name: typo3-fluid-form-onsubmit
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript: On submit of the form
+    JavaScript: On submit of the form
 
-.. _typo3-fluid-form-target:
+.. _typo3-fluid-form-target_argument:
 
 target
 ------
 
-:aspect:`DataType`
-   string
+..  confval:: target
+    :name: typo3-fluid-form-target
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Target attribute of the form
+    Target attribute of the form
 
-.. _typo3-fluid-form-novalidate:
+.. _typo3-fluid-form-novalidate_argument:
 
 novalidate
 ----------
 
-:aspect:`DataType`
-   boolean
+..  confval:: novalidate
+    :name: typo3-fluid-form-novalidate
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Indicate that the form is not to be validated on submit.
+    Indicate that the form is not to be validated on submit.
 
-.. _typo3-fluid-form-class:
+.. _typo3-fluid-form-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-dir:
+.. _typo3-fluid-form-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-id:
+.. _typo3-fluid-form-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-lang:
+.. _typo3-fluid-form-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-style:
+.. _typo3-fluid-form-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-title:
+.. _typo3-fluid-form-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-accesskey:
+.. _typo3-fluid-form-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-tabindex:
+.. _typo3-fluid-form-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-onclick:
+.. _typo3-fluid-form-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event

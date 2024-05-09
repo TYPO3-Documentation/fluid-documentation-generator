@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/IconForRecordViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/IconForRecordViewHelper.php
 :navigation-title: iconForRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-iconforrecord:
 
 ===============================================
-iconForRecord ViewHelper `<core:iconForRecord>`
+IconForRecord ViewHelper `<core:iconForRecord>`
 ===============================================
-
 
 Displays icon for record.
 
@@ -25,64 +28,69 @@ Output::
         </span>
     </span>
 
+.. _typo3-core-iconforrecord_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `IconForRecordViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/IconForRecordViewHelper.php>`__.
 
 .. _typo3-core-iconforrecord_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<core:iconForRecord>`:
 
-.. _typo3-core-iconforrecord-table:
+..  contents::
+    :local:
+
+
+.. _typo3-core-iconforrecord-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-core-iconforrecord-table
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The table for the record icon
+    The table for the record icon
 
-.. _typo3-core-iconforrecord-row:
+.. _typo3-core-iconforrecord-row_argument:
 
 row
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: row
+    :name: typo3-core-iconforrecord-row
+    :type: mixed
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   The record row
+    The record row
 
-.. _typo3-core-iconforrecord-size:
+.. _typo3-core-iconforrecord-size_argument:
 
 size
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: size
+    :name: typo3-core-iconforrecord-size
+    :type: string
+    :Default: \TYPO3\CMS\Core\Imaging\IconSize::SMALL
+    :required: false
 
-:aspect:`Default`
-   \TYPO3\CMS\Core\Imaging\IconSize::SMALL
+    The icon size
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The icon size
-
-.. _typo3-core-iconforrecord-alternativemarkupidentifier:
+.. _typo3-core-iconforrecord-alternativemarkupidentifier_argument:
 
 alternativeMarkupIdentifier
 ---------------------------
 
-:aspect:`DataType`
-   string
+..  confval:: alternativeMarkupIdentifier
+    :name: typo3-core-iconforrecord-alternativemarkupidentifier
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Alternative markup identifier
+    Alternative markup identifier

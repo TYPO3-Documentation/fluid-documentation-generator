@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ExternalViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ExternalViewHelper.php
 :navigation-title: uri.external
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-external:
 
 ==========================================
-uri.external ViewHelper `<f:uri.external>`
+Uri.external ViewHelper `<f:uri.external>`
 ==========================================
-
 
 A ViewHelper for creating URIs to external targets.
 Currently the specified URI is simply passed through.
@@ -32,38 +35,45 @@ Custom default scheme
 
 ``ftp://typo3.org``
 
+.. _typo3-fluid-uri-external_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `ExternalViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ExternalViewHelper.php>`__.
 
 .. _typo3-fluid-uri-external_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:uri.external>`:
 
-.. _typo3-fluid-uri-external-uri:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-uri-external-uri_argument:
 
 uri
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: uri
+    :name: typo3-fluid-uri-external-uri
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Target URI
+    Target URI
 
-.. _typo3-fluid-uri-external-defaultscheme:
+.. _typo3-fluid-uri-external-defaultscheme_argument:
 
 defaultScheme
 -------------
 
-:aspect:`DataType`
-   string
+..  confval:: defaultScheme
+    :name: typo3-fluid-uri-external-defaultscheme
+    :type: string
+    :Default: 'https'
+    :required: false
 
-:aspect:`Default`
-   'https'
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Scheme the href attribute will be prefixed with if specified $uri does not contain a scheme already
+    Scheme the href attribute will be prefixed with if specified $uri does not contain a scheme already

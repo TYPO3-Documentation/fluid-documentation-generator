@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/RadioViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/RadioViewHelper.php
 :navigation-title: form.radio
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-radio:
 
 ======================================
-form.radio ViewHelper `<f:form.radio>`
+Form.radio ViewHelper `<f:form.radio>`
 ======================================
-
 
 ViewHelper which creates a simple radio button :html:`<input type="radio">`.
 
@@ -52,246 +55,237 @@ Output::
 
 Depending on property ``newsletter``.
 
+.. _typo3-fluid-form-radio_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `RadioViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/RadioViewHelper.php>`__.
 
 .. _typo3-fluid-form-radio_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<f:form.radio>`:
 
-.. _typo3-fluid-form-radio-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-fluid-form-radio-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-fluid-form-radio-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-fluid-form-radio-data:
+.. _typo3-fluid-form-radio-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-fluid-form-radio-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-fluid-form-radio-aria:
+.. _typo3-fluid-form-radio-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-fluid-form-radio-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-fluid-form-radio-name:
+.. _typo3-fluid-form-radio-name_argument:
 
 name
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: name
+    :name: typo3-fluid-form-radio-name
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of input tag
+    Name of input tag
 
-.. _typo3-fluid-form-radio-value:
+.. _typo3-fluid-form-radio-value_argument:
 
 value
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: value
+    :name: typo3-fluid-form-radio-value
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Value of input tag. Required for radio buttons
+    Value of input tag. Required for radio buttons
 
-.. _typo3-fluid-form-radio-property:
+.. _typo3-fluid-form-radio-property_argument:
 
 property
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: property
+    :name: typo3-fluid-form-radio-property
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
+    Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
-.. _typo3-fluid-form-radio-errorclass:
+.. _typo3-fluid-form-radio-errorclass_argument:
 
 errorClass
 ----------
 
-:aspect:`DataType`
-   string
+..  confval:: errorClass
+    :name: typo3-fluid-form-radio-errorclass
+    :type: string
+    :Default: 'f3-form-error'
+    :required: false
 
-:aspect:`Default`
-   'f3-form-error'
+    CSS class to set if there are errors for this ViewHelper
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class to set if there are errors for this ViewHelper
-
-.. _typo3-fluid-form-radio-checked:
+.. _typo3-fluid-form-radio-checked_argument:
 
 checked
 -------
 
-:aspect:`DataType`
-   boolean
+..  confval:: checked
+    :name: typo3-fluid-form-radio-checked
+    :type: boolean
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be preselected
+    Specifies that the input element should be preselected
 
-.. _typo3-fluid-form-radio-class:
+.. _typo3-fluid-form-radio-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-fluid-form-radio-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-fluid-form-radio-dir:
+.. _typo3-fluid-form-radio-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-fluid-form-radio-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-fluid-form-radio-id:
+.. _typo3-fluid-form-radio-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-fluid-form-radio-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-fluid-form-radio-lang:
+.. _typo3-fluid-form-radio-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-fluid-form-radio-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-fluid-form-radio-style:
+.. _typo3-fluid-form-radio-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-fluid-form-radio-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-fluid-form-radio-title:
+.. _typo3-fluid-form-radio-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-fluid-form-radio-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-fluid-form-radio-accesskey:
+.. _typo3-fluid-form-radio-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-fluid-form-radio-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-fluid-form-radio-tabindex:
+.. _typo3-fluid-form-radio-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-fluid-form-radio-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-fluid-form-radio-onclick:
+.. _typo3-fluid-form-radio-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-fluid-form-radio-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-fluid-form-radio-disabled:
+.. _typo3-fluid-form-radio-disabled_argument:
 
 disabled
 --------
 
-:aspect:`DataType`
-   string
+..  confval:: disabled
+    :name: typo3-fluid-form-radio-disabled
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies that the input element should be disabled when the page loads
+    Specifies that the input element should be disabled when the page loads

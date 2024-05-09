@@ -1,12 +1,15 @@
+..  This reStructured text file has been automatically generated, do not change.
+..  Source: https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Link/NewRecordViewHelper.php
+
+:edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Link/NewRecordViewHelper.php
 :navigation-title: link.newRecord
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-link-newrecord:
 
 ====================================================
-link.newRecord ViewHelper `<backend:link.newRecord>`
+Link.newRecord ViewHelper `<backend:link.newRecord>`
 ====================================================
-
 
 Use this ViewHelper to provide 'create new record' links.
 The ViewHelper will pass the command to FormEngine.
@@ -79,233 +82,225 @@ Output::
        New record
    </a>
 
+.. _typo3-backend-link-newrecord_source:
+
+Source code
+===========
+
+Go to the source code of this ViewHelper: `NewRecordViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/Link/NewRecordViewHelper.php>`__.
 
 .. _typo3-backend-link-newrecord_arguments:
 
 Arguments
 =========
 
+The following arguments are available for `<backend:link.newRecord>`:
 
-.. _typo3-backend-link-newrecord-additionalattributes:
+..  contents::
+    :local:
+
+
+.. _typo3-backend-link-newrecord-additionalattributes_argument:
 
 additionalAttributes
 --------------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: additionalAttributes
+    :name: typo3-backend-link-newrecord-additionalattributes
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional tag attributes. They will be added directly to the resulting HTML tag.
+    Additional tag attributes. They will be added directly to the resulting HTML tag.
 
-.. _typo3-backend-link-newrecord-data:
+.. _typo3-backend-link-newrecord-data_argument:
 
 data
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: data
+    :name: typo3-backend-link-newrecord-data
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional data-* attributes. They will each be added with a "data-" prefix.
+    Additional data-* attributes. They will each be added with a "data-" prefix.
 
-.. _typo3-backend-link-newrecord-aria:
+.. _typo3-backend-link-newrecord-aria_argument:
 
 aria
 ----
 
-:aspect:`DataType`
-   mixed
+..  confval:: aria
+    :name: typo3-backend-link-newrecord-aria
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Additional aria-* attributes. They will each be added with a "aria-" prefix.
+    Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
-.. _typo3-backend-link-newrecord-class:
+.. _typo3-backend-link-newrecord-class_argument:
 
 class
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: class
+    :name: typo3-backend-link-newrecord-class
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   CSS class(es) for this element
+    CSS class(es) for this element
 
-.. _typo3-backend-link-newrecord-dir:
+.. _typo3-backend-link-newrecord-dir_argument:
 
 dir
 ---
 
-:aspect:`DataType`
-   string
+..  confval:: dir
+    :name: typo3-backend-link-newrecord-dir
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
+    Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
-.. _typo3-backend-link-newrecord-id:
+.. _typo3-backend-link-newrecord-id_argument:
 
 id
 --
 
-:aspect:`DataType`
-   string
+..  confval:: id
+    :name: typo3-backend-link-newrecord-id
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Unique (in this file) identifier for this HTML element.
+    Unique (in this file) identifier for this HTML element.
 
-.. _typo3-backend-link-newrecord-lang:
+.. _typo3-backend-link-newrecord-lang_argument:
 
 lang
 ----
 
-:aspect:`DataType`
-   string
+..  confval:: lang
+    :name: typo3-backend-link-newrecord-lang
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Language for this element. Use short names specified in RFC 1766
+    Language for this element. Use short names specified in RFC 1766
 
-.. _typo3-backend-link-newrecord-style:
+.. _typo3-backend-link-newrecord-style_argument:
 
 style
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: style
+    :name: typo3-backend-link-newrecord-style
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Individual CSS styles for this element
+    Individual CSS styles for this element
 
-.. _typo3-backend-link-newrecord-title:
+.. _typo3-backend-link-newrecord-title_argument:
 
 title
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: title
+    :name: typo3-backend-link-newrecord-title
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Tooltip text of element
+    Tooltip text of element
 
-.. _typo3-backend-link-newrecord-accesskey:
+.. _typo3-backend-link-newrecord-accesskey_argument:
 
 accesskey
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: accesskey
+    :name: typo3-backend-link-newrecord-accesskey
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Keyboard shortcut to access this element
+    Keyboard shortcut to access this element
 
-.. _typo3-backend-link-newrecord-tabindex:
+.. _typo3-backend-link-newrecord-tabindex_argument:
 
 tabindex
 --------
 
-:aspect:`DataType`
-   integer
+..  confval:: tabindex
+    :name: typo3-backend-link-newrecord-tabindex
+    :type: integer
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Specifies the tab order of this element
+    Specifies the tab order of this element
 
-.. _typo3-backend-link-newrecord-onclick:
+.. _typo3-backend-link-newrecord-onclick_argument:
 
 onclick
 -------
 
-:aspect:`DataType`
-   string
+..  confval:: onclick
+    :name: typo3-backend-link-newrecord-onclick
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   JavaScript evaluated for the onclick event
+    JavaScript evaluated for the onclick event
 
-.. _typo3-backend-link-newrecord-uid:
+.. _typo3-backend-link-newrecord-uid_argument:
 
 uid
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: uid
+    :name: typo3-backend-link-newrecord-uid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Uid < 0 will insert the record after the given uid
+    Uid < 0 will insert the record after the given uid
 
-.. _typo3-backend-link-newrecord-pid:
+.. _typo3-backend-link-newrecord-pid_argument:
 
 pid
 ---
 
-:aspect:`DataType`
-   mixed
+..  confval:: pid
+    :name: typo3-backend-link-newrecord-pid
+    :type: mixed
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   The page id where the record will be created
+    The page id where the record will be created
 
-.. _typo3-backend-link-newrecord-table:
+.. _typo3-backend-link-newrecord-table_argument:
 
 table
 -----
 
-:aspect:`DataType`
-   string
+..  confval:: table
+    :name: typo3-backend-link-newrecord-table
+    :type: string
+    :required: true
 
-:aspect:`Required`
-   true
-:aspect:`Description`
-   Target database table
+    Target database table
 
-.. _typo3-backend-link-newrecord-returnurl:
+.. _typo3-backend-link-newrecord-returnurl_argument:
 
 returnUrl
 ---------
 
-:aspect:`DataType`
-   string
+..  confval:: returnUrl
+    :name: typo3-backend-link-newrecord-returnurl
+    :type: string
+    :required: false
 
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Return to this URL after closing the new record dialog
+    Return to this URL after closing the new record dialog
 
-.. _typo3-backend-link-newrecord-defaultvalues:
+.. _typo3-backend-link-newrecord-defaultvalues_argument:
 
 defaultValues
 -------------
 
-:aspect:`DataType`
-   mixed
+..  confval:: defaultValues
+    :name: typo3-backend-link-newrecord-defaultvalues
+    :type: mixed
+    :Default: array ()
+    :required: false
 
-:aspect:`Default`
-   array ()
-
-:aspect:`Required`
-   false
-:aspect:`Description`
-   Default values for fields of the new record
+    Default values for fields of the new record

@@ -25,7 +25,8 @@ Content
 .. toctree::
    :titlesonly:
 
-   fluidtypo3/vhs/6.1/Index
-   typo3/backend/9.4/Index
-   typo3/backend/9.5/Index
+   typo3/backend/latest/Index
+   typo3/core/latest/Index
+   typo3/fluid/latest/Index
+   typo3fluid/fluid/latest/Index
 

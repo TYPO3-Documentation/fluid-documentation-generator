@@ -153,7 +153,7 @@ class RstExporter implements ExporterInterface
         foreach ($viewHelperDocumentation->getArgumentDefinitions() as $argumentDefinition) {
             $argumentHeadline = trim($argumentDefinition->getName());
             $argumentHeadlineDecoration = array_pad([], strlen($argumentHeadline), '-');
-            $argumentHeadlineIdentifier = strtolower($viewHelperDocumentation->getName() . '_' . $argumentHeadline);
+            $argumentHeadlineIdentifier = strtolower($headlineIdentifier . '-' . $argumentHeadline);
             $argumentsData = [
                 'headline' => $argumentHeadline,
                 'headlineIdentifier' => $argumentHeadlineIdentifier,

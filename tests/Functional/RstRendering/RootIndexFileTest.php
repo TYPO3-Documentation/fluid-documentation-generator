@@ -19,6 +19,11 @@ class RootIndexFileTest extends TestCase
     private $vfs;
 
     /**
+     * the generated file is compared against this fixture file
+     * @var string
+     */
+    private $fixtureFilePath = __DIR__ . '/../../Fixtures/rendering/output/Documentation/Index.rst';
+    /**
      * output of the generation process
      */
     private string $generatedFilePath = 'outputDir/public/Index.rst';
@@ -51,46 +56,11 @@ class RootIndexFileTest extends TestCase
     /**
      * @test
      */
-    public function includeClausePointsToSettingsCfg(): void
+    public function generatedFileIsSameAsFixture(): void
     {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $this->assertSame('.. include:: /Includes.rst.txt' . PHP_EOL, $output[0]);
-    }
-
-    /**
-     * @test
-     */
-    public function headlineAsExpected(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        // include, empty, anchor, empty, upper headline decoration, text, lower headline decoration
-        $index = 5;
-        $this->assertSame('Fluid ViewHelper Documentation' . PHP_EOL, $output[$index]);
-    }
-
-    /**
-     * @test
-     */
-    public function headlineIsProperlyDecorated(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        // include, empty, anchor, empty, upper headline decoration, text, lower headline decoration
-        $headlineTextIndex = 5;
-        $lengthOfHeadline = strlen($output[$headlineTextIndex]);
-        $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex - 1]));
-        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex - 1]);
-        $this->assertSame($lengthOfHeadline, strlen($output[$headlineTextIndex + 1]));
-        $this->assertMatchesRegularExpression('/^[=]+$/', $output[$headlineTextIndex + 1]);
-    }
-
-    /**
-     * @test
-     */
-    public function tocTreeContainsSubDirectoriesAsExpected(): void
-    {
-        $output = file($this->vfs->getChild($this->generatedFilePath)->url());
-        $output = implode(PHP_EOL, $output);
-        $this->assertStringContainsString('   typo3/backend/latest/Index' . PHP_EOL, $output);
-        $this->assertStringContainsString('   typo3fluid/fluid/latest/Index' . PHP_EOL, $output);
+        $this->assertSame(
+            file_get_contents($this->fixtureFilePath),
+            file_get_contents($this->vfs->getChild($this->generatedFilePath)->url())
+        );
     }
 }

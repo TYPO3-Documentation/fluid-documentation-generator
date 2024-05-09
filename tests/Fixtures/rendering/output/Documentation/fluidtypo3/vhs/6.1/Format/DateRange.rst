@@ -67,7 +67,7 @@ Arguments
 =========
 
 
-.. _format.daterange_start:
+.. _fluidtypo3-vhs-format-daterange-start:
 
 start
 -----
@@ -83,7 +83,7 @@ start
 :aspect:`Description`
    Start date which can be a DateTime object or a string consumable by DateTime constructor
 
-.. _format.daterange_end:
+.. _fluidtypo3-vhs-format-daterange-end:
 
 end
 ---
@@ -96,7 +96,7 @@ end
 :aspect:`Description`
    End date which can be a DateTime object or a string consumable by DateTime constructor
 
-.. _format.daterange_intervalformat:
+.. _fluidtypo3-vhs-format-daterange-intervalformat:
 
 intervalFormat
 --------------
@@ -109,7 +109,7 @@ intervalFormat
 :aspect:`Description`
    Interval format consumable by DateInterval
 
-.. _format.daterange_format:
+.. _fluidtypo3-vhs-format-daterange-format:
 
 format
 ------
@@ -125,7 +125,7 @@ format
 :aspect:`Description`
    Date format to apply to both start and end date
 
-.. _format.daterange_startformat:
+.. _fluidtypo3-vhs-format-daterange-startformat:
 
 startFormat
 -----------
@@ -138,7 +138,7 @@ startFormat
 :aspect:`Description`
    Date format to apply to start date
 
-.. _format.daterange_endformat:
+.. _fluidtypo3-vhs-format-daterange-endformat:
 
 endFormat
 ---------
@@ -151,7 +151,7 @@ endFormat
 :aspect:`Description`
    Date format to apply to end date
 
-.. _format.daterange_glue:
+.. _fluidtypo3-vhs-format-daterange-glue:
 
 glue
 ----
@@ -167,7 +167,7 @@ glue
 :aspect:`Description`
    Glue string to concatenate dates with
 
-.. _format.daterange_spaceglue:
+.. _fluidtypo3-vhs-format-daterange-spaceglue:
 
 spaceGlue
 ---------
@@ -183,7 +183,7 @@ spaceGlue
 :aspect:`Description`
    If TRUE glue string is surrounded with whitespace
 
-.. _format.daterange_return:
+.. _fluidtypo3-vhs-format-daterange-return:
 
 return
 ------

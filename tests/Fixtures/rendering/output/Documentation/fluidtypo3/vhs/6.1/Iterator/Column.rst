@@ -75,7 +75,7 @@ Arguments
 =========
 
 
-.. _iterator.column_subject:
+.. _fluidtypo3-vhs-iterator-column-subject:
 
 subject
 -------
@@ -88,7 +88,7 @@ subject
 :aspect:`Description`
    Input to work on - Array/Traversable/...
 
-.. _iterator.column_columnkey:
+.. _fluidtypo3-vhs-iterator-column-columnkey:
 
 columnKey
 ---------
@@ -101,7 +101,7 @@ columnKey
 :aspect:`Description`
    Name of the column whose values will become the value of the new array
 
-.. _iterator.column_indexkey:
+.. _fluidtypo3-vhs-iterator-column-indexkey:
 
 indexKey
 --------
@@ -114,7 +114,7 @@ indexKey
 :aspect:`Description`
    Name of the column whose values will become the index of the new array
 
-.. _iterator.column_as:
+.. _fluidtypo3-vhs-iterator-column-as:
 
 as
 --

@@ -31,7 +31,7 @@ final class GraphDataHandler
 
     public static function getInstance(): self
     {
-        return new static();
+        return new self();
     }
 
     public function createSchemaData(ProcessedSchema $schema, bool $summary = false): array

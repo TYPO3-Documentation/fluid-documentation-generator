@@ -38,7 +38,7 @@ final class DataFileResolver
         }
 
         if (!static::$instance instanceof \NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver || $rootDirectory) {
-            static::$instance = new static($rootDirectory);
+            static::$instance = new self($rootDirectory);
         }
 
         return static::$instance;

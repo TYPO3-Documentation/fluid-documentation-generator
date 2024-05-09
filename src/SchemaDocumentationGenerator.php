@@ -20,7 +20,7 @@ final class SchemaDocumentationGenerator
     {
         static $instance;
         if (!$instance) {
-            $instance = new static($exporters, $forceUpdate);
+            $instance = new self($exporters, $forceUpdate);
         }
 
         return $instance;
@@ -45,14 +45,14 @@ final class SchemaDocumentationGenerator
     public function generateFilesForVendor(SchemaVendor $vendor): void
     {
         foreach ($this->exporters as $exporter) {
-            $exporter->exportVendor($vendor, $this->forceUpdate);
+            $exporter->exportVendor($vendor);
         }
     }
 
     public function generateFilesForPackage(SchemaPackage $package): void
     {
         foreach ($this->exporters as $exporter) {
-            $exporter->exportPackage($package, $this->forceUpdate);
+            $exporter->exportPackage($package);
         }
     }
 

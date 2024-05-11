@@ -81,14 +81,13 @@ Arguments
 
 The following arguments are available for `<f:format.printf>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-printf-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-printf-value
@@ -98,9 +97,6 @@ value
     String to format
 
 .. _typo3fluid-fluid-format-printf-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3fluid-fluid-format-printf-arguments

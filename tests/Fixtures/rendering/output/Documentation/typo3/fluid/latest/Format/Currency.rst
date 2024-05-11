@@ -82,14 +82,13 @@ Arguments
 
 The following arguments are available for `<f:format.currency>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-currency-currencysign_argument:
-
-currencySign
-------------
 
 ..  confval:: currencySign
     :name: typo3-fluid-format-currency-currencysign
@@ -99,9 +98,6 @@ currencySign
     The currency sign, eg $ or .
 
 .. _typo3-fluid-format-currency-decimalseparator_argument:
-
-decimalSeparator
-----------------
 
 ..  confval:: decimalSeparator
     :name: typo3-fluid-format-currency-decimalseparator
@@ -113,9 +109,6 @@ decimalSeparator
 
 .. _typo3-fluid-format-currency-thousandsseparator_argument:
 
-thousandsSeparator
-------------------
-
 ..  confval:: thousandsSeparator
     :name: typo3-fluid-format-currency-thousandsseparator
     :type: string
@@ -126,9 +119,6 @@ thousandsSeparator
 
 .. _typo3-fluid-format-currency-prependcurrency_argument:
 
-prependCurrency
----------------
-
 ..  confval:: prependCurrency
     :name: typo3-fluid-format-currency-prependcurrency
     :type: boolean
@@ -137,9 +127,6 @@ prependCurrency
     Select if the currency sign should be prepended
 
 .. _typo3-fluid-format-currency-separatecurrency_argument:
-
-separateCurrency
-----------------
 
 ..  confval:: separateCurrency
     :name: typo3-fluid-format-currency-separatecurrency
@@ -151,9 +138,6 @@ separateCurrency
 
 .. _typo3-fluid-format-currency-decimals_argument:
 
-decimals
---------
-
 ..  confval:: decimals
     :name: typo3-fluid-format-currency-decimals
     :type: mixed
@@ -163,9 +147,6 @@ decimals
     Set decimals places.
 
 .. _typo3-fluid-format-currency-usedash_argument:
-
-useDash
--------
 
 ..  confval:: useDash
     :name: typo3-fluid-format-currency-usedash

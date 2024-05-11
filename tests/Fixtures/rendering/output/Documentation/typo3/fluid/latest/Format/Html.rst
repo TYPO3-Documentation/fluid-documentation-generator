@@ -115,14 +115,13 @@ Arguments
 
 The following arguments are available for `<f:format.html>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-html-parsefunctspath_argument:
-
-parseFuncTSPath
----------------
 
 ..  confval:: parseFuncTSPath
     :name: typo3-fluid-format-html-parsefunctspath
@@ -134,9 +133,6 @@ parseFuncTSPath
 
 .. _typo3-fluid-format-html-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-format-html-data
     :type: mixed
@@ -145,9 +141,6 @@ data
     Initialize the content object with this set of data. Either an array or object.
 
 .. _typo3-fluid-format-html-current_argument:
-
-current
--------
 
 ..  confval:: current
     :name: typo3-fluid-format-html-current
@@ -158,9 +151,6 @@ current
 
 .. _typo3-fluid-format-html-currentvaluekey_argument:
 
-currentValueKey
----------------
-
 ..  confval:: currentValueKey
     :name: typo3-fluid-format-html-currentvaluekey
     :type: string
@@ -169,9 +159,6 @@ currentValueKey
     Define the value key, used to locate the current value for the content object
 
 .. _typo3-fluid-format-html-table_argument:
-
-table
------
 
 ..  confval:: table
     :name: typo3-fluid-format-html-table

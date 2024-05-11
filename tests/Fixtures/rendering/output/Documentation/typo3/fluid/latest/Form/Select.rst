@@ -99,14 +99,13 @@ Arguments
 
 The following arguments are available for `<f:form.select>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-select-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-select-additionalattributes
@@ -117,9 +116,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-select-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-select-data
     :type: mixed
@@ -128,9 +124,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-select-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-select-aria
@@ -141,9 +134,6 @@ aria
 
 .. _typo3-fluid-form-select-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-select-name
     :type: string
@@ -152,9 +142,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-select-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-select-value
@@ -165,9 +152,6 @@ value
 
 .. _typo3-fluid-form-select-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-select-property
     :type: string
@@ -176,9 +160,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-select-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-form-select-class
@@ -189,9 +170,6 @@ class
 
 .. _typo3-fluid-form-select-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-form-select-dir
     :type: string
@@ -200,9 +178,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-form-select-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-form-select-id
@@ -213,9 +188,6 @@ id
 
 .. _typo3-fluid-form-select-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-form-select-lang
     :type: string
@@ -224,9 +196,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-form-select-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-form-select-style
@@ -237,9 +206,6 @@ style
 
 .. _typo3-fluid-form-select-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-form-select-title
     :type: string
@@ -248,9 +214,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-form-select-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-form-select-accesskey
@@ -261,9 +224,6 @@ accesskey
 
 .. _typo3-fluid-form-select-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-select-tabindex
     :type: integer
@@ -272,9 +232,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-select-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-select-onclick
@@ -285,9 +242,6 @@ onclick
 
 .. _typo3-fluid-form-select-size_argument:
 
-size
-----
-
 ..  confval:: size
     :name: typo3-fluid-form-select-size
     :type: string
@@ -296,9 +250,6 @@ size
     Size of select field, a numeric value to show the amount of items to be visible at the same time - equivalent to HTML <select> site attribute
 
 .. _typo3-fluid-form-select-disabled_argument:
-
-disabled
---------
 
 ..  confval:: disabled
     :name: typo3-fluid-form-select-disabled
@@ -309,9 +260,6 @@ disabled
 
 .. _typo3-fluid-form-select-options_argument:
 
-options
--------
-
 ..  confval:: options
     :name: typo3-fluid-form-select-options
     :type: mixed
@@ -320,9 +268,6 @@ options
     Associative array with internal IDs as key, and the values are displayed in the select box. Can be combined with or replaced by child f:form.select.* nodes.
 
 .. _typo3-fluid-form-select-optionsaftercontent_argument:
-
-optionsAfterContent
--------------------
 
 ..  confval:: optionsAfterContent
     :name: typo3-fluid-form-select-optionsaftercontent
@@ -333,9 +278,6 @@ optionsAfterContent
 
 .. _typo3-fluid-form-select-optionvaluefield_argument:
 
-optionValueField
-----------------
-
 ..  confval:: optionValueField
     :name: typo3-fluid-form-select-optionvaluefield
     :type: string
@@ -344,9 +286,6 @@ optionValueField
     If specified, will call the appropriate getter on each object to determine the value.
 
 .. _typo3-fluid-form-select-optionlabelfield_argument:
-
-optionLabelField
-----------------
 
 ..  confval:: optionLabelField
     :name: typo3-fluid-form-select-optionlabelfield
@@ -357,9 +296,6 @@ optionLabelField
 
 .. _typo3-fluid-form-select-sortbyoptionlabel_argument:
 
-sortByOptionLabel
------------------
-
 ..  confval:: sortByOptionLabel
     :name: typo3-fluid-form-select-sortbyoptionlabel
     :type: boolean
@@ -369,9 +305,6 @@ sortByOptionLabel
 
 .. _typo3-fluid-form-select-selectallbydefault_argument:
 
-selectAllByDefault
-------------------
-
 ..  confval:: selectAllByDefault
     :name: typo3-fluid-form-select-selectallbydefault
     :type: boolean
@@ -380,9 +313,6 @@ selectAllByDefault
     If specified options are selected if none was set before.
 
 .. _typo3-fluid-form-select-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-select-errorclass
@@ -394,9 +324,6 @@ errorClass
 
 .. _typo3-fluid-form-select-prependoptionlabel_argument:
 
-prependOptionLabel
-------------------
-
 ..  confval:: prependOptionLabel
     :name: typo3-fluid-form-select-prependoptionlabel
     :type: string
@@ -405,9 +332,6 @@ prependOptionLabel
     If specified, will provide an option at first position with the specified label.
 
 .. _typo3-fluid-form-select-prependoptionvalue_argument:
-
-prependOptionValue
-------------------
 
 ..  confval:: prependOptionValue
     :name: typo3-fluid-form-select-prependoptionvalue
@@ -418,9 +342,6 @@ prependOptionValue
 
 .. _typo3-fluid-form-select-multiple_argument:
 
-multiple
---------
-
 ..  confval:: multiple
     :name: typo3-fluid-form-select-multiple
     :type: boolean
@@ -429,9 +350,6 @@ multiple
     If set multiple options may be selected.
 
 .. _typo3-fluid-form-select-required_argument:
-
-required
---------
 
 ..  confval:: required
     :name: typo3-fluid-form-select-required

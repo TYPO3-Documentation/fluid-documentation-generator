@@ -40,14 +40,13 @@ Arguments
 
 The following arguments are available for `<f:last>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-last-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-last-value

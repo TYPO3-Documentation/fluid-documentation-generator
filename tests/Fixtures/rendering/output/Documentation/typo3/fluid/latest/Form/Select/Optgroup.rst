@@ -30,14 +30,13 @@ Arguments
 
 The following arguments are available for `<f:form.select.optgroup>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-select-optgroup-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-form-select-optgroup-class
@@ -48,9 +47,6 @@ class
 
 .. _typo3-fluid-form-select-optgroup-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-form-select-optgroup-dir
     :type: string
@@ -59,9 +55,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-form-select-optgroup-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-form-select-optgroup-id
@@ -72,9 +65,6 @@ id
 
 .. _typo3-fluid-form-select-optgroup-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-form-select-optgroup-lang
     :type: string
@@ -83,9 +73,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-form-select-optgroup-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-form-select-optgroup-style
@@ -96,9 +83,6 @@ style
 
 .. _typo3-fluid-form-select-optgroup-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-form-select-optgroup-title
     :type: string
@@ -107,9 +91,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-form-select-optgroup-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-form-select-optgroup-accesskey
@@ -120,9 +101,6 @@ accesskey
 
 .. _typo3-fluid-form-select-optgroup-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-select-optgroup-tabindex
     :type: integer
@@ -131,9 +109,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-select-optgroup-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-select-optgroup-onclick
@@ -144,9 +119,6 @@ onclick
 
 .. _typo3-fluid-form-select-optgroup-additionalattributes_argument:
 
-additionalAttributes
---------------------
-
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-select-optgroup-additionalattributes
     :type: mixed
@@ -155,9 +127,6 @@ additionalAttributes
     Additional tag attributes. They will be added directly to the resulting HTML tag.
 
 .. _typo3-fluid-form-select-optgroup-data_argument:
-
-data
-----
 
 ..  confval:: data
     :name: typo3-fluid-form-select-optgroup-data
@@ -168,9 +137,6 @@ data
 
 .. _typo3-fluid-form-select-optgroup-label_argument:
 
-label
------
-
 ..  confval:: label
     :name: typo3-fluid-form-select-optgroup-label
     :type: string
@@ -179,9 +145,6 @@ label
     Human-readable label property for the generated optgroup tag
 
 .. _typo3-fluid-form-select-optgroup-disabled_argument:
-
-disabled
---------
 
 ..  confval:: disabled
     :name: typo3-fluid-form-select-optgroup-disabled

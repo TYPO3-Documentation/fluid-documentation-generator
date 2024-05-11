@@ -64,14 +64,13 @@ Arguments
 
 The following arguments are available for `<f:format.padding>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-padding-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-format-padding-value
@@ -82,9 +81,6 @@ value
 
 .. _typo3-fluid-format-padding-padlength_argument:
 
-padLength
----------
-
 ..  confval:: padLength
     :name: typo3-fluid-format-padding-padlength
     :type: mixed
@@ -93,9 +89,6 @@ padLength
     Length of the resulting string. If the value of pad_length is negative or less than the length of the input string, no padding takes place.
 
 .. _typo3-fluid-format-padding-padstring_argument:
-
-padString
----------
 
 ..  confval:: padString
     :name: typo3-fluid-format-padding-padstring
@@ -106,9 +99,6 @@ padString
     The padding string
 
 .. _typo3-fluid-format-padding-padtype_argument:
-
-padType
--------
 
 ..  confval:: padType
     :name: typo3-fluid-format-padding-padtype

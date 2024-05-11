@@ -56,14 +56,13 @@ Arguments
 
 The following arguments are available for `<f:format.htmlspecialchars>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-htmlspecialchars-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-htmlspecialchars-value
@@ -74,9 +73,6 @@ value
 
 .. _typo3fluid-fluid-format-htmlspecialchars-keepquotes_argument:
 
-keepQuotes
-----------
-
 ..  confval:: keepQuotes
     :name: typo3fluid-fluid-format-htmlspecialchars-keepquotes
     :type: boolean
@@ -85,9 +81,6 @@ keepQuotes
     If TRUE quotes will not be replaced (ENT_NOQUOTES)
 
 .. _typo3fluid-fluid-format-htmlspecialchars-encoding_argument:
-
-encoding
---------
 
 ..  confval:: encoding
     :name: typo3fluid-fluid-format-htmlspecialchars-encoding
@@ -98,9 +91,6 @@ encoding
     Encoding
 
 .. _typo3fluid-fluid-format-htmlspecialchars-doubleencode_argument:
-
-doubleEncode
-------------
 
 ..  confval:: doubleEncode
     :name: typo3fluid-fluid-format-htmlspecialchars-doubleencode

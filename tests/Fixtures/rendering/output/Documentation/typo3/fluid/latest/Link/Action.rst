@@ -42,14 +42,13 @@ Arguments
 
 The following arguments are available for `<f:link.action>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-link-action-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-link-action-additionalattributes
@@ -60,9 +59,6 @@ additionalAttributes
 
 .. _typo3-fluid-link-action-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-link-action-data
     :type: mixed
@@ -71,9 +67,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-link-action-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-link-action-aria
@@ -84,9 +77,6 @@ aria
 
 .. _typo3-fluid-link-action-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-link-action-class
     :type: string
@@ -95,9 +85,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-link-action-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-link-action-dir
@@ -108,9 +95,6 @@ dir
 
 .. _typo3-fluid-link-action-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-link-action-id
     :type: string
@@ -119,9 +103,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-link-action-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-link-action-lang
@@ -132,9 +113,6 @@ lang
 
 .. _typo3-fluid-link-action-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-link-action-style
     :type: string
@@ -143,9 +121,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-link-action-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-link-action-title
@@ -156,9 +131,6 @@ title
 
 .. _typo3-fluid-link-action-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-link-action-accesskey
     :type: string
@@ -167,9 +139,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-link-action-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-link-action-tabindex
@@ -180,9 +149,6 @@ tabindex
 
 .. _typo3-fluid-link-action-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-link-action-onclick
     :type: string
@@ -191,9 +157,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-link-action-name_argument:
-
-name
-----
 
 ..  confval:: name
     :name: typo3-fluid-link-action-name
@@ -204,9 +167,6 @@ name
 
 .. _typo3-fluid-link-action-rel_argument:
 
-rel
----
-
 ..  confval:: rel
     :name: typo3-fluid-link-action-rel
     :type: string
@@ -215,9 +175,6 @@ rel
     Specifies the relationship between the current document and the linked document
 
 .. _typo3-fluid-link-action-rev_argument:
-
-rev
----
 
 ..  confval:: rev
     :name: typo3-fluid-link-action-rev
@@ -228,9 +185,6 @@ rev
 
 .. _typo3-fluid-link-action-target_argument:
 
-target
-------
-
 ..  confval:: target
     :name: typo3-fluid-link-action-target
     :type: string
@@ -239,9 +193,6 @@ target
     Specifies where to open the linked document
 
 .. _typo3-fluid-link-action-action_argument:
-
-action
-------
 
 ..  confval:: action
     :name: typo3-fluid-link-action-action
@@ -252,9 +203,6 @@ action
 
 .. _typo3-fluid-link-action-controller_argument:
 
-controller
-----------
-
 ..  confval:: controller
     :name: typo3-fluid-link-action-controller
     :type: string
@@ -263,9 +211,6 @@ controller
     Target controller. If NULL current controllerName is used
 
 .. _typo3-fluid-link-action-extensionname_argument:
-
-extensionName
--------------
 
 ..  confval:: extensionName
     :name: typo3-fluid-link-action-extensionname
@@ -276,9 +221,6 @@ extensionName
 
 .. _typo3-fluid-link-action-pluginname_argument:
 
-pluginName
-----------
-
 ..  confval:: pluginName
     :name: typo3-fluid-link-action-pluginname
     :type: string
@@ -287,9 +229,6 @@ pluginName
     Target plugin. If empty, the current plugin name is used
 
 .. _typo3-fluid-link-action-pageuid_argument:
-
-pageUid
--------
 
 ..  confval:: pageUid
     :name: typo3-fluid-link-action-pageuid
@@ -300,9 +239,6 @@ pageUid
 
 .. _typo3-fluid-link-action-pagetype_argument:
 
-pageType
---------
-
 ..  confval:: pageType
     :name: typo3-fluid-link-action-pagetype
     :type: mixed
@@ -311,9 +247,6 @@ pageType
     Type of the target page. See typolink.parameter
 
 .. _typo3-fluid-link-action-nocache_argument:
-
-noCache
--------
 
 ..  confval:: noCache
     :name: typo3-fluid-link-action-nocache
@@ -324,9 +257,6 @@ noCache
 
 .. _typo3-fluid-link-action-language_argument:
 
-language
---------
-
 ..  confval:: language
     :name: typo3-fluid-link-action-language
     :type: string
@@ -335,9 +265,6 @@ language
     Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
 
 .. _typo3-fluid-link-action-section_argument:
-
-section
--------
 
 ..  confval:: section
     :name: typo3-fluid-link-action-section
@@ -348,9 +275,6 @@ section
 
 .. _typo3-fluid-link-action-format_argument:
 
-format
-------
-
 ..  confval:: format
     :name: typo3-fluid-link-action-format
     :type: string
@@ -359,9 +283,6 @@ format
     The requested format, e.g. ".html
 
 .. _typo3-fluid-link-action-linkaccessrestrictedpages_argument:
-
-linkAccessRestrictedPages
--------------------------
 
 ..  confval:: linkAccessRestrictedPages
     :name: typo3-fluid-link-action-linkaccessrestrictedpages
@@ -372,9 +293,6 @@ linkAccessRestrictedPages
 
 .. _typo3-fluid-link-action-additionalparams_argument:
 
-additionalParams
-----------------
-
 ..  confval:: additionalParams
     :name: typo3-fluid-link-action-additionalparams
     :type: mixed
@@ -383,9 +301,6 @@ additionalParams
     Additional query parameters that won't be prefixed like $arguments (overrule $arguments)
 
 .. _typo3-fluid-link-action-absolute_argument:
-
-absolute
---------
 
 ..  confval:: absolute
     :name: typo3-fluid-link-action-absolute
@@ -396,9 +311,6 @@ absolute
 
 .. _typo3-fluid-link-action-addquerystring_argument:
 
-addQueryString
---------------
-
 ..  confval:: addQueryString
     :name: typo3-fluid-link-action-addquerystring
     :type: string
@@ -408,9 +320,6 @@ addQueryString
 
 .. _typo3-fluid-link-action-argumentstobeexcludedfromquerystring_argument:
 
-argumentsToBeExcludedFromQueryString
-------------------------------------
-
 ..  confval:: argumentsToBeExcludedFromQueryString
     :name: typo3-fluid-link-action-argumentstobeexcludedfromquerystring
     :type: mixed
@@ -419,9 +328,6 @@ argumentsToBeExcludedFromQueryString
     Arguments to be removed from the URI. Only active if $addQueryString = TRUE
 
 .. _typo3-fluid-link-action-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3-fluid-link-action-arguments

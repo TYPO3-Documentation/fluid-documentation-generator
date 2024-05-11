@@ -61,14 +61,13 @@ Arguments
 
 The following arguments are available for `<f:be.infobox>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-infobox-message_argument:
-
-message
--------
 
 ..  confval:: message
     :name: typo3-fluid-be-infobox-message
@@ -79,9 +78,6 @@ message
 
 .. _typo3-fluid-be-infobox-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-be-infobox-title
     :type: string
@@ -90,9 +86,6 @@ title
     The title of the info box
 
 .. _typo3-fluid-be-infobox-state_argument:
-
-state
------
 
 ..  confval:: state
     :name: typo3-fluid-be-infobox-state
@@ -104,9 +97,6 @@ state
 
 .. _typo3-fluid-be-infobox-iconname_argument:
 
-iconName
---------
-
 ..  confval:: iconName
     :name: typo3-fluid-be-infobox-iconname
     :type: string
@@ -115,9 +105,6 @@ iconName
     The icon name from font awesome, NULL sets default icon
 
 .. _typo3-fluid-be-infobox-disableicon_argument:
-
-disableIcon
------------
 
 ..  confval:: disableIcon
     :name: typo3-fluid-be-infobox-disableicon

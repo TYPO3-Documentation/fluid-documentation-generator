@@ -71,14 +71,13 @@ Arguments
 
 The following arguments are available for `<f:cache.warmup>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-cache-warmup-variables_argument:
-
-variables
----------
 
 ..  confval:: variables
     :name: typo3fluid-fluid-cache-warmup-variables

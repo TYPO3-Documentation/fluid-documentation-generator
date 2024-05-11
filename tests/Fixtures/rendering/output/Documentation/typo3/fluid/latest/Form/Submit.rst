@@ -54,14 +54,13 @@ Arguments
 
 The following arguments are available for `<f:form.submit>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-submit-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-submit-additionalattributes
@@ -72,9 +71,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-submit-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-submit-data
     :type: mixed
@@ -83,9 +79,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-submit-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-submit-aria
@@ -96,9 +89,6 @@ aria
 
 .. _typo3-fluid-form-submit-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-submit-name
     :type: string
@@ -107,9 +97,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-submit-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-submit-value
@@ -120,9 +107,6 @@ value
 
 .. _typo3-fluid-form-submit-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-submit-property
     :type: string
@@ -131,9 +115,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-submit-disabled_argument:
-
-disabled
---------
 
 ..  confval:: disabled
     :name: typo3-fluid-form-submit-disabled
@@ -144,9 +125,6 @@ disabled
 
 .. _typo3-fluid-form-submit-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-form-submit-class
     :type: string
@@ -155,9 +133,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-form-submit-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-form-submit-dir
@@ -168,9 +143,6 @@ dir
 
 .. _typo3-fluid-form-submit-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-form-submit-id
     :type: string
@@ -179,9 +151,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-form-submit-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-form-submit-lang
@@ -192,9 +161,6 @@ lang
 
 .. _typo3-fluid-form-submit-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-form-submit-style
     :type: string
@@ -203,9 +169,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-form-submit-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-form-submit-title
@@ -216,9 +179,6 @@ title
 
 .. _typo3-fluid-form-submit-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-form-submit-accesskey
     :type: string
@@ -228,9 +188,6 @@ accesskey
 
 .. _typo3-fluid-form-submit-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-submit-tabindex
     :type: integer
@@ -239,9 +196,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-submit-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-submit-onclick

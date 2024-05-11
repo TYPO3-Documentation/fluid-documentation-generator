@@ -64,14 +64,13 @@ Arguments
 
 The following arguments are available for `<f:format.bytes>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-bytes-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-format-bytes-value
@@ -82,9 +81,6 @@ value
 
 .. _typo3-fluid-format-bytes-decimals_argument:
 
-decimals
---------
-
 ..  confval:: decimals
     :name: typo3-fluid-format-bytes-decimals
     :type: mixed
@@ -93,9 +89,6 @@ decimals
     The number of digits after the decimal point
 
 .. _typo3-fluid-format-bytes-decimalseparator_argument:
-
-decimalSeparator
-----------------
 
 ..  confval:: decimalSeparator
     :name: typo3-fluid-format-bytes-decimalseparator
@@ -107,9 +100,6 @@ decimalSeparator
 
 .. _typo3-fluid-format-bytes-thousandsseparator_argument:
 
-thousandsSeparator
-------------------
-
 ..  confval:: thousandsSeparator
     :name: typo3-fluid-format-bytes-thousandsseparator
     :type: string
@@ -119,9 +109,6 @@ thousandsSeparator
     The character for grouping the thousand digits
 
 .. _typo3-fluid-format-bytes-units_argument:
-
-units
------
 
 ..  confval:: units
     :name: typo3-fluid-format-bytes-units

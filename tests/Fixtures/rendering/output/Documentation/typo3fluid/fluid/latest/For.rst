@@ -86,14 +86,13 @@ Arguments
 
 The following arguments are available for `<f:for>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-for-each_argument:
-
-each
-----
 
 ..  confval:: each
     :name: typo3fluid-fluid-for-each
@@ -104,9 +103,6 @@ each
 
 .. _typo3fluid-fluid-for-as_argument:
 
-as
---
-
 ..  confval:: as
     :name: typo3fluid-fluid-for-as
     :type: string
@@ -115,9 +111,6 @@ as
     The name of the iteration variable
 
 .. _typo3fluid-fluid-for-key_argument:
-
-key
----
 
 ..  confval:: key
     :name: typo3fluid-fluid-for-key
@@ -128,9 +121,6 @@ key
 
 .. _typo3fluid-fluid-for-reverse_argument:
 
-reverse
--------
-
 ..  confval:: reverse
     :name: typo3fluid-fluid-for-reverse
     :type: boolean
@@ -139,9 +129,6 @@ reverse
     If TRUE, iterates in reverse
 
 .. _typo3fluid-fluid-for-iteration_argument:
-
-iteration
----------
 
 ..  confval:: iteration
     :name: typo3fluid-fluid-for-iteration

@@ -55,14 +55,13 @@ Arguments
 
 The following arguments are available for `<f:format.htmlentitiesDecode>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-htmlentitiesdecode-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-format-htmlentitiesdecode-value
@@ -73,9 +72,6 @@ value
 
 .. _typo3-fluid-format-htmlentitiesdecode-keepquotes_argument:
 
-keepQuotes
-----------
-
 ..  confval:: keepQuotes
     :name: typo3-fluid-format-htmlentitiesdecode-keepquotes
     :type: boolean
@@ -84,9 +80,6 @@ keepQuotes
     If TRUE, single and double quotes won't be replaced (sets ENT_NOQUOTES flag).
 
 .. _typo3-fluid-format-htmlentitiesdecode-encoding_argument:
-
-encoding
---------
 
 ..  confval:: encoding
     :name: typo3-fluid-format-htmlentitiesdecode-encoding

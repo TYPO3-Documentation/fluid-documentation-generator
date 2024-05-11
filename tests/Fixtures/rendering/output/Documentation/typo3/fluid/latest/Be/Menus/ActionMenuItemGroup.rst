@@ -47,14 +47,13 @@ Arguments
 
 The following arguments are available for `<f:be.menus.actionMenuItemGroup>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-be-menus-actionmenuitemgroup-additionalattributes
@@ -65,9 +64,6 @@ additionalAttributes
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-be-menus-actionmenuitemgroup-data
     :type: mixed
@@ -76,9 +72,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-be-menus-actionmenuitemgroup-aria
@@ -89,9 +82,6 @@ aria
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup-defaultcontroller_argument:
 
-defaultController
------------------
-
 ..  confval:: defaultController
     :name: typo3-fluid-be-menus-actionmenuitemgroup-defaultcontroller
     :type: string
@@ -100,9 +90,6 @@ defaultController
     Unused
 
 .. _typo3-fluid-be-menus-actionmenuitemgroup-label_argument:
-
-label
------
 
 ..  confval:: label
     :name: typo3-fluid-be-menus-actionmenuitemgroup-label

@@ -71,14 +71,13 @@ Arguments
 
 The following arguments are available for `<f:link.page>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-link-page-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-link-page-additionalattributes
@@ -89,9 +88,6 @@ additionalAttributes
 
 .. _typo3-fluid-link-page-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-link-page-data
     :type: mixed
@@ -100,9 +96,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-link-page-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-link-page-aria
@@ -113,9 +106,6 @@ aria
 
 .. _typo3-fluid-link-page-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-link-page-class
     :type: string
@@ -124,9 +114,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-link-page-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-link-page-dir
@@ -137,9 +124,6 @@ dir
 
 .. _typo3-fluid-link-page-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-link-page-id
     :type: string
@@ -148,9 +132,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-link-page-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-link-page-lang
@@ -161,9 +142,6 @@ lang
 
 .. _typo3-fluid-link-page-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-link-page-style
     :type: string
@@ -172,9 +150,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-link-page-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-link-page-title
@@ -185,9 +160,6 @@ title
 
 .. _typo3-fluid-link-page-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-link-page-accesskey
     :type: string
@@ -196,9 +168,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-link-page-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-link-page-tabindex
@@ -209,9 +178,6 @@ tabindex
 
 .. _typo3-fluid-link-page-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-link-page-onclick
     :type: string
@@ -220,9 +186,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-link-page-target_argument:
-
-target
-------
 
 ..  confval:: target
     :name: typo3-fluid-link-page-target
@@ -233,9 +196,6 @@ target
 
 .. _typo3-fluid-link-page-rel_argument:
 
-rel
----
-
 ..  confval:: rel
     :name: typo3-fluid-link-page-rel
     :type: string
@@ -244,9 +204,6 @@ rel
     Specifies the relationship between the current document and the linked document
 
 .. _typo3-fluid-link-page-pageuid_argument:
-
-pageUid
--------
 
 ..  confval:: pageUid
     :name: typo3-fluid-link-page-pageuid
@@ -257,9 +214,6 @@ pageUid
 
 .. _typo3-fluid-link-page-pagetype_argument:
 
-pageType
---------
-
 ..  confval:: pageType
     :name: typo3-fluid-link-page-pagetype
     :type: mixed
@@ -268,9 +222,6 @@ pageType
     Type of the target page. See typolink.parameter
 
 .. _typo3-fluid-link-page-nocache_argument:
-
-noCache
--------
 
 ..  confval:: noCache
     :name: typo3-fluid-link-page-nocache
@@ -281,9 +232,6 @@ noCache
 
 .. _typo3-fluid-link-page-language_argument:
 
-language
---------
-
 ..  confval:: language
     :name: typo3-fluid-link-page-language
     :type: string
@@ -292,9 +240,6 @@ language
     Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
 
 .. _typo3-fluid-link-page-section_argument:
-
-section
--------
 
 ..  confval:: section
     :name: typo3-fluid-link-page-section
@@ -305,9 +250,6 @@ section
 
 .. _typo3-fluid-link-page-linkaccessrestrictedpages_argument:
 
-linkAccessRestrictedPages
--------------------------
-
 ..  confval:: linkAccessRestrictedPages
     :name: typo3-fluid-link-page-linkaccessrestrictedpages
     :type: boolean
@@ -316,9 +258,6 @@ linkAccessRestrictedPages
     If set, links pointing to access restricted pages will still link to the page even though the page cannot be accessed.
 
 .. _typo3-fluid-link-page-additionalparams_argument:
-
-additionalParams
-----------------
 
 ..  confval:: additionalParams
     :name: typo3-fluid-link-page-additionalparams
@@ -329,9 +268,6 @@ additionalParams
 
 .. _typo3-fluid-link-page-absolute_argument:
 
-absolute
---------
-
 ..  confval:: absolute
     :name: typo3-fluid-link-page-absolute
     :type: boolean
@@ -341,9 +277,6 @@ absolute
 
 .. _typo3-fluid-link-page-addquerystring_argument:
 
-addQueryString
---------------
-
 ..  confval:: addQueryString
     :name: typo3-fluid-link-page-addquerystring
     :type: string
@@ -352,9 +285,6 @@ addQueryString
     If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
 
 .. _typo3-fluid-link-page-argumentstobeexcludedfromquerystring_argument:
-
-argumentsToBeExcludedFromQueryString
-------------------------------------
 
 ..  confval:: argumentsToBeExcludedFromQueryString
     :name: typo3-fluid-link-page-argumentstobeexcludedfromquerystring

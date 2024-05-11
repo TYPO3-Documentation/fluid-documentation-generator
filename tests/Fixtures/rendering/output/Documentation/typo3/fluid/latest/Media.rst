@@ -68,14 +68,13 @@ Arguments
 
 The following arguments are available for `<f:media>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-media-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-media-additionalattributes
@@ -86,9 +85,6 @@ additionalAttributes
 
 .. _typo3-fluid-media-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-media-data
     :type: mixed
@@ -97,9 +93,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-media-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-media-aria
@@ -110,9 +103,6 @@ aria
 
 .. _typo3-fluid-media-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-media-class
     :type: string
@@ -121,9 +111,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-media-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-media-dir
@@ -134,9 +121,6 @@ dir
 
 .. _typo3-fluid-media-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-media-id
     :type: string
@@ -145,9 +129,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-media-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-media-lang
@@ -158,9 +139,6 @@ lang
 
 .. _typo3-fluid-media-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-media-style
     :type: string
@@ -169,9 +147,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-media-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-media-title
@@ -182,9 +157,6 @@ title
 
 .. _typo3-fluid-media-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-media-accesskey
     :type: string
@@ -193,9 +165,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-media-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-media-tabindex
@@ -206,9 +175,6 @@ tabindex
 
 .. _typo3-fluid-media-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-media-onclick
     :type: string
@@ -217,9 +183,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-media-alt_argument:
-
-alt
----
 
 ..  confval:: alt
     :name: typo3-fluid-media-alt
@@ -230,9 +193,6 @@ alt
 
 .. _typo3-fluid-media-file_argument:
 
-file
-----
-
 ..  confval:: file
     :name: typo3-fluid-media-file
     :type: mixed
@@ -241,9 +201,6 @@ file
     File
 
 .. _typo3-fluid-media-additionalconfig_argument:
-
-additionalConfig
-----------------
 
 ..  confval:: additionalConfig
     :name: typo3-fluid-media-additionalconfig
@@ -255,9 +212,6 @@ additionalConfig
 
 .. _typo3-fluid-media-width_argument:
 
-width
------
-
 ..  confval:: width
     :name: typo3-fluid-media-width
     :type: string
@@ -267,9 +221,6 @@ width
 
 .. _typo3-fluid-media-height_argument:
 
-height
-------
-
 ..  confval:: height
     :name: typo3-fluid-media-height
     :type: string
@@ -278,9 +229,6 @@ height
     This can be a numeric value representing the fixed height in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
 .. _typo3-fluid-media-cropvariant_argument:
-
-cropVariant
------------
 
 ..  confval:: cropVariant
     :name: typo3-fluid-media-cropvariant
@@ -292,9 +240,6 @@ cropVariant
 
 .. _typo3-fluid-media-fileextension_argument:
 
-fileExtension
--------------
-
 ..  confval:: fileExtension
     :name: typo3-fluid-media-fileextension
     :type: string
@@ -304,9 +249,6 @@ fileExtension
 
 .. _typo3-fluid-media-loading_argument:
 
-loading
--------
-
 ..  confval:: loading
     :name: typo3-fluid-media-loading
     :type: string
@@ -315,9 +257,6 @@ loading
     Native lazy-loading for images property. Can be "lazy", "eager" or "auto". Used on image files only.
 
 .. _typo3-fluid-media-decoding_argument:
-
-decoding
---------
 
 ..  confval:: decoding
     :name: typo3-fluid-media-decoding

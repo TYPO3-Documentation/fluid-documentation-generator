@@ -40,14 +40,13 @@ Arguments
 
 The following arguments are available for `<f:uri.action>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-uri-action-action_argument:
-
-action
-------
 
 ..  confval:: action
     :name: typo3-fluid-uri-action-action
@@ -57,9 +56,6 @@ action
     Target action
 
 .. _typo3-fluid-uri-action-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3-fluid-uri-action-arguments
@@ -71,9 +67,6 @@ arguments
 
 .. _typo3-fluid-uri-action-controller_argument:
 
-controller
-----------
-
 ..  confval:: controller
     :name: typo3-fluid-uri-action-controller
     :type: string
@@ -82,9 +75,6 @@ controller
     Target controller. If NULL current controllerName is used
 
 .. _typo3-fluid-uri-action-extensionname_argument:
-
-extensionName
--------------
 
 ..  confval:: extensionName
     :name: typo3-fluid-uri-action-extensionname
@@ -95,9 +85,6 @@ extensionName
 
 .. _typo3-fluid-uri-action-pluginname_argument:
 
-pluginName
-----------
-
 ..  confval:: pluginName
     :name: typo3-fluid-uri-action-pluginname
     :type: string
@@ -106,9 +93,6 @@ pluginName
     Target plugin. If empty, the current plugin name is used
 
 .. _typo3-fluid-uri-action-pageuid_argument:
-
-pageUid
--------
 
 ..  confval:: pageUid
     :name: typo3-fluid-uri-action-pageuid
@@ -119,9 +103,6 @@ pageUid
 
 .. _typo3-fluid-uri-action-pagetype_argument:
 
-pageType
---------
-
 ..  confval:: pageType
     :name: typo3-fluid-uri-action-pagetype
     :type: mixed
@@ -130,9 +111,6 @@ pageType
     Type of the target page. See typolink.parameter
 
 .. _typo3-fluid-uri-action-nocache_argument:
-
-noCache
--------
 
 ..  confval:: noCache
     :name: typo3-fluid-uri-action-nocache
@@ -143,9 +121,6 @@ noCache
 
 .. _typo3-fluid-uri-action-language_argument:
 
-language
---------
-
 ..  confval:: language
     :name: typo3-fluid-uri-action-language
     :type: string
@@ -154,9 +129,6 @@ language
     Link to a specific language - defaults to the current language, use a language ID or "current" to enforce a specific language
 
 .. _typo3-fluid-uri-action-section_argument:
-
-section
--------
 
 ..  confval:: section
     :name: typo3-fluid-uri-action-section
@@ -167,9 +139,6 @@ section
 
 .. _typo3-fluid-uri-action-format_argument:
 
-format
-------
-
 ..  confval:: format
     :name: typo3-fluid-uri-action-format
     :type: string
@@ -179,9 +148,6 @@ format
 
 .. _typo3-fluid-uri-action-linkaccessrestrictedpages_argument:
 
-linkAccessRestrictedPages
--------------------------
-
 ..  confval:: linkAccessRestrictedPages
     :name: typo3-fluid-uri-action-linkaccessrestrictedpages
     :type: boolean
@@ -190,9 +156,6 @@ linkAccessRestrictedPages
     If set, links pointing to access restricted pages will still link to the page even though the page cannot be accessed.
 
 .. _typo3-fluid-uri-action-additionalparams_argument:
-
-additionalParams
-----------------
 
 ..  confval:: additionalParams
     :name: typo3-fluid-uri-action-additionalparams
@@ -204,9 +167,6 @@ additionalParams
 
 .. _typo3-fluid-uri-action-absolute_argument:
 
-absolute
---------
-
 ..  confval:: absolute
     :name: typo3-fluid-uri-action-absolute
     :type: boolean
@@ -216,9 +176,6 @@ absolute
 
 .. _typo3-fluid-uri-action-addquerystring_argument:
 
-addQueryString
---------------
-
 ..  confval:: addQueryString
     :name: typo3-fluid-uri-action-addquerystring
     :type: string
@@ -227,9 +184,6 @@ addQueryString
     If set, the current query parameters will be kept in the URL. If set to "untrusted", then ALL query parameters will be added. Be aware, that this might lead to problems when the generated link is cached.
 
 .. _typo3-fluid-uri-action-argumentstobeexcludedfromquerystring_argument:
-
-argumentsToBeExcludedFromQueryString
-------------------------------------
 
 ..  confval:: argumentsToBeExcludedFromQueryString
     :name: typo3-fluid-uri-action-argumentstobeexcludedfromquerystring

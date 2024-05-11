@@ -35,14 +35,13 @@ Arguments
 
 The following arguments are available for `<be:toolbar.attributes>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-toolbar-attributes-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-backend-toolbar-attributes-class

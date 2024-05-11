@@ -75,14 +75,13 @@ Arguments
 
 The following arguments are available for `<f:security.ifHasRole>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-security-ifhasrole-then_argument:
-
-then
-----
 
 ..  confval:: then
     :name: typo3-fluid-security-ifhasrole-then
@@ -93,9 +92,6 @@ then
 
 .. _typo3-fluid-security-ifhasrole-else_argument:
 
-else
-----
-
 ..  confval:: else
     :name: typo3-fluid-security-ifhasrole-else
     :type: mixed
@@ -104,9 +100,6 @@ else
     Value to be returned if the condition if not met.
 
 .. _typo3-fluid-security-ifhasrole-role_argument:
-
-role
-----
 
 ..  confval:: role
     :name: typo3-fluid-security-ifhasrole-role

@@ -41,14 +41,13 @@ Arguments
 
 The following arguments are available for `<f:form.upload>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-upload-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-upload-additionalattributes
@@ -59,9 +58,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-upload-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-upload-data
     :type: mixed
@@ -70,9 +66,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-upload-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-upload-aria
@@ -83,9 +76,6 @@ aria
 
 .. _typo3-fluid-form-upload-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-upload-name
     :type: string
@@ -94,9 +84,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-upload-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-upload-value
@@ -107,9 +94,6 @@ value
 
 .. _typo3-fluid-form-upload-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-upload-property
     :type: string
@@ -118,9 +102,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-upload-disabled_argument:
-
-disabled
---------
 
 ..  confval:: disabled
     :name: typo3-fluid-form-upload-disabled
@@ -131,9 +112,6 @@ disabled
 
 .. _typo3-fluid-form-upload-multiple_argument:
 
-multiple
---------
-
 ..  confval:: multiple
     :name: typo3-fluid-form-upload-multiple
     :type: string
@@ -143,9 +121,6 @@ multiple
 
 .. _typo3-fluid-form-upload-accept_argument:
 
-accept
-------
-
 ..  confval:: accept
     :name: typo3-fluid-form-upload-accept
     :type: string
@@ -154,9 +129,6 @@ accept
     Specifies the allowed file extensions to upload via comma-separated list, example ".png,.gif"
 
 .. _typo3-fluid-form-upload-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-upload-errorclass
@@ -168,9 +140,6 @@ errorClass
 
 .. _typo3-fluid-form-upload-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-form-upload-class
     :type: string
@@ -179,9 +148,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-form-upload-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-form-upload-dir
@@ -192,9 +158,6 @@ dir
 
 .. _typo3-fluid-form-upload-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-form-upload-id
     :type: string
@@ -203,9 +166,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-form-upload-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-form-upload-lang
@@ -216,9 +176,6 @@ lang
 
 .. _typo3-fluid-form-upload-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-form-upload-style
     :type: string
@@ -227,9 +184,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-form-upload-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-form-upload-title
@@ -240,9 +194,6 @@ title
 
 .. _typo3-fluid-form-upload-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-form-upload-accesskey
     :type: string
@@ -252,9 +203,6 @@ accesskey
 
 .. _typo3-fluid-form-upload-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-upload-tabindex
     :type: integer
@@ -263,9 +211,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-upload-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-upload-onclick

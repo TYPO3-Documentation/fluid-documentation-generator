@@ -125,14 +125,13 @@ Arguments
 
 The following arguments are available for `<f:format.date>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-date-date_argument:
-
-date
-----
 
 ..  confval:: date
     :name: typo3-fluid-format-date-date
@@ -143,9 +142,6 @@ date
 
 .. _typo3-fluid-format-date-format_argument:
 
-format
-------
-
 ..  confval:: format
     :name: typo3-fluid-format-date-format
     :type: string
@@ -154,9 +150,6 @@ format
     Format String which is taken to format the Date/Time
 
 .. _typo3-fluid-format-date-pattern_argument:
-
-pattern
--------
 
 ..  confval:: pattern
     :name: typo3-fluid-format-date-pattern
@@ -167,9 +160,6 @@ pattern
 
 .. _typo3-fluid-format-date-locale_argument:
 
-locale
-------
-
 ..  confval:: locale
     :name: typo3-fluid-format-date-locale
     :type: string
@@ -178,9 +168,6 @@ locale
     A locale format such as "nl-NL" to format the date in a specific locale, if none given, uses the current locale of the current request. Only works when pattern argument is given
 
 .. _typo3-fluid-format-date-base_argument:
-
-base
-----
 
 ..  confval:: base
     :name: typo3-fluid-format-date-base

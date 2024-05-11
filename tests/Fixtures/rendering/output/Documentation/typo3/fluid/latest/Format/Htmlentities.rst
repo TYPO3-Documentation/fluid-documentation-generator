@@ -55,14 +55,13 @@ Arguments
 
 The following arguments are available for `<f:format.htmlentities>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-htmlentities-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-format-htmlentities-value
@@ -73,9 +72,6 @@ value
 
 .. _typo3-fluid-format-htmlentities-keepquotes_argument:
 
-keepQuotes
-----------
-
 ..  confval:: keepQuotes
     :name: typo3-fluid-format-htmlentities-keepquotes
     :type: boolean
@@ -85,9 +81,6 @@ keepQuotes
 
 .. _typo3-fluid-format-htmlentities-encoding_argument:
 
-encoding
---------
-
 ..  confval:: encoding
     :name: typo3-fluid-format-htmlentities-encoding
     :type: string
@@ -96,9 +89,6 @@ encoding
     Define the encoding used when converting characters (Default: UTF-8
 
 .. _typo3-fluid-format-htmlentities-doubleencode_argument:
-
-doubleEncode
-------------
 
 ..  confval:: doubleEncode
     :name: typo3-fluid-format-htmlentities-doubleencode

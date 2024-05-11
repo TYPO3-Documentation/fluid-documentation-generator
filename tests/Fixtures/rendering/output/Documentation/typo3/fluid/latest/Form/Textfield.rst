@@ -40,14 +40,13 @@ Arguments
 
 The following arguments are available for `<f:form.textfield>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-textfield-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-textfield-additionalattributes
@@ -58,9 +57,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-textfield-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-textfield-data
     :type: mixed
@@ -69,9 +65,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-textfield-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-textfield-aria
@@ -82,9 +75,6 @@ aria
 
 .. _typo3-fluid-form-textfield-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-textfield-name
     :type: string
@@ -93,9 +83,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-textfield-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-textfield-value
@@ -106,9 +93,6 @@ value
 
 .. _typo3-fluid-form-textfield-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-textfield-property
     :type: string
@@ -117,9 +101,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-textfield-autofocus_argument:
-
-autofocus
----------
 
 ..  confval:: autofocus
     :name: typo3-fluid-form-textfield-autofocus
@@ -130,9 +111,6 @@ autofocus
 
 .. _typo3-fluid-form-textfield-disabled_argument:
 
-disabled
---------
-
 ..  confval:: disabled
     :name: typo3-fluid-form-textfield-disabled
     :type: string
@@ -141,9 +119,6 @@ disabled
     Specifies that the input element should be disabled when the page loads
 
 .. _typo3-fluid-form-textfield-maxlength_argument:
-
-maxlength
----------
 
 ..  confval:: maxlength
     :name: typo3-fluid-form-textfield-maxlength
@@ -154,9 +129,6 @@ maxlength
 
 .. _typo3-fluid-form-textfield-readonly_argument:
 
-readonly
---------
-
 ..  confval:: readonly
     :name: typo3-fluid-form-textfield-readonly
     :type: string
@@ -165,9 +137,6 @@ readonly
     The readonly attribute of the input field
 
 .. _typo3-fluid-form-textfield-size_argument:
-
-size
-----
 
 ..  confval:: size
     :name: typo3-fluid-form-textfield-size
@@ -178,9 +147,6 @@ size
 
 .. _typo3-fluid-form-textfield-placeholder_argument:
 
-placeholder
------------
-
 ..  confval:: placeholder
     :name: typo3-fluid-form-textfield-placeholder
     :type: string
@@ -190,9 +156,6 @@ placeholder
 
 .. _typo3-fluid-form-textfield-pattern_argument:
 
-pattern
--------
-
 ..  confval:: pattern
     :name: typo3-fluid-form-textfield-pattern
     :type: string
@@ -201,9 +164,6 @@ pattern
     HTML5 validation pattern
 
 .. _typo3-fluid-form-textfield-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-textfield-errorclass
@@ -215,9 +175,6 @@ errorClass
 
 .. _typo3-fluid-form-textfield-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-form-textfield-class
     :type: string
@@ -226,9 +183,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-form-textfield-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-form-textfield-dir
@@ -239,9 +193,6 @@ dir
 
 .. _typo3-fluid-form-textfield-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-form-textfield-id
     :type: string
@@ -250,9 +201,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-form-textfield-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-form-textfield-lang
@@ -263,9 +211,6 @@ lang
 
 .. _typo3-fluid-form-textfield-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-form-textfield-style
     :type: string
@@ -274,9 +219,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-form-textfield-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-form-textfield-title
@@ -287,9 +229,6 @@ title
 
 .. _typo3-fluid-form-textfield-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-form-textfield-accesskey
     :type: string
@@ -298,9 +237,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-form-textfield-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-form-textfield-tabindex
@@ -311,9 +247,6 @@ tabindex
 
 .. _typo3-fluid-form-textfield-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-form-textfield-onclick
     :type: string
@@ -323,9 +256,6 @@ onclick
 
 .. _typo3-fluid-form-textfield-required_argument:
 
-required
---------
-
 ..  confval:: required
     :name: typo3-fluid-form-textfield-required
     :type: boolean
@@ -334,9 +264,6 @@ required
     If the field is required or not
 
 .. _typo3-fluid-form-textfield-type_argument:
-
-type
-----
 
 ..  confval:: type
     :name: typo3-fluid-form-textfield-type

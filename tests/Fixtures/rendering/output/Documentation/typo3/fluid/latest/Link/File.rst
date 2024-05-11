@@ -62,14 +62,13 @@ Arguments
 
 The following arguments are available for `<f:link.file>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-link-file-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-link-file-additionalattributes
@@ -80,9 +79,6 @@ additionalAttributes
 
 .. _typo3-fluid-link-file-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-link-file-data
     :type: mixed
@@ -91,9 +87,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-link-file-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-link-file-aria
@@ -104,9 +97,6 @@ aria
 
 .. _typo3-fluid-link-file-file_argument:
 
-file
-----
-
 ..  confval:: file
     :name: typo3-fluid-link-file-file
     :type: mixed
@@ -115,9 +105,6 @@ file
     Specifies the file to create a link to
 
 .. _typo3-fluid-link-file-download_argument:
-
-download
---------
 
 ..  confval:: download
     :name: typo3-fluid-link-file-download
@@ -128,9 +115,6 @@ download
 
 .. _typo3-fluid-link-file-filename_argument:
 
-filename
---------
-
 ..  confval:: filename
     :name: typo3-fluid-link-file-filename
     :type: string
@@ -139,9 +123,6 @@ filename
     Specifies an alternative filename. If filename contains a file extension, this must be the same as from 'file'.
 
 .. _typo3-fluid-link-file-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-link-file-class
@@ -152,9 +133,6 @@ class
 
 .. _typo3-fluid-link-file-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-link-file-dir
     :type: string
@@ -163,9 +141,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-link-file-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-link-file-id
@@ -176,9 +151,6 @@ id
 
 .. _typo3-fluid-link-file-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-link-file-lang
     :type: string
@@ -187,9 +159,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-link-file-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-link-file-style
@@ -200,9 +169,6 @@ style
 
 .. _typo3-fluid-link-file-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-link-file-title
     :type: string
@@ -211,9 +177,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-link-file-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-link-file-accesskey
@@ -224,9 +187,6 @@ accesskey
 
 .. _typo3-fluid-link-file-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-link-file-tabindex
     :type: integer
@@ -235,9 +195,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-link-file-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-link-file-onclick
@@ -248,9 +205,6 @@ onclick
 
 .. _typo3-fluid-link-file-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-link-file-name
     :type: string
@@ -259,9 +213,6 @@ name
     Specifies the name of an anchor
 
 .. _typo3-fluid-link-file-rel_argument:
-
-rel
----
 
 ..  confval:: rel
     :name: typo3-fluid-link-file-rel
@@ -272,9 +223,6 @@ rel
 
 .. _typo3-fluid-link-file-rev_argument:
 
-rev
----
-
 ..  confval:: rev
     :name: typo3-fluid-link-file-rev
     :type: string
@@ -283,9 +231,6 @@ rev
     Specifies the relationship between the linked document and the current document
 
 .. _typo3-fluid-link-file-target_argument:
-
-target
-------
 
 ..  confval:: target
     :name: typo3-fluid-link-file-target

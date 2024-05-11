@@ -42,14 +42,13 @@ Arguments
 
 The following arguments are available for `<f:form.textarea>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-textarea-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-textarea-additionalattributes
@@ -60,9 +59,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-textarea-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-textarea-data
     :type: mixed
@@ -71,9 +67,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-textarea-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-textarea-aria
@@ -84,9 +77,6 @@ aria
 
 .. _typo3-fluid-form-textarea-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-textarea-name
     :type: string
@@ -95,9 +85,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-textarea-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-textarea-value
@@ -108,9 +95,6 @@ value
 
 .. _typo3-fluid-form-textarea-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-textarea-property
     :type: string
@@ -119,9 +103,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-textarea-autofocus_argument:
-
-autofocus
----------
 
 ..  confval:: autofocus
     :name: typo3-fluid-form-textarea-autofocus
@@ -132,9 +113,6 @@ autofocus
 
 .. _typo3-fluid-form-textarea-rows_argument:
 
-rows
-----
-
 ..  confval:: rows
     :name: typo3-fluid-form-textarea-rows
     :type: mixed
@@ -143,9 +121,6 @@ rows
     The number of rows of a text area
 
 .. _typo3-fluid-form-textarea-cols_argument:
-
-cols
-----
 
 ..  confval:: cols
     :name: typo3-fluid-form-textarea-cols
@@ -156,9 +131,6 @@ cols
 
 .. _typo3-fluid-form-textarea-disabled_argument:
 
-disabled
---------
-
 ..  confval:: disabled
     :name: typo3-fluid-form-textarea-disabled
     :type: string
@@ -168,9 +140,6 @@ disabled
 
 .. _typo3-fluid-form-textarea-placeholder_argument:
 
-placeholder
------------
-
 ..  confval:: placeholder
     :name: typo3-fluid-form-textarea-placeholder
     :type: string
@@ -179,9 +148,6 @@ placeholder
     The placeholder of the textarea
 
 .. _typo3-fluid-form-textarea-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-textarea-errorclass
@@ -193,9 +159,6 @@ errorClass
 
 .. _typo3-fluid-form-textarea-readonly_argument:
 
-readonly
---------
-
 ..  confval:: readonly
     :name: typo3-fluid-form-textarea-readonly
     :type: string
@@ -204,9 +167,6 @@ readonly
     The readonly attribute of the textarea
 
 .. _typo3-fluid-form-textarea-required_argument:
-
-required
---------
 
 ..  confval:: required
     :name: typo3-fluid-form-textarea-required
@@ -217,9 +177,6 @@ required
 
 .. _typo3-fluid-form-textarea-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-form-textarea-class
     :type: string
@@ -228,9 +185,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-form-textarea-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-form-textarea-dir
@@ -241,9 +195,6 @@ dir
 
 .. _typo3-fluid-form-textarea-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-form-textarea-id
     :type: string
@@ -252,9 +203,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-form-textarea-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-form-textarea-lang
@@ -265,9 +213,6 @@ lang
 
 .. _typo3-fluid-form-textarea-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-form-textarea-style
     :type: string
@@ -276,9 +221,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-form-textarea-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-form-textarea-title
@@ -289,9 +231,6 @@ title
 
 .. _typo3-fluid-form-textarea-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-form-textarea-accesskey
     :type: string
@@ -301,9 +240,6 @@ accesskey
 
 .. _typo3-fluid-form-textarea-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-textarea-tabindex
     :type: integer
@@ -312,9 +248,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-textarea-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-textarea-onclick

@@ -44,14 +44,13 @@ Arguments
 
 The following arguments are available for `<f:be.uri>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-uri-route_argument:
-
-route
------
 
 ..  confval:: route
     :name: typo3-fluid-be-uri-route
@@ -62,9 +61,6 @@ route
 
 .. _typo3-fluid-be-uri-parameters_argument:
 
-parameters
-----------
-
 ..  confval:: parameters
     :name: typo3-fluid-be-uri-parameters
     :type: mixed
@@ -74,9 +70,6 @@ parameters
     An array of parameters
 
 .. _typo3-fluid-be-uri-referencetype_argument:
-
-referenceType
--------------
 
 ..  confval:: referenceType
     :name: typo3-fluid-be-uri-referencetype

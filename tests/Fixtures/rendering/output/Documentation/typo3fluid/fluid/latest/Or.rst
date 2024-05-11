@@ -49,14 +49,13 @@ Arguments
 
 The following arguments are available for `<f:or>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-or-content_argument:
-
-content
--------
 
 ..  confval:: content
     :name: typo3fluid-fluid-or-content
@@ -67,9 +66,6 @@ content
 
 .. _typo3fluid-fluid-or-alternative_argument:
 
-alternative
------------
-
 ..  confval:: alternative
     :name: typo3fluid-fluid-or-alternative
     :type: mixed
@@ -78,9 +74,6 @@ alternative
     Alternative if content is null
 
 .. _typo3fluid-fluid-or-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3fluid-fluid-or-arguments

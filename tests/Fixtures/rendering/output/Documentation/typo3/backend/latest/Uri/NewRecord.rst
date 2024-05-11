@@ -78,14 +78,13 @@ Arguments
 
 The following arguments are available for `<be:uri.newRecord>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-uri-newrecord-uid_argument:
-
-uid
----
 
 ..  confval:: uid
     :name: typo3-backend-uri-newrecord-uid
@@ -96,9 +95,6 @@ uid
 
 .. _typo3-backend-uri-newrecord-pid_argument:
 
-pid
----
-
 ..  confval:: pid
     :name: typo3-backend-uri-newrecord-pid
     :type: mixed
@@ -107,9 +103,6 @@ pid
     The page id where the record will be created
 
 .. _typo3-backend-uri-newrecord-table_argument:
-
-table
------
 
 ..  confval:: table
     :name: typo3-backend-uri-newrecord-table
@@ -120,9 +113,6 @@ table
 
 .. _typo3-backend-uri-newrecord-returnurl_argument:
 
-returnUrl
----------
-
 ..  confval:: returnUrl
     :name: typo3-backend-uri-newrecord-returnurl
     :type: string
@@ -131,9 +121,6 @@ returnUrl
     Return to this URL after closing the edit dialog
 
 .. _typo3-backend-uri-newrecord-defaultvalues_argument:
-
-defaultValues
--------------
 
 ..  confval:: defaultValues
     :name: typo3-backend-uri-newrecord-defaultvalues

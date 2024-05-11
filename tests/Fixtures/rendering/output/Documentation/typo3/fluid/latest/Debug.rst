@@ -57,14 +57,13 @@ Arguments
 
 The following arguments are available for `<f:debug>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-debug-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-debug-title
@@ -74,9 +73,6 @@ title
     Optional custom title for the debug output
 
 .. _typo3-fluid-debug-maxdepth_argument:
-
-maxDepth
---------
 
 ..  confval:: maxDepth
     :name: typo3-fluid-debug-maxdepth
@@ -88,9 +84,6 @@ maxDepth
 
 .. _typo3-fluid-debug-plaintext_argument:
 
-plainText
----------
-
 ..  confval:: plainText
     :name: typo3-fluid-debug-plaintext
     :type: boolean
@@ -99,9 +92,6 @@ plainText
     If TRUE, the dump is in plain text, if FALSE the debug output is in HTML format.
 
 .. _typo3-fluid-debug-ansicolors_argument:
-
-ansiColors
-----------
 
 ..  confval:: ansiColors
     :name: typo3-fluid-debug-ansicolors
@@ -112,9 +102,6 @@ ansiColors
 
 .. _typo3-fluid-debug-inline_argument:
 
-inline
-------
-
 ..  confval:: inline
     :name: typo3-fluid-debug-inline
     :type: boolean
@@ -124,9 +111,6 @@ inline
 
 .. _typo3-fluid-debug-blacklistedclassnames_argument:
 
-blacklistedClassNames
----------------------
-
 ..  confval:: blacklistedClassNames
     :name: typo3-fluid-debug-blacklistedclassnames
     :type: mixed
@@ -135,9 +119,6 @@ blacklistedClassNames
     An array of class names (RegEx) to be filtered. Default is an array of some common class names.
 
 .. _typo3-fluid-debug-blacklistedpropertynames_argument:
-
-blacklistedPropertyNames
-------------------------
 
 ..  confval:: blacklistedPropertyNames
     :name: typo3-fluid-debug-blacklistedpropertynames

@@ -40,14 +40,13 @@ Arguments
 
 The following arguments are available for `<f:form.password>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-password-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-password-additionalattributes
@@ -58,9 +57,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-password-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-password-data
     :type: mixed
@@ -69,9 +65,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-password-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-password-aria
@@ -82,9 +75,6 @@ aria
 
 .. _typo3-fluid-form-password-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-password-name
     :type: string
@@ -93,9 +83,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-password-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-password-value
@@ -106,9 +93,6 @@ value
 
 .. _typo3-fluid-form-password-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-password-property
     :type: string
@@ -117,9 +101,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-password-disabled_argument:
-
-disabled
---------
 
 ..  confval:: disabled
     :name: typo3-fluid-form-password-disabled
@@ -130,9 +111,6 @@ disabled
 
 .. _typo3-fluid-form-password-maxlength_argument:
 
-maxlength
----------
-
 ..  confval:: maxlength
     :name: typo3-fluid-form-password-maxlength
     :type: mixed
@@ -141,9 +119,6 @@ maxlength
     The maxlength attribute of the input field (will not be validated)
 
 .. _typo3-fluid-form-password-placeholder_argument:
-
-placeholder
------------
 
 ..  confval:: placeholder
     :name: typo3-fluid-form-password-placeholder
@@ -154,9 +129,6 @@ placeholder
 
 .. _typo3-fluid-form-password-readonly_argument:
 
-readonly
---------
-
 ..  confval:: readonly
     :name: typo3-fluid-form-password-readonly
     :type: string
@@ -165,9 +137,6 @@ readonly
     The readonly attribute of the input field
 
 .. _typo3-fluid-form-password-autocomplete_argument:
-
-autocomplete
-------------
 
 ..  confval:: autocomplete
     :name: typo3-fluid-form-password-autocomplete
@@ -178,9 +147,6 @@ autocomplete
 
 .. _typo3-fluid-form-password-size_argument:
 
-size
-----
-
 ..  confval:: size
     :name: typo3-fluid-form-password-size
     :type: mixed
@@ -189,9 +155,6 @@ size
     The size of the input field
 
 .. _typo3-fluid-form-password-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-password-errorclass
@@ -203,9 +166,6 @@ errorClass
 
 .. _typo3-fluid-form-password-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-form-password-class
     :type: string
@@ -214,9 +174,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-form-password-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-form-password-dir
@@ -227,9 +184,6 @@ dir
 
 .. _typo3-fluid-form-password-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-form-password-id
     :type: string
@@ -238,9 +192,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-form-password-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-form-password-lang
@@ -251,9 +202,6 @@ lang
 
 .. _typo3-fluid-form-password-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-form-password-style
     :type: string
@@ -262,9 +210,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-form-password-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-form-password-title
@@ -275,9 +220,6 @@ title
 
 .. _typo3-fluid-form-password-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-form-password-accesskey
     :type: string
@@ -287,9 +229,6 @@ accesskey
 
 .. _typo3-fluid-form-password-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-password-tabindex
     :type: integer
@@ -298,9 +237,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-password-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-password-onclick

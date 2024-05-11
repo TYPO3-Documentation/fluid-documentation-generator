@@ -40,14 +40,13 @@ Arguments
 
 The following arguments are available for `<f:format.raw>{tagName}</f:format.raw>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 <f:for each="{arguments}" as="argumentData">
 .. _{argumentData.headlineIdentifier}_argument:
-
-{argumentData.headline}
-{argumentData.headlineDecoration}
 
 ..  confval:: {argumentData.headline}
     :name: {argumentData.headlineIdentifier}

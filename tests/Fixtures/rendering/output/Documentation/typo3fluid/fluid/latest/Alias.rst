@@ -66,14 +66,13 @@ Arguments
 
 The following arguments are available for `<f:alias>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-alias-map_argument:
-
-map
----
 
 ..  confval:: map
     :name: typo3fluid-fluid-alias-map

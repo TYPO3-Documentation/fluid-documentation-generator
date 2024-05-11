@@ -74,14 +74,13 @@ Arguments
 
 The following arguments are available for `<f:form.validationResults>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-validationresults-for_argument:
-
-for
----
 
 ..  confval:: for
     :name: typo3-fluid-form-validationresults-for
@@ -91,9 +90,6 @@ for
     The name of the error name (e.g. argument name or property name). This can also be a property path (like blog.title), and will then only display the validation errors of that property.
 
 .. _typo3-fluid-form-validationresults-as_argument:
-
-as
---
 
 ..  confval:: as
     :name: typo3-fluid-form-validationresults-as

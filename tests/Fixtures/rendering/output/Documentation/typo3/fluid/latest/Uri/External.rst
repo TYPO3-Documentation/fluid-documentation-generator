@@ -51,14 +51,13 @@ Arguments
 
 The following arguments are available for `<f:uri.external>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-uri-external-uri_argument:
-
-uri
----
 
 ..  confval:: uri
     :name: typo3-fluid-uri-external-uri
@@ -68,9 +67,6 @@ uri
     Target URI
 
 .. _typo3-fluid-uri-external-defaultscheme_argument:
-
-defaultScheme
--------------
 
 ..  confval:: defaultScheme
     :name: typo3-fluid-uri-external-defaultscheme

@@ -54,14 +54,13 @@ Arguments
 
 The following arguments are available for `<f:link.external>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-link-external-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-link-external-additionalattributes
@@ -72,9 +71,6 @@ additionalAttributes
 
 .. _typo3-fluid-link-external-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-link-external-data
     :type: mixed
@@ -83,9 +79,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-link-external-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-link-external-aria
@@ -96,9 +89,6 @@ aria
 
 .. _typo3-fluid-link-external-uri_argument:
 
-uri
----
-
 ..  confval:: uri
     :name: typo3-fluid-link-external-uri
     :type: string
@@ -107,9 +97,6 @@ uri
     The URI that will be put in the href attribute of the rendered link tag
 
 .. _typo3-fluid-link-external-defaultscheme_argument:
-
-defaultScheme
--------------
 
 ..  confval:: defaultScheme
     :name: typo3-fluid-link-external-defaultscheme
@@ -121,9 +108,6 @@ defaultScheme
 
 .. _typo3-fluid-link-external-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-link-external-class
     :type: string
@@ -132,9 +116,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-link-external-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-link-external-dir
@@ -145,9 +126,6 @@ dir
 
 .. _typo3-fluid-link-external-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-link-external-id
     :type: string
@@ -156,9 +134,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-link-external-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-link-external-lang
@@ -169,9 +144,6 @@ lang
 
 .. _typo3-fluid-link-external-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-link-external-style
     :type: string
@@ -180,9 +152,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-link-external-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-link-external-title
@@ -193,9 +162,6 @@ title
 
 .. _typo3-fluid-link-external-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-link-external-accesskey
     :type: string
@@ -204,9 +170,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-link-external-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-link-external-tabindex
@@ -217,9 +180,6 @@ tabindex
 
 .. _typo3-fluid-link-external-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-link-external-onclick
     :type: string
@@ -228,9 +188,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-link-external-name_argument:
-
-name
-----
 
 ..  confval:: name
     :name: typo3-fluid-link-external-name
@@ -241,9 +198,6 @@ name
 
 .. _typo3-fluid-link-external-rel_argument:
 
-rel
----
-
 ..  confval:: rel
     :name: typo3-fluid-link-external-rel
     :type: string
@@ -253,9 +207,6 @@ rel
 
 .. _typo3-fluid-link-external-rev_argument:
 
-rev
----
-
 ..  confval:: rev
     :name: typo3-fluid-link-external-rev
     :type: string
@@ -264,9 +215,6 @@ rev
     Specifies the relationship between the linked document and the current document
 
 .. _typo3-fluid-link-external-target_argument:
-
-target
-------
 
 ..  confval:: target
     :name: typo3-fluid-link-external-target

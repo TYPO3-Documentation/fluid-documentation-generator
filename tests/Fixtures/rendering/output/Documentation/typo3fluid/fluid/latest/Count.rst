@@ -54,14 +54,13 @@ Arguments
 
 The following arguments are available for `<f:count>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-count-subject_argument:
-
-subject
--------
 
 ..  confval:: subject
     :name: typo3fluid-fluid-count-subject

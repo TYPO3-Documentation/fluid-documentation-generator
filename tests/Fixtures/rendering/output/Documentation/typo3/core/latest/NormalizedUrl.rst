@@ -54,14 +54,13 @@ Arguments
 
 The following arguments are available for `<core:normalizedUrl>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-core-normalizedurl-pathorurl_argument:
-
-pathOrUrl
----------
 
 ..  confval:: pathOrUrl
     :name: typo3-core-normalizedurl-pathorurl

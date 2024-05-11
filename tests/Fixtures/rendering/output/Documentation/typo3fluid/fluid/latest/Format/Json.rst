@@ -61,14 +61,13 @@ Arguments
 
 The following arguments are available for `<f:format.json>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-json-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-json-value
@@ -78,9 +77,6 @@ value
     The incoming data to convert, or null if VH children should be used
 
 .. _typo3fluid-fluid-format-json-forceobject_argument:
-
-forceObject
------------
 
 ..  confval:: forceObject
     :name: typo3fluid-fluid-format-json-forceobject

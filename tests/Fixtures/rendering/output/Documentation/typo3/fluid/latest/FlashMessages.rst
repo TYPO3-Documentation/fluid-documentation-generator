@@ -100,14 +100,13 @@ Arguments
 
 The following arguments are available for `<f:flashMessages>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-flashmessages-queueidentifier_argument:
-
-queueIdentifier
----------------
 
 ..  confval:: queueIdentifier
     :name: typo3-fluid-flashmessages-queueidentifier
@@ -117,9 +116,6 @@ queueIdentifier
     Flash-message queue to use
 
 .. _typo3-fluid-flashmessages-as_argument:
-
-as
---
 
 ..  confval:: as
     :name: typo3-fluid-flashmessages-as

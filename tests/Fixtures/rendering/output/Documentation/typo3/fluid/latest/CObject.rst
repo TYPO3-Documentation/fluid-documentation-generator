@@ -79,14 +79,13 @@ Arguments
 
 The following arguments are available for `<f:cObject>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-cobject-data_argument:
-
-data
-----
 
 ..  confval:: data
     :name: typo3-fluid-cobject-data
@@ -97,9 +96,6 @@ data
 
 .. _typo3-fluid-cobject-typoscriptobjectpath_argument:
 
-typoscriptObjectPath
---------------------
-
 ..  confval:: typoscriptObjectPath
     :name: typo3-fluid-cobject-typoscriptobjectpath
     :type: string
@@ -109,9 +105,6 @@ typoscriptObjectPath
 
 .. _typo3-fluid-cobject-currentvaluekey_argument:
 
-currentValueKey
----------------
-
 ..  confval:: currentValueKey
     :name: typo3-fluid-cobject-currentvaluekey
     :type: string
@@ -120,9 +113,6 @@ currentValueKey
     CurrentValueKey
 
 .. _typo3-fluid-cobject-table_argument:
-
-table
------
 
 ..  confval:: table
     :name: typo3-fluid-cobject-table

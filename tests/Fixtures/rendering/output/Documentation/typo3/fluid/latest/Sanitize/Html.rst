@@ -55,14 +55,13 @@ Arguments
 
 The following arguments are available for `<f:sanitize.html>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-sanitize-html-build_argument:
-
-build
------
 
 ..  confval:: build
     :name: typo3-fluid-sanitize-html-build

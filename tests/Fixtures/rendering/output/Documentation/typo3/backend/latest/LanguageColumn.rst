@@ -35,14 +35,13 @@ Arguments
 
 The following arguments are available for `<be:languageColumn>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-languagecolumn-languagecolumn_argument:
-
-languageColumn
---------------
 
 ..  confval:: languageColumn
     :name: typo3-backend-languagecolumn-languagecolumn
@@ -52,9 +51,6 @@ languageColumn
     Language column object which is context for column
 
 .. _typo3-backend-languagecolumn-columnnumber_argument:
-
-columnNumber
-------------
 
 ..  confval:: columnNumber
     :name: typo3-backend-languagecolumn-columnnumber

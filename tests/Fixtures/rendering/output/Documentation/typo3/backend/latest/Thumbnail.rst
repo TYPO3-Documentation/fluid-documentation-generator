@@ -68,14 +68,13 @@ Arguments
 
 The following arguments are available for `<be:thumbnail>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-thumbnail-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-backend-thumbnail-additionalattributes
@@ -86,9 +85,6 @@ additionalAttributes
 
 .. _typo3-backend-thumbnail-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-backend-thumbnail-data
     :type: mixed
@@ -97,9 +93,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-backend-thumbnail-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-backend-thumbnail-aria
@@ -110,9 +103,6 @@ aria
 
 .. _typo3-backend-thumbnail-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-backend-thumbnail-class
     :type: string
@@ -121,9 +111,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-backend-thumbnail-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-backend-thumbnail-dir
@@ -134,9 +121,6 @@ dir
 
 .. _typo3-backend-thumbnail-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-backend-thumbnail-id
     :type: string
@@ -145,9 +129,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-backend-thumbnail-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-backend-thumbnail-lang
@@ -158,9 +139,6 @@ lang
 
 .. _typo3-backend-thumbnail-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-backend-thumbnail-style
     :type: string
@@ -169,9 +147,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-backend-thumbnail-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-backend-thumbnail-title
@@ -182,9 +157,6 @@ title
 
 .. _typo3-backend-thumbnail-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-backend-thumbnail-accesskey
     :type: string
@@ -193,9 +165,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-backend-thumbnail-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-backend-thumbnail-tabindex
@@ -206,9 +175,6 @@ tabindex
 
 .. _typo3-backend-thumbnail-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-backend-thumbnail-onclick
     :type: string
@@ -217,9 +183,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-backend-thumbnail-alt_argument:
-
-alt
----
 
 ..  confval:: alt
     :name: typo3-backend-thumbnail-alt
@@ -230,9 +193,6 @@ alt
 
 .. _typo3-backend-thumbnail-src_argument:
 
-src
----
-
 ..  confval:: src
     :name: typo3-backend-thumbnail-src
     :type: string
@@ -241,9 +201,6 @@ src
     A path to a file, a combined FAL identifier or an uid (int). If $treatIdAsReference is set, the integer is considered the uid of the sys_file_reference record. If you already got a FAL object, consider using the $image parameter instead
 
 .. _typo3-backend-thumbnail-treatidasreference_argument:
-
-treatIdAsReference
-------------------
 
 ..  confval:: treatIdAsReference
     :name: typo3-backend-thumbnail-treatidasreference
@@ -254,9 +211,6 @@ treatIdAsReference
 
 .. _typo3-backend-thumbnail-image_argument:
 
-image
------
-
 ..  confval:: image
     :name: typo3-backend-thumbnail-image
     :type: mixed
@@ -266,9 +220,6 @@ image
 
 .. _typo3-backend-thumbnail-crop_argument:
 
-crop
-----
-
 ..  confval:: crop
     :name: typo3-backend-thumbnail-crop
     :type: mixed
@@ -277,9 +228,6 @@ crop
     Overrule cropping of image (setting to FALSE disables the cropping set in FileReference)
 
 .. _typo3-backend-thumbnail-cropvariant_argument:
-
-cropVariant
------------
 
 ..  confval:: cropVariant
     :name: typo3-backend-thumbnail-cropvariant
@@ -291,9 +239,6 @@ cropVariant
 
 .. _typo3-backend-thumbnail-width_argument:
 
-width
------
-
 ..  confval:: width
     :name: typo3-backend-thumbnail-width
     :type: string
@@ -302,9 +247,6 @@ width
     Width of the image. This can be a numeric value representing the fixed width of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
 .. _typo3-backend-thumbnail-height_argument:
-
-height
-------
 
 ..  confval:: height
     :name: typo3-backend-thumbnail-height
@@ -315,9 +257,6 @@ height
 
 .. _typo3-backend-thumbnail-minwidth_argument:
 
-minWidth
---------
-
 ..  confval:: minWidth
     :name: typo3-backend-thumbnail-minwidth
     :type: mixed
@@ -326,9 +265,6 @@ minWidth
     Minimum width of the image
 
 .. _typo3-backend-thumbnail-minheight_argument:
-
-minHeight
----------
 
 ..  confval:: minHeight
     :name: typo3-backend-thumbnail-minheight
@@ -339,9 +275,6 @@ minHeight
 
 .. _typo3-backend-thumbnail-maxwidth_argument:
 
-maxWidth
---------
-
 ..  confval:: maxWidth
     :name: typo3-backend-thumbnail-maxwidth
     :type: mixed
@@ -351,9 +284,6 @@ maxWidth
 
 .. _typo3-backend-thumbnail-maxheight_argument:
 
-maxHeight
----------
-
 ..  confval:: maxHeight
     :name: typo3-backend-thumbnail-maxheight
     :type: mixed
@@ -362,9 +292,6 @@ maxHeight
     Maximum height of the image
 
 .. _typo3-backend-thumbnail-context_argument:
-
-context
--------
 
 ..  confval:: context
     :name: typo3-backend-thumbnail-context

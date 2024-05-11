@@ -46,14 +46,13 @@ Arguments
 
 The following arguments are available for `<f:be.pageRenderer>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-pagerenderer-pagetitle_argument:
-
-pageTitle
----------
 
 ..  confval:: pageTitle
     :name: typo3-fluid-be-pagerenderer-pagetitle
@@ -64,9 +63,6 @@ pageTitle
 
 .. _typo3-fluid-be-pagerenderer-includecssfiles_argument:
 
-includeCssFiles
----------------
-
 ..  confval:: includeCssFiles
     :name: typo3-fluid-be-pagerenderer-includecssfiles
     :type: mixed
@@ -75,9 +71,6 @@ includeCssFiles
     List of custom CSS file to be loaded
 
 .. _typo3-fluid-be-pagerenderer-includejsfiles_argument:
-
-includeJsFiles
---------------
 
 ..  confval:: includeJsFiles
     :name: typo3-fluid-be-pagerenderer-includejsfiles
@@ -88,9 +81,6 @@ includeJsFiles
 
 .. _typo3-fluid-be-pagerenderer-addjsinlinelabels_argument:
 
-addJsInlineLabels
------------------
-
 ..  confval:: addJsInlineLabels
     :name: typo3-fluid-be-pagerenderer-addjsinlinelabels
     :type: mixed
@@ -100,9 +90,6 @@ addJsInlineLabels
 
 .. _typo3-fluid-be-pagerenderer-includejavascriptmodules_argument:
 
-includeJavaScriptModules
-------------------------
-
 ..  confval:: includeJavaScriptModules
     :name: typo3-fluid-be-pagerenderer-includejavascriptmodules
     :type: mixed
@@ -111,9 +98,6 @@ includeJavaScriptModules
     List of JavaScript modules to be loaded
 
 .. _typo3-fluid-be-pagerenderer-addinlinesettings_argument:
-
-addInlineSettings
------------------
 
 ..  confval:: addInlineSettings
     :name: typo3-fluid-be-pagerenderer-addinlinesettings

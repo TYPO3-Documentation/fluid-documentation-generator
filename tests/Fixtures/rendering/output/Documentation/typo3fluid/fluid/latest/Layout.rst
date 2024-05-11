@@ -40,14 +40,13 @@ Arguments
 
 The following arguments are available for `<f:layout>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-layout-name_argument:
-
-name
-----
 
 ..  confval:: name
     :name: typo3fluid-fluid-layout-name

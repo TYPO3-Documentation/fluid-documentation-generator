@@ -76,14 +76,13 @@ Arguments
 
 The following arguments are available for `<f:uri.resource>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-uri-resource-path_argument:
-
-path
-----
 
 ..  confval:: path
     :name: typo3-fluid-uri-resource-path
@@ -94,9 +93,6 @@ path
 
 .. _typo3-fluid-uri-resource-extensionname_argument:
 
-extensionName
--------------
-
 ..  confval:: extensionName
     :name: typo3-fluid-uri-resource-extensionname
     :type: string
@@ -105,9 +101,6 @@ extensionName
     Target extension name. If not set, the current extension name will be used
 
 .. _typo3-fluid-uri-resource-absolute_argument:
-
-absolute
---------
 
 ..  confval:: absolute
     :name: typo3-fluid-uri-resource-absolute

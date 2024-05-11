@@ -50,14 +50,13 @@ Arguments
 
 The following arguments are available for `<core:iconForRecord>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-core-iconforrecord-table_argument:
-
-table
------
 
 ..  confval:: table
     :name: typo3-core-iconforrecord-table
@@ -68,9 +67,6 @@ table
 
 .. _typo3-core-iconforrecord-row_argument:
 
-row
----
-
 ..  confval:: row
     :name: typo3-core-iconforrecord-row
     :type: mixed
@@ -79,9 +75,6 @@ row
     The record row
 
 .. _typo3-core-iconforrecord-size_argument:
-
-size
-----
 
 ..  confval:: size
     :name: typo3-core-iconforrecord-size
@@ -92,9 +85,6 @@ size
     The icon size
 
 .. _typo3-core-iconforrecord-alternativemarkupidentifier_argument:
-
-alternativeMarkupIdentifier
----------------------------
 
 ..  confval:: alternativeMarkupIdentifier
     :name: typo3-core-iconforrecord-alternativemarkupidentifier

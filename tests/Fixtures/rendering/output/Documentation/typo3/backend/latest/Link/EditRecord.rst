@@ -68,14 +68,13 @@ Arguments
 
 The following arguments are available for `<be:link.editRecord>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-link-editrecord-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-backend-link-editrecord-additionalattributes
@@ -86,9 +85,6 @@ additionalAttributes
 
 .. _typo3-backend-link-editrecord-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-backend-link-editrecord-data
     :type: mixed
@@ -97,9 +93,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-backend-link-editrecord-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-backend-link-editrecord-aria
@@ -110,9 +103,6 @@ aria
 
 .. _typo3-backend-link-editrecord-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-backend-link-editrecord-class
     :type: string
@@ -121,9 +111,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-backend-link-editrecord-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-backend-link-editrecord-dir
@@ -134,9 +121,6 @@ dir
 
 .. _typo3-backend-link-editrecord-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-backend-link-editrecord-id
     :type: string
@@ -145,9 +129,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-backend-link-editrecord-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-backend-link-editrecord-lang
@@ -158,9 +139,6 @@ lang
 
 .. _typo3-backend-link-editrecord-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-backend-link-editrecord-style
     :type: string
@@ -169,9 +147,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-backend-link-editrecord-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-backend-link-editrecord-title
@@ -182,9 +157,6 @@ title
 
 .. _typo3-backend-link-editrecord-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-backend-link-editrecord-accesskey
     :type: string
@@ -193,9 +165,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-backend-link-editrecord-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-backend-link-editrecord-tabindex
@@ -206,9 +175,6 @@ tabindex
 
 .. _typo3-backend-link-editrecord-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-backend-link-editrecord-onclick
     :type: string
@@ -217,9 +183,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-backend-link-editrecord-uid_argument:
-
-uid
----
 
 ..  confval:: uid
     :name: typo3-backend-link-editrecord-uid
@@ -230,9 +193,6 @@ uid
 
 .. _typo3-backend-link-editrecord-table_argument:
 
-table
------
-
 ..  confval:: table
     :name: typo3-backend-link-editrecord-table
     :type: string
@@ -242,9 +202,6 @@ table
 
 .. _typo3-backend-link-editrecord-fields_argument:
 
-fields
-------
-
 ..  confval:: fields
     :name: typo3-backend-link-editrecord-fields
     :type: string
@@ -253,9 +210,6 @@ fields
     Edit only these fields (comma separated list)
 
 .. _typo3-backend-link-editrecord-returnurl_argument:
-
-returnUrl
----------
 
 ..  confval:: returnUrl
     :name: typo3-backend-link-editrecord-returnurl

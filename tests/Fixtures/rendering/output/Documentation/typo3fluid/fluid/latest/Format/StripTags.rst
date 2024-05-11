@@ -76,14 +76,13 @@ Arguments
 
 The following arguments are available for `<f:format.stripTags>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-striptags-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-striptags-value
@@ -93,9 +92,6 @@ value
     String to format
 
 .. _typo3fluid-fluid-format-striptags-allowedtags_argument:
-
-allowedTags
------------
 
 ..  confval:: allowedTags
     :name: typo3fluid-fluid-format-striptags-allowedtags

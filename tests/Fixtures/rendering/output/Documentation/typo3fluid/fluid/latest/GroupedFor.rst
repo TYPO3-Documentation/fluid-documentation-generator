@@ -97,14 +97,13 @@ Arguments
 
 The following arguments are available for `<f:groupedFor>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-groupedfor-each_argument:
-
-each
-----
 
 ..  confval:: each
     :name: typo3fluid-fluid-groupedfor-each
@@ -115,9 +114,6 @@ each
 
 .. _typo3fluid-fluid-groupedfor-as_argument:
 
-as
---
-
 ..  confval:: as
     :name: typo3fluid-fluid-groupedfor-as
     :type: string
@@ -127,9 +123,6 @@ as
 
 .. _typo3fluid-fluid-groupedfor-groupby_argument:
 
-groupBy
--------
-
 ..  confval:: groupBy
     :name: typo3fluid-fluid-groupedfor-groupby
     :type: string
@@ -138,9 +131,6 @@ groupBy
     Group by this property
 
 .. _typo3fluid-fluid-groupedfor-groupkey_argument:
-
-groupKey
---------
 
 ..  confval:: groupKey
     :name: typo3fluid-fluid-groupedfor-groupkey

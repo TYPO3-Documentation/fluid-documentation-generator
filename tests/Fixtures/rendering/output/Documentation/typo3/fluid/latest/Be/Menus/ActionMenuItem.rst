@@ -56,14 +56,13 @@ Arguments
 
 The following arguments are available for `<f:be.menus.actionMenuItem>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-menus-actionmenuitem-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-be-menus-actionmenuitem-additionalattributes
@@ -74,9 +73,6 @@ additionalAttributes
 
 .. _typo3-fluid-be-menus-actionmenuitem-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-be-menus-actionmenuitem-data
     :type: mixed
@@ -85,9 +81,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-be-menus-actionmenuitem-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-be-menus-actionmenuitem-aria
@@ -98,9 +91,6 @@ aria
 
 .. _typo3-fluid-be-menus-actionmenuitem-label_argument:
 
-label
------
-
 ..  confval:: label
     :name: typo3-fluid-be-menus-actionmenuitem-label
     :type: string
@@ -109,9 +99,6 @@ label
     Label of the option tag
 
 .. _typo3-fluid-be-menus-actionmenuitem-controller_argument:
-
-controller
-----------
 
 ..  confval:: controller
     :name: typo3-fluid-be-menus-actionmenuitem-controller
@@ -122,9 +109,6 @@ controller
 
 .. _typo3-fluid-be-menus-actionmenuitem-action_argument:
 
-action
-------
-
 ..  confval:: action
     :name: typo3-fluid-be-menus-actionmenuitem-action
     :type: string
@@ -133,9 +117,6 @@ action
     The action to be associated with this ActionMenuItem
 
 .. _typo3-fluid-be-menus-actionmenuitem-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3-fluid-be-menus-actionmenuitem-arguments

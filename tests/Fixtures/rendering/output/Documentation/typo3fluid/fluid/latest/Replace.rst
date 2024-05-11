@@ -68,14 +68,13 @@ Arguments
 
 The following arguments are available for `<f:replace>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-replace-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-replace-value
@@ -86,9 +85,6 @@ value
 
 .. _typo3fluid-fluid-replace-search_argument:
 
-search
-------
-
 ..  confval:: search
     :name: typo3fluid-fluid-replace-search
     :type: mixed
@@ -97,9 +93,6 @@ search
     
 
 .. _typo3fluid-fluid-replace-replace_argument:
-
-replace
--------
 
 ..  confval:: replace
     :name: typo3fluid-fluid-replace-replace

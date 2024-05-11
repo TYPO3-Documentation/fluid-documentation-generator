@@ -69,14 +69,13 @@ Arguments
 
 The following arguments are available for `<f:format.raw>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-raw-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-raw-value

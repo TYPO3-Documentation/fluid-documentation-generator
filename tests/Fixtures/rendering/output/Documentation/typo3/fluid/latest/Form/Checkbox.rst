@@ -69,14 +69,13 @@ Arguments
 
 The following arguments are available for `<f:form.checkbox>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-checkbox-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-checkbox-additionalattributes
@@ -87,9 +86,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-checkbox-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-checkbox-data
     :type: mixed
@@ -98,9 +94,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-checkbox-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-checkbox-aria
@@ -111,9 +104,6 @@ aria
 
 .. _typo3-fluid-form-checkbox-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-checkbox-name
     :type: string
@@ -122,9 +112,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-checkbox-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-checkbox-value
@@ -135,9 +122,6 @@ value
 
 .. _typo3-fluid-form-checkbox-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-checkbox-property
     :type: string
@@ -147,9 +131,6 @@ property
 
 .. _typo3-fluid-form-checkbox-disabled_argument:
 
-disabled
---------
-
 ..  confval:: disabled
     :name: typo3-fluid-form-checkbox-disabled
     :type: string
@@ -158,9 +139,6 @@ disabled
     Specifies that the input element should be disabled when the page loads
 
 .. _typo3-fluid-form-checkbox-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-checkbox-errorclass
@@ -172,9 +150,6 @@ errorClass
 
 .. _typo3-fluid-form-checkbox-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-form-checkbox-class
     :type: string
@@ -183,9 +158,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-form-checkbox-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-form-checkbox-dir
@@ -196,9 +168,6 @@ dir
 
 .. _typo3-fluid-form-checkbox-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-form-checkbox-id
     :type: string
@@ -207,9 +176,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-form-checkbox-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-form-checkbox-lang
@@ -220,9 +186,6 @@ lang
 
 .. _typo3-fluid-form-checkbox-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-form-checkbox-style
     :type: string
@@ -231,9 +194,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-form-checkbox-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-form-checkbox-title
@@ -244,9 +204,6 @@ title
 
 .. _typo3-fluid-form-checkbox-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-form-checkbox-accesskey
     :type: string
@@ -255,9 +212,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-form-checkbox-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-form-checkbox-tabindex
@@ -268,9 +222,6 @@ tabindex
 
 .. _typo3-fluid-form-checkbox-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-form-checkbox-onclick
     :type: string
@@ -280,9 +231,6 @@ onclick
 
 .. _typo3-fluid-form-checkbox-checked_argument:
 
-checked
--------
-
 ..  confval:: checked
     :name: typo3-fluid-form-checkbox-checked
     :type: boolean
@@ -291,9 +239,6 @@ checked
     Specifies that the input element should be preselected
 
 .. _typo3-fluid-form-checkbox-multiple_argument:
-
-multiple
---------
 
 ..  confval:: multiple
     :name: typo3-fluid-form-checkbox-multiple

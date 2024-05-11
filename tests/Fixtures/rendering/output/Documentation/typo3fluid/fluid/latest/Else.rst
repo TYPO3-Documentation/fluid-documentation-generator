@@ -49,14 +49,13 @@ Arguments
 
 The following arguments are available for `<f:else>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-else-if_argument:
-
-if
---
 
 ..  confval:: if
     :name: typo3fluid-fluid-else-if

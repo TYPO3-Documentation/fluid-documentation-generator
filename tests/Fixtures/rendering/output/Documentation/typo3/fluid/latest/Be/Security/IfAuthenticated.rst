@@ -56,14 +56,13 @@ Arguments
 
 The following arguments are available for `<f:be.security.ifAuthenticated>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-security-ifauthenticated-then_argument:
-
-then
-----
 
 ..  confval:: then
     :name: typo3-fluid-be-security-ifauthenticated-then
@@ -73,9 +72,6 @@ then
     Value to be returned if the condition if met.
 
 .. _typo3-fluid-be-security-ifauthenticated-else_argument:
-
-else
-----
 
 ..  confval:: else
     :name: typo3-fluid-be-security-ifauthenticated-else

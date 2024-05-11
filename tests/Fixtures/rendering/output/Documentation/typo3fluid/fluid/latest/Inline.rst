@@ -47,14 +47,13 @@ Arguments
 
 The following arguments are available for `<f:inline>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-inline-code_argument:
-
-code
-----
 
 ..  confval:: code
     :name: typo3fluid-fluid-inline-code

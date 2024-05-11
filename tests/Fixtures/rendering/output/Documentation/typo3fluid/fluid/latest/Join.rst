@@ -69,14 +69,13 @@ Arguments
 
 The following arguments are available for `<f:join>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-join-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-join-value
@@ -87,9 +86,6 @@ value
 
 .. _typo3fluid-fluid-join-separator_argument:
 
-separator
----------
-
 ..  confval:: separator
     :name: typo3fluid-fluid-join-separator
     :type: string
@@ -98,9 +94,6 @@ separator
     The separator
 
 .. _typo3fluid-fluid-join-separatorlast_argument:
-
-separatorLast
--------------
 
 ..  confval:: separatorLast
     :name: typo3fluid-fluid-join-separatorlast

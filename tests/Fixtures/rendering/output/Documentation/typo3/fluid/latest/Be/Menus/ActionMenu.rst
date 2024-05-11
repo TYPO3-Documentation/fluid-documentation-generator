@@ -55,14 +55,13 @@ Arguments
 
 The following arguments are available for `<f:be.menus.actionMenu>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-menus-actionmenu-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-be-menus-actionmenu-additionalattributes
@@ -73,9 +72,6 @@ additionalAttributes
 
 .. _typo3-fluid-be-menus-actionmenu-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-be-menus-actionmenu-data
     :type: mixed
@@ -85,9 +81,6 @@ data
 
 .. _typo3-fluid-be-menus-actionmenu-aria_argument:
 
-aria
-----
-
 ..  confval:: aria
     :name: typo3-fluid-be-menus-actionmenu-aria
     :type: mixed
@@ -96,9 +89,6 @@ aria
     Additional aria-* attributes. They will each be added with a "aria-" prefix.
 
 .. _typo3-fluid-be-menus-actionmenu-defaultcontroller_argument:
-
-defaultController
------------------
 
 ..  confval:: defaultController
     :name: typo3-fluid-be-menus-actionmenu-defaultcontroller

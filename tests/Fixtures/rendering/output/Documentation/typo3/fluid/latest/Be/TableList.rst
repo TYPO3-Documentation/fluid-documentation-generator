@@ -64,14 +64,13 @@ Arguments
 
 The following arguments are available for `<f:be.tableList>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-tablelist-tablename_argument:
-
-tableName
----------
 
 ..  confval:: tableName
     :name: typo3-fluid-be-tablelist-tablename
@@ -81,9 +80,6 @@ tableName
     Name of the database table
 
 .. _typo3-fluid-be-tablelist-fieldlist_argument:
-
-fieldList
----------
 
 ..  confval:: fieldList
     :name: typo3-fluid-be-tablelist-fieldlist
@@ -95,9 +91,6 @@ fieldList
 
 .. _typo3-fluid-be-tablelist-storagepid_argument:
 
-storagePid
-----------
-
 ..  confval:: storagePid
     :name: typo3-fluid-be-tablelist-storagepid
     :type: mixed
@@ -106,9 +99,6 @@ storagePid
     By default, records are fetched from the storage PID configured in persistence.storagePid. With this argument, the storage PID can be overwritten
 
 .. _typo3-fluid-be-tablelist-levels_argument:
-
-levels
-------
 
 ..  confval:: levels
     :name: typo3-fluid-be-tablelist-levels
@@ -119,9 +109,6 @@ levels
 
 .. _typo3-fluid-be-tablelist-filter_argument:
 
-filter
-------
-
 ..  confval:: filter
     :name: typo3-fluid-be-tablelist-filter
     :type: string
@@ -130,9 +117,6 @@ filter
     Corresponds to the "Search String" textbox of the TYPO3 list module. If not empty, only records matching the string will be fetched
 
 .. _typo3-fluid-be-tablelist-recordsperpage_argument:
-
-recordsPerPage
---------------
 
 ..  confval:: recordsPerPage
     :name: typo3-fluid-be-tablelist-recordsperpage
@@ -143,9 +127,6 @@ recordsPerPage
 
 .. _typo3-fluid-be-tablelist-sortfield_argument:
 
-sortField
----------
-
 ..  confval:: sortField
     :name: typo3-fluid-be-tablelist-sortfield
     :type: string
@@ -154,9 +135,6 @@ sortField
     Table field to sort the results by
 
 .. _typo3-fluid-be-tablelist-sortdescending_argument:
-
-sortDescending
---------------
 
 ..  confval:: sortDescending
     :name: typo3-fluid-be-tablelist-sortdescending
@@ -167,9 +145,6 @@ sortDescending
 
 .. _typo3-fluid-be-tablelist-readonly_argument:
 
-readOnly
---------
-
 ..  confval:: readOnly
     :name: typo3-fluid-be-tablelist-readonly
     :type: boolean
@@ -178,9 +153,6 @@ readOnly
     If TRUE, the edit icons won't be shown. Otherwise edit icons will be shown, if the current BE user has edit rights for the specified table!
 
 .. _typo3-fluid-be-tablelist-enableclickmenu_argument:
-
-enableClickMenu
----------------
 
 ..  confval:: enableClickMenu
     :name: typo3-fluid-be-tablelist-enableclickmenu
@@ -192,9 +164,6 @@ enableClickMenu
 
 .. _typo3-fluid-be-tablelist-enablecontrolpanels_argument:
 
-enableControlPanels
--------------------
-
 ..  confval:: enableControlPanels
     :name: typo3-fluid-be-tablelist-enablecontrolpanels
     :type: boolean
@@ -203,9 +172,6 @@ enableControlPanels
     Enables control panels
 
 .. _typo3-fluid-be-tablelist-clicktitlemode_argument:
-
-clickTitleMode
---------------
 
 ..  confval:: clickTitleMode
     :name: typo3-fluid-be-tablelist-clicktitlemode

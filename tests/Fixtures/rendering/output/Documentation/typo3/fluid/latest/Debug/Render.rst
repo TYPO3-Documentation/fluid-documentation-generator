@@ -35,14 +35,13 @@ Arguments
 
 The following arguments are available for `<f:debug.render>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-debug-render-debug_argument:
-
-debug
------
 
 ..  confval:: debug
     :name: typo3-fluid-debug-render-debug
@@ -54,9 +53,6 @@ debug
 
 .. _typo3-fluid-debug-render-section_argument:
 
-section
--------
-
 ..  confval:: section
     :name: typo3-fluid-debug-render-section
     :type: string
@@ -66,9 +62,6 @@ section
 
 .. _typo3-fluid-debug-render-partial_argument:
 
-partial
--------
-
 ..  confval:: partial
     :name: typo3-fluid-debug-render-partial
     :type: string
@@ -77,9 +70,6 @@ partial
     Partial to render, with or without section
 
 .. _typo3-fluid-debug-render-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3-fluid-debug-render-arguments
@@ -91,9 +81,6 @@ arguments
 
 .. _typo3-fluid-debug-render-optional_argument:
 
-optional
---------
-
 ..  confval:: optional
     :name: typo3-fluid-debug-render-optional
     :type: boolean
@@ -103,9 +90,6 @@ optional
 
 .. _typo3-fluid-debug-render-default_argument:
 
-default
--------
-
 ..  confval:: default
     :name: typo3-fluid-debug-render-default
     :type: mixed
@@ -114,9 +98,6 @@ default
     Value (usually string) to be displayed if the section or partial does not exist
 
 .. _typo3-fluid-debug-render-contentas_argument:
-
-contentAs
----------
 
 ..  confval:: contentAs
     :name: typo3-fluid-debug-render-contentas

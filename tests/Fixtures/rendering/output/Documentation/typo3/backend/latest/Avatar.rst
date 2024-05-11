@@ -70,14 +70,13 @@ Arguments
 
 The following arguments are available for `<be:avatar>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-avatar-backenduser_argument:
-
-backendUser
------------
 
 ..  confval:: backendUser
     :name: typo3-backend-avatar-backenduser
@@ -88,9 +87,6 @@ backendUser
 
 .. _typo3-backend-avatar-size_argument:
 
-size
-----
-
 ..  confval:: size
     :name: typo3-backend-avatar-size
     :type: mixed
@@ -100,9 +96,6 @@ size
     Width and height of the image
 
 .. _typo3-backend-avatar-showicon_argument:
-
-showIcon
---------
 
 ..  confval:: showIcon
     :name: typo3-backend-avatar-showicon

@@ -82,14 +82,13 @@ Arguments
 
 The following arguments are available for `<f:form.countrySelect>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-countryselect-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-countryselect-additionalattributes
@@ -100,9 +99,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-countryselect-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-countryselect-data
     :type: mixed
@@ -111,9 +107,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-countryselect-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-countryselect-aria
@@ -124,9 +117,6 @@ aria
 
 .. _typo3-fluid-form-countryselect-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-countryselect-name
     :type: string
@@ -135,9 +125,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-countryselect-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-countryselect-value
@@ -148,9 +135,6 @@ value
 
 .. _typo3-fluid-form-countryselect-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-countryselect-property
     :type: string
@@ -159,9 +143,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-countryselect-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-form-countryselect-class
@@ -172,9 +153,6 @@ class
 
 .. _typo3-fluid-form-countryselect-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-form-countryselect-dir
     :type: string
@@ -183,9 +161,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-form-countryselect-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-form-countryselect-id
@@ -196,9 +171,6 @@ id
 
 .. _typo3-fluid-form-countryselect-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-form-countryselect-lang
     :type: string
@@ -207,9 +179,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-form-countryselect-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-form-countryselect-style
@@ -220,9 +189,6 @@ style
 
 .. _typo3-fluid-form-countryselect-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-form-countryselect-title
     :type: string
@@ -231,9 +197,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-form-countryselect-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-form-countryselect-accesskey
@@ -244,9 +207,6 @@ accesskey
 
 .. _typo3-fluid-form-countryselect-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-countryselect-tabindex
     :type: integer
@@ -255,9 +215,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-countryselect-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-countryselect-onclick
@@ -268,9 +225,6 @@ onclick
 
 .. _typo3-fluid-form-countryselect-size_argument:
 
-size
-----
-
 ..  confval:: size
     :name: typo3-fluid-form-countryselect-size
     :type: string
@@ -280,9 +234,6 @@ size
 
 .. _typo3-fluid-form-countryselect-disabled_argument:
 
-disabled
---------
-
 ..  confval:: disabled
     :name: typo3-fluid-form-countryselect-disabled
     :type: string
@@ -291,9 +242,6 @@ disabled
     Specifies that the input element should be disabled when the page loads
 
 .. _typo3-fluid-form-countryselect-excludecountries_argument:
-
-excludeCountries
-----------------
 
 ..  confval:: excludeCountries
     :name: typo3-fluid-form-countryselect-excludecountries
@@ -305,9 +253,6 @@ excludeCountries
 
 .. _typo3-fluid-form-countryselect-onlycountries_argument:
 
-onlyCountries
--------------
-
 ..  confval:: onlyCountries
     :name: typo3-fluid-form-countryselect-onlycountries
     :type: mixed
@@ -317,9 +262,6 @@ onlyCountries
     If set, only the country codes in the list are rendered.
 
 .. _typo3-fluid-form-countryselect-optionlabelfield_argument:
-
-optionLabelField
-----------------
 
 ..  confval:: optionLabelField
     :name: typo3-fluid-form-countryselect-optionlabelfield
@@ -331,9 +273,6 @@ optionLabelField
 
 .. _typo3-fluid-form-countryselect-sortbyoptionlabel_argument:
 
-sortByOptionLabel
------------------
-
 ..  confval:: sortByOptionLabel
     :name: typo3-fluid-form-countryselect-sortbyoptionlabel
     :type: boolean
@@ -342,9 +281,6 @@ sortByOptionLabel
     If true, List will be sorted by label.
 
 .. _typo3-fluid-form-countryselect-errorclass_argument:
-
-errorClass
-----------
 
 ..  confval:: errorClass
     :name: typo3-fluid-form-countryselect-errorclass
@@ -356,9 +292,6 @@ errorClass
 
 .. _typo3-fluid-form-countryselect-prependoptionlabel_argument:
 
-prependOptionLabel
-------------------
-
 ..  confval:: prependOptionLabel
     :name: typo3-fluid-form-countryselect-prependoptionlabel
     :type: string
@@ -367,9 +300,6 @@ prependOptionLabel
     If specified, will provide an option at first position with the specified label.
 
 .. _typo3-fluid-form-countryselect-prependoptionvalue_argument:
-
-prependOptionValue
-------------------
 
 ..  confval:: prependOptionValue
     :name: typo3-fluid-form-countryselect-prependoptionvalue
@@ -380,9 +310,6 @@ prependOptionValue
 
 .. _typo3-fluid-form-countryselect-multiple_argument:
 
-multiple
---------
-
 ..  confval:: multiple
     :name: typo3-fluid-form-countryselect-multiple
     :type: boolean
@@ -391,9 +318,6 @@ multiple
     If set multiple options may be selected.
 
 .. _typo3-fluid-form-countryselect-required_argument:
-
-required
---------
 
 ..  confval:: required
     :name: typo3-fluid-form-countryselect-required
@@ -404,9 +328,6 @@ required
 
 .. _typo3-fluid-form-countryselect-prioritizedcountries_argument:
 
-prioritizedCountries
---------------------
-
 ..  confval:: prioritizedCountries
     :name: typo3-fluid-form-countryselect-prioritizedcountries
     :type: mixed
@@ -416,9 +337,6 @@ prioritizedCountries
     A list of country codes which should be listed on top of the list.
 
 .. _typo3-fluid-form-countryselect-alternativelanguage_argument:
-
-alternativeLanguage
--------------------
 
 ..  confval:: alternativeLanguage
     :name: typo3-fluid-form-countryselect-alternativelanguage

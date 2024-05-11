@@ -104,14 +104,13 @@ Arguments
 
 The following arguments are available for `<be:link.newRecord>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-link-newrecord-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-backend-link-newrecord-additionalattributes
@@ -122,9 +121,6 @@ additionalAttributes
 
 .. _typo3-backend-link-newrecord-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-backend-link-newrecord-data
     :type: mixed
@@ -133,9 +129,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-backend-link-newrecord-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-backend-link-newrecord-aria
@@ -146,9 +139,6 @@ aria
 
 .. _typo3-backend-link-newrecord-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-backend-link-newrecord-class
     :type: string
@@ -157,9 +147,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-backend-link-newrecord-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-backend-link-newrecord-dir
@@ -170,9 +157,6 @@ dir
 
 .. _typo3-backend-link-newrecord-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-backend-link-newrecord-id
     :type: string
@@ -181,9 +165,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-backend-link-newrecord-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-backend-link-newrecord-lang
@@ -194,9 +175,6 @@ lang
 
 .. _typo3-backend-link-newrecord-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-backend-link-newrecord-style
     :type: string
@@ -205,9 +183,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-backend-link-newrecord-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-backend-link-newrecord-title
@@ -218,9 +193,6 @@ title
 
 .. _typo3-backend-link-newrecord-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-backend-link-newrecord-accesskey
     :type: string
@@ -229,9 +201,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-backend-link-newrecord-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-backend-link-newrecord-tabindex
@@ -242,9 +211,6 @@ tabindex
 
 .. _typo3-backend-link-newrecord-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-backend-link-newrecord-onclick
     :type: string
@@ -253,9 +219,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-backend-link-newrecord-uid_argument:
-
-uid
----
 
 ..  confval:: uid
     :name: typo3-backend-link-newrecord-uid
@@ -266,9 +229,6 @@ uid
 
 .. _typo3-backend-link-newrecord-pid_argument:
 
-pid
----
-
 ..  confval:: pid
     :name: typo3-backend-link-newrecord-pid
     :type: mixed
@@ -277,9 +237,6 @@ pid
     The page id where the record will be created
 
 .. _typo3-backend-link-newrecord-table_argument:
-
-table
------
 
 ..  confval:: table
     :name: typo3-backend-link-newrecord-table
@@ -290,9 +247,6 @@ table
 
 .. _typo3-backend-link-newrecord-returnurl_argument:
 
-returnUrl
----------
-
 ..  confval:: returnUrl
     :name: typo3-backend-link-newrecord-returnurl
     :type: string
@@ -301,9 +255,6 @@ returnUrl
     Return to this URL after closing the new record dialog
 
 .. _typo3-backend-link-newrecord-defaultvalues_argument:
-
-defaultValues
--------------
 
 ..  confval:: defaultValues
     :name: typo3-backend-link-newrecord-defaultvalues

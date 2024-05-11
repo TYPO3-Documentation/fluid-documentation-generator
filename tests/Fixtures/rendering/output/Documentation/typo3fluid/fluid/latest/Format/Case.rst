@@ -77,14 +77,13 @@ Arguments
 
 The following arguments are available for `<f:format.case>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-case-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-case-value
@@ -94,9 +93,6 @@ value
     The input value. If not given, the evaluated child nodes will be used.
 
 .. _typo3fluid-fluid-format-case-mode_argument:
-
-mode
-----
 
 ..  confval:: mode
     :name: typo3fluid-fluid-format-case-mode

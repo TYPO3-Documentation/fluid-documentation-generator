@@ -52,14 +52,13 @@ Arguments
 
 The following arguments are available for `<f:transform.html>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-transform-html-selector_argument:
-
-selector
---------
 
 ..  confval:: selector
     :name: typo3-fluid-transform-html-selector
@@ -70,9 +69,6 @@ selector
     Comma separated list of node attributes to be considered
 
 .. _typo3-fluid-transform-html-onfailure_argument:
-
-onFailure
----------
 
 ..  confval:: onFailure
     :name: typo3-fluid-transform-html-onfailure

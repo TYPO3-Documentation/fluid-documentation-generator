@@ -72,14 +72,13 @@ Arguments
 
 The following arguments are available for `<f:split>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-split-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-split-value
@@ -90,9 +89,6 @@ value
 
 .. _typo3fluid-fluid-split-separator_argument:
 
-separator
----------
-
 ..  confval:: separator
     :name: typo3fluid-fluid-split-separator
     :type: string
@@ -101,9 +97,6 @@ separator
     Separator string to explode with
 
 .. _typo3fluid-fluid-split-limit_argument:
-
-limit
------
 
 ..  confval:: limit
     :name: typo3fluid-fluid-split-limit

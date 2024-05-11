@@ -116,14 +116,13 @@ Arguments
 
 The following arguments are available for `<f:render>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-render-section_argument:
-
-section
--------
 
 ..  confval:: section
     :name: typo3fluid-fluid-render-section
@@ -134,9 +133,6 @@ section
 
 .. _typo3fluid-fluid-render-partial_argument:
 
-partial
--------
-
 ..  confval:: partial
     :name: typo3fluid-fluid-render-partial
     :type: string
@@ -146,9 +142,6 @@ partial
 
 .. _typo3fluid-fluid-render-delegate_argument:
 
-delegate
---------
-
 ..  confval:: delegate
     :name: typo3fluid-fluid-render-delegate
     :type: string
@@ -157,9 +150,6 @@ delegate
     Optional PHP class name of a permanent, included-in-app ParsedTemplateInterface implementation to override partial/section
 
 .. _typo3fluid-fluid-render-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3fluid-fluid-render-arguments
@@ -171,9 +161,6 @@ arguments
 
 .. _typo3fluid-fluid-render-optional_argument:
 
-optional
---------
-
 ..  confval:: optional
     :name: typo3fluid-fluid-render-optional
     :type: boolean
@@ -183,9 +170,6 @@ optional
 
 .. _typo3fluid-fluid-render-default_argument:
 
-default
--------
-
 ..  confval:: default
     :name: typo3fluid-fluid-render-default
     :type: mixed
@@ -194,9 +178,6 @@ default
     Value (usually string) to be displayed if the section or partial does not exist
 
 .. _typo3fluid-fluid-render-contentas_argument:
-
-contentAs
----------
 
 ..  confval:: contentAs
     :name: typo3fluid-fluid-render-contentas

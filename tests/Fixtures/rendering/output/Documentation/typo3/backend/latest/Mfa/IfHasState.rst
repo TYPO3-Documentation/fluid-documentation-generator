@@ -35,14 +35,13 @@ Arguments
 
 The following arguments are available for `<be:mfa.ifHasState>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-mfa-ifhasstate-then_argument:
-
-then
-----
 
 ..  confval:: then
     :name: typo3-backend-mfa-ifhasstate-then
@@ -53,9 +52,6 @@ then
 
 .. _typo3-backend-mfa-ifhasstate-else_argument:
 
-else
-----
-
 ..  confval:: else
     :name: typo3-backend-mfa-ifhasstate-else
     :type: mixed
@@ -65,9 +61,6 @@ else
 
 .. _typo3-backend-mfa-ifhasstate-state_argument:
 
-state
------
-
 ..  confval:: state
     :name: typo3-backend-mfa-ifhasstate-state
     :type: string
@@ -76,9 +69,6 @@ state
     The state to check for (e.g. active or locked)
 
 .. _typo3-backend-mfa-ifhasstate-provider_argument:
-
-provider
---------
 
 ..  confval:: provider
     :name: typo3-backend-mfa-ifhasstate-provider

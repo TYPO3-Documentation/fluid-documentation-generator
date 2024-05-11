@@ -38,14 +38,13 @@ Arguments
 
 The following arguments are available for `<f:be.link>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-be-link-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-be-link-additionalattributes
@@ -56,9 +55,6 @@ additionalAttributes
 
 .. _typo3-fluid-be-link-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-be-link-data
     :type: mixed
@@ -67,9 +63,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-be-link-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-be-link-aria
@@ -80,9 +73,6 @@ aria
 
 .. _typo3-fluid-be-link-route_argument:
 
-route
------
-
 ..  confval:: route
     :name: typo3-fluid-be-link-route
     :type: string
@@ -91,9 +81,6 @@ route
     The name of the route
 
 .. _typo3-fluid-be-link-parameters_argument:
-
-parameters
-----------
 
 ..  confval:: parameters
     :name: typo3-fluid-be-link-parameters
@@ -105,9 +92,6 @@ parameters
 
 .. _typo3-fluid-be-link-referencetype_argument:
 
-referenceType
--------------
-
 ..  confval:: referenceType
     :name: typo3-fluid-be-link-referencetype
     :type: string
@@ -118,9 +102,6 @@ referenceType
 
 .. _typo3-fluid-be-link-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-be-link-name
     :type: string
@@ -129,9 +110,6 @@ name
     Specifies the name of an anchor
 
 .. _typo3-fluid-be-link-rel_argument:
-
-rel
----
 
 ..  confval:: rel
     :name: typo3-fluid-be-link-rel
@@ -142,9 +120,6 @@ rel
 
 .. _typo3-fluid-be-link-rev_argument:
 
-rev
----
-
 ..  confval:: rev
     :name: typo3-fluid-be-link-rev
     :type: string
@@ -153,9 +128,6 @@ rev
     Specifies the relationship between the linked document and the current document
 
 .. _typo3-fluid-be-link-target_argument:
-
-target
-------
 
 ..  confval:: target
     :name: typo3-fluid-be-link-target
@@ -166,9 +138,6 @@ target
 
 .. _typo3-fluid-be-link-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-be-link-class
     :type: string
@@ -177,9 +146,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-be-link-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-be-link-dir
@@ -190,9 +156,6 @@ dir
 
 .. _typo3-fluid-be-link-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-be-link-id
     :type: string
@@ -201,9 +164,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-be-link-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-be-link-lang
@@ -214,9 +174,6 @@ lang
 
 .. _typo3-fluid-be-link-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-be-link-style
     :type: string
@@ -225,9 +182,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-be-link-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-be-link-title
@@ -238,9 +192,6 @@ title
 
 .. _typo3-fluid-be-link-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-be-link-accesskey
     :type: string
@@ -250,9 +201,6 @@ accesskey
 
 .. _typo3-fluid-be-link-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-be-link-tabindex
     :type: integer
@@ -261,9 +209,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-be-link-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-be-link-onclick

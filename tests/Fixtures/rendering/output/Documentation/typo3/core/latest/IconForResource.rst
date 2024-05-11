@@ -50,14 +50,13 @@ Arguments
 
 The following arguments are available for `<core:iconForResource>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-core-iconforresource-resource_argument:
-
-resource
---------
 
 ..  confval:: resource
     :name: typo3-core-iconforresource-resource
@@ -67,9 +66,6 @@ resource
     Resource
 
 .. _typo3-core-iconforresource-size_argument:
-
-size
-----
 
 ..  confval:: size
     :name: typo3-core-iconforresource-size
@@ -81,9 +77,6 @@ size
 
 .. _typo3-core-iconforresource-overlay_argument:
 
-overlay
--------
-
 ..  confval:: overlay
     :name: typo3-core-iconforresource-overlay
     :type: string
@@ -92,9 +85,6 @@ overlay
     Overlay identifier
 
 .. _typo3-core-iconforresource-options_argument:
-
-options
--------
 
 ..  confval:: options
     :name: typo3-core-iconforresource-options
@@ -105,9 +95,6 @@ options
     An associative array with additional options
 
 .. _typo3-core-iconforresource-alternativemarkupidentifier_argument:
-
-alternativeMarkupIdentifier
----------------------------
 
 ..  confval:: alternativeMarkupIdentifier
     :name: typo3-core-iconforresource-alternativemarkupidentifier

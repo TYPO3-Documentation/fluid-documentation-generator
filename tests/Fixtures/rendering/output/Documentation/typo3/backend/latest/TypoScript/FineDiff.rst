@@ -35,14 +35,13 @@ Arguments
 
 The following arguments are available for `<be:typoScript.fineDiff>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-typoscript-finediff-from_argument:
-
-from
-----
 
 ..  confval:: from
     :name: typo3-backend-typoscript-finediff-from
@@ -52,9 +51,6 @@ from
     Source string
 
 .. _typo3-backend-typoscript-finediff-to_argument:
-
-to
---
 
 ..  confval:: to
     :name: typo3-backend-typoscript-finediff-to

@@ -43,14 +43,13 @@ Arguments
 
 The following arguments are available for `<f:form.hidden>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-hidden-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-hidden-additionalattributes
@@ -61,9 +60,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-hidden-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-hidden-data
     :type: mixed
@@ -72,9 +68,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-hidden-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-hidden-aria
@@ -85,9 +78,6 @@ aria
 
 .. _typo3-fluid-form-hidden-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-hidden-name
     :type: string
@@ -96,9 +86,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-hidden-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-hidden-value
@@ -109,9 +96,6 @@ value
 
 .. _typo3-fluid-form-hidden-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-hidden-property
     :type: string
@@ -120,9 +104,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-hidden-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-form-hidden-class
@@ -133,9 +114,6 @@ class
 
 .. _typo3-fluid-form-hidden-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-form-hidden-dir
     :type: string
@@ -144,9 +122,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-form-hidden-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-form-hidden-id
@@ -157,9 +132,6 @@ id
 
 .. _typo3-fluid-form-hidden-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-form-hidden-lang
     :type: string
@@ -168,9 +140,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-form-hidden-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-form-hidden-style
@@ -181,9 +150,6 @@ style
 
 .. _typo3-fluid-form-hidden-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-form-hidden-title
     :type: string
@@ -192,9 +158,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-form-hidden-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-form-hidden-accesskey
@@ -205,9 +168,6 @@ accesskey
 
 .. _typo3-fluid-form-hidden-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-hidden-tabindex
     :type: integer
@@ -217,9 +177,6 @@ tabindex
 
 .. _typo3-fluid-form-hidden-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-form-hidden-onclick
     :type: string
@@ -228,9 +185,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-form-hidden-respectsubmitteddatavalue_argument:
-
-respectSubmittedDataValue
--------------------------
 
 ..  confval:: respectSubmittedDataValue
     :name: typo3-fluid-form-hidden-respectsubmitteddatavalue

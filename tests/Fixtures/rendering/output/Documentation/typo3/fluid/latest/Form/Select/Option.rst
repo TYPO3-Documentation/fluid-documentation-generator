@@ -29,14 +29,13 @@ Arguments
 
 The following arguments are available for `<f:form.select.option>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-select-option-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-form-select-option-class
@@ -47,9 +46,6 @@ class
 
 .. _typo3-fluid-form-select-option-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-form-select-option-dir
     :type: string
@@ -58,9 +54,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-form-select-option-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-form-select-option-id
@@ -71,9 +64,6 @@ id
 
 .. _typo3-fluid-form-select-option-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-form-select-option-lang
     :type: string
@@ -82,9 +72,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-form-select-option-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-form-select-option-style
@@ -95,9 +82,6 @@ style
 
 .. _typo3-fluid-form-select-option-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-form-select-option-title
     :type: string
@@ -106,9 +90,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-form-select-option-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-form-select-option-accesskey
@@ -119,9 +100,6 @@ accesskey
 
 .. _typo3-fluid-form-select-option-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-select-option-tabindex
     :type: integer
@@ -130,9 +108,6 @@ tabindex
     Specifies the tab order of this element
 
 .. _typo3-fluid-form-select-option-onclick_argument:
-
-onclick
--------
 
 ..  confval:: onclick
     :name: typo3-fluid-form-select-option-onclick
@@ -143,9 +118,6 @@ onclick
 
 .. _typo3-fluid-form-select-option-selected_argument:
 
-selected
---------
-
 ..  confval:: selected
     :name: typo3-fluid-form-select-option-selected
     :type: boolean
@@ -154,9 +126,6 @@ selected
     If set, overrides automatic detection of selected state for this option.
 
 .. _typo3-fluid-form-select-option-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-select-option-additionalattributes
@@ -167,9 +136,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-select-option-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-select-option-data
     :type: mixed
@@ -178,9 +144,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-select-option-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-select-option-value

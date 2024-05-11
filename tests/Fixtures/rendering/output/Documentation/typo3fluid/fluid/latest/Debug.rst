@@ -54,14 +54,13 @@ Arguments
 
 The following arguments are available for `<f:debug>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-debug-typeonly_argument:
-
-typeOnly
---------
 
 ..  confval:: typeOnly
     :name: typo3fluid-fluid-debug-typeonly
@@ -72,9 +71,6 @@ typeOnly
 
 .. _typo3fluid-fluid-debug-levels_argument:
 
-levels
-------
-
 ..  confval:: levels
     :name: typo3fluid-fluid-debug-levels
     :type: integer
@@ -84,9 +80,6 @@ levels
     Levels to render when rendering nested objects/arrays
 
 .. _typo3fluid-fluid-debug-html_argument:
-
-html
-----
 
 ..  confval:: html
     :name: typo3fluid-fluid-debug-html

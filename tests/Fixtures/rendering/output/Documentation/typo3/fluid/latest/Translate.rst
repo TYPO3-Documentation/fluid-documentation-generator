@@ -100,14 +100,13 @@ Arguments
 
 The following arguments are available for `<f:translate>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-translate-key_argument:
-
-key
----
 
 ..  confval:: key
     :name: typo3-fluid-translate-key
@@ -118,9 +117,6 @@ key
 
 .. _typo3-fluid-translate-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-translate-id
     :type: string
@@ -129,9 +125,6 @@ id
     Translation ID. Same as key.
 
 .. _typo3-fluid-translate-default_argument:
-
-default
--------
 
 ..  confval:: default
     :name: typo3-fluid-translate-default
@@ -142,9 +135,6 @@ default
 
 .. _typo3-fluid-translate-arguments_argument:
 
-arguments
----------
-
 ..  confval:: arguments
     :name: typo3-fluid-translate-arguments
     :type: mixed
@@ -154,9 +144,6 @@ arguments
 
 .. _typo3-fluid-translate-extensionname_argument:
 
-extensionName
--------------
-
 ..  confval:: extensionName
     :name: typo3-fluid-translate-extensionname
     :type: string
@@ -165,9 +152,6 @@ extensionName
     UpperCamelCased extension key (for example BlogExample)
 
 .. _typo3-fluid-translate-languagekey_argument:
-
-languageKey
------------
 
 ..  confval:: languageKey
     :name: typo3-fluid-translate-languagekey

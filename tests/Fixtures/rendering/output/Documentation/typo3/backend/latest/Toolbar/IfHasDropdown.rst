@@ -35,14 +35,13 @@ Arguments
 
 The following arguments are available for `<be:toolbar.ifHasDropdown>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-toolbar-ifhasdropdown-then_argument:
-
-then
-----
 
 ..  confval:: then
     :name: typo3-backend-toolbar-ifhasdropdown-then
@@ -53,9 +52,6 @@ then
 
 .. _typo3-backend-toolbar-ifhasdropdown-else_argument:
 
-else
-----
-
 ..  confval:: else
     :name: typo3-backend-toolbar-ifhasdropdown-else
     :type: mixed
@@ -64,9 +60,6 @@ else
     Value to be returned if the condition if not met.
 
 .. _typo3-backend-toolbar-ifhasdropdown-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-backend-toolbar-ifhasdropdown-class

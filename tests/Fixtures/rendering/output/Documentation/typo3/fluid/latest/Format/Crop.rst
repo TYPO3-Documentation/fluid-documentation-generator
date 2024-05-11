@@ -91,14 +91,13 @@ Arguments
 
 The following arguments are available for `<f:format.crop>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-format-crop-maxcharacters_argument:
-
-maxCharacters
--------------
 
 ..  confval:: maxCharacters
     :name: typo3-fluid-format-crop-maxcharacters
@@ -108,9 +107,6 @@ maxCharacters
     Place where to truncate the string
 
 .. _typo3-fluid-format-crop-append_argument:
-
-append
-------
 
 ..  confval:: append
     :name: typo3-fluid-format-crop-append
@@ -122,9 +118,6 @@ append
 
 .. _typo3-fluid-format-crop-respectwordboundaries_argument:
 
-respectWordBoundaries
----------------------
-
 ..  confval:: respectWordBoundaries
     :name: typo3-fluid-format-crop-respectwordboundaries
     :type: boolean
@@ -134,9 +127,6 @@ respectWordBoundaries
     If TRUE and division is in the middle of a word, the remains of that word is removed.
 
 .. _typo3-fluid-format-crop-respecthtml_argument:
-
-respectHtml
------------
 
 ..  confval:: respectHtml
     :name: typo3-fluid-format-crop-respecthtml

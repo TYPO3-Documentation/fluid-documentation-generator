@@ -46,14 +46,13 @@ Arguments
 
 The following arguments are available for `<f:variable>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-variable-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-variable-value
@@ -63,9 +62,6 @@ value
     Value to assign. If not in arguments then taken from tag content
 
 .. _typo3fluid-fluid-variable-name_argument:
-
-name
-----
 
 ..  confval:: name
     :name: typo3fluid-fluid-variable-name

@@ -36,3 +36,21 @@ phpstan: ## Execute phpstan
 phpstan-baseline: ## Generates phpstan baseline
 	@echo "$(ENV_INFO)"
 	$(PHP_BIN) vendor/bin/phpstan --configuration=phpstan.neon --generate-baseline
+
+.PHONY: generate
+generate: ## Generate rst files to "public" with schemas from "schemas"
+	$(PHP_BIN) rm -r public/typo3
+	$(PHP_BIN) rm -r public/typo3fluid
+	$(PHP_BIN) rm -r public/Index.rst
+	$(PHP_BIN) ./bin/generate-fluid-documentation "`pwd`/public/" "" 1
+
+.PHONY: docs
+docs: ## Try out the generated reference (from "public" directory)
+	mkdir -p Documentation-GENERATED-temp
+	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=public public
+
+.PHONY: test-docs
+test-docs: ## Test rendering the generated reference
+	mkdir -p Documentation-GENERATED-temp
+	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=public public --no-progress --fail-on-log
+

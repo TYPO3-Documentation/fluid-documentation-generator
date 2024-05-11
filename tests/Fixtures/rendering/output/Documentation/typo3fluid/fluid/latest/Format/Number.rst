@@ -53,14 +53,13 @@ Arguments
 
 The following arguments are available for `<f:format.number>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-number-decimals_argument:
-
-decimals
---------
 
 ..  confval:: decimals
     :name: typo3fluid-fluid-format-number-decimals
@@ -72,9 +71,6 @@ decimals
 
 .. _typo3fluid-fluid-format-number-decimalseparator_argument:
 
-decimalSeparator
-----------------
-
 ..  confval:: decimalSeparator
     :name: typo3fluid-fluid-format-number-decimalseparator
     :type: string
@@ -84,9 +80,6 @@ decimalSeparator
     The decimal point character
 
 .. _typo3fluid-fluid-format-number-thousandsseparator_argument:
-
-thousandsSeparator
-------------------
 
 ..  confval:: thousandsSeparator
     :name: typo3fluid-fluid-format-number-thousandsseparator

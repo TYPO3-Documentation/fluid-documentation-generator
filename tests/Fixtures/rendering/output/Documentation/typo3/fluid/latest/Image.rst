@@ -97,14 +97,13 @@ Arguments
 
 The following arguments are available for `<f:image>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-image-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-image-additionalattributes
@@ -115,9 +114,6 @@ additionalAttributes
 
 .. _typo3-fluid-image-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-image-data
     :type: mixed
@@ -126,9 +122,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-image-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-image-aria
@@ -139,9 +132,6 @@ aria
 
 .. _typo3-fluid-image-class_argument:
 
-class
------
-
 ..  confval:: class
     :name: typo3-fluid-image-class
     :type: string
@@ -150,9 +140,6 @@ class
     CSS class(es) for this element
 
 .. _typo3-fluid-image-dir_argument:
-
-dir
----
 
 ..  confval:: dir
     :name: typo3-fluid-image-dir
@@ -163,9 +150,6 @@ dir
 
 .. _typo3-fluid-image-id_argument:
 
-id
---
-
 ..  confval:: id
     :name: typo3-fluid-image-id
     :type: string
@@ -174,9 +158,6 @@ id
     Unique (in this file) identifier for this HTML element.
 
 .. _typo3-fluid-image-lang_argument:
-
-lang
-----
 
 ..  confval:: lang
     :name: typo3-fluid-image-lang
@@ -187,9 +168,6 @@ lang
 
 .. _typo3-fluid-image-style_argument:
 
-style
------
-
 ..  confval:: style
     :name: typo3-fluid-image-style
     :type: string
@@ -198,9 +176,6 @@ style
     Individual CSS styles for this element
 
 .. _typo3-fluid-image-title_argument:
-
-title
------
 
 ..  confval:: title
     :name: typo3-fluid-image-title
@@ -211,9 +186,6 @@ title
 
 .. _typo3-fluid-image-accesskey_argument:
 
-accesskey
----------
-
 ..  confval:: accesskey
     :name: typo3-fluid-image-accesskey
     :type: string
@@ -222,9 +194,6 @@ accesskey
     Keyboard shortcut to access this element
 
 .. _typo3-fluid-image-tabindex_argument:
-
-tabindex
---------
 
 ..  confval:: tabindex
     :name: typo3-fluid-image-tabindex
@@ -235,9 +204,6 @@ tabindex
 
 .. _typo3-fluid-image-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-image-onclick
     :type: string
@@ -246,9 +212,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-image-alt_argument:
-
-alt
----
 
 ..  confval:: alt
     :name: typo3-fluid-image-alt
@@ -259,9 +222,6 @@ alt
 
 .. _typo3-fluid-image-ismap_argument:
 
-ismap
------
-
 ..  confval:: ismap
     :name: typo3-fluid-image-ismap
     :type: string
@@ -270,9 +230,6 @@ ismap
     Specifies an image as a server-side image-map. Rarely used. Look at usemap instead
 
 .. _typo3-fluid-image-longdesc_argument:
-
-longdesc
---------
 
 ..  confval:: longdesc
     :name: typo3-fluid-image-longdesc
@@ -283,9 +240,6 @@ longdesc
 
 .. _typo3-fluid-image-usemap_argument:
 
-usemap
-------
-
 ..  confval:: usemap
     :name: typo3-fluid-image-usemap
     :type: string
@@ -294,9 +248,6 @@ usemap
     Specifies an image as a client-side image-map
 
 .. _typo3-fluid-image-loading_argument:
-
-loading
--------
 
 ..  confval:: loading
     :name: typo3-fluid-image-loading
@@ -307,9 +258,6 @@ loading
 
 .. _typo3-fluid-image-decoding_argument:
 
-decoding
---------
-
 ..  confval:: decoding
     :name: typo3-fluid-image-decoding
     :type: string
@@ -318,9 +266,6 @@ decoding
     Provides an image decoding hint to the browser. Can be "sync", "async" or "auto"
 
 .. _typo3-fluid-image-src_argument:
-
-src
----
 
 ..  confval:: src
     :name: typo3-fluid-image-src
@@ -331,9 +276,6 @@ src
 
 .. _typo3-fluid-image-treatidasreference_argument:
 
-treatIdAsReference
-------------------
-
 ..  confval:: treatIdAsReference
     :name: typo3-fluid-image-treatidasreference
     :type: boolean
@@ -342,9 +284,6 @@ treatIdAsReference
     Given src argument is a sys_file_reference record
 
 .. _typo3-fluid-image-image_argument:
-
-image
------
 
 ..  confval:: image
     :name: typo3-fluid-image-image
@@ -355,9 +294,6 @@ image
 
 .. _typo3-fluid-image-crop_argument:
 
-crop
-----
-
 ..  confval:: crop
     :name: typo3-fluid-image-crop
     :type: mixed
@@ -366,9 +302,6 @@ crop
     Overrule cropping of image (setting to FALSE disables the cropping set in FileReference)
 
 .. _typo3-fluid-image-cropvariant_argument:
-
-cropVariant
------------
 
 ..  confval:: cropVariant
     :name: typo3-fluid-image-cropvariant
@@ -380,9 +313,6 @@ cropVariant
 
 .. _typo3-fluid-image-fileextension_argument:
 
-fileExtension
--------------
-
 ..  confval:: fileExtension
     :name: typo3-fluid-image-fileextension
     :type: string
@@ -391,9 +321,6 @@ fileExtension
     Custom file extension to use
 
 .. _typo3-fluid-image-width_argument:
-
-width
------
 
 ..  confval:: width
     :name: typo3-fluid-image-width
@@ -404,9 +331,6 @@ width
 
 .. _typo3-fluid-image-height_argument:
 
-height
-------
-
 ..  confval:: height
     :name: typo3-fluid-image-height
     :type: string
@@ -415,9 +339,6 @@ height
     Height of the image. This can be a numeric value representing the fixed height of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.
 
 .. _typo3-fluid-image-minwidth_argument:
-
-minWidth
---------
 
 ..  confval:: minWidth
     :name: typo3-fluid-image-minwidth
@@ -428,9 +349,6 @@ minWidth
 
 .. _typo3-fluid-image-minheight_argument:
 
-minHeight
----------
-
 ..  confval:: minHeight
     :name: typo3-fluid-image-minheight
     :type: mixed
@@ -439,9 +357,6 @@ minHeight
     Minimum height of the image
 
 .. _typo3-fluid-image-maxwidth_argument:
-
-maxWidth
---------
 
 ..  confval:: maxWidth
     :name: typo3-fluid-image-maxwidth
@@ -452,9 +367,6 @@ maxWidth
 
 .. _typo3-fluid-image-maxheight_argument:
 
-maxHeight
----------
-
 ..  confval:: maxHeight
     :name: typo3-fluid-image-maxheight
     :type: mixed
@@ -463,9 +375,6 @@ maxHeight
     Maximum height of the image
 
 .. _typo3-fluid-image-absolute_argument:
-
-absolute
---------
 
 ..  confval:: absolute
     :name: typo3-fluid-image-absolute

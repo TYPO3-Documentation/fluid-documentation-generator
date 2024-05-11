@@ -55,14 +55,13 @@ Arguments
 
 The following arguments are available for `<be:uri.editRecord>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-uri-editrecord-uid_argument:
-
-uid
----
 
 ..  confval:: uid
     :name: typo3-backend-uri-editrecord-uid
@@ -73,9 +72,6 @@ uid
 
 .. _typo3-backend-uri-editrecord-table_argument:
 
-table
------
-
 ..  confval:: table
     :name: typo3-backend-uri-editrecord-table
     :type: string
@@ -85,9 +81,6 @@ table
 
 .. _typo3-backend-uri-editrecord-fields_argument:
 
-fields
-------
-
 ..  confval:: fields
     :name: typo3-backend-uri-editrecord-fields
     :type: string
@@ -96,9 +89,6 @@ fields
     Edit only these fields (comma separated list)
 
 .. _typo3-backend-uri-editrecord-returnurl_argument:
-
-returnUrl
----------
 
 ..  confval:: returnUrl
     :name: typo3-backend-uri-editrecord-returnurl

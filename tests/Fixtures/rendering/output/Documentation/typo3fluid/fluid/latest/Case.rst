@@ -29,14 +29,13 @@ Arguments
 
 The following arguments are available for `<f:case>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-case-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-case-value

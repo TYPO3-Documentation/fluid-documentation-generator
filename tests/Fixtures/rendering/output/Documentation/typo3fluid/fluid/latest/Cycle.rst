@@ -76,14 +76,13 @@ Arguments
 
 The following arguments are available for `<f:cycle>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-cycle-values_argument:
-
-values
-------
 
 ..  confval:: values
     :name: typo3fluid-fluid-cycle-values
@@ -93,9 +92,6 @@ values
     The array or object implementing \ArrayAccess (for example \SplObjectStorage) to iterated over
 
 .. _typo3fluid-fluid-cycle-as_argument:
-
-as
---
 
 ..  confval:: as
     :name: typo3fluid-fluid-cycle-as

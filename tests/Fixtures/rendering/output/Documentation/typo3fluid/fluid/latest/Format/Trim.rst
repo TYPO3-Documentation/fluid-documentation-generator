@@ -78,14 +78,13 @@ Arguments
 
 The following arguments are available for `<f:format.trim>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-format-trim-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3fluid-fluid-format-trim-value
@@ -96,9 +95,6 @@ value
 
 .. _typo3fluid-fluid-format-trim-characters_argument:
 
-characters
-----------
-
 ..  confval:: characters
     :name: typo3fluid-fluid-format-trim-characters
     :type: string
@@ -107,9 +103,6 @@ characters
     Optionally, the stripped characters can also be specified using the characters parameter. Simply list all characters that you want to be stripped. With .. you can specify a range of characters.
 
 .. _typo3fluid-fluid-format-trim-side_argument:
-
-side
-----
 
 ..  confval:: side
     :name: typo3fluid-fluid-format-trim-side

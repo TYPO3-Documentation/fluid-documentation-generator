@@ -57,14 +57,13 @@ Arguments
 
 The following arguments are available for `<f:switch>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3fluid-fluid-switch-expression_argument:
-
-expression
-----------
 
 ..  confval:: expression
     :name: typo3fluid-fluid-switch-expression

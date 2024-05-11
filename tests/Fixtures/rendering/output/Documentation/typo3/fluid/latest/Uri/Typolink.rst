@@ -60,14 +60,13 @@ Arguments
 
 The following arguments are available for `<f:uri.typolink>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-uri-typolink-parameter_argument:
-
-parameter
----------
 
 ..  confval:: parameter
     :name: typo3-fluid-uri-typolink-parameter
@@ -78,9 +77,6 @@ parameter
 
 .. _typo3-fluid-uri-typolink-additionalparams_argument:
 
-additionalParams
-----------------
-
 ..  confval:: additionalParams
     :name: typo3-fluid-uri-typolink-additionalparams
     :type: string
@@ -89,9 +85,6 @@ additionalParams
     StdWrap.typolink additionalParams
 
 .. _typo3-fluid-uri-typolink-language_argument:
-
-language
---------
 
 ..  confval:: language
     :name: typo3-fluid-uri-typolink-language
@@ -102,9 +95,6 @@ language
 
 .. _typo3-fluid-uri-typolink-addquerystring_argument:
 
-addQueryString
---------------
-
 ..  confval:: addQueryString
     :name: typo3-fluid-uri-typolink-addquerystring
     :type: string
@@ -114,9 +104,6 @@ addQueryString
 
 .. _typo3-fluid-uri-typolink-addquerystringexclude_argument:
 
-addQueryStringExclude
----------------------
-
 ..  confval:: addQueryStringExclude
     :name: typo3-fluid-uri-typolink-addquerystringexclude
     :type: string
@@ -125,9 +112,6 @@ addQueryStringExclude
     Define parameters to be excluded from the query string (only active if addQueryString is set)
 
 .. _typo3-fluid-uri-typolink-absolute_argument:
-
-absolute
---------
 
 ..  confval:: absolute
     :name: typo3-fluid-uri-typolink-absolute

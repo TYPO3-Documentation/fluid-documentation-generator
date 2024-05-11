@@ -53,14 +53,13 @@ Arguments
 
 The following arguments are available for `<f:form.button>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-fluid-form-button-additionalattributes_argument:
-
-additionalAttributes
---------------------
 
 ..  confval:: additionalAttributes
     :name: typo3-fluid-form-button-additionalattributes
@@ -71,9 +70,6 @@ additionalAttributes
 
 .. _typo3-fluid-form-button-data_argument:
 
-data
-----
-
 ..  confval:: data
     :name: typo3-fluid-form-button-data
     :type: mixed
@@ -82,9 +78,6 @@ data
     Additional data-* attributes. They will each be added with a "data-" prefix.
 
 .. _typo3-fluid-form-button-aria_argument:
-
-aria
-----
 
 ..  confval:: aria
     :name: typo3-fluid-form-button-aria
@@ -95,9 +88,6 @@ aria
 
 .. _typo3-fluid-form-button-name_argument:
 
-name
-----
-
 ..  confval:: name
     :name: typo3-fluid-form-button-name
     :type: string
@@ -106,9 +96,6 @@ name
     Name of input tag
 
 .. _typo3-fluid-form-button-value_argument:
-
-value
------
 
 ..  confval:: value
     :name: typo3-fluid-form-button-value
@@ -119,9 +106,6 @@ value
 
 .. _typo3-fluid-form-button-property_argument:
 
-property
---------
-
 ..  confval:: property
     :name: typo3-fluid-form-button-property
     :type: string
@@ -130,9 +114,6 @@ property
     Name of Object Property. If used in conjunction with <f:form object="...">, the "name" property will be ignored, while "value" can be used to specify a default field value instead of the object property value.
 
 .. _typo3-fluid-form-button-autofocus_argument:
-
-autofocus
----------
 
 ..  confval:: autofocus
     :name: typo3-fluid-form-button-autofocus
@@ -143,9 +124,6 @@ autofocus
 
 .. _typo3-fluid-form-button-disabled_argument:
 
-disabled
---------
-
 ..  confval:: disabled
     :name: typo3-fluid-form-button-disabled
     :type: string
@@ -154,9 +132,6 @@ disabled
     Specifies that the input element should be disabled when the page loads
 
 .. _typo3-fluid-form-button-form_argument:
-
-form
-----
 
 ..  confval:: form
     :name: typo3-fluid-form-button-form
@@ -167,9 +142,6 @@ form
 
 .. _typo3-fluid-form-button-formaction_argument:
 
-formaction
-----------
-
 ..  confval:: formaction
     :name: typo3-fluid-form-button-formaction
     :type: string
@@ -178,9 +150,6 @@ formaction
     Specifies where to send the form-data when a form is submitted. Only for type="submit"
 
 .. _typo3-fluid-form-button-formenctype_argument:
-
-formenctype
------------
 
 ..  confval:: formenctype
     :name: typo3-fluid-form-button-formenctype
@@ -191,9 +160,6 @@ formenctype
 
 .. _typo3-fluid-form-button-formmethod_argument:
 
-formmethod
-----------
-
 ..  confval:: formmethod
     :name: typo3-fluid-form-button-formmethod
     :type: string
@@ -202,9 +168,6 @@ formmethod
     Specifies how to send the form-data (which HTTP method to use). Only for type="submit" (e.g. "get" or "post")
 
 .. _typo3-fluid-form-button-formnovalidate_argument:
-
-formnovalidate
---------------
 
 ..  confval:: formnovalidate
     :name: typo3-fluid-form-button-formnovalidate
@@ -215,9 +178,6 @@ formnovalidate
 
 .. _typo3-fluid-form-button-formtarget_argument:
 
-formtarget
-----------
-
 ..  confval:: formtarget
     :name: typo3-fluid-form-button-formtarget
     :type: string
@@ -226,9 +186,6 @@ formtarget
     Specifies where to display the response after submitting the form. Only for type="submit" (e.g. "_blank", "_self", "_parent", "_top", "framename")
 
 .. _typo3-fluid-form-button-class_argument:
-
-class
------
 
 ..  confval:: class
     :name: typo3-fluid-form-button-class
@@ -239,9 +196,6 @@ class
 
 .. _typo3-fluid-form-button-dir_argument:
 
-dir
----
-
 ..  confval:: dir
     :name: typo3-fluid-form-button-dir
     :type: string
@@ -250,9 +204,6 @@ dir
     Text direction for this HTML element. Allowed strings: "ltr" (left to right), "rtl" (right to left)
 
 .. _typo3-fluid-form-button-id_argument:
-
-id
---
 
 ..  confval:: id
     :name: typo3-fluid-form-button-id
@@ -263,9 +214,6 @@ id
 
 .. _typo3-fluid-form-button-lang_argument:
 
-lang
-----
-
 ..  confval:: lang
     :name: typo3-fluid-form-button-lang
     :type: string
@@ -274,9 +222,6 @@ lang
     Language for this element. Use short names specified in RFC 1766
 
 .. _typo3-fluid-form-button-style_argument:
-
-style
------
 
 ..  confval:: style
     :name: typo3-fluid-form-button-style
@@ -287,9 +232,6 @@ style
 
 .. _typo3-fluid-form-button-title_argument:
 
-title
------
-
 ..  confval:: title
     :name: typo3-fluid-form-button-title
     :type: string
@@ -298,9 +240,6 @@ title
     Tooltip text of element
 
 .. _typo3-fluid-form-button-accesskey_argument:
-
-accesskey
----------
 
 ..  confval:: accesskey
     :name: typo3-fluid-form-button-accesskey
@@ -311,9 +250,6 @@ accesskey
 
 .. _typo3-fluid-form-button-tabindex_argument:
 
-tabindex
---------
-
 ..  confval:: tabindex
     :name: typo3-fluid-form-button-tabindex
     :type: integer
@@ -323,9 +259,6 @@ tabindex
 
 .. _typo3-fluid-form-button-onclick_argument:
 
-onclick
--------
-
 ..  confval:: onclick
     :name: typo3-fluid-form-button-onclick
     :type: string
@@ -334,9 +267,6 @@ onclick
     JavaScript evaluated for the onclick event
 
 .. _typo3-fluid-form-button-type_argument:
-
-type
-----
 
 ..  confval:: type
     :name: typo3-fluid-form-button-type

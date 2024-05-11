@@ -50,14 +50,13 @@ Arguments
 
 The following arguments are available for `<be:moduleLink>`:
 
-..  contents::
-    :local:
+..  confval-menu::
+    :display: table
+    :type:
+    :Default:
 
 
 .. _typo3-backend-modulelink-route_argument:
-
-route
------
 
 ..  confval:: route
     :name: typo3-backend-modulelink-route
@@ -67,9 +66,6 @@ route
     The route to link to
 
 .. _typo3-backend-modulelink-arguments_argument:
-
-arguments
----------
 
 ..  confval:: arguments
     :name: typo3-backend-modulelink-arguments
@@ -81,9 +77,6 @@ arguments
 
 .. _typo3-backend-modulelink-query_argument:
 
-query
------
-
 ..  confval:: query
     :name: typo3-backend-modulelink-query
     :type: string
@@ -92,9 +85,6 @@ query
     Additional link arguments as string
 
 .. _typo3-backend-modulelink-currenturlparametername_argument:
-
-currentUrlParameterName
------------------------
 
 ..  confval:: currentUrlParameterName
     :name: typo3-backend-modulelink-currenturlparametername

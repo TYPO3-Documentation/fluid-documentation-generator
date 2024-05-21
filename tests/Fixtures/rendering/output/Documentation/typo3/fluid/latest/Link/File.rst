@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/FileViewHelper.php
 :navigation-title: link.file
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-file:
@@ -65,7 +66,7 @@ The following arguments are available for `<f:link.file>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-link-file-additionalattributes_argument:

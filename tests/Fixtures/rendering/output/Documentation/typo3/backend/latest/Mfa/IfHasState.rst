@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Mfa/IfHasStateViewHelper.php
 :navigation-title: mfa.ifHasState
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-mfa-ifhasstate:
@@ -38,7 +39,7 @@ The following arguments are available for `<be:mfa.ifHasState>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-mfa-ifhasstate-then_argument:

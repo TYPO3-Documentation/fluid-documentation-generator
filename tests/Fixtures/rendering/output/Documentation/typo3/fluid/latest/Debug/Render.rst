@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Debug/RenderViewHelper.php
 :navigation-title: debug.render
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-debug-render:
@@ -38,7 +39,7 @@ The following arguments are available for `<f:debug.render>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-debug-render-debug_argument:
@@ -46,7 +47,7 @@ The following arguments are available for `<f:debug.render>`:
 ..  confval:: debug
     :name: typo3-fluid-debug-render-debug
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     If true, the admin panel shows debug information if activated,
@@ -74,7 +75,7 @@ The following arguments are available for `<f:debug.render>`:
 ..  confval:: arguments
     :name: typo3-fluid-debug-render-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Array of variables to be transferred. Use {_all} for all variables

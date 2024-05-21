@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextareaViewHelper.php
 :navigation-title: form.textarea
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-textarea:
@@ -45,7 +46,7 @@ The following arguments are available for `<f:form.textarea>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-textarea-additionalattributes_argument:
@@ -152,7 +153,7 @@ The following arguments are available for `<f:form.textarea>`:
 ..  confval:: errorClass
     :name: typo3-fluid-form-textarea-errorclass
     :type: string
-    :Default: 'f3-form-error'
+    :default: `'f3-form-error'`
     :required: false
 
     CSS class to set if there are errors for this ViewHelper

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/JsonViewHelper.php
 :navigation-title: format.json
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-json:
@@ -64,7 +65,7 @@ The following arguments are available for `<f:format.json>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-json-value_argument:

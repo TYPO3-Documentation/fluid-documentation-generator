@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/HtmlspecialcharsViewHelper.php
 :navigation-title: format.htmlspecialchars
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-htmlspecialchars:
@@ -59,7 +60,7 @@ The following arguments are available for `<f:format.htmlspecialchars>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-htmlspecialchars-value_argument:
@@ -85,7 +86,7 @@ The following arguments are available for `<f:format.htmlspecialchars>`:
 ..  confval:: encoding
     :name: typo3fluid-fluid-format-htmlspecialchars-encoding
     :type: string
-    :Default: 'UTF-8'
+    :default: `'UTF-8'`
     :required: false
 
     Encoding
@@ -95,7 +96,7 @@ The following arguments are available for `<f:format.htmlspecialchars>`:
 ..  confval:: doubleEncode
     :name: typo3fluid-fluid-format-htmlspecialchars-doubleencode
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     If FALSE html entities will not be encoded

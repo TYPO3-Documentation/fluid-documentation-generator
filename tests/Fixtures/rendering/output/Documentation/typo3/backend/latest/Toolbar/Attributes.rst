@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Toolbar/AttributesViewHelper.php
 :navigation-title: toolbar.attributes
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-toolbar-attributes:
@@ -38,7 +39,7 @@ The following arguments are available for `<be:toolbar.attributes>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-toolbar-attributes-class_argument:

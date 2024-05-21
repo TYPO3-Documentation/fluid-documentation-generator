@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PagePathViewHelper.php
 :navigation-title: be.pagePath
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-pagepath:

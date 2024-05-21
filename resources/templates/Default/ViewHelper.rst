@@ -3,6 +3,7 @@
 
 :edit-on-github-link: {sourceEdit}
 :navigation-title: {viewHelper.name -> f:format.raw()}
+
 .. include:: /Includes.rst.txt
 
 .. _{headlineIdentifier}:
@@ -43,7 +44,7 @@ The following arguments are available for `<f:format.raw>{tagName}</f:format.raw
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 <f:for each="{arguments}" as="argumentData">
 .. _{argumentData.headlineIdentifier}_argument:
@@ -51,7 +52,7 @@ The following arguments are available for `<f:format.raw>{tagName}</f:format.raw
 ..  confval:: {argumentData.headline}
     :name: {argumentData.headlineIdentifier}
 <f:if condition="{argumentData.dataType}">    :type: {argumentData.dataType}
-</f:if><f:if condition="{argumentData.default}">    :Default: {argumentData.default -> f:format.raw()}
+</f:if><f:if condition="{argumentData.default}">    :default: `{argumentData.default -> f:format.raw()}`
 </f:if>    :required: {argumentData.isRequired ? 'true' : 'false'}
 
     {argumentData.description -> f:format.raw()}

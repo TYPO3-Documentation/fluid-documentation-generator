@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/LastViewHelper.php
 :navigation-title: last
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-last:
@@ -43,7 +44,7 @@ The following arguments are available for `<f:last>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-last-value_argument:

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/DebugViewHelper.php
 :navigation-title: debug
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-debug:
@@ -60,7 +61,7 @@ The following arguments are available for `<f:debug>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-debug-title_argument:
@@ -77,7 +78,7 @@ The following arguments are available for `<f:debug>`:
 ..  confval:: maxDepth
     :name: typo3-fluid-debug-maxdepth
     :type: mixed
-    :Default: 8
+    :default: `8`
     :required: false
 
     Sets the max recursion depth of the dump (defaults to 8). De- or increase the number according to your needs and memory limit.

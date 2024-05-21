@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/LinkViewHelper.php
 :navigation-title: be.link
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-link:
@@ -41,7 +42,7 @@ The following arguments are available for `<f:be.link>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-link-additionalattributes_argument:
@@ -85,7 +86,7 @@ The following arguments are available for `<f:be.link>`:
 ..  confval:: parameters
     :name: typo3-fluid-be-link-parameters
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     An array of parameters
@@ -95,7 +96,7 @@ The following arguments are available for `<f:be.link>`:
 ..  confval:: referenceType
     :name: typo3-fluid-be-link-referencetype
     :type: string
-    :Default: 'absolute'
+    :default: `'absolute'`
     :required: false
 
     The type of reference to be generated (one of the constants)

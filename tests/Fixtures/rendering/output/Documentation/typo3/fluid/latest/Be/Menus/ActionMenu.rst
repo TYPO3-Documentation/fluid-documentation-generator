@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuViewHelper.php
 :navigation-title: be.menus.actionMenu
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-menus-actionmenu:
@@ -58,7 +59,7 @@ The following arguments are available for `<f:be.menus.actionMenu>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-menus-actionmenu-additionalattributes_argument:

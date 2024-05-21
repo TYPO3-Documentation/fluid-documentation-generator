@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/IconForRecordViewHelper.php
 :navigation-title: iconForRecord
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-iconforrecord:
@@ -53,7 +54,7 @@ The following arguments are available for `<core:iconForRecord>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-core-iconforrecord-table_argument:
@@ -79,7 +80,7 @@ The following arguments are available for `<core:iconForRecord>`:
 ..  confval:: size
     :name: typo3-core-iconforrecord-size
     :type: string
-    :Default: \TYPO3\CMS\Core\Imaging\IconSize::SMALL
+    :default: `\TYPO3\CMS\Core\Imaging\IconSize::SMALL`
     :required: false
 
     The icon size

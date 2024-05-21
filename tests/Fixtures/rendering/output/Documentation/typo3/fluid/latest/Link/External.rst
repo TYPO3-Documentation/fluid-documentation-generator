@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/ExternalViewHelper.php
 :navigation-title: link.external
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-external:
@@ -57,7 +58,7 @@ The following arguments are available for `<f:link.external>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-link-external-additionalattributes_argument:
@@ -101,7 +102,7 @@ The following arguments are available for `<f:link.external>`:
 ..  confval:: defaultScheme
     :name: typo3-fluid-link-external-defaultscheme
     :type: string
-    :Default: 'https'
+    :default: `'https'`
     :required: false
 
     Scheme the href attribute will be prefixed with if specified $uri does not contain a scheme already

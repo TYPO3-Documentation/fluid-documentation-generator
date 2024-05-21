@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/HiddenViewHelper.php
 :navigation-title: form.hidden
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-hidden:
@@ -46,7 +47,7 @@ The following arguments are available for `<f:form.hidden>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-hidden-additionalattributes_argument:
@@ -189,7 +190,7 @@ The following arguments are available for `<f:form.hidden>`:
 ..  confval:: respectSubmittedDataValue
     :name: typo3-fluid-form-hidden-respectsubmitteddatavalue
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     Enable or disable the usage of the submitted values

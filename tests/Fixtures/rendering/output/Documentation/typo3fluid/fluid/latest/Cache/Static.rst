@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Cache/StaticViewHelper.php
 :navigation-title: cache.static
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cache-static:

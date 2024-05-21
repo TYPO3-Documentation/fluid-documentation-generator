@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/PageViewHelper.php
 :navigation-title: uri.page
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-page:
@@ -68,7 +69,7 @@ The following arguments are available for `<f:uri.page>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-uri-page-pageuid_argument:
@@ -85,7 +86,7 @@ The following arguments are available for `<f:uri.page>`:
 ..  confval:: additionalParams
     :name: typo3-fluid-uri-page-additionalparams
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Query parameters to be attached to the resulting URI
@@ -158,7 +159,7 @@ The following arguments are available for `<f:uri.page>`:
 ..  confval:: argumentsToBeExcludedFromQueryString
     :name: typo3-fluid-uri-page-argumentstobeexcludedfromquerystring
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Arguments to be removed from the URI. Only active if $addQueryString = TRUE

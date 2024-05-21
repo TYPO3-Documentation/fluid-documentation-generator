@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/ScriptViewHelper.php
 :navigation-title: asset.script
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-asset-script:
@@ -51,7 +52,7 @@ The following arguments are available for `<f:asset.script>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-asset-script-additionalattributes_argument:

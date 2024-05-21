@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/BytesViewHelper.php
 :navigation-title: format.bytes
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-bytes:
@@ -67,7 +68,7 @@ The following arguments are available for `<f:format.bytes>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-format-bytes-value_argument:
@@ -93,7 +94,7 @@ The following arguments are available for `<f:format.bytes>`:
 ..  confval:: decimalSeparator
     :name: typo3-fluid-format-bytes-decimalseparator
     :type: string
-    :Default: '.'
+    :default: `'.'`
     :required: false
 
     The decimal point character
@@ -103,7 +104,7 @@ The following arguments are available for `<f:format.bytes>`:
 ..  confval:: thousandsSeparator
     :name: typo3-fluid-format-bytes-thousandsseparator
     :type: string
-    :Default: ','
+    :default: `','`
     :required: false
 
     The character for grouping the thousand digits

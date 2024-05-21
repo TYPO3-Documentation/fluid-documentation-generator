@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlentitiesViewHelper.php
 :navigation-title: format.htmlentities
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-htmlentities:
@@ -58,7 +59,7 @@ The following arguments are available for `<f:format.htmlentities>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-format-htmlentities-value_argument:
@@ -93,7 +94,7 @@ The following arguments are available for `<f:format.htmlentities>`:
 ..  confval:: doubleEncode
     :name: typo3-fluid-format-htmlentities-doubleencode
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     If FALSE existing html entities won't be encoded, the default is to convert everything.

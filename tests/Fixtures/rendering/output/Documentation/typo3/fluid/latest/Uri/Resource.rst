@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ResourceViewHelper.php
 :navigation-title: uri.resource
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-resource:
@@ -79,7 +80,7 @@ The following arguments are available for `<f:uri.resource>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-uri-resource-path_argument:

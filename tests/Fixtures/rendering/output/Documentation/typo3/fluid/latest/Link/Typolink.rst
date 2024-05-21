@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/TypolinkViewHelper.php
 :navigation-title: link.typolink
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-typolink:
@@ -93,7 +94,7 @@ The following arguments are available for `<f:link.typolink>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-link-typolink-parameter_argument:
@@ -155,7 +156,7 @@ The following arguments are available for `<f:link.typolink>`:
 ..  confval:: additionalAttributes
     :name: typo3-fluid-link-typolink-additionalattributes
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Additional tag attributes to be added directly to the resulting HTML tag
@@ -192,7 +193,7 @@ The following arguments are available for `<f:link.typolink>`:
 ..  confval:: parts-as
     :name: typo3-fluid-link-typolink-parts-as
     :type: string
-    :Default: 'typoLinkParts'
+    :default: `'typoLinkParts'`
     :required: false
 
     Variable name containing typoLink parts (if any)

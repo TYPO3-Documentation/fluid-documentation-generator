@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Menus/ActionMenuItemViewHelper.php
 :navigation-title: be.menus.actionMenuItem
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-menus-actionmenuitem:
@@ -59,7 +60,7 @@ The following arguments are available for `<f:be.menus.actionMenuItem>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-menus-actionmenuitem-additionalattributes_argument:
@@ -121,7 +122,7 @@ The following arguments are available for `<f:be.menus.actionMenuItem>`:
 ..  confval:: arguments
     :name: typo3-fluid-be-menus-actionmenuitem-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Additional controller arguments to be passed to the action when this ActionMenuItem is selected

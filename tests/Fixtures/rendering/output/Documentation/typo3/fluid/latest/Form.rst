@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/FormViewHelper.php
 :navigation-title: form
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form:
@@ -63,7 +64,7 @@ The following arguments are available for `<f:form>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-additionalattributes_argument:
@@ -107,7 +108,7 @@ The following arguments are available for `<f:form>`:
 ..  confval:: arguments
     :name: typo3-fluid-form-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Arguments
@@ -198,7 +199,7 @@ The following arguments are available for `<f:form>`:
 ..  confval:: additionalParams
     :name: typo3-fluid-form-additionalparams
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Additional action URI query parameters that won't be prefixed like $arguments (overrule $arguments) (only active if $actionUri is not set)
@@ -226,7 +227,7 @@ The following arguments are available for `<f:form>`:
 ..  confval:: argumentsToBeExcludedFromQueryString
     :name: typo3-fluid-form-argumentstobeexcludedfromquerystring
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Arguments to be removed from the action URI. Only active if $addQueryString = TRUE and $actionUri is not set
@@ -299,7 +300,7 @@ The following arguments are available for `<f:form>`:
 ..  confval:: method
     :name: typo3-fluid-form-method
     :type: string
-    :Default: 'post'
+    :default: `'post'`
     :required: false
 
     Transfer type (get or post)

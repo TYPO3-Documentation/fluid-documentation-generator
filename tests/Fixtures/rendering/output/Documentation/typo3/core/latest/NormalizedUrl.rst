@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/NormalizedUrlViewHelper.php
 :navigation-title: normalizedUrl
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-normalizedurl:
@@ -57,7 +58,7 @@ The following arguments are available for `<core:normalizedUrl>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-core-normalizedurl-pathorurl_argument:

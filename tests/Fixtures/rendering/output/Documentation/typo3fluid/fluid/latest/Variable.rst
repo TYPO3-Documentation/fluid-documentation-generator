@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/VariableViewHelper.php
 :navigation-title: variable
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-variable:
@@ -49,7 +50,7 @@ The following arguments are available for `<f:variable>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-variable-value_argument:

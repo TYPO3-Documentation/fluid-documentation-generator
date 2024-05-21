@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/NewRecordViewHelper.php
 :navigation-title: uri.newRecord
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-uri-newrecord:
@@ -81,7 +82,7 @@ The following arguments are available for `<be:uri.newRecord>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-uri-newrecord-uid_argument:
@@ -125,7 +126,7 @@ The following arguments are available for `<be:uri.newRecord>`:
 ..  confval:: defaultValues
     :name: typo3-backend-uri-newrecord-defaultvalues
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Default values for fields of the new record

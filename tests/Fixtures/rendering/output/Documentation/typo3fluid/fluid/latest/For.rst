@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/ForViewHelper.php
 :navigation-title: for
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-for:
@@ -89,7 +90,7 @@ The following arguments are available for `<f:for>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-for-each_argument:

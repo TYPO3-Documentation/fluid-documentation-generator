@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/FlashMessagesViewHelper.php
 :navigation-title: flashMessages
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-flashmessages:
@@ -103,7 +104,7 @@ The following arguments are available for `<f:flashMessages>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-flashmessages-queueidentifier_argument:

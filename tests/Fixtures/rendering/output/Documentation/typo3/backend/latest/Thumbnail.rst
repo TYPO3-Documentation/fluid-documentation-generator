@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/ThumbnailViewHelper.php
 :navigation-title: thumbnail
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-thumbnail:
@@ -71,7 +72,7 @@ The following arguments are available for `<be:thumbnail>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-thumbnail-additionalattributes_argument:
@@ -232,7 +233,7 @@ The following arguments are available for `<be:thumbnail>`:
 ..  confval:: cropVariant
     :name: typo3-backend-thumbnail-cropvariant
     :type: string
-    :Default: 'default'
+    :default: `'default'`
     :required: false
 
     Select a cropping variant, in case multiple croppings have been specified or stored in FileReference
@@ -296,7 +297,7 @@ The following arguments are available for `<be:thumbnail>`:
 ..  confval:: context
     :name: typo3-backend-thumbnail-context
     :type: string
-    :Default: 'Image.Preview'
+    :default: `'Image.Preview'`
     :required: false
 
     Context for image rendering

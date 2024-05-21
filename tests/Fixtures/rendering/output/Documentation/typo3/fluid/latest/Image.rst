@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/ImageViewHelper.php
 :navigation-title: image
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-image:
@@ -100,7 +101,7 @@ The following arguments are available for `<f:image>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-image-additionalattributes_argument:
@@ -306,7 +307,7 @@ The following arguments are available for `<f:image>`:
 ..  confval:: cropVariant
     :name: typo3-fluid-image-cropvariant
     :type: string
-    :Default: 'default'
+    :default: `'default'`
     :required: false
 
     Select a cropping variant, in case multiple croppings have been specified or stored in FileReference

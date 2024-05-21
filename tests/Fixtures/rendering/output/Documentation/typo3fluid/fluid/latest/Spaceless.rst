@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SpacelessViewHelper.php
 :navigation-title: spaceless
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-spaceless:

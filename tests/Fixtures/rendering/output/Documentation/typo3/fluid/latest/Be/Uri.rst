@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/UriViewHelper.php
 :navigation-title: be.uri
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-uri:
@@ -47,7 +48,7 @@ The following arguments are available for `<f:be.uri>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-uri-route_argument:
@@ -64,7 +65,7 @@ The following arguments are available for `<f:be.uri>`:
 ..  confval:: parameters
     :name: typo3-fluid-be-uri-parameters
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     An array of parameters
@@ -74,7 +75,7 @@ The following arguments are available for `<f:be.uri>`:
 ..  confval:: referenceType
     :name: typo3-fluid-be-uri-referencetype
     :type: string
-    :Default: 'absolute'
+    :default: `'absolute'`
     :required: false
 
     The type of reference to be generated (one of the constants)

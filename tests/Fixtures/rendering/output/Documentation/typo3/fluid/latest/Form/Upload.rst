@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/UploadViewHelper.php
 :navigation-title: form.upload
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-upload:
@@ -44,7 +45,7 @@ The following arguments are available for `<f:form.upload>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-upload-additionalattributes_argument:
@@ -133,7 +134,7 @@ The following arguments are available for `<f:form.upload>`:
 ..  confval:: errorClass
     :name: typo3-fluid-form-upload-errorclass
     :type: string
-    :Default: 'f3-form-error'
+    :default: `'f3-form-error'`
     :required: false
 
     CSS class to set if there are errors for this ViewHelper

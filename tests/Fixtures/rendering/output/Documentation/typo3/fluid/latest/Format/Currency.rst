@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/CurrencyViewHelper.php
 :navigation-title: format.currency
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-currency:
@@ -85,7 +86,7 @@ The following arguments are available for `<f:format.currency>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-format-currency-currencysign_argument:
@@ -102,7 +103,7 @@ The following arguments are available for `<f:format.currency>`:
 ..  confval:: decimalSeparator
     :name: typo3-fluid-format-currency-decimalseparator
     :type: string
-    :Default: ','
+    :default: `','`
     :required: false
 
     The separator for the decimal point.
@@ -112,7 +113,7 @@ The following arguments are available for `<f:format.currency>`:
 ..  confval:: thousandsSeparator
     :name: typo3-fluid-format-currency-thousandsseparator
     :type: string
-    :Default: '.'
+    :default: `'.'`
     :required: false
 
     The thousands separator.
@@ -131,7 +132,7 @@ The following arguments are available for `<f:format.currency>`:
 ..  confval:: separateCurrency
     :name: typo3-fluid-format-currency-separatecurrency
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     Separate the currency sign from the number by a single space, defaults to true due to backwards compatibility
@@ -141,7 +142,7 @@ The following arguments are available for `<f:format.currency>`:
 ..  confval:: decimals
     :name: typo3-fluid-format-currency-decimals
     :type: mixed
-    :Default: 2
+    :default: `2`
     :required: false
 
     Set decimals places.

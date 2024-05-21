@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/EmailViewHelper.php
 :navigation-title: link.email
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-email:
@@ -74,7 +75,7 @@ The following arguments are available for `<f:link.email>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-link-email-additionalattributes_argument:

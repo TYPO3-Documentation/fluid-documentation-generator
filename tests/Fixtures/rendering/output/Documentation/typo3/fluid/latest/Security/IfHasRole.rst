@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Security/IfHasRoleViewHelper.php
 :navigation-title: security.ifHasRole
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-security-ifhasrole:
@@ -78,7 +79,7 @@ The following arguments are available for `<f:security.ifHasRole>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-security-ifhasrole-then_argument:

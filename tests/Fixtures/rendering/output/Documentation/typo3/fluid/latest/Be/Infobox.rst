@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/InfoboxViewHelper.php
 :navigation-title: be.infobox
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-infobox:
@@ -64,7 +65,7 @@ The following arguments are available for `<f:be.infobox>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-infobox-message_argument:
@@ -90,7 +91,7 @@ The following arguments are available for `<f:be.infobox>`:
 ..  confval:: state
     :name: typo3-fluid-be-infobox-state
     :type: mixed
-    :Default: -2
+    :default: `-2`
     :required: false
 
     The state of the box, InfoboxViewHelper::STATE_*

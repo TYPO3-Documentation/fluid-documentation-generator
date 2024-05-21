@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/Select/OptgroupViewHelper.php
 :navigation-title: form.select.optgroup
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-select-optgroup:
@@ -33,7 +34,7 @@ The following arguments are available for `<f:form.select.optgroup>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-select-optgroup-class_argument:

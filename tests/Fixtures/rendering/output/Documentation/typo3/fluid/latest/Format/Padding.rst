@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/PaddingViewHelper.php
 :navigation-title: format.padding
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-padding:
@@ -67,7 +68,7 @@ The following arguments are available for `<f:format.padding>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-format-padding-value_argument:
@@ -93,7 +94,7 @@ The following arguments are available for `<f:format.padding>`:
 ..  confval:: padString
     :name: typo3-fluid-format-padding-padstring
     :type: string
-    :Default: ' '
+    :default: `' '`
     :required: false
 
     The padding string
@@ -103,7 +104,7 @@ The following arguments are available for `<f:format.padding>`:
 ..  confval:: padType
     :name: typo3-fluid-format-padding-padtype
     :type: string
-    :Default: 'right'
+    :default: `'right'`
     :required: false
 
     Append the padding at this site (Possible values: right,left,both. Default: right)

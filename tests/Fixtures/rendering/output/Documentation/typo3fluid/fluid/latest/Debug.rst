@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/DebugViewHelper.php
 :navigation-title: debug
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-debug:
@@ -57,7 +58,7 @@ The following arguments are available for `<f:debug>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-debug-typeonly_argument:
@@ -74,7 +75,7 @@ The following arguments are available for `<f:debug>`:
 ..  confval:: levels
     :name: typo3fluid-fluid-debug-levels
     :type: integer
-    :Default: 5
+    :default: `5`
     :required: false
 
     Levels to render when rendering nested objects/arrays

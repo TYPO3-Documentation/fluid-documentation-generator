@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Transform/HtmlViewHelper.php
 :navigation-title: transform.html
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-transform-html:
@@ -55,7 +56,7 @@ The following arguments are available for `<f:transform.html>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-transform-html-selector_argument:
@@ -63,7 +64,7 @@ The following arguments are available for `<f:transform.html>`:
 ..  confval:: selector
     :name: typo3-fluid-transform-html-selector
     :type: string
-    :Default: 'a.href'
+    :default: `'a.href'`
     :required: false
 
     Comma separated list of node attributes to be considered
@@ -73,7 +74,7 @@ The following arguments are available for `<f:transform.html>`:
 ..  confval:: onFailure
     :name: typo3-fluid-transform-html-onfailure
     :type: string
-    :Default: 'removeEnclosure'
+    :default: `'removeEnclosure'`
     :required: false
 
     Behavior on failure, either `removeTag`, `removeAttr`, `removeEnclosure` or `null`

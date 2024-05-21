@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PageInfoViewHelper.php
 :navigation-title: be.pageInfo
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-pageinfo:

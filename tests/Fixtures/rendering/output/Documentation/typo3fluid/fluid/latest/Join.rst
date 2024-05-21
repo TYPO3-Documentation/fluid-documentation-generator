@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/JoinViewHelper.php
 :navigation-title: join
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-join:
@@ -72,7 +73,7 @@ The following arguments are available for `<f:join>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-join-value_argument:

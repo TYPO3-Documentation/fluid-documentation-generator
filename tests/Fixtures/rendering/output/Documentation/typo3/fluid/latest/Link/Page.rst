@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Link/PageViewHelper.php
 :navigation-title: link.page
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-link-page:
@@ -74,7 +75,7 @@ The following arguments are available for `<f:link.page>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-link-page-additionalattributes_argument:

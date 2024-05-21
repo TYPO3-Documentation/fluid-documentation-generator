@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/MediaViewHelper.php
 :navigation-title: media
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-media:
@@ -71,7 +72,7 @@ The following arguments are available for `<f:media>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-media-additionalattributes_argument:
@@ -205,7 +206,7 @@ The following arguments are available for `<f:media>`:
 ..  confval:: additionalConfig
     :name: typo3-fluid-media-additionalconfig
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     This array can hold additional configuration that is passed though to the Renderer object
@@ -233,7 +234,7 @@ The following arguments are available for `<f:media>`:
 ..  confval:: cropVariant
     :name: typo3-fluid-media-cropvariant
     :type: string
-    :Default: 'default'
+    :default: `'default'`
     :required: false
 
     Select a cropping variant, in case multiple croppings have been specified or stored in FileReference

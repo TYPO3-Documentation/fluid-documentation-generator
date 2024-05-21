@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/StripTagsViewHelper.php
 :navigation-title: format.stripTags
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-striptags:
@@ -79,7 +80,7 @@ The following arguments are available for `<f:format.stripTags>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-striptags-value_argument:

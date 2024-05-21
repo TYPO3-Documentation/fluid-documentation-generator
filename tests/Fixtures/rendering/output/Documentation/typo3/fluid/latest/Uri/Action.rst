@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Uri/ActionViewHelper.php
 :navigation-title: uri.action
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-uri-action:
@@ -43,7 +44,7 @@ The following arguments are available for `<f:uri.action>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-uri-action-action_argument:
@@ -60,7 +61,7 @@ The following arguments are available for `<f:uri.action>`:
 ..  confval:: arguments
     :name: typo3-fluid-uri-action-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Arguments
@@ -160,7 +161,7 @@ The following arguments are available for `<f:uri.action>`:
 ..  confval:: additionalParams
     :name: typo3-fluid-uri-action-additionalparams
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Additional query parameters that won't be prefixed like $arguments (overrule $arguments)
@@ -188,7 +189,7 @@ The following arguments are available for `<f:uri.action>`:
 ..  confval:: argumentsToBeExcludedFromQueryString
     :name: typo3-fluid-uri-action-argumentstobeexcludedfromquerystring
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Arguments to be removed from the URI. Only active if $addQueryString = TRUE

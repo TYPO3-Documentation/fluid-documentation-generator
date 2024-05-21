@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Uri/EditRecordViewHelper.php
 :navigation-title: uri.editRecord
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-uri-editrecord:
@@ -58,7 +59,7 @@ The following arguments are available for `<be:uri.editRecord>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-uri-editrecord-uid_argument:

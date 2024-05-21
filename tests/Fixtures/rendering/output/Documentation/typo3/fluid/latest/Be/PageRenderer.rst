@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PageRendererViewHelper.php
 :navigation-title: be.pageRenderer
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-pagerenderer:
@@ -49,7 +50,7 @@ The following arguments are available for `<f:be.pageRenderer>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-pagerenderer-pagetitle_argument:

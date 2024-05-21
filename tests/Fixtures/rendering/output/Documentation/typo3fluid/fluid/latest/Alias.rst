@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/AliasViewHelper.php
 :navigation-title: alias
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-alias:
@@ -69,7 +70,7 @@ The following arguments are available for `<f:alias>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-alias-map_argument:

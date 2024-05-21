@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/CountrySelectViewHelper.php
 :navigation-title: form.countrySelect
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-countryselect:
@@ -85,7 +86,7 @@ The following arguments are available for `<f:form.countrySelect>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-countryselect-additionalattributes_argument:
@@ -246,7 +247,7 @@ The following arguments are available for `<f:form.countrySelect>`:
 ..  confval:: excludeCountries
     :name: typo3-fluid-form-countryselect-excludecountries
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Array with country codes that should not be shown.
@@ -256,7 +257,7 @@ The following arguments are available for `<f:form.countrySelect>`:
 ..  confval:: onlyCountries
     :name: typo3-fluid-form-countryselect-onlycountries
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     If set, only the country codes in the list are rendered.
@@ -266,7 +267,7 @@ The following arguments are available for `<f:form.countrySelect>`:
 ..  confval:: optionLabelField
     :name: typo3-fluid-form-countryselect-optionlabelfield
     :type: string
-    :Default: 'localizedName'
+    :default: `'localizedName'`
     :required: false
 
     If specified, will call the appropriate getter on each object to determine the label. Use "name", "localizedName", "officialName" or "localizedOfficialName"
@@ -285,7 +286,7 @@ The following arguments are available for `<f:form.countrySelect>`:
 ..  confval:: errorClass
     :name: typo3-fluid-form-countryselect-errorclass
     :type: string
-    :Default: 'f3-form-error'
+    :default: `'f3-form-error'`
     :required: false
 
     CSS class to set if there are errors for this ViewHelper
@@ -331,7 +332,7 @@ The following arguments are available for `<f:form.countrySelect>`:
 ..  confval:: prioritizedCountries
     :name: typo3-fluid-form-countryselect-prioritizedcountries
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     A list of country codes which should be listed on top of the list.

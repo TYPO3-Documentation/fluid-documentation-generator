@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/TypoScript/FineDiffViewHelper.php
 :navigation-title: typoScript.fineDiff
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-typoscript-finediff:
@@ -38,7 +39,7 @@ The following arguments are available for `<be:typoScript.fineDiff>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-typoscript-finediff-from_argument:

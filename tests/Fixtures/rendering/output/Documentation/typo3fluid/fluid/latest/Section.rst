@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SectionViewHelper.php
 :navigation-title: section
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-section:
@@ -78,7 +79,7 @@ The following arguments are available for `<f:section>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-section-name_argument:

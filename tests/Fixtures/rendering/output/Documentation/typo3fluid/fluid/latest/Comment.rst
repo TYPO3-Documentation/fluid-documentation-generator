@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/CommentViewHelper.php
 :navigation-title: comment
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-comment:

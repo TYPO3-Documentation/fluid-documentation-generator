@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/CycleViewHelper.php
 :navigation-title: cycle
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cycle:
@@ -79,7 +80,7 @@ The following arguments are available for `<f:cycle>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-cycle-values_argument:

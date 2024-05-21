@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/CheckboxViewHelper.php
 :navigation-title: form.checkbox
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-checkbox:
@@ -72,7 +73,7 @@ The following arguments are available for `<f:form.checkbox>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-checkbox-additionalattributes_argument:
@@ -143,7 +144,7 @@ The following arguments are available for `<f:form.checkbox>`:
 ..  confval:: errorClass
     :name: typo3-fluid-form-checkbox-errorclass
     :type: string
-    :Default: 'f3-form-error'
+    :default: `'f3-form-error'`
     :required: false
 
     CSS class to set if there are errors for this ViewHelper

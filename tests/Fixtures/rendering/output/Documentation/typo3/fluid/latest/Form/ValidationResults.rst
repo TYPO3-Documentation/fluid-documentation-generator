@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/ValidationResultsViewHelper.php
 :navigation-title: form.validationResults
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-validationresults:
@@ -77,7 +78,7 @@ The following arguments are available for `<f:form.validationResults>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-validationresults-for_argument:
@@ -94,7 +95,7 @@ The following arguments are available for `<f:form.validationResults>`:
 ..  confval:: as
     :name: typo3-fluid-form-validationresults-as
     :type: string
-    :Default: 'validationResults'
+    :default: `'validationResults'`
     :required: false
 
     The name of the variable to store the current error

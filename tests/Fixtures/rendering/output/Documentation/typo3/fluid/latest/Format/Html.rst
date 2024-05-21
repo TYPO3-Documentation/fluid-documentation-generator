@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/HtmlViewHelper.php
 :navigation-title: format.html
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-html:
@@ -118,7 +119,7 @@ The following arguments are available for `<f:format.html>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-format-html-parsefunctspath_argument:
@@ -126,7 +127,7 @@ The following arguments are available for `<f:format.html>`:
 ..  confval:: parseFuncTSPath
     :name: typo3-fluid-format-html-parsefunctspath
     :type: string
-    :Default: 'lib.parseFunc_RTE'
+    :default: `'lib.parseFunc_RTE'`
     :required: false
 
     Path to the TypoScript parseFunc setup.

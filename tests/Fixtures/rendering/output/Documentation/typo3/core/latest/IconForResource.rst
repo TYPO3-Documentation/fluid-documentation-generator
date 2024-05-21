@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/IconForResourceViewHelper.php
 :navigation-title: iconForResource
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-iconforresource:
@@ -53,7 +54,7 @@ The following arguments are available for `<core:iconForResource>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-core-iconforresource-resource_argument:
@@ -70,7 +71,7 @@ The following arguments are available for `<core:iconForResource>`:
 ..  confval:: size
     :name: typo3-core-iconforresource-size
     :type: string
-    :Default: \TYPO3\CMS\Core\Imaging\IconSize::SMALL
+    :default: `\TYPO3\CMS\Core\Imaging\IconSize::SMALL`
     :required: false
 
     The icon size
@@ -89,7 +90,7 @@ The following arguments are available for `<core:iconForResource>`:
 ..  confval:: options
     :name: typo3-core-iconforresource-options
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     An associative array with additional options

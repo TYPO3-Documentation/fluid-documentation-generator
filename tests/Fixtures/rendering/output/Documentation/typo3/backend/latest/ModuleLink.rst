@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/ModuleLinkViewHelper.php
 :navigation-title: moduleLink
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-modulelink:
@@ -53,7 +54,7 @@ The following arguments are available for `<be:moduleLink>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-modulelink-route_argument:
@@ -70,7 +71,7 @@ The following arguments are available for `<be:moduleLink>`:
 ..  confval:: arguments
     :name: typo3-backend-modulelink-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Additional link arguments

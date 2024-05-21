@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/Select/OptionViewHelper.php
 :navigation-title: form.select.option
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-select-option:
@@ -32,7 +33,7 @@ The following arguments are available for `<f:form.select.option>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-select-option-class_argument:

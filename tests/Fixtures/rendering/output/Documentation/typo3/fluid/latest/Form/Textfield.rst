@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/TextfieldViewHelper.php
 :navigation-title: form.textfield
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-textfield:
@@ -43,7 +44,7 @@ The following arguments are available for `<f:form.textfield>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-textfield-additionalattributes_argument:
@@ -168,7 +169,7 @@ The following arguments are available for `<f:form.textfield>`:
 ..  confval:: errorClass
     :name: typo3-fluid-form-textfield-errorclass
     :type: string
-    :Default: 'f3-form-error'
+    :default: `'f3-form-error'`
     :required: false
 
     CSS class to set if there are errors for this ViewHelper
@@ -268,7 +269,7 @@ The following arguments are available for `<f:form.textfield>`:
 ..  confval:: type
     :name: typo3-fluid-form-textfield-type
     :type: string
-    :Default: 'text'
+    :default: `'text'`
     :required: false
 
     The field type, e.g. "text", "email", "url" etc.

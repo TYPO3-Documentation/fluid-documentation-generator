@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/SplitViewHelper.php
 :navigation-title: split
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-split:
@@ -75,7 +76,7 @@ The following arguments are available for `<f:split>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-split-value_argument:
@@ -101,7 +102,7 @@ The following arguments are available for `<f:split>`:
 ..  confval:: limit
     :name: typo3fluid-fluid-split-limit
     :type: mixed
-    :Default: 9223372036854775807
+    :default: `9223372036854775807`
     :required: false
 
     If limit is positive, a maximum of $limit items will be returned. If limit is negative, all items except for the last $limit items will be returned. 0 will be treated as 1.

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Sanitize/HtmlViewHelper.php
 :navigation-title: sanitize.html
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-sanitize-html:
@@ -58,7 +59,7 @@ The following arguments are available for `<f:sanitize.html>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-sanitize-html-build_argument:
@@ -66,7 +67,7 @@ The following arguments are available for `<f:sanitize.html>`:
 ..  confval:: build
     :name: typo3-fluid-sanitize-html-build
     :type: string
-    :Default: 'default'
+    :default: `'default'`
     :required: false
 
     Preset name or class-like name of sanitization builder

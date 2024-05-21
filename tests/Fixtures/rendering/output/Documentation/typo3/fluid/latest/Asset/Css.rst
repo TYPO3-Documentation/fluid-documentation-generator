@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Asset/CssViewHelper.php
 :navigation-title: asset.css
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-asset-css:
@@ -52,7 +53,7 @@ The following arguments are available for `<f:asset.css>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-asset-css-additionalattributes_argument:

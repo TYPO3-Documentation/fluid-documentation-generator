@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Format/CropViewHelper.php
 :navigation-title: format.crop
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-format-crop:
@@ -94,7 +95,7 @@ The following arguments are available for `<f:format.crop>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-format-crop-maxcharacters_argument:
@@ -111,7 +112,7 @@ The following arguments are available for `<f:format.crop>`:
 ..  confval:: append
     :name: typo3-fluid-format-crop-append
     :type: string
-    :Default: '&hellip;'
+    :default: `'&hellip;'`
     :required: false
 
     What to append, if truncation happened
@@ -121,7 +122,7 @@ The following arguments are available for `<f:format.crop>`:
 ..  confval:: respectWordBoundaries
     :name: typo3-fluid-format-crop-respectwordboundaries
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     If TRUE and division is in the middle of a word, the remains of that word is removed.
@@ -131,7 +132,7 @@ The following arguments are available for `<f:format.crop>`:
 ..  confval:: respectHtml
     :name: typo3-fluid-format-crop-respecthtml
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     If TRUE the cropped string will respect HTML tags and entities. Technically that means, that cropHTML() is called rather than crop()

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/CObjectViewHelper.php
 :navigation-title: cObject
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-cobject:
@@ -82,7 +83,7 @@ The following arguments are available for `<f:cObject>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-cobject-data_argument:

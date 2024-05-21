@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/IfViewHelper.php
 :navigation-title: if
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-if:
@@ -164,7 +165,7 @@ The following arguments are available for `<f:if>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-if-then_argument:

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/Security/IfAuthenticatedViewHelper.php
 :navigation-title: be.security.ifAuthenticated
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-security-ifauthenticated:
@@ -59,7 +60,7 @@ The following arguments are available for `<f:be.security.ifAuthenticated>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-security-ifauthenticated-then_argument:

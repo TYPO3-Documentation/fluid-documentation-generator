@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SubmitViewHelper.php
 :navigation-title: form.submit
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-submit:
@@ -57,7 +58,7 @@ The following arguments are available for `<f:form.submit>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-submit-additionalattributes_argument:

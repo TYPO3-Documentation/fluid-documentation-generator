@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Link/NewRecordViewHelper.php
 :navigation-title: link.newRecord
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-link-newrecord:
@@ -107,7 +108,7 @@ The following arguments are available for `<be:link.newRecord>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-link-newrecord-additionalattributes_argument:
@@ -259,7 +260,7 @@ The following arguments are available for `<be:link.newRecord>`:
 ..  confval:: defaultValues
     :name: typo3-backend-link-newrecord-defaultvalues
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Default values for fields of the new record

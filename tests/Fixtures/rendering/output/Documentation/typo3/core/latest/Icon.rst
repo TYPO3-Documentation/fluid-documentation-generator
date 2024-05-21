@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/IconViewHelper.php
 :navigation-title: icon
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-core-icon:
@@ -65,7 +66,7 @@ The following arguments are available for `<core:icon>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-core-icon-identifier_argument:
@@ -82,7 +83,7 @@ The following arguments are available for `<core:icon>`:
 ..  confval:: size
     :name: typo3-core-icon-size
     :type: string
-    :Default: 'small'
+    :default: `'small'`
     :required: false
 
     Desired size of the icon. All values of the IconSize enum are allowed, these are: "small", "default", "medium", "large" and "mega".
@@ -101,7 +102,7 @@ The following arguments are available for `<core:icon>`:
 ..  confval:: state
     :name: typo3-core-icon-state
     :type: string
-    :Default: 'default'
+    :default: `'default'`
     :required: false
 
     Sets the state of the icon. All values of the Icons.states enum are allowed, these are: "default" and "disabled".

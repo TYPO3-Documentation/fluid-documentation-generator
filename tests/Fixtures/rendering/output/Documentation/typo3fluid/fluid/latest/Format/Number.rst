@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/NumberViewHelper.php
 :navigation-title: format.number
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-number:
@@ -56,7 +57,7 @@ The following arguments are available for `<f:format.number>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-number-decimals_argument:
@@ -64,7 +65,7 @@ The following arguments are available for `<f:format.number>`:
 ..  confval:: decimals
     :name: typo3fluid-fluid-format-number-decimals
     :type: mixed
-    :Default: 2
+    :default: `2`
     :required: false
 
     The number of digits after the decimal point
@@ -74,7 +75,7 @@ The following arguments are available for `<f:format.number>`:
 ..  confval:: decimalSeparator
     :name: typo3fluid-fluid-format-number-decimalseparator
     :type: string
-    :Default: '.'
+    :default: `'.'`
     :required: false
 
     The decimal point character
@@ -84,7 +85,7 @@ The following arguments are available for `<f:format.number>`:
 ..  confval:: thousandsSeparator
     :name: typo3fluid-fluid-format-number-thousandsseparator
     :type: string
-    :Default: ','
+    :default: `','`
     :required: false
 
     The character for grouping the thousand digits

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/SelectViewHelper.php
 :navigation-title: form.select
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-select:
@@ -102,7 +103,7 @@ The following arguments are available for `<f:form.select>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-select-additionalattributes_argument:
@@ -317,7 +318,7 @@ The following arguments are available for `<f:form.select>`:
 ..  confval:: errorClass
     :name: typo3-fluid-form-select-errorclass
     :type: string
-    :Default: 'f3-form-error'
+    :default: `'f3-form-error'`
     :required: false
 
     CSS class to set if there are errors for this ViewHelper

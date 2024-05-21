@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/PrintfViewHelper.php
 :navigation-title: format.printf
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-printf:
@@ -84,7 +85,7 @@ The following arguments are available for `<f:format.printf>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-printf-value_argument:
@@ -101,7 +102,7 @@ The following arguments are available for `<f:format.printf>`:
 ..  confval:: arguments
     :name: typo3fluid-fluid-format-printf-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     The arguments for vsprintf

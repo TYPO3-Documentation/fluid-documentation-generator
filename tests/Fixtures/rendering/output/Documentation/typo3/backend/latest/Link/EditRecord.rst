@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/Link/EditRecordViewHelper.php
 :navigation-title: link.editRecord
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-link-editrecord:
@@ -71,7 +72,7 @@ The following arguments are available for `<be:link.editRecord>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-link-editrecord-additionalattributes_argument:

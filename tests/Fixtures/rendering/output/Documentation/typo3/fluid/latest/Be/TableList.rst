@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/TableListViewHelper.php
 :navigation-title: be.tableList
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-be-tablelist:
@@ -67,7 +68,7 @@ The following arguments are available for `<f:be.tableList>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-be-tablelist-tablename_argument:
@@ -84,7 +85,7 @@ The following arguments are available for `<f:be.tableList>`:
 ..  confval:: fieldList
     :name: typo3-fluid-be-tablelist-fieldlist
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     List of fields to be displayed. If empty, only the title column (configured in $TCA[$tableName]['ctrl']['title']) is shown
@@ -157,7 +158,7 @@ The following arguments are available for `<f:be.tableList>`:
 ..  confval:: enableClickMenu
     :name: typo3-fluid-be-tablelist-enableclickmenu
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     Enables context menu

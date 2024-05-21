@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/RawViewHelper.php
 :navigation-title: format.raw
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-raw:
@@ -72,7 +73,7 @@ The following arguments are available for `<f:format.raw>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-raw-value_argument:

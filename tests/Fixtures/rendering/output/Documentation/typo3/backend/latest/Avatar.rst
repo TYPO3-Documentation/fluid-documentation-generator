@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/AvatarViewHelper.php
 :navigation-title: avatar
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-backend-avatar:
@@ -73,7 +74,7 @@ The following arguments are available for `<be:avatar>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-backend-avatar-backenduser_argument:
@@ -90,7 +91,7 @@ The following arguments are available for `<be:avatar>`:
 ..  confval:: size
     :name: typo3-backend-avatar-size
     :type: mixed
-    :Default: 32
+    :default: `32`
     :required: false
 
     Width and height of the image

@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Format/CaseViewHelper.php
 :navigation-title: format.case
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-format-case:
@@ -80,7 +81,7 @@ The following arguments are available for `<f:format.case>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-format-case-value_argument:
@@ -97,7 +98,7 @@ The following arguments are available for `<f:format.case>`:
 ..  confval:: mode
     :name: typo3fluid-fluid-format-case-mode
     :type: string
-    :Default: 'upper'
+    :default: `'upper'`
     :required: false
 
     The case to apply, must be one of this' CASE_* constants. Defaults to uppercase application.

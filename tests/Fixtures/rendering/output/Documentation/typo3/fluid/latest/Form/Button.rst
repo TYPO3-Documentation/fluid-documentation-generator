@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/Form/ButtonViewHelper.php
 :navigation-title: form.button
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-form-button:
@@ -56,7 +57,7 @@ The following arguments are available for `<f:form.button>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-form-button-additionalattributes_argument:
@@ -271,7 +272,7 @@ The following arguments are available for `<f:form.button>`:
 ..  confval:: type
     :name: typo3-fluid-form-button-type
     :type: string
-    :Default: 'submit'
+    :default: `'submit'`
     :required: false
 
     Specifies the type of button (e.g. "button", "reset" or "submit")

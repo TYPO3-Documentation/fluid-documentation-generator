@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/RenderViewHelper.php
 :navigation-title: render
+
 .. include:: /Includes.rst.txt
 
 .. _typo3-fluid-render:
@@ -32,7 +33,7 @@ The following arguments are available for `<f:render>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3-fluid-render-section_argument:
@@ -67,7 +68,7 @@ The following arguments are available for `<f:render>`:
 ..  confval:: arguments
     :name: typo3-fluid-render-arguments
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Array of variables to be transferred. Use {_all} for all variables
@@ -104,7 +105,7 @@ The following arguments are available for `<f:render>`:
 ..  confval:: debug
     :name: typo3-fluid-render-debug
     :type: boolean
-    :Default: true
+    :default: `true`
     :required: false
 
     If true, the admin panel shows debug information if activated,

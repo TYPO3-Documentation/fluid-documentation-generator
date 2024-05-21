@@ -3,6 +3,7 @@
 
 :edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/Cache/WarmupViewHelper.php
 :navigation-title: cache.warmup
+
 .. include:: /Includes.rst.txt
 
 .. _typo3fluid-fluid-cache-warmup:
@@ -74,7 +75,7 @@ The following arguments are available for `<f:cache.warmup>`:
 ..  confval-menu::
     :display: table
     :type:
-    :Default:
+    :default:
 
 
 .. _typo3fluid-fluid-cache-warmup-variables_argument:
@@ -82,7 +83,7 @@ The following arguments are available for `<f:cache.warmup>`:
 ..  confval:: variables
     :name: typo3fluid-fluid-cache-warmup-variables
     :type: mixed
-    :Default: array ()
+    :default: `array ()`
     :required: false
 
     Array of variables to assign ONLY when compiling. See main class documentation.

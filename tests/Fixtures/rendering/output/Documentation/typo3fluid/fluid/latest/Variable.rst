@@ -1,7 +1,7 @@
 ..  This reStructured text file has been automatically generated, do not change.
 ..  Source: https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/VariableViewHelper.php
 
-:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/VariableViewHelper.php
+:edit-on-github-link: https://github.com/TYPO3/Fluid/edit/main/src/ViewHelpers/VariableViewHelper.php
 :navigation-title: variable
 
 .. include:: /Includes.rst.txt

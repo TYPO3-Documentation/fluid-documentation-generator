@@ -271,7 +271,7 @@ class RstExporter implements ExporterInterface
                 break;
             case 'typo3fluid/fluid/latest/':
                 $sourcePath = 'https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/';
-                $sourceEditPath = 'https://github.com/TYPO3/Fluid/edit/tree/main/src/ViewHelpers/';
+                $sourceEditPath = 'https://github.com/TYPO3/Fluid/edit/main/src/ViewHelpers/';
                 $namespace = 'TYPO3Fluid\\Fluid\\ViewHelpers\\';
                 break;
         }

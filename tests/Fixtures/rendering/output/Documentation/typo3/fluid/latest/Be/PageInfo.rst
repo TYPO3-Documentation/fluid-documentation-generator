@@ -12,27 +12,5 @@
 Be.pageInfo ViewHelper `<f:be.pageInfo>`
 ========================================
 
-
-
-ViewHelper which return page info icon as known from TYPO3 backend modules.
-
-.. note::
-   This ViewHelper is experimental!
-
-Examples
-========
-
-Default::
-
-   <f:be.pageInfo />
-
-Page info icon with context menu
-
-.. _typo3-fluid-be-pageinfo_source:
-
-Source code
-===========
-
-Go to the source code of this ViewHelper: `PageInfoViewHelper.php (GitHub) <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/Be/PageInfoViewHelper.php>`__.
-
-..  note:: `<f:be.pageInfo>` has no arguments.
+..  typo3:viewhelper:: be.pageInfo
+    :source: /_source/_f.json

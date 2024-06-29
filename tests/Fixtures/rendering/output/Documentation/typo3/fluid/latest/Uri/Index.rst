@@ -6,13 +6,14 @@ uri
 ===
 
 
-* 6 ViewHelpers documented
+* 7 ViewHelpers documented
 
 .. toctree::
    :titlesonly:
    :glob:
 
    Action
+   Email
    External
    Image
    Page

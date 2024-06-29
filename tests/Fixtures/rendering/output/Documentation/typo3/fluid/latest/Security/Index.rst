@@ -6,7 +6,7 @@ security
 ========
 
 
-* 3 ViewHelpers documented
+* 2 ViewHelpers documented
 
 .. toctree::
    :titlesonly:
@@ -14,7 +14,6 @@ security
 
    IfAuthenticated
    IfHasRole
-   Nonce
 
 
 

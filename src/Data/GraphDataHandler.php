@@ -104,8 +104,6 @@ final class GraphDataHandler
         if (!$summary) {
             return array_merge_recursive(
                 $viewHelperData,
-                ['arguments' => $this->createPropertyIndexedDataArray($viewHelper->getArgumentDefinitions(), 'name')],
-                [static::GRAPH_VIEW_HELPER_GROUP => $this->createViewHelperGroupData($viewHelper->getGroup(), true)],
                 [static::GRAPH_SCHEMA => $this->createSchemaData($schema, true)]
             );
         }

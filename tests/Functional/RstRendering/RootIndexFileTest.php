@@ -23,6 +23,7 @@ class RootIndexFileTest extends TestCase
      * @var string
      */
     private $fixtureFilePath = __DIR__ . '/../../Fixtures/rendering/output/Documentation/Index.rst';
+
     /**
      * output of the generation process
      */

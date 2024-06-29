@@ -17,7 +17,7 @@ use TYPO3Fluid\Fluid\View\TemplateView;
 
 class RstExporter implements ExporterInterface
 {
-    private readonly \TYPO3Fluid\Fluid\View\TemplateView $view;
+    private readonly TemplateView $view;
 
     /**
      * intention level for toctree structures
@@ -113,7 +113,6 @@ class RstExporter implements ExporterInterface
         $this->view->assignMultiple([
             'headline' => $headline,
             'headlineDecoration' => implode('', $headlineDecoration),
-            'rootPath' => '../../../',
             'subGroups' => $subGroupsCount,
             'viewHelpers' => \count($viewHelpers),
             'tocTree' => $this->getTocTree($viewHelpers, $subGroupsCount),
@@ -140,40 +139,15 @@ class RstExporter implements ExporterInterface
         };
 
         $path = $viewHelperDocumentation->getPath();
-        $backPath = str_repeat('../', substr_count($path, '/'));
-        $rootPath = $backPath . '../../../';
 
-        $tagName = '<' . $package . ':' . $viewHelperDocumentation->getName() . '>';
-        $headline = ucfirst($viewHelperDocumentation->getName()) . ' ViewHelper `' . $tagName . '`';
+        $tagName = sprintf('<%s:%s>', $package, $viewHelperDocumentation->getName());
+        $headline = sprintf('%s ViewHelper `%s`', ucfirst($viewHelperDocumentation->getName()), $tagName);
         $headlineDecoration = array_pad([], strlen($headline), '=');
         $namespace = array_filter(explode('/', $viewHelperDocumentation->getSchema()->getPath()));
         array_pop($namespace);
         $namespace = implode('/', $namespace);
-        $headlineIdentifier = str_replace(['.', "'", '/'], '-', strtolower($namespace . '-' . $viewHelperDocumentation->getName()));
+        $headlineIdentifier = str_replace(['.', "'", '/'], '-', strtolower(sprintf('%s-%s', $namespace, $viewHelperDocumentation->getName())));
         $source = $this->getSourcePath($viewHelperDocumentation);
-
-        $arguments = [];
-        foreach ($viewHelperDocumentation->getArgumentDefinitions() as $argumentDefinition) {
-            $argumentHeadline = trim($argumentDefinition->getName());
-            $argumentHeadlineDecoration = array_pad([], strlen($argumentHeadline), '-');
-            $argumentHeadlineIdentifier = strtolower($headlineIdentifier . '-' . $argumentHeadline);
-            $argumentsData = [
-                'headline' => $argumentHeadline,
-                'headlineIdentifier' => $argumentHeadlineIdentifier,
-                'headlineDecoration' => implode('', $argumentHeadlineDecoration),
-                'package' => $package,
-                'description' => ucfirst(trim($argumentDefinition->getDescription())),
-                'dataType' => ($argumentDefinition->getType() === 'anySimpleType') ? 'mixed' : trim($argumentDefinition->getType()),
-                'isRequired' => $argumentDefinition->isRequired(),
-            ];
-
-            $defaultValue = $argumentDefinition->getDefaultValue();
-            if ($defaultValue !== 'NULL' && $defaultValue !== "''") {
-                $argumentsData['default'] = trim(str_replace(PHP_EOL, '', (string) $defaultValue));
-            }
-
-            $arguments[] = $argumentsData;
-        }
 
         $this->view->assignMultiple([
             'headline' => $headline,
@@ -181,15 +155,8 @@ class RstExporter implements ExporterInterface
             'headlineIdentifier' => $headlineIdentifier,
             'source' => $source['source'],
             'sourceEdit' => $source['sourceEdit'],
-            'phpFileName' => $source['phpFileName'],
-            'namespace' => $source['namespace'],
-            'namespace2' => sprintf('xmlns:%s="http://typo3.org/ns/%s"', $package, $source['namespaceUrl']),
-            'namespace3' => sprintf('{namespace %s=%s}', $package, $source['namespace']),
             'package' => $package,
-            'tagName' => $tagName,
-            'rootPath' => $rootPath,
-            'viewHelper' => $viewHelperDocumentation,
-            'arguments' => $arguments,
+            'viewHelper' => $viewHelperDocumentation->getName(),
         ]);
         $resolver->getWriter()->publishDataFileForSchema(
             $viewHelperDocumentation->getSchema(),
@@ -206,8 +173,6 @@ class RstExporter implements ExporterInterface
         }
 
         $groupPath = $viewHelperDocumentationGroup->getPath() . DIRECTORY_SEPARATOR;
-        $backPath = str_repeat('../', substr_count($groupPath, '/'));
-        $rootPath = $backPath . '../../../';
 
         $headline = $viewHelperDocumentationGroup->getGroupId();
         $headlineDecoration = array_pad([], strlen($headline), '=');
@@ -216,7 +181,6 @@ class RstExporter implements ExporterInterface
         $this->view->assignMultiple([
             'headline' => $headline,
             'headlineDecoration' => implode('', $headlineDecoration),
-            'rootPath' => $rootPath,
             'viewHelpers' => \count($viewHelpers),
             'subGroups' => $subGroupsCount,
             'tocTree' => $this->getTocTree($viewHelpers, $subGroupsCount),
@@ -253,6 +217,7 @@ class RstExporter implements ExporterInterface
     {
         $sourcePath = $viewHelperDocumentation->getSchema()->getPath();
         $sourceEditPath = '';
+        $namespace = '';
         switch ($sourcePath) {
             case 'typo3/backend/latest/':
                 $sourcePath = 'https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/';
@@ -275,7 +240,6 @@ class RstExporter implements ExporterInterface
                 $namespace = 'TYPO3Fluid\\Fluid\\ViewHelpers\\';
                 break;
         }
-
         $name = $viewHelperDocumentation->getName();
         $explodedName = explode('.', $name);
         $explodedName = array_map('ucfirst', $explodedName);

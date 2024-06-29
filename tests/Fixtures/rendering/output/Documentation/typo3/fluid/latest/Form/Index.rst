@@ -6,7 +6,7 @@ form
 ====
 
 
-* 12 ViewHelpers documented
+* 11 ViewHelpers documented
 * 1 Sub namespaces
 
 .. toctree::
@@ -16,7 +16,6 @@ form
    */Index
    Button
    Checkbox
-   CountrySelect
    Hidden
    Password
    Radio

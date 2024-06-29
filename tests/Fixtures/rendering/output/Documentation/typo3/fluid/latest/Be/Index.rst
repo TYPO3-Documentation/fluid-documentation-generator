@@ -6,14 +6,15 @@ be
 ==
 
 
-* 7 ViewHelpers documented
-* 2 Sub namespaces
+* 8 ViewHelpers documented
+* 4 Sub namespaces
 
 .. toctree::
    :titlesonly:
    :glob:
 
    */Index
+   Container
    Infobox
    Link
    PageInfo

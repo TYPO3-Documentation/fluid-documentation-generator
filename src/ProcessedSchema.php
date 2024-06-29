@@ -6,7 +6,6 @@ namespace NamelessCoder\FluidDocumentationGenerator;
 
 use NamelessCoder\FluidDocumentationGenerator\Data\DataFileResolver;
 use NamelessCoder\FluidDocumentationGenerator\Entity\Schema;
-use TYPO3Fluid\Fluid\Core\ViewHelper\ArgumentDefinition;
 
 class ProcessedSchema
 {
@@ -66,11 +65,9 @@ class ProcessedSchema
             $group = $this->findOrCreateViewHelperDocumentationGroupByViewHelperName($name);
             $this->viewHelpersDocumentations[$name] = new ViewHelperDocumentation(
                 $group->getSchema(),
-                $name,
-                (string)$element->xpath('xsd:annotation/xsd:documentation')[0],
-                $this->extractArgumentDefinitions($element->xpath('xsd:complexType/xsd:attribute')),
-                $group
+                $name
             );
+            $group->addDocumentedViewHelper($this->viewHelpersDocumentations[$name]);
         }
 
         return $json;
@@ -103,27 +100,5 @@ class ProcessedSchema
         }
 
         return $group;
-    }
-
-    /**
-     * @param array|\SimpleXMLElement[] $elements
-     * @return ArgumentDefinition[]
-     */
-    private function extractArgumentDefinitions(array $elements): array
-    {
-        $argumentDefinitions = [];
-        foreach ($elements as $element) {
-            $attributes = $element->attributes();
-            $name = (string)$attributes['name'];
-            $argumentDefinitions[$name] = new ArgumentDefinition(
-                $name,
-                substr((string)$attributes['type'], 4),
-                (string)$element->xpath('xsd:annotation/xsd:documentation')[0],
-                ((string)($attributes['use'] ?? false)) === 'required',
-                ((string)$attributes['default'])
-            );
-        }
-
-        return $argumentDefinitions;
     }
 }

@@ -39,9 +39,9 @@ phpstan-baseline: ## Generates phpstan baseline
 
 .PHONY: generate
 generate: ## Generate rst files to "public" with schemas from "schemas"
-	rm -r public/typo3
-	rm -r public/typo3fluid
-	rm -r public/Index.rst
+	@if [ -d public/typo3 ]; then rm -r public/typo3; fi
+	@if [ -d public/typo3fluid ]; then rm -r public/typo3fluid; fi
+	@if [ -f public/Index.rst ]; then rm -r public/Index.rst; fi
 	$(PHP_BIN) ./bin/generate-fluid-documentation "`pwd`/public/" "" 1
 
 .PHONY: docs

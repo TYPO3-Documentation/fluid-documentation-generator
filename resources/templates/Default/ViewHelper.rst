@@ -2,7 +2,7 @@
 ..  Source: {source}
 
 :edit-on-github-link: {sourceEdit}
-:navigation-title: {viewHelper.name -> f:format.raw()}
+:navigation-title: {viewHelper -> f:format.raw()}
 
 .. include:: /Includes.rst.txt
 
@@ -12,5 +12,5 @@
 <f:format.raw>{headline}</f:format.raw>
 {headlineDecoration}
 
-..  typo3:viewhelper:: {viewHelper.name}
+..  typo3:viewhelper:: {viewHelper}
     :source: /_source/_{package}.json

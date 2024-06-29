@@ -16,7 +16,11 @@ class ViewHelperDocumentationGroup
      */
     private array $subGroups = [];
 
-    public function __construct(private readonly \NamelessCoder\FluidDocumentationGenerator\ProcessedSchema $schema, private readonly string $groupId = '', private readonly string $path = '') {}
+    public function __construct(
+        private readonly ProcessedSchema $schema,
+        private readonly string $groupId = '',
+        private readonly string $path = ''
+    ) {}
 
     public function getPath(): string
     {

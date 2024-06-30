@@ -20,6 +20,15 @@
       "items": {
         "type": "string"
       }
+    },
+    "templates": {
+      "type": "object",
+      "properties": {
+        "root": { "type": "string" },
+        "namespace": { "type": "string" },
+        "group": { "type": "string" },
+        "viewHelper": { "type": "string" }
+      }
     }
   },
   "required": [

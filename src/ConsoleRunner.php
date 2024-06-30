@@ -13,13 +13,21 @@ use Composer\Autoload\ClassLoader;
 use JsonSchema\Validator;
 use TYPO3Fluid\Fluid\Schema\ViewHelperFinder;
 use TYPO3Fluid\Fluid\Schema\ViewHelperMetadata;
+use TYPO3Fluid\Fluid\View\TemplateView;
 
 /**
  * @internal
  */
 final class ConsoleRunner
 {
+    private const OUTPUT_DIR = './fluidDocumentationOutput/';
     private const SCHEMA_FILE = __DIR__ . '/Config.schema.json';
+    private const DEFAULT_TEMPLATES = [
+        'root' => __DIR__ . '/../templates/typo3/Root.rst',
+        'namespace' => __DIR__ . '/../templates/typo3/Namespace.rst',
+        'group' => __DIR__ . '/../templates/typo3/Group.rst',
+        'viewHelper' => __DIR__ . '/../templates/typo3/ViewHelper.rst',
+    ];
 
     /**
      * @param string[] $arguments
@@ -48,24 +56,9 @@ final class ConsoleRunner
 
     public function handleGenerateCommand(array $configFiles, ClassLoader $autoloader): string
     {
-
         $config = [];
         foreach ($configFiles as $file) {
-            $config[$file] = json_decode(file_get_contents($file));
-
-            $validator = new Validator;
-            $validator->validate($config[$file], (object)['$ref' => 'file://' . self::SCHEMA_FILE]);
-            if (!$validator->isValid()) {
-                throw new \InvalidArgumentException(
-                    'Invalid config file provided: ' . $file . "\n" .
-                    implode("\n", array_map(fn ($error) => $error['message'], $validator->getErrors()))
-                );
-            }
-        }
-
-        $outDir = './fluidDocumentationOutput/';
-        if (!file_exists($outDir)) {
-            mkdir($outDir, recursive: true);
+            $config[$file] = $this->sanitizeConfiguration($file);
         }
 
         $viewHelperFinder = new ViewHelperFinder();
@@ -77,9 +70,7 @@ final class ConsoleRunner
             $groupedViewHelpers[$viewHelper->xmlNamespace][$viewHelper->tagName] = $viewHelper;
         }
 
-        foreach ($config as $filename => $content) {
-            $content->includesNamespaces ??= [$content->targetNamespace];
-
+        foreach ($config as $content) {
             // Combine multiple xml namespaces to one
             $content->viewHelpers = [];
             foreach ($content->includesNamespaces as $xmlNamespace) {
@@ -89,21 +80,111 @@ final class ConsoleRunner
                 );
             }
 
+            // Extract ViewHelper arguments and convert to stdClass
             $content->viewHelpers = array_map(
                 $this->extractRawViewHelperData(...),
                 $content->viewHelpers,
             );
 
-            file_put_contents($outDir . basename($filename), json_encode($content));
+            // Generate documentation URIs
+            $content->uri = $content->name . '/Index';
+            foreach ($content->viewHelpers as $viewHelper) {
+                $viewHelper->uri = $content->name . '/' . str_replace('\\', '/', $viewHelper->nameWithoutSuffix);
+            }
+
+            // Collect nested index pages both for root ViewHelpers (directly in namespace)
+            // and for grouped ViewHelpers (like format.*)
+            $indexPages = [
+                $content->uri => []
+            ];
+            foreach ($content->viewHelpers as $viewHelper) {
+                $parts = explode('\\', $viewHelper->nameWithoutSuffix);
+                $subgroupUri = $content->uri;
+                for ($i = 0; $i < count($parts) - 1; $i++) {
+                    $subgroupUri = $content->name . '/' . implode('/', array_slice($parts, 0, $i + 1)) . '/Index';
+                    $indexPages[$subgroupUri] ??= [];
+                }
+                $indexPages[$subgroupUri][] = $viewHelper;
+            }
+
+            // Generate index page for namespace with root ViewHelpers
+            $rootViewHelpers = array_shift($indexPages);
+            $this->renderGroupDocumentation(
+                '../',
+                $content->uri,
+                $content->label,
+                $rootViewHelpers,
+                $content->templates['namespace']
+            );
+
+            // Generate index page for grouped ViewHelpers
+            foreach ($indexPages as $uri => $viewHelpers) {
+                $this->renderGroupDocumentation(
+                    str_repeat('../', substr_count($uri, '/')),
+                    $uri,
+                    dirname($uri),
+                    $viewHelpers,
+                    $content->templates['group']
+                );
+            }
+
+            // Write JSON file with ViewHelper definitions
+            $this->writeFile(self::OUTPUT_DIR . $content->name . '.json', json_encode($content));
         }
+
+        $this->renderRootDocumentation($content);
+
         return '';
     }
 
-    public function extractRawViewHelperData(ViewHelperMetadata $viewHelperMetadata): array
+    private function renderGroupDocumentation(
+        string $pathToRoot,
+        string $uri,
+        string $headline,
+        array $viewHelpers,
+        string $templateFile
+    ): void  {
+        $view = $this->createView($templateFile);
+        $view->assignMultiple([
+            'tocTree' => array_map(fn ($viewHelper) => $pathToRoot . $viewHelper->uri, $viewHelpers),
+            'headline' => $headline,
+            'viewHelperCount' => count($viewHelpers),
+        ]);
+        $this->writeFile(self::OUTPUT_DIR . $uri . '.rst', $view->render());
+    }
+
+    private function renderRootDocumentation($content): void
     {
-        $data = get_object_vars($viewHelperMetadata);
+        $view = $this->createView($content->templates['root']);
+        $view->assign('tocTree', array_map(fn ($viewHelper) => $viewHelper->uri, $content->viewHelpers));
+        $this->writeFile(self::OUTPUT_DIR . 'Index.rst', $view->render());
+    }
+
+    private function createView(string $templateFile): TemplateView
+    {
+        $view = new TemplateView();
+        $view->getViewHelperResolver()->addNamespace('d', 'TYPO3Fluid\\FluidDocumentation\\ViewHelpers');
+        $view->getTemplatePaths()->setTemplatePathAndFilename($templateFile);
+        return $view;
+    }
+
+    private function writeFile(string $filePath, string $content): void
+    {
+        $dirName = dirname($filePath);
+        if (!file_exists($dirName)) {
+            mkdir($dirName, recursive: true);
+        }
+        file_put_contents($filePath, $content);
+    }
+
+    private function extractRawViewHelperData(ViewHelperMetadata $viewHelperMetadata): object
+    {
+        // Convert to stdClass to be able to add more information to it
+        $raw = (object)get_object_vars($viewHelperMetadata);
+        $raw->nameWithoutSuffix = preg_replace('#ViewHelper$#', '', $raw->name);
         foreach ($viewHelperMetadata->argumentDefinitions as $definition) {
-            $data['argumentDefinitions'][$definition->getName()] = [
+            // Extract information from ArgumentDefinition objects
+            $raw->argumentDefinitions[$definition->getName()] = (object)[
                 'name' => $definition->getName(),
                 'type' => $definition->getType(),
                 'description' => $definition->getDescription(),
@@ -112,6 +193,32 @@ final class ConsoleRunner
                 'escape' => $definition->getEscape(),
             ];
         }
-        return $data;
+        return $raw;
+    }
+
+    private function sanitizeConfiguration(string $filePath): object
+    {
+        // Read file
+        $config = json_decode(file_get_contents($filePath));
+
+        // Validate against JSON schema
+        $validator = new Validator;
+        $validator->validate($config, (object)['$ref' => 'file://' . self::SCHEMA_FILE]);
+        if (!$validator->isValid()) {
+            throw new \InvalidArgumentException(
+                'Invalid config file provided: ' . $filePath . "\n" .
+                implode("\n", array_map(fn ($error) => $error['message'], $validator->getErrors()))
+            );
+        }
+
+        // Set default values
+        $config->label ??= $config->name;
+        $config->includesNamespaces ??= [$config->targetNamespace];
+        $config->templates = array_merge(
+            self::DEFAULT_TEMPLATES,
+            isset($config->templates) ? get_object_vars($config->templates) : []
+        );
+
+        return $config;
     }
 }

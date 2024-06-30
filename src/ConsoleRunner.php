@@ -104,7 +104,7 @@ final class ConsoleRunner
             // Collect nested index pages both for root ViewHelpers (directly in namespace)
             // and for grouped ViewHelpers (like format.*)
             $indexPages = [
-                $package->uri => []
+                $package->uri => [],
             ];
             foreach ($package->viewHelpers as $viewHelper) {
                 $parts = explode('\\', $viewHelper->nameWithoutSuffix);
@@ -123,7 +123,7 @@ final class ConsoleRunner
                 $package->uri,
                 $package->label,
                 $rootViewHelpers,
-                $package->templates['namespace']
+                $package->templates['namespace'],
             );
 
             // Generate index page for grouped ViewHelpers
@@ -133,7 +133,7 @@ final class ConsoleRunner
                     $uri,
                     dirname($uri),
                     $viewHelpers,
-                    $package->templates['group']
+                    $package->templates['group'],
                 );
             }
 
@@ -141,7 +141,7 @@ final class ConsoleRunner
                 $this->renderViewHelperDocumentation(
                     $package,
                     $viewHelper,
-                    $package->templates['viewHelper']
+                    $package->templates['viewHelper'],
                 );
             }
 
@@ -158,7 +158,7 @@ final class ConsoleRunner
     {
         $sourceEdit = $package->sourceEdit?->{$viewHelper->xmlNamespace} ?? null;
 
-        $headlineIdentifier = str_replace(['.', "'", '/', "\\"], '-', strtolower(sprintf('%s-%s', $viewHelper->namespaceWithoutSuffix, $viewHelper->nameWithoutSuffix)));
+        $headlineIdentifier = str_replace(['.', "'", '/', '\\'], '-', strtolower(sprintf('%s-%s', $viewHelper->namespaceWithoutSuffix, $viewHelper->nameWithoutSuffix)));
 
         $view = $this->createView($templateFile);
         $view->assignMultiple([
@@ -167,7 +167,7 @@ final class ConsoleRunner
             'headlineIdentifier' => $headlineIdentifier,
             'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
             'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
-            'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json'
+            'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json',
         ]);
         $this->writeFile(self::OUTPUT_DIR . $viewHelper->uri . '.rst', $view->render());
     }
@@ -177,11 +177,11 @@ final class ConsoleRunner
         string $uri,
         string $headline,
         array $viewHelpers,
-        string $templateFile
-    ): void  {
+        string $templateFile,
+    ): void {
         $view = $this->createView($templateFile);
         $view->assignMultiple([
-            'tocTree' => array_map(fn ($viewHelper) => $pathToRoot . $viewHelper->uri, $viewHelpers),
+            'tocTree' => array_map(fn($viewHelper) => $pathToRoot . $viewHelper->uri, $viewHelpers),
             'headline' => $headline,
             'viewHelperCount' => count($viewHelpers),
         ]);
@@ -192,7 +192,7 @@ final class ConsoleRunner
     {
         $firstPackage = reset($packages);
         $view = $this->createView($firstPackage->templates['root']);
-        $view->assign('tocTree', array_map(fn ($package) => $package->uri, $packages));
+        $view->assign('tocTree', array_map(fn($package) => $package->uri, $packages));
         $this->writeFile(self::OUTPUT_DIR . 'Index.rst', $view->render());
     }
 
@@ -223,9 +223,9 @@ final class ConsoleRunner
         $ri = new RecursiveIteratorIterator($di, RecursiveIteratorIterator::CHILD_FIRST);
         foreach ($ri as $file) {
             if ($file->isDir()) {
-                rmdir((string) $file);
+                rmdir((string)$file);
             } else {
-                unlink((string) $file);
+                unlink((string)$file);
             }
         }
     }
@@ -256,12 +256,12 @@ final class ConsoleRunner
         $config = json_decode(file_get_contents($filePath), flags: JSON_THROW_ON_ERROR);
 
         // Validate against JSON schema
-        $validator = new Validator;
+        $validator = new Validator();
         $validator->validate($config, (object)['$ref' => 'file://' . self::SCHEMA_FILE]);
         if (!$validator->isValid()) {
             throw new \InvalidArgumentException(
                 'Invalid config file provided: ' . $filePath . "\n" .
-                implode("\n", array_map(fn ($error) => $error['message'], $validator->getErrors()))
+                implode("\n", array_map(fn($error) => $error['message'], $validator->getErrors())),
             );
         }
 
@@ -270,7 +270,7 @@ final class ConsoleRunner
         $config->includesNamespaces ??= [$config->targetNamespace];
         $config->templates = array_merge(
             self::DEFAULT_TEMPLATES,
-            isset($config->templates) ? get_object_vars($config->templates) : []
+            isset($config->templates) ? get_object_vars($config->templates) : [],
         );
 
         return $config;

@@ -3,6 +3,10 @@
   "description": "",
   "type": "object",
   "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
     "label": {
       "type": "string",
       "minLength": 1
@@ -19,8 +23,7 @@
     }
   },
   "required": [
-    "label",
+    "name",
     "targetNamespace"
-  ],
-  "additionalProperties": true
+  ]
 }

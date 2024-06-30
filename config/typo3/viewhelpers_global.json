@@ -1,4 +1,5 @@
 {
+  "name": "Global",
   "label": "Global (f:*)",
   "targetNamespace": "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers",
   "includesNamespaces": [

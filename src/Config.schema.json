@@ -11,6 +11,10 @@
       "type": "string",
       "minLength": 1
     },
+    "namespaceAlias": {
+      "type": "string",
+      "minLength": 1
+    },
     "targetNamespace": {
       "type": "string",
       "minLength": 1
@@ -43,6 +47,7 @@
   },
   "required": [
     "name",
+    "namespaceAlias",
     "targetNamespace"
   ]
 }

@@ -152,11 +152,14 @@ final class ConsoleRunner
     private function renderViewHelperDocumentation(object $package, object $viewHelper, string $templateFile): void
     {
         $sourceEdit = $package->sourceEdit?->{$viewHelper->xmlNamespace} ?? null;
+
+        $headlineIdentifier = str_replace(['.', "'", '/', "\\"], '-', strtolower(sprintf('%s-%s', $viewHelper->namespaceWithoutSuffix, $viewHelper->nameWithoutSuffix)));
+
         $view = $this->createView($templateFile);
         $view->assignMultiple([
-            'headline' => $viewHelper->tagName,
+            'headline' => sprintf('%s ViewHelper `<%s:%s>`', ucfirst($viewHelper->tagName), $package->namespaceAlias, $viewHelper->tagName),
             'viewHelperName' => $viewHelper->tagName,
-            'headlineIdentifier' => 'TODO', // TODO
+            'headlineIdentifier' => $headlineIdentifier,
             'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
             'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json'
@@ -210,6 +213,7 @@ final class ConsoleRunner
         // Convert to stdClass to be able to add more information to it
         $raw = (object)get_object_vars($viewHelperMetadata);
         $raw->nameWithoutSuffix = preg_replace('#ViewHelper$#', '', $raw->name);
+        $raw->namespaceWithoutSuffix = preg_replace('#\\\\ViewHelpers$#', '', $raw->namespace);
         foreach ($viewHelperMetadata->argumentDefinitions as $definition) {
             // Extract information from ArgumentDefinition objects
             $raw->argumentDefinitions[$definition->getName()] = (object)[

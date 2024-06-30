@@ -10,7 +10,10 @@ declare(strict_types=1);
 namespace TYPO3Fluid\FluidDocumentation;
 
 use Composer\Autoload\ClassLoader;
+use FilesystemIterator;
 use JsonSchema\Validator;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 use TYPO3Fluid\Fluid\Schema\ViewHelperFinder;
 use TYPO3Fluid\Fluid\Schema\ViewHelperMetadata;
 use TYPO3Fluid\Fluid\View\TemplateView;
@@ -64,6 +67,8 @@ final class ConsoleRunner
         if (count($packages) === 0) {
             return 'Nothing to do';
         }
+
+        $this->cleanupOutputDir();
 
         $viewHelperFinder = new ViewHelperFinder();
         $viewHelpers = $viewHelperFinder->findViewHelpersInComposerProject($autoloader);
@@ -206,6 +211,23 @@ final class ConsoleRunner
             mkdir($dirName, recursive: true);
         }
         file_put_contents($filePath, $content);
+    }
+
+    private function cleanupOutputDir(): void
+    {
+        if (!file_exists(self::OUTPUT_DIR)) {
+            return;
+        }
+
+        $di = new RecursiveDirectoryIterator(self::OUTPUT_DIR, FilesystemIterator::SKIP_DOTS);
+        $ri = new RecursiveIteratorIterator($di, RecursiveIteratorIterator::CHILD_FIRST);
+        foreach ($ri as $file) {
+            if ($file->isDir()) {
+                rmdir((string) $file);
+            } else {
+                unlink((string) $file);
+            }
+        }
     }
 
     private function extractRawViewHelperData(ViewHelperMetadata $viewHelperMetadata): object

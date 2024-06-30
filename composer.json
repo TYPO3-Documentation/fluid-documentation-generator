@@ -1,0 +1,27 @@
+{
+    "name": "typo3fluid/fluid-documentation",
+    "description": "",
+    "license": ["LGPL-3.0-or-later"],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "typo3fluid/fluid": "^2.12"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.59.3",
+        "phpstan/phpstan": "^1.11.5",
+        "phpstan/phpstan-phpunit": "^1.4.0",
+        "phpunit/phpunit": "^11.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TYPO3Fluid\\FluidDocumentation\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/fluidDocumentation"
+    ]
+}

@@ -61,6 +61,10 @@ final class ConsoleRunner
             $config[$file] = $this->sanitizeConfiguration($file);
         }
 
+        if (count($config) === 0) {
+            return 'Nothing to do';
+        }
+
         $viewHelperFinder = new ViewHelperFinder();
         $viewHelpers = $viewHelperFinder->findViewHelpersInComposerProject($autoloader);
 
@@ -132,7 +136,7 @@ final class ConsoleRunner
             $this->writeFile(self::OUTPUT_DIR . $content->name . '.json', json_encode($content));
         }
 
-        $this->renderRootDocumentation($content);
+        $this->renderRootDocumentation($config);
 
         return '';
     }
@@ -153,10 +157,11 @@ final class ConsoleRunner
         $this->writeFile(self::OUTPUT_DIR . $uri . '.rst', $view->render());
     }
 
-    private function renderRootDocumentation($content): void
+    private function renderRootDocumentation(array $config): void
     {
-        $view = $this->createView($content->templates['root']);
-        $view->assign('tocTree', array_map(fn ($viewHelper) => $viewHelper->uri, $content->viewHelpers));
+        $firstConfig = reset($config);
+        $view = $this->createView($firstConfig->templates['root']);
+        $view->assign('tocTree', array_map(fn ($content) => $content->uri, $config));
         $this->writeFile(self::OUTPUT_DIR . 'Index.rst', $view->render());
     }
 

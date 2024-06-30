@@ -57,6 +57,9 @@ final class ConsoleRunner
         return 'TODO help text';
     }
 
+    /**
+     * @param string[] $configFiles
+     */
     public function handleGenerateCommand(array $configFiles, ClassLoader $autoloader): string
     {
         $packages = [];

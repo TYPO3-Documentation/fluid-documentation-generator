@@ -56,12 +56,12 @@ final class ConsoleRunner
 
     public function handleGenerateCommand(array $configFiles, ClassLoader $autoloader): string
     {
-        $config = [];
+        $packages = [];
         foreach ($configFiles as $file) {
-            $config[$file] = $this->sanitizeConfiguration($file);
+            $packages[$file] = $this->sanitizeConfiguration($file);
         }
 
-        if (count($config) === 0) {
+        if (count($packages) === 0) {
             return 'Nothing to do';
         }
 
@@ -74,38 +74,38 @@ final class ConsoleRunner
             $groupedViewHelpers[$viewHelper->xmlNamespace][$viewHelper->tagName] = $viewHelper;
         }
 
-        foreach ($config as $content) {
+        foreach ($packages as $package) {
             // Combine multiple xml namespaces to one
-            $content->viewHelpers = [];
-            foreach ($content->includesNamespaces as $xmlNamespace) {
-                $content->viewHelpers = array_merge(
-                    $content->viewHelpers,
+            $package->viewHelpers = [];
+            foreach ($package->includesNamespaces as $xmlNamespace) {
+                $package->viewHelpers = array_merge(
+                    $package->viewHelpers,
                     $groupedViewHelpers[$xmlNamespace] ?? [],
                 );
             }
 
             // Extract ViewHelper arguments and convert to stdClass
-            $content->viewHelpers = array_map(
+            $package->viewHelpers = array_map(
                 $this->extractRawViewHelperData(...),
-                $content->viewHelpers,
+                $package->viewHelpers,
             );
 
             // Generate documentation URIs
-            $content->uri = $content->name . '/Index';
-            foreach ($content->viewHelpers as $viewHelper) {
-                $viewHelper->uri = $content->name . '/' . str_replace('\\', '/', $viewHelper->nameWithoutSuffix);
+            $package->uri = $package->name . '/Index';
+            foreach ($package->viewHelpers as $viewHelper) {
+                $viewHelper->uri = $package->name . '/' . str_replace('\\', '/', $viewHelper->nameWithoutSuffix);
             }
 
             // Collect nested index pages both for root ViewHelpers (directly in namespace)
             // and for grouped ViewHelpers (like format.*)
             $indexPages = [
-                $content->uri => []
+                $package->uri => []
             ];
-            foreach ($content->viewHelpers as $viewHelper) {
+            foreach ($package->viewHelpers as $viewHelper) {
                 $parts = explode('\\', $viewHelper->nameWithoutSuffix);
-                $subgroupUri = $content->uri;
+                $subgroupUri = $package->uri;
                 for ($i = 0; $i < count($parts) - 1; $i++) {
-                    $subgroupUri = $content->name . '/' . implode('/', array_slice($parts, 0, $i + 1)) . '/Index';
+                    $subgroupUri = $package->name . '/' . implode('/', array_slice($parts, 0, $i + 1)) . '/Index';
                     $indexPages[$subgroupUri] ??= [];
                 }
                 $indexPages[$subgroupUri][] = $viewHelper;
@@ -115,10 +115,10 @@ final class ConsoleRunner
             $rootViewHelpers = array_shift($indexPages);
             $this->renderGroupDocumentation(
                 '../',
-                $content->uri,
-                $content->label,
+                $package->uri,
+                $package->label,
                 $rootViewHelpers,
-                $content->templates['namespace']
+                $package->templates['namespace']
             );
 
             // Generate index page for grouped ViewHelpers
@@ -128,17 +128,38 @@ final class ConsoleRunner
                     $uri,
                     dirname($uri),
                     $viewHelpers,
-                    $content->templates['group']
+                    $package->templates['group']
+                );
+            }
+
+            foreach ($package->viewHelpers as $viewHelper) {
+                $this->renderViewHelperDocumentation(
+                    $package->name,
+                    $viewHelper,
+                    $package->templates['viewHelper']
                 );
             }
 
             // Write JSON file with ViewHelper definitions
-            $this->writeFile(self::OUTPUT_DIR . $content->name . '.json', json_encode($content));
+            $this->writeFile(self::OUTPUT_DIR . $package->name . '.json', json_encode($package));
         }
 
-        $this->renderRootDocumentation($config);
+        $this->renderRootDocumentation($packages);
 
         return '';
+    }
+
+    private function renderViewHelperDocumentation(string $packageName, object $viewHelper, string $templateFile): void
+    {
+        $view = $this->createView($templateFile);
+        $view->assignMultiple([
+            'headline' => $viewHelper->tagName,
+            'viewHelperName' => $viewHelper->tagName,
+            'headlineIdentifier' => 'TODO', // TODO
+            'sourceEdit' => 'TODO', // TODO
+            'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $packageName . '.json'
+        ]);
+        $this->writeFile(self::OUTPUT_DIR . $viewHelper->uri . '.rst', $view->render());
     }
 
     private function renderGroupDocumentation(
@@ -157,11 +178,11 @@ final class ConsoleRunner
         $this->writeFile(self::OUTPUT_DIR . $uri . '.rst', $view->render());
     }
 
-    private function renderRootDocumentation(array $config): void
+    private function renderRootDocumentation(array $packages): void
     {
-        $firstConfig = reset($config);
-        $view = $this->createView($firstConfig->templates['root']);
-        $view->assign('tocTree', array_map(fn ($content) => $content->uri, $config));
+        $firstPackage = reset($packages);
+        $view = $this->createView($firstPackage->templates['root']);
+        $view->assign('tocTree', array_map(fn ($package) => $package->uri, $packages));
         $this->writeFile(self::OUTPUT_DIR . 'Index.rst', $view->render());
     }
 

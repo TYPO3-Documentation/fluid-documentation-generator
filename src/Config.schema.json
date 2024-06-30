@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "targetNamespace": {
+      "type": "string",
+      "minLength": 1
+    },
+    "includesNamespaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "label",
+    "targetNamespace"
+  ],
+  "additionalProperties": true
+}

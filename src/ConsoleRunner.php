@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace TYPO3Fluid\FluidDocumentation;
 
 use Composer\Autoload\ClassLoader;
+use JsonSchema\Validator;
 use TYPO3Fluid\Fluid\Schema\ViewHelperFinder;
 use TYPO3Fluid\Fluid\Schema\ViewHelperMetadata;
 
@@ -18,22 +19,7 @@ use TYPO3Fluid\Fluid\Schema\ViewHelperMetadata;
  */
 final class ConsoleRunner
 {
-    private $config = [
-        [
-            'label' => 'Global (f:*)',
-            'targetNamespace' => 'http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers',
-            'filename' => 'viewhelpers_global.json',
-            'includes' => [
-                'http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers',
-                'http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers',
-            ],
-        ],
-        [
-            'label' => 'Backend (be:*)',
-            'targetNamespace' => 'http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers',
-            'filename' => 'viewhelpers_backend.json',
-        ],
-    ];
+    private const SCHEMA_FILE = __DIR__ . '/Config.schema.json';
 
     /**
      * @param string[] $arguments
@@ -60,8 +46,28 @@ final class ConsoleRunner
         return 'TODO help text';
     }
 
-    public function handleGenerateCommand(array $arguments, ClassLoader $autoloader): string
+    public function handleGenerateCommand(array $configFiles, ClassLoader $autoloader): string
     {
+
+        $config = [];
+        foreach ($configFiles as $file) {
+            $config[$file] = json_decode(file_get_contents($file));
+
+            $validator = new Validator;
+            $validator->validate($config[$file], (object)['$ref' => 'file://' . self::SCHEMA_FILE]);
+            if (!$validator->isValid()) {
+                throw new \InvalidArgumentException(
+                    'Invalid config file provided: ' . $file . "\n" .
+                    implode("\n", array_map(fn ($error) => $error['message'], $validator->getErrors()))
+                );
+            }
+        }
+
+        $outDir = './fluidDocumentationOutput/';
+        if (!file_exists($outDir)) {
+            mkdir($outDir, recursive: true);
+        }
+
         $viewHelperFinder = new ViewHelperFinder();
         $viewHelpers = $viewHelperFinder->findViewHelpersInComposerProject($autoloader);
 
@@ -71,24 +77,24 @@ final class ConsoleRunner
             $groupedViewHelpers[$viewHelper->xmlNamespace][$viewHelper->tagName] = $viewHelper;
         }
 
-        foreach ($this->config as $namespaceFile) {
-            $namespaceFile['includes'] ??= [$namespaceFile['targetNamespace']];
+        foreach ($config as $filename => $content) {
+            $content->includesNamespaces ??= [$content->targetNamespace];
 
             // Combine multiple xml namespaces to one
-            $namespaceFile['viewHelpers'] = [];
-            foreach ($namespaceFile['includes'] as $xmlNamespace) {
-                $namespaceFile['viewHelpers'] = array_merge(
-                    $namespaceFile['viewHelpers'],
+            $content->viewHelpers = [];
+            foreach ($content->includesNamespaces as $xmlNamespace) {
+                $content->viewHelpers = array_merge(
+                    $content->viewHelpers,
                     $groupedViewHelpers[$xmlNamespace] ?? [],
                 );
             }
 
-            $namespaceFile['viewHelpers'] = array_map(
+            $content->viewHelpers = array_map(
                 $this->extractRawViewHelperData(...),
-                $namespaceFile['viewHelpers']
+                $content->viewHelpers,
             );
 
-            file_put_contents($namespaceFile['filename'], json_encode($namespaceFile));
+            file_put_contents($outDir . basename($filename), json_encode($content));
         }
         return '';
     }

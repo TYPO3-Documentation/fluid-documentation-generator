@@ -157,8 +157,8 @@ final class ConsoleRunner
             'headline' => $viewHelper->tagName,
             'viewHelperName' => $viewHelper->tagName,
             'headlineIdentifier' => 'TODO', // TODO
-            'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . $viewHelper->name . '.php' : '',
-            'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . $viewHelper->name . '.php' : '',
+            'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
+            'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json'
         ]);
         $this->writeFile(self::OUTPUT_DIR . $viewHelper->uri . '.rst', $view->render());

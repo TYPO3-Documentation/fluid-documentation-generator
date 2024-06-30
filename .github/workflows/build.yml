@@ -37,3 +37,6 @@ jobs:
 
       - name: CGL check
         run: vendor/bin/php-cs-fixer fix --dry-run --diff -v
+
+      - name: Phpunit
+        run: vendor/bin/phpunit

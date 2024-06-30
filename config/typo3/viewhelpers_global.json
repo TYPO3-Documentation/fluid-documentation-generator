@@ -5,5 +5,15 @@
   "includesNamespaces": [
     "http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers",
     "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-  ]
+  ],
+  "sourceEdit": {
+    "http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers": {
+      "sourcePrefix": "https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/",
+      "editPrefix": "https://github.com/TYPO3/Fluid/edit/main/src/ViewHelpers/"
+    },
+    "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers": {
+      "sourcePrefix": "https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/",
+      "editPrefix": "https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/"
+    }
+  }
 }

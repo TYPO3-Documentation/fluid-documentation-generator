@@ -29,6 +29,16 @@
         "group": { "type": "string" },
         "viewHelper": { "type": "string" }
       }
+    },
+    "sourceEdit": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "sourcePrefix": { "type": "string" },
+          "editPrefix": { "type": "string" }
+        }
+      }
     }
   },
   "required": [

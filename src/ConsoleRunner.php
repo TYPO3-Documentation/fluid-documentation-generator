@@ -134,7 +134,7 @@ final class ConsoleRunner
 
             foreach ($package->viewHelpers as $viewHelper) {
                 $this->renderViewHelperDocumentation(
-                    $package->name,
+                    $package,
                     $viewHelper,
                     $package->templates['viewHelper']
                 );
@@ -149,15 +149,17 @@ final class ConsoleRunner
         return '';
     }
 
-    private function renderViewHelperDocumentation(string $packageName, object $viewHelper, string $templateFile): void
+    private function renderViewHelperDocumentation(object $package, object $viewHelper, string $templateFile): void
     {
+        $sourceEdit = $package->sourceEdit?->{$viewHelper->xmlNamespace} ?? null;
         $view = $this->createView($templateFile);
         $view->assignMultiple([
             'headline' => $viewHelper->tagName,
             'viewHelperName' => $viewHelper->tagName,
             'headlineIdentifier' => 'TODO', // TODO
-            'sourceEdit' => 'TODO', // TODO
-            'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $packageName . '.json'
+            'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . $viewHelper->name . '.php' : '',
+            'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . $viewHelper->name . '.php' : '',
+            'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json'
         ]);
         $this->writeFile(self::OUTPUT_DIR . $viewHelper->uri . '.rst', $view->render());
     }

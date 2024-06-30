@@ -141,7 +141,7 @@ final class ConsoleRunner
             }
 
             // Write JSON file with ViewHelper definitions
-            $this->writeFile(self::OUTPUT_DIR . $package->name . '.json', json_encode($package));
+            $this->writeFile(self::OUTPUT_DIR . $package->name . '.json', json_encode($package, JSON_THROW_ON_ERROR));
         }
 
         $this->renderRootDocumentation($packages);
@@ -231,7 +231,7 @@ final class ConsoleRunner
     private function sanitizeConfiguration(string $filePath): object
     {
         // Read file
-        $config = json_decode(file_get_contents($filePath));
+        $config = json_decode(file_get_contents($filePath), flags: JSON_THROW_ON_ERROR);
 
         // Validate against JSON schema
         $validator = new Validator;

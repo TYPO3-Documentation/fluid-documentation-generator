@@ -182,7 +182,7 @@ HELP;
 
     private function renderViewHelperDocumentation(ViewHelperPackage $package, ViewHelper $viewHelper, string $templateFile): void
     {
-        $sourceEdit = $package->sourceEdit?->{$viewHelper->metadata->xmlNamespace} ?? null;
+        $sourceEdit = $package->sourceEdit[$viewHelper->metadata->xmlNamespace] ?? null;
 
         $headlineIdentifier = str_replace(['.', "'", '/', '\\'], '-', strtolower(sprintf('%s-%s', $viewHelper->namespaceWithoutSuffix, $viewHelper->nameWithoutSuffix)));
 

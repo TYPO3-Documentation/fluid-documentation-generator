@@ -24,7 +24,7 @@ final class ViewHelperPackage
     /**
      * @param string[] $includesNamespaces
      * @param array<string, string> $templates
-     * @param array<string, array<string, string>> $sourceEdit
+     * @param array<string, object> $sourceEdit
      */
     public function __construct(
         public readonly string $name,

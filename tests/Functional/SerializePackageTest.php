@@ -53,7 +53,7 @@ class SerializePackageTest extends TestCase
                 'viewhelper' => 'path/to/ViewHelper.rst',
             ],
             [
-                'http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/' => [
+                'http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/' => (object)[
                     'editPrefix' => 'http://example.com/edit/',
                     'sourcePrefix' => 'http://example.com/source/',
                 ],

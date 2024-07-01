@@ -64,7 +64,7 @@ final class ConsoleRunner
     {
         $packages = [];
         foreach ($configFiles as $file) {
-            $packages[$file] = $this->sanitizeConfiguration($file);
+            $packages[$file] = $this->createPackageFromConfigFile($file);
         }
 
         if (count($packages) === 0) {
@@ -84,18 +84,18 @@ final class ConsoleRunner
 
         foreach ($packages as $package) {
             // Combine multiple xml namespaces to one
-            $package->viewHelpers = [];
+            $mergedViewHelpers = [];
             foreach ($package->includesNamespaces as $xmlNamespace) {
-                $package->viewHelpers = array_merge(
-                    $package->viewHelpers,
+                $mergedViewHelpers = array_merge(
+                    $mergedViewHelpers,
                     $groupedViewHelpers[$xmlNamespace] ?? [],
                 );
             }
 
             // Extract ViewHelper arguments and convert to stdClass
             $package->viewHelpers = array_map(
-                $this->extractRawViewHelperData(...),
-                $package->viewHelpers,
+                fn(ViewHelperMetadata $metadata) => new ViewHelper($metadata),
+                $mergedViewHelpers,
             );
 
             // Generate documentation URIs
@@ -157,24 +157,27 @@ final class ConsoleRunner
         return '';
     }
 
-    private function renderViewHelperDocumentation(object $package, object $viewHelper, string $templateFile): void
+    private function renderViewHelperDocumentation(ViewHelperPackage $package, ViewHelper $viewHelper, string $templateFile): void
     {
-        $sourceEdit = $package->sourceEdit?->{$viewHelper->xmlNamespace} ?? null;
+        $sourceEdit = $package->sourceEdit?->{$viewHelper->metadata->xmlNamespace} ?? null;
 
         $headlineIdentifier = str_replace(['.', "'", '/', '\\'], '-', strtolower(sprintf('%s-%s', $viewHelper->namespaceWithoutSuffix, $viewHelper->nameWithoutSuffix)));
 
         $view = $this->createView($templateFile);
         $view->assignMultiple([
-            'headline' => sprintf('%s ViewHelper `<%s:%s>`', ucfirst($viewHelper->tagName), $package->namespaceAlias, $viewHelper->tagName),
-            'viewHelperName' => $viewHelper->tagName,
+            'headline' => sprintf('%s ViewHelper `<%s:%s>`', ucfirst($viewHelper->metadata->tagName), $package->namespaceAlias, $viewHelper->metadata->tagName),
+            'viewHelperName' => $viewHelper->metadata->tagName,
             'headlineIdentifier' => $headlineIdentifier,
-            'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
-            'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->name) . '.php' : '',
+            'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
+            'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json',
         ]);
         $this->writeFile(self::OUTPUT_DIR . $viewHelper->uri . '.rst', $view->render());
     }
 
+    /**
+     * @param ViewHelper[] $viewHelpers
+     */
     private function renderGroupDocumentation(
         string $pathToRoot,
         string $uri,
@@ -191,9 +194,16 @@ final class ConsoleRunner
         $this->writeFile(self::OUTPUT_DIR . $uri . '.rst', $view->render());
     }
 
+    /**
+     * @param ViewHelperPackage[] $packages
+     */
     private function renderRootDocumentation(array $packages): void
     {
         $firstPackage = reset($packages);
+        if (!$firstPackage) {
+            return;
+        }
+
         $view = $this->createView($firstPackage->templates['root']);
         $view->assign('tocTree', array_map(fn($package) => $package->uri, $packages));
         $this->writeFile(self::OUTPUT_DIR . 'Index.rst', $view->render());
@@ -225,6 +235,11 @@ final class ConsoleRunner
         $di = new RecursiveDirectoryIterator(self::OUTPUT_DIR, FilesystemIterator::SKIP_DOTS);
         $ri = new RecursiveIteratorIterator($di, RecursiveIteratorIterator::CHILD_FIRST);
         foreach ($ri as $file) {
+            // Make phpstan happy
+            if (!$file instanceof \SplFileInfo) {
+                continue;
+            }
+
             if ($file->isDir()) {
                 rmdir((string)$file);
             } else {
@@ -233,30 +248,10 @@ final class ConsoleRunner
         }
     }
 
-    private function extractRawViewHelperData(ViewHelperMetadata $viewHelperMetadata): object
-    {
-        // Convert to stdClass to be able to add more information to it
-        $raw = (object)get_object_vars($viewHelperMetadata);
-        $raw->nameWithoutSuffix = preg_replace('#ViewHelper$#', '', $raw->name);
-        $raw->namespaceWithoutSuffix = preg_replace('#\\\\ViewHelpers$#', '', $raw->namespace);
-        foreach ($viewHelperMetadata->argumentDefinitions as $definition) {
-            // Extract information from ArgumentDefinition objects
-            $raw->argumentDefinitions[$definition->getName()] = (object)[
-                'name' => $definition->getName(),
-                'type' => $definition->getType(),
-                'description' => $definition->getDescription(),
-                'required' => $definition->isRequired(),
-                'defaultValue' => $definition->getDefaultValue(),
-                'escape' => $definition->getEscape(),
-            ];
-        }
-        return $raw;
-    }
-
-    private function sanitizeConfiguration(string $filePath): object
+    private function createPackageFromConfigFile(string $filePath): ViewHelperPackage
     {
         // Read file
-        $config = json_decode(file_get_contents($filePath), flags: JSON_THROW_ON_ERROR);
+        $config = json_decode((string)file_get_contents($filePath), flags: JSON_THROW_ON_ERROR);
 
         // Validate against JSON schema
         $validator = new Validator();
@@ -268,14 +263,19 @@ final class ConsoleRunner
             );
         }
 
-        // Set default values
-        $config->label ??= $config->name;
-        $config->includesNamespaces ??= [$config->targetNamespace];
-        $config->templates = array_merge(
-            self::DEFAULT_TEMPLATES,
-            isset($config->templates) ? get_object_vars($config->templates) : [],
+        return new ViewHelperPackage(
+            name: $config->name,
+            label: $config->label ?? $config->name,
+            namespaceAlias: $config->namespaceAlias,
+            targetNamespace: $config->targetNamespace,
+            includesNamespaces: $config->includesNamespaces ?? [$config->targetNamespace],
+            templates: [
+                'root' => $config->templates['root'] ?? self::DEFAULT_TEMPLATES['root'],
+                'namespace' => $config->templates['namespace'] ?? self::DEFAULT_TEMPLATES['namespace'],
+                'group' => $config->templates['group'] ?? self::DEFAULT_TEMPLATES['group'],
+                'viewHelper' => $config->templates['viewHelper'] ?? self::DEFAULT_TEMPLATES['viewHelper'],
+            ],
+            sourceEdit: isset($config->sourceEdit) ? (array)$config->sourceEdit : null,
         );
-
-        return $config;
     }
 }

@@ -38,5 +38,8 @@ jobs:
       - name: CGL check
         run: vendor/bin/php-cs-fixer fix --dry-run --diff -v
 
+      - name: Phpstan
+        run: vendor/bin/phpstan analyze --no-progress
+
       - name: Phpunit
         run: vendor/bin/phpunit

@@ -1,0 +1,45 @@
+{
+    "viewHelpers": [
+        {
+            "className": "Vendor\\MyPackage\\ViewHelpers\\TestViewHelper",
+            "namespace": "Vendor\\MyPackage\\ViewHelpers",
+            "name": "TestViewHelper",
+            "tagName": "test",
+            "documentation": "Some documentation\nwith newlines",
+            "xmlNamespace": "http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/",
+            "docTags": { "@deprecated": "since 1.2.3" },
+            "argumentDefinitions": {
+                "value": {
+                    "name": "value",
+                    "type": "string",
+                    "description": "argument description",
+                    "required": false,
+                    "defaultValue": null,
+                    "escape": null
+                }
+            },
+            "allowsArbitraryArguments": false,
+            "nameWithoutSuffix": "Test",
+            "namespaceWithoutSuffix": "Vendor\\MyPackage",
+            "uri": "Global/Test"
+        }
+    ],
+    "uri": "Global/Index",
+    "name": "Global",
+    "label": "Global (f:*)",
+    "namespaceAlias": "f",
+    "targetNamespace": "http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/",
+    "includesNamespaces": ["http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/"],
+    "templates": {
+        "root": "path/to/Root.rst",
+        "namespace": "path/to/Namespace.rst",
+        "group": "path/to/Group.rst",
+        "viewhelper": "path/to/ViewHelper.rst"
+    },
+    "sourceEdit": {
+        "http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/": {
+            "editPrefix": "http://example.com/edit/",
+            "sourcePrefix": "http://example.com/source/"
+        }
+    }
+}

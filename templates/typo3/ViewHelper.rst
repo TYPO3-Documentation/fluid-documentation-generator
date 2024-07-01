@@ -2,7 +2,7 @@
 ..  Source: {source}
 
 :edit-on-github-link: {sourceEdit}
-:navigation-title: {viewHelperName -> f:format.raw()}
+:navigation-title: {viewHelperName}
 
 ..  include:: /Includes.rst.txt
 

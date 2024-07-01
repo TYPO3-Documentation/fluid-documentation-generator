@@ -134,7 +134,7 @@ final class ConsoleRunner
                 $this->renderGroupDocumentation(
                     str_repeat('../', substr_count($uri, '/')),
                     $uri,
-                    dirname($uri),
+                    basename(dirname($uri)),
                     $viewHelpers,
                     $package->templates['group'],
                 );
@@ -166,8 +166,8 @@ final class ConsoleRunner
         $view = $this->createView($templateFile);
         $view->assignMultiple([
             'headline' => sprintf('%s ViewHelper `<%s:%s>`', ucfirst($viewHelper->metadata->tagName), $package->namespaceAlias, $viewHelper->metadata->tagName),
-            'viewHelperName' => $viewHelper->metadata->tagName,
             'headlineIdentifier' => $headlineIdentifier,
+            'viewHelperName' => $viewHelper->metadata->tagName,
             'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
             'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json',
@@ -189,7 +189,6 @@ final class ConsoleRunner
         $view->assignMultiple([
             'tocTree' => array_map(fn($viewHelper) => $pathToRoot . $viewHelper->uri, $viewHelpers),
             'headline' => $headline,
-            'viewHelperCount' => count($viewHelpers),
         ]);
         $this->writeFile(self::OUTPUT_DIR . $uri . '.rst', $view->render());
     }

@@ -6,9 +6,6 @@
 {headline -> d:decoration()}
 
 
-* {viewHelperCount} ViewHelpers documented
-
-
 ..  toctree::
     :titlesonly:
     :glob:

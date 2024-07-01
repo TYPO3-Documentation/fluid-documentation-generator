@@ -14,5 +14,4 @@
     :glob:
 
     */Index
-<f:for each="{tocTree}" as="line">    {line}
-</f:for>
+    *

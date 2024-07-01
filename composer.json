@@ -1,6 +1,6 @@
 {
-    "name": "typo3fluid/fluid-documentation",
-    "description": "",
+    "name": "t3docs/fluid-documentation-generator",
+    "description": "Generates automatic documentation in RST format based on Fluid ViewHelper source files",
     "license": ["LGPL-3.0-or-later"],
     "require": {
         "php": "^8.2",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TYPO3Fluid\\FluidDocumentation\\": "src/"
+            "T3Docs\\FluidDocumentationGenerator\\": "src/"
         }
     },
     "bin": [

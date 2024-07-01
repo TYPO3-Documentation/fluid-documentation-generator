@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 /*
- * This file belongs to the package "TYPO3 Fluid".
+ * This file belongs to the package "Fluid Documentation Generator".
  * See LICENSE.txt that was shipped with this package.
  */
 
-namespace TYPO3Fluid\FluidDocumentation;
+namespace T3Docs\FluidDocumentationGenerator;
 
 use TYPO3Fluid\Fluid\Schema\ViewHelperMetadata;
 

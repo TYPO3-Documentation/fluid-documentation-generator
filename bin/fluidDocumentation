@@ -8,7 +8,7 @@ declare(strict_types=1);
  * See LICENSE.txt that was shipped with this package.
  */
 
-use TYPO3Fluid\FluidDocumentation\ConsoleRunner;
+use T3Docs\FluidDocumentationGenerator\ConsoleRunner;
 
 if (file_exists(__DIR__ . '/../autoload.php')) {
     $autoloader = require_once __DIR__ . '/../autoload.php';

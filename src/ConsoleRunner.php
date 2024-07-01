@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 /*
- * This file belongs to the package "TYPO3 Fluid".
+ * This file belongs to the package "Fluid Documentation Generator".
  * See LICENSE.txt that was shipped with this package.
  */
 
-namespace TYPO3Fluid\FluidDocumentation;
+namespace T3Docs\FluidDocumentationGenerator;
 
 use Composer\Autoload\ClassLoader;
 use FilesystemIterator;
@@ -211,7 +211,7 @@ final class ConsoleRunner
     private function createView(string $templateFile): TemplateView
     {
         $view = new TemplateView();
-        $view->getViewHelperResolver()->addNamespace('d', 'TYPO3Fluid\\FluidDocumentation\\ViewHelpers');
+        $view->getViewHelperResolver()->addNamespace('d', 'T3Docs\\FluidDocumentationGenerator\\ViewHelpers');
         $view->getTemplatePaths()->setTemplatePathAndFilename($templateFile);
         return $view;
     }

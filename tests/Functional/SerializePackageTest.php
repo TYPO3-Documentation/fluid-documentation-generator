@@ -31,10 +31,10 @@ class SerializePackageTest extends TestCase
                 'http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/',
                 ['@deprecated' => 'since 1.2.3'],
                 [
-                    'value' => new ArgumentDefinition('value', 'string', 'argument description', false)
+                    'value' => new ArgumentDefinition('value', 'string', 'argument description', false),
                 ],
-                false
-            )
+                false,
+            ),
         );
         $viewHelper->uri = 'Global/Test';
 
@@ -55,9 +55,9 @@ class SerializePackageTest extends TestCase
             [
                 'http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/' => [
                     'editPrefix' => 'http://example.com/edit/',
-                    'sourcePrefix' => 'http://example.com/source/'
-                ]
-            ]
+                    'sourcePrefix' => 'http://example.com/source/',
+                ],
+            ],
         );
         $package->uri = 'Global/Index';
         $package->viewHelpers = [$viewHelper];

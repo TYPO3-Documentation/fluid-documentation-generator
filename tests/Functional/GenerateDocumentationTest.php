@@ -21,7 +21,7 @@ class GenerateDocumentationTest extends TestCase
     {
         $classLoader = self::createStub(ClassLoader::class);
         $classLoader->method('getPrefixesPsr4')->willReturn([
-            'T3Docs\\FluidDocumentationGenerator\\Tests\\Fixtures\\' => [__DIR__ . '/../Fixtures']
+            'T3Docs\\FluidDocumentationGenerator\\Tests\\Fixtures\\' => [__DIR__ . '/../Fixtures'],
         ]);
 
         $subject = new ConsoleRunner();

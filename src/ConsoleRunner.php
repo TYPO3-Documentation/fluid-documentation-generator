@@ -295,7 +295,7 @@ HELP;
             includesNamespaces: $config->includesNamespaces ?? [$config->targetNamespace],
             templates: [
                 ...self::DEFAULT_TEMPLATES,
-                ...array_map(fn ($path) => $this->preparePath($path, $configPath), (array)$config->templates)
+                ...array_map(fn($path) => $this->preparePath($path, $configPath), (array)$config->templates),
             ],
             sourceEdit: isset($config->sourceEdit) ? (array)$config->sourceEdit : null,
         );

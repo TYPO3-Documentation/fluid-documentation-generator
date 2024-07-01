@@ -28,6 +28,7 @@ class GenerateDocumentationTest extends TestCase
         $subject->handleGenerateCommand([__DIR__ . '/../Fixtures/viewhelpers_test.json'], $classLoader);
 
         self::assertFileExists('fluidDocumentationOutput/Index.rst');
+        self::assertFileMatchesFormat('TEST OVERRIDE TEMPLATE', 'fluidDocumentationOutput/Index.rst');
         self::assertFileExists('fluidDocumentationOutput/Test.json');
         self::assertFileExists('fluidDocumentationOutput/Test/Index.rst');
         self::assertFileExists('fluidDocumentationOutput/Test/Group/Index.rst');

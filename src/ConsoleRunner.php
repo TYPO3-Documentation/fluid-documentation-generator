@@ -285,6 +285,8 @@ HELP;
             );
         }
 
+        $configPath = dirname($filePath);
+
         return new ViewHelperPackage(
             name: $config->name,
             label: $config->label ?? $config->name,
@@ -292,12 +294,18 @@ HELP;
             targetNamespace: $config->targetNamespace,
             includesNamespaces: $config->includesNamespaces ?? [$config->targetNamespace],
             templates: [
-                'root' => $config->templates['root'] ?? self::DEFAULT_TEMPLATES['root'],
-                'namespace' => $config->templates['namespace'] ?? self::DEFAULT_TEMPLATES['namespace'],
-                'group' => $config->templates['group'] ?? self::DEFAULT_TEMPLATES['group'],
-                'viewHelper' => $config->templates['viewHelper'] ?? self::DEFAULT_TEMPLATES['viewHelper'],
+                ...self::DEFAULT_TEMPLATES,
+                ...array_map(fn ($path) => $this->preparePath($path, $configPath), (array)$config->templates)
             ],
             sourceEdit: isset($config->sourceEdit) ? (array)$config->sourceEdit : null,
         );
+    }
+
+    private function preparePath(string $path, string $relativeTo): string
+    {
+        if (str_starts_with($path, '/')) {
+            return $path;
+        }
+        return realpath($relativeTo . '/' . $path) ?: $path;
     }
 }

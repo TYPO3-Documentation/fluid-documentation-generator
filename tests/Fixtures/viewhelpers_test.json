@@ -2,5 +2,8 @@
     "name": "Test",
     "label": "Test (test:*)",
     "namespaceAlias": "test",
-    "targetNamespace": "http://typo3.org/ns/T3Docs/FluidDocumentationGenerator/Tests/Fixtures/ViewHelpers"
+    "targetNamespace": "http://typo3.org/ns/T3Docs/FluidDocumentationGenerator/Tests/Fixtures/ViewHelpers",
+    "templates": {
+        "root": "Root.rst"
+    }
 }

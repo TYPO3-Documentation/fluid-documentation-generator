@@ -1,53 +1,53 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "",
-  "type": "object",
-  "properties": {
-    "name": {
-      "type": "string",
-      "minLength": 1
-    },
-    "label": {
-      "type": "string",
-      "minLength": 1
-    },
-    "namespaceAlias": {
-      "type": "string",
-      "minLength": 1
-    },
-    "targetNamespace": {
-      "type": "string",
-      "minLength": 1
-    },
-    "includesNamespaces": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "templates": {
-      "type": "object",
-      "properties": {
-        "root": { "type": "string" },
-        "namespace": { "type": "string" },
-        "group": { "type": "string" },
-        "viewHelper": { "type": "string" }
-      }
-    },
-    "sourceEdit": {
-      "type": "object",
-      "additionalProperties": {
-        "type": "object",
-        "properties": {
-          "sourcePrefix": { "type": "string" },
-          "editPrefix": { "type": "string" }
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 1
+        },
+        "label": {
+            "type": "string",
+            "minLength": 1
+        },
+        "namespaceAlias": {
+            "type": "string",
+            "minLength": 1
+        },
+        "targetNamespace": {
+            "type": "string",
+            "minLength": 1
+        },
+        "includesNamespaces": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "templates": {
+            "type": "object",
+            "properties": {
+                "root": { "type": "string" },
+                "namespace": { "type": "string" },
+                "group": { "type": "string" },
+                "viewHelper": { "type": "string" }
+            }
+        },
+        "sourceEdit": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "sourcePrefix": { "type": "string" },
+                    "editPrefix": { "type": "string" }
+                }
+            }
         }
-      }
-    }
-  },
-  "required": [
-    "name",
-    "namespaceAlias",
-    "targetNamespace"
-  ]
+    },
+    "required": [
+        "name",
+        "namespaceAlias",
+        "targetNamespace"
+    ]
 }

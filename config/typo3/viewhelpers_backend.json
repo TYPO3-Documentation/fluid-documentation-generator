@@ -1,6 +1,6 @@
 {
-  "name": "Backend",
-  "label": "Backend (be:*)",
-  "namespaceAlias": "be",
-  "targetNamespace": "http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    "name": "Backend",
+    "label": "Backend (be:*)",
+    "namespaceAlias": "be",
+    "targetNamespace": "http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
 }

@@ -4,9 +4,9 @@
 :edit-on-github-link: {sourceEdit}
 :navigation-title: {viewHelperName -> f:format.raw()}
 
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _{headlineIdentifier}:
+..  _{headlineIdentifier}:
 
 {headline -> f:format.raw() -> d:decoration()}
 <f:format.raw>{headline}</f:format.raw>

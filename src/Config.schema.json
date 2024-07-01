@@ -1,31 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "",
+    "title": "Fluid ViewHelper Package Configuration",
+    "description": "Configuration file format for bin/fluidDocumentation generate ...",
     "type": "object",
     "properties": {
         "name": {
+            "description": "Name of the package, will be used in URIs as well as short titles",
             "type": "string",
             "minLength": 1
         },
         "label": {
+            "description": "Label of the package, will be used as human-readable title",
             "type": "string",
             "minLength": 1
         },
         "namespaceAlias": {
+            "description": "Alias to be used in the documentation for this package, e. g. 'f'",
             "type": "string",
             "minLength": 1
         },
         "targetNamespace": {
+            "description": "XML namespace this ViewHelper package covers",
             "type": "string",
             "minLength": 1
         },
         "includesNamespaces": {
+            "description": "A list of XML namespaces that are part of this ViewHelper package. Order is important here: Subsequent ViewHelpers with the same name will overwrite each other, only the last one will remain. Can be omitted if only the targetNamespace is included.",
             "type": "array",
             "items": {
                 "type": "string"
             }
         },
         "templates": {
+            "description": "Paths to template files to be used to render the documentation sections. Relative paths are treated as relative to the config file. If a template is omitted, a default template will be used.",
             "type": "object",
             "properties": {
                 "root": { "type": "string" },
@@ -35,6 +42,7 @@
             }
         },
         "sourceEdit": {
+            "description": "Per-namespace configuration of URL prefixes to allow 'view source on ...' and 'edit source on...' buttons. The ViewHelper name with '.php' will be appended to the prefix.",
             "type": "object",
             "additionalProperties": {
                 "type": "object",

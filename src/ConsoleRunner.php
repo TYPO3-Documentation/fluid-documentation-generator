@@ -248,7 +248,7 @@ HELP;
         file_put_contents($filePath, $content);
     }
 
-    private function cleanupOutputDir(): void
+    public function cleanupOutputDir(): void
     {
         if (!file_exists(self::OUTPUT_DIR)) {
             return;

@@ -22,6 +22,11 @@
             "T3Docs\\FluidDocumentationGenerator\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "T3Docs\\FluidDocumentationGenerator\\Tests\\": "tests/"
+        }
+    },
     "bin": [
         "bin/fluidDocumentation"
     ]

@@ -1,0 +1,12 @@
+{
+    "name": "Fluid",
+    "label": "Fluid (f:*)",
+    "namespaceAlias": "f",
+    "targetNamespace": "http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers",
+    "sourceEdit": {
+        "http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers": {
+            "sourcePrefix": "https://github.com/TYPO3/Fluid/blob/main/src/ViewHelpers/",
+            "editPrefix": "https://github.com/TYPO3/Fluid/edit/main/src/ViewHelpers/"
+        }
+    }
+}

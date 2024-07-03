@@ -184,7 +184,9 @@ HELP;
     {
         $sourceEdit = $package->sourceEdit[$viewHelper->metadata->xmlNamespace] ?? null;
 
-        $headlineIdentifier = str_replace(['.', "'", '/', '\\'], '-', strtolower(sprintf('%s-%s', $viewHelper->namespaceWithoutSuffix, $viewHelper->nameWithoutSuffix)));
+        $headlineIdentifierPrefix = $package->headlineIdentifierPrefix[$viewHelper->metadata->xmlNamespace]
+            ?? str_replace(['.', "'", '/', '\\'], '-', strtolower($viewHelper->namespaceWithoutSuffix));
+        $headlineIdentifier = sprintf('%s-%s', $headlineIdentifierPrefix, str_replace(['.', "'", '/', '\\'], '-', strtolower($viewHelper->nameWithoutSuffix)));
 
         $view = $this->createView($templateFile);
         $view->assignMultiple([
@@ -298,6 +300,7 @@ HELP;
                 ...array_map(fn($path) => $this->preparePath($path, $configPath), (array)($config->templates ?? [])),
             ],
             sourceEdit: isset($config->sourceEdit) ? (array)$config->sourceEdit : null,
+            headlineIdentifierPrefix: isset($config->headlineIdentifierPrefix) ? (array)$config->headlineIdentifierPrefix : null,
         );
     }
 

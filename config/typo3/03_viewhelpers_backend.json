@@ -8,5 +8,8 @@
             "sourcePrefix": "https://github.com/TYPO3/typo3/blob/main/typo3/sysext/backend/Classes/ViewHelpers/",
             "editPrefix": "https://github.com/TYPO3/typo3/edit/main/typo3/sysext/backend/Classes/ViewHelpers/"
         }
+    },
+    "headlineIdentifierPrefix": {
+        "http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers": "typo3-backend"
     }
 }

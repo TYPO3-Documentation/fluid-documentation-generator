@@ -51,6 +51,13 @@
                     "editPrefix": { "type": "string" }
                 }
             }
+        },
+        "headlineIdentifierPrefix": {
+            "description": "Per-namespace configuration of prefixes for headline anchor names in the rendered documentation",
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            }
         }
     },
     "required": [

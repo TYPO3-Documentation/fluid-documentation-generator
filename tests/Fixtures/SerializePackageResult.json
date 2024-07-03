@@ -41,5 +41,8 @@
             "editPrefix": "http://example.com/edit/",
             "sourcePrefix": "http://example.com/source/"
         }
+    },
+    "headlineIdentifierPrefix": {
+        "http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/": "vendor-mypackage"
     }
 }

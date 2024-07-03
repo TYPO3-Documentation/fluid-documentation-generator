@@ -64,7 +64,7 @@ Generate ViewHelper reference for `dev-main` of [TYPO3 Core](https://github.com/
 git clone git@github.com:TYPO3/typo3.git
 composer install
 composer require --dev t3docs/fluid-documentation-generator
-vendor/bin/fluidDocumentation generate vendor/t3docs/fluid-documentation-generator/config/typo3/*
+composer exec fluidDocumentation generate vendor/t3docs/fluid-documentation-generator/config/typo3/*
 ```
 
 Generate ViewHelper reference for `dev-main` of [Fluid Standalone](https://github.com/TYPO3/Fluid) with [config files](./config/fluidStandalone/):
@@ -73,5 +73,5 @@ Generate ViewHelper reference for `dev-main` of [Fluid Standalone](https://githu
 git clone git@github.com:TYPO3/Fluid.git
 composer install
 composer require --dev t3docs/fluid-documentation-generator
-vendor/bin/fluidDocumentation generate vendor/t3docs/fluid-documentation-generator/config/fluidStandalone/viewhelpers_fluid.json
+composer exec fluidDocumentation generate vendor/t3docs/fluid-documentation-generator/config/fluidStandalone/viewhelpers_fluid.json
 ```

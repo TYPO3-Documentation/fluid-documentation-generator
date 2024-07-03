@@ -1,0 +1,12 @@
+{
+    "name": "Core",
+    "label": "Core (core:*)",
+    "namespaceAlias": "core",
+    "targetNamespace": "http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers",
+    "sourceEdit": {
+        "http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers": {
+            "sourcePrefix": "https://github.com/TYPO3/typo3/blob/main/typo3/sysext/core/Classes/ViewHelpers/",
+            "editPrefix": "https://github.com/TYPO3/typo3/edit/main/typo3/sysext/core/Classes/ViewHelpers/"
+        }
+    }
+}

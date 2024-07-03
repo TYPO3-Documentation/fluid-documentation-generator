@@ -1,0 +1,33 @@
+{
+    "name": "t3docs/fluid-documentation-generator",
+    "description": "Generates automatic documentation in RST format based on Fluid ViewHelper source files",
+    "license": ["LGPL-3.0-or-later"],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "justinrainbow/json-schema": "^5.2",
+        "typo3fluid/fluid": "^2.12"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.59.3",
+        "phpstan/phpstan": "^1.11.5",
+        "phpstan/phpstan-phpunit": "^1.4.0",
+        "phpunit/phpunit": "^11.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3Docs\\FluidDocumentationGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "T3Docs\\FluidDocumentationGenerator\\Tests\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/fluidDocumentation"
+    ]
+}

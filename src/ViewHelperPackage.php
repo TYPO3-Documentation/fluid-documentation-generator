@@ -25,6 +25,7 @@ final class ViewHelperPackage
      * @param string[] $includesNamespaces
      * @param array<string, string> $templates
      * @param array<string, object> $sourceEdit
+     * @param array<string, string> $headlineIdentifierPrefix
      */
     public function __construct(
         public readonly string $name,
@@ -34,5 +35,6 @@ final class ViewHelperPackage
         public readonly array $includesNamespaces,
         public readonly array $templates,
         public readonly ?array $sourceEdit,
+        public readonly ?array $headlineIdentifierPrefix,
     ) {}
 }

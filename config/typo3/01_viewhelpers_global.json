@@ -16,5 +16,8 @@
             "sourcePrefix": "https://github.com/TYPO3/typo3/blob/main/typo3/sysext/fluid/Classes/ViewHelpers/",
             "editPrefix": "https://github.com/TYPO3/typo3/edit/main/typo3/sysext/fluid/Classes/ViewHelpers/"
         }
+    },
+    "headlineIdentifierPrefix": {
+        "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers": "typo3-fluid"
     }
 }

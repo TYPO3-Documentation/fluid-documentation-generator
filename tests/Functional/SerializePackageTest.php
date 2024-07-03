@@ -58,6 +58,9 @@ class SerializePackageTest extends TestCase
                     'sourcePrefix' => 'http://example.com/source/',
                 ],
             ],
+            [
+                'http://typo3.org/ns/Vendor/MyPackage/ViewHelpers/' => 'vendor-mypackage',
+            ],
         );
         $package->uri = 'Global/Index';
         $package->viewHelpers = [$viewHelper];

@@ -1,0 +1,12 @@
+{
+    "name": "Form",
+    "label": "Form (formvh:*)",
+    "namespaceAlias": "formvh",
+    "targetNamespace": "http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers",
+    "sourceEdit": {
+        "http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers": {
+            "sourcePrefix": "https://github.com/TYPO3/typo3/blob/main/typo3/sysext/form/Classes/ViewHelpers/",
+            "editPrefix": "https://github.com/TYPO3/typo3/edit/main/typo3/sysext/form/Classes/ViewHelpers/"
+        }
+    }
+}

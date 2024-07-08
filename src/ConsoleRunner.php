@@ -190,6 +190,9 @@ HELP;
 
         $view = $this->createView($templateFile);
         $view->assignMultiple([
+            'viewHelper' => $viewHelper,
+            'package' => $package,
+
             'headline' => sprintf('%s ViewHelper `<%s:%s>`', ucfirst($viewHelper->metadata->tagName), $package->namespaceAlias, $viewHelper->metadata->tagName),
             'headlineIdentifier' => $headlineIdentifier,
             'viewHelperName' => $viewHelper->metadata->tagName,

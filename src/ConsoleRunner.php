@@ -26,10 +26,10 @@ final class ConsoleRunner
     private const DEFAULT_OUTPUT_DIR = './fluidDocumentationOutput';
     private const SCHEMA_FILE = __DIR__ . '/Config.schema.json';
     private const DEFAULT_TEMPLATES = [
-        'root' => __DIR__ . '/../templates/typo3/Root.rst',
-        'namespace' => __DIR__ . '/../templates/typo3/Namespace.rst',
-        'group' => __DIR__ . '/../templates/typo3/Group.rst',
-        'viewHelper' => __DIR__ . '/../templates/typo3/ViewHelper.rst',
+        'root' => __DIR__ . '/../templates/default/Root.rst',
+        'namespace' => __DIR__ . '/../templates/default/Namespace.rst',
+        'group' => __DIR__ . '/../templates/default/Group.rst',
+        'viewHelper' => __DIR__ . '/../templates/default/ViewHelper.rst',
     ];
 
     /**

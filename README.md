@@ -45,7 +45,8 @@ minimal configuration file could look like this:
 ```
 
 The resulting JSON file will contain all ViewHelpers in the PHP namespace `Vendor\MyPackage\ViewHelpers`.
-The result will be placed in a folder called `fluidDocumentationOutput`. In this example, the folder
+The result will be placed in a folder called `fluidDocumentationOutput`. The output folder can be changed
+by providing the environment variable `FLUID_DOCUMENTATION_OUTPUT_DIR`. In the example, the folder
 structure will look like this:
 
 * fluidDocumentationOutput/

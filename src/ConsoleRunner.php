@@ -114,6 +114,7 @@ HELP;
                     $groupedViewHelpers[$xmlNamespace] ?? [],
                 );
             }
+            ksort($mergedViewHelpers);
 
             // Extract ViewHelper arguments and convert to stdClass
             $package->viewHelpers = array_map(

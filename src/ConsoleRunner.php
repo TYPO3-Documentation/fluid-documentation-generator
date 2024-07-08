@@ -283,6 +283,10 @@ HELP;
 
     private function createPackageFromConfigFile(string $filePath): ViewHelperPackage
     {
+        if (!is_file($filePath)) {
+            throw new \InvalidArgumentException('Specified path is not a valid configuration file: ' . $filePath);
+        }
+
         // Read file
         $config = json_decode((string)file_get_contents($filePath), flags: JSON_THROW_ON_ERROR);
 

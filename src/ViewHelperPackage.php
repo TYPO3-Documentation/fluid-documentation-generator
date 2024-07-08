@@ -12,7 +12,7 @@ namespace T3Docs\FluidDocumentationGenerator;
 /**
  * @internal
  */
-final class ViewHelperPackage
+final class ViewHelperPackage implements \JsonSerializable
 {
     /**
      * @var ViewHelper[]
@@ -37,4 +37,14 @@ final class ViewHelperPackage
         public readonly ?array $sourceEdit,
         public readonly ?array $headlineIdentifierPrefix,
     ) {}
+
+    public function jsonSerialize(): object
+    {
+        $raw = (object)get_object_vars($this);
+
+        // Remove template paths from exported json to make builds reproducible
+        unset($raw->templates);
+
+        return $raw;
+    }
 }

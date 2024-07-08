@@ -23,7 +23,7 @@ use TYPO3Fluid\Fluid\View\TemplateView;
  */
 final class ConsoleRunner
 {
-    private const OUTPUT_DIR = './fluidDocumentationOutput/';
+    private const DEFAULT_OUTPUT_DIR = './fluidDocumentationOutput';
     private const SCHEMA_FILE = __DIR__ . '/Config.schema.json';
     private const DEFAULT_TEMPLATES = [
         'root' => __DIR__ . '/../templates/typo3/Root.rst',
@@ -173,7 +173,7 @@ HELP;
             }
 
             // Write JSON file with ViewHelper definitions
-            $this->writeFile(self::OUTPUT_DIR . $package->name . '.json', json_encode($package, JSON_THROW_ON_ERROR));
+            $this->writeFile($this->getOutputDir() . $package->name . '.json', json_encode($package, JSON_THROW_ON_ERROR));
         }
 
         $this->renderRootDocumentation($packages);
@@ -201,7 +201,7 @@ HELP;
             'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json',
         ]);
-        $this->writeFile(self::OUTPUT_DIR . $viewHelper->uri . '.rst', $view->render());
+        $this->writeFile($this->getOutputDir() . $viewHelper->uri . '.rst', $view->render());
     }
 
     /**
@@ -219,7 +219,7 @@ HELP;
             'tocTree' => array_map(fn($viewHelper) => $pathToRoot . $viewHelper->uri, $viewHelpers),
             'headline' => $headline,
         ]);
-        $this->writeFile(self::OUTPUT_DIR . $uri . '.rst', $view->render());
+        $this->writeFile($this->getOutputDir() . $uri . '.rst', $view->render());
     }
 
     /**
@@ -234,7 +234,7 @@ HELP;
 
         $view = $this->createView($firstPackage->templates['root']);
         $view->assign('tocTree', array_map(fn($package) => $package->uri, $packages));
-        $this->writeFile(self::OUTPUT_DIR . 'Index.rst', $view->render());
+        $this->writeFile($this->getOutputDir() . 'Index.rst', $view->render());
     }
 
     private function createView(string $templateFile): TemplateView
@@ -256,11 +256,11 @@ HELP;
 
     public function cleanupOutputDir(): void
     {
-        if (!file_exists(self::OUTPUT_DIR)) {
+        if (!file_exists($this->getOutputDir())) {
             return;
         }
 
-        $di = new RecursiveDirectoryIterator(self::OUTPUT_DIR, FilesystemIterator::SKIP_DOTS);
+        $di = new RecursiveDirectoryIterator($this->getOutputDir(), FilesystemIterator::SKIP_DOTS);
         $ri = new RecursiveIteratorIterator($di, RecursiveIteratorIterator::CHILD_FIRST);
         foreach ($ri as $file) {
             // Make phpstan happy
@@ -274,6 +274,11 @@ HELP;
                 unlink((string)$file);
             }
         }
+    }
+
+    public function getOutputDir(): string
+    {
+        return rtrim((string)(getenv('FLUID_DOCUMENTATION_OUTPUT_DIR') ?: self::DEFAULT_OUTPUT_DIR), '/') . '/';
     }
 
     private function createPackageFromConfigFile(string $filePath): ViewHelperPackage

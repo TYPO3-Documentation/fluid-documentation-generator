@@ -19,5 +19,11 @@
     },
     "headlineIdentifierPrefix": {
         "http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers": "typo3-fluid"
+    },
+    "templates": {
+        "root": "../../templates/typo3/Root.rst",
+        "namespace": "../../templates/typo3/Namespace.rst",
+        "group": "../../templates/typo3/Group.rst",
+        "viewHelper": "../../templates/typo3/ViewHelper.rst"
     }
 }

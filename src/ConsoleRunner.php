@@ -240,8 +240,8 @@ HELP;
     private function createView(string $templateFile): TemplateView
     {
         $view = new TemplateView();
-        $view->getViewHelperResolver()->addNamespace('d', 'T3Docs\\FluidDocumentationGenerator\\ViewHelpers');
-        $view->getTemplatePaths()->setTemplatePathAndFilename($templateFile);
+        $view->getRenderingContext()->getViewHelperResolver()->addNamespace('d', 'T3Docs\\FluidDocumentationGenerator\\ViewHelpers');
+        $view->getRenderingContext()->getTemplatePaths()->setTemplatePathAndFilename($templateFile);
         return $view;
     }
 

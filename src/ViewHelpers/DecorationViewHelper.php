@@ -15,6 +15,6 @@ class DecorationViewHelper extends AbstractViewHelper
 {
     public function render(): string
     {
-        return str_repeat('=', strlen($this->renderChildren()));
+        return str_repeat('=', strlen((string)$this->renderChildren()));
     }
 }

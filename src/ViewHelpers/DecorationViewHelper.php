@@ -14,8 +14,8 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 class DecorationViewHelper extends AbstractViewHelper
 {
-    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext): string
+    public function render(): string
     {
-        return str_repeat('=', strlen($renderChildrenClosure()));
+        return str_repeat('=', strlen($this->renderChildren()));
     }
 }

@@ -16,7 +16,7 @@ class DecorationViewHelper extends AbstractViewHelper
     public function render(): string
     {
         $children = $this->renderChildren();
-        if (!is_scalar($children) || !$children instanceof \Stringable) {
+        if (!is_scalar($children) && !$children instanceof \Stringable) {
             throw new \InvalidArgumentException('DecorationViewHelper only works on string input');
         }
         return str_repeat('=', strlen((string)$children));

@@ -5,6 +5,7 @@ if (PHP_SAPI !== 'cli') {
 
 $finder = (new PhpCsFixer\Finder())
     ->exclude('vendor')
+    ->exclude('.cache')
     ->in(__DIR__);
 
 return (new PhpCsFixer\Config())

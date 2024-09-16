@@ -6,7 +6,7 @@
         "php": "^8.2",
         "ext-json": "*",
         "justinrainbow/json-schema": "^5.2",
-        "typo3fluid/fluid": "^2.12 || dev-main"
+        "typo3fluid/fluid": "^2.12 || ^4.0 || dev-main"
     },
     "config": {
         "sort-packages": true

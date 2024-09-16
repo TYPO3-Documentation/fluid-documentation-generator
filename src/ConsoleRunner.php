@@ -201,7 +201,9 @@ HELP;
             'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json',
         ]);
-        $this->writeFile($this->getOutputDir() . $viewHelper->uri . '.rst', $view->render());
+        $content = $view->render();
+        assert(is_string($content));
+        $this->writeFile($this->getOutputDir() . $viewHelper->uri . '.rst', $content);
     }
 
     /**
@@ -219,7 +221,9 @@ HELP;
             'tocTree' => array_map(fn($viewHelper) => $pathToRoot . $viewHelper->uri, $viewHelpers),
             'headline' => $headline,
         ]);
-        $this->writeFile($this->getOutputDir() . $uri . '.rst', $view->render());
+        $content = $view->render();
+        assert(is_string($content));
+        $this->writeFile($this->getOutputDir() . $uri . '.rst', $content);
     }
 
     /**
@@ -234,7 +238,9 @@ HELP;
 
         $view = $this->createView($firstPackage->templates['root']);
         $view->assign('tocTree', array_map(fn($package) => $package->uri, $packages));
-        $this->writeFile($this->getOutputDir() . 'Index.rst', $view->render());
+        $content = $view->render();
+        assert(is_string($content));
+        $this->writeFile($this->getOutputDir() . 'Index.rst', $content);
     }
 
     private function createView(string $templateFile): TemplateView

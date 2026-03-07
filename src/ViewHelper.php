@@ -23,6 +23,9 @@ final class ViewHelper implements \JsonSerializable
     public function __construct(
         public readonly ViewHelperMetadata $metadata,
     ) {
+        if (!isset($metadata->name)) {
+            throw new \InvalidArgumentException('Invalid ViewHelper metadata provided: name is not specified', 1772880604);
+        }
         $this->nameWithoutSuffix = (string)preg_replace('#ViewHelper$#', '', $metadata->name);
         $this->namespaceWithoutSuffix = (string)preg_replace('#\\\\ViewHelpers$#', '', $metadata->namespace);
     }

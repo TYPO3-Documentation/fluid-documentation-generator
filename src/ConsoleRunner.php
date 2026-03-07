@@ -197,8 +197,8 @@ HELP;
             'headline' => sprintf('%s ViewHelper `<%s:%s>`', ucfirst($viewHelper->metadata->tagName), $package->namespaceAlias, $viewHelper->metadata->tagName),
             'headlineIdentifier' => $headlineIdentifier,
             'viewHelperName' => $viewHelper->metadata->tagName,
-            'source' => isset($sourceEdit->sourcePrefix) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
-            'sourceEdit' => isset($sourceEdit->editPrefix) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
+            'source' => isset($sourceEdit->sourcePrefix) && isset($viewHelper->metadata->name) ? $sourceEdit->sourcePrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
+            'sourceEdit' => isset($sourceEdit->editPrefix) && isset($viewHelper->metadata->name) ? $sourceEdit->editPrefix . str_replace('\\', '/', $viewHelper->metadata->name) . '.php' : '',
             'jsonFile' => str_repeat('../', substr_count($viewHelper->uri, '/')) . $package->name . '.json',
         ]);
         $content = $view->render();

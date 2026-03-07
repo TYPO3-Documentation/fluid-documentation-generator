@@ -301,8 +301,8 @@ HELP;
         $validator->validate($config, (object)['$ref' => 'file://' . self::SCHEMA_FILE]);
         if (!$validator->isValid()) {
             throw new \InvalidArgumentException(
-                'Invalid config file provided: ' . $filePath . "\n" .
-                implode("\n", array_map(fn($error) => $error['message'], $validator->getErrors())),
+                'Invalid config file provided: ' . $filePath . "\n"
+                . implode("\n", array_map(fn($error) => $error['message'], $validator->getErrors())),
             );
         }
 
